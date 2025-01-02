@@ -1,0 +1,9 @@
+{
+    "Subscript": {
+        "scope": "typst",
+        "prefix": "#ss",
+        "body": [
+            "#sub[$1]"
+        ],
+    }
+}
