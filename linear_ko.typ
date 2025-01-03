@@ -1,4 +1,4 @@
-#import "@preview/orange-book:0.4.0": book, part, chapter, my-bibliography, appendices, make-index, index, theorem, definition, notation,remark,corollary,proposition,example,exercise, problem, vocabulary, scr, update-heading-image, thmbox
+#import "@local/korange-book:0.1.0": book, part, chapter, my-bibliography, appendices, make-index, index, theorem, definition, notation,remark,corollary,proposition,example,exercise, problem, vocabulary, scr, update-heading-image, thmbox
 //#set text(font: "TeX Gyre Pagella")
 //#set text(font: "Lato")
 //#show math.equation: set text(font: "Fira Math")
@@ -73,8 +73,8 @@
   font-size: 11pt,
   // list-of-figure-title: "List of Figures",
   // list-of-table-title: "List of Tables",
-  supplement-chapter: "Chapter",
-  supplement-part: "Part",
+  supplement-chapter: "",
+  supplement-part: "",
   part-style: 0,
   copyright: [
     © 1996 Houston Publishing, Inc.
@@ -89,6 +89,7 @@
 #set text(font: ("Times New Roman", "KoPubBatang"), lang: "ko")
 #set par(leading: 0.9em, spacing: 1.2em)
 #set sub(size: 0.9em)
+#set heading(supplement: none)
 
 #chapter("개요", l: "chap1")
 
@@ -128,13 +129,13 @@
 
 == 기본 이론
 
-=== 온음계 화음과 로마 숫자
+=== 온음계 화음과 로마 숫자 <sec_diatonic_roman>
 
 이 책 전반에서, 화음은 으뜸음#sub[tonic]$$(또는 음조 중심#sub[tonal center])과의 관계를 기준으로 설명된다. 이 관계를 나타내기 위해 로마 숫자가 사용됩니다. 장조의 화성을 다룰 때, 화음은 기본적으로 장조 음계(major scale)에서 파생된 것으로 간주된다. 반면, 단조의 화성을 다룰 때는 화음이 #sans[화성] 단음계#sub[_harmonic_ minor scale]에서 파생된 것으로 간주된다. 다른 단음계도 존재하지만, 이 책에서는 화성 단음계만 논의한다. 화성 단음계는 3도와 6도가 낮아져 있지만, 이끎음#sub[leading tone]은 유지되어 5도 음 위에 형성된 화음이 딸림화음#sub[dominant chord]가 되도록 한다. 이 7도 음은 또한 3도와 7도 음 위에 형성된 화음에도 영향을 미친다.
 
 장조와 단조 음계 모두에서 7개의 음이 있으므로, 각 음에 기반한 화음은 1부터 7까지의 로마 숫자로 표시됩니다. 대문자 로마 숫자는 장화음에 할당되며, 소문자 로마 숫자는 단화음 및 감화음에 할당된다. 감화음의 경우 숫자 뒤에 "$degree$" 기호가 추가된다. 반감화음은 $-7flat 5$로 표현하지 #sans[않는다]. 이는 변화($flat 5$)가 일어났음을 의미하지만, 실제로는 그렇지 않기 때문이다. (이 화음은 장조 및 화성 단음계 모두에서 자연스럽게 나타난다.) 반감화음은 소문자 로마 숫자 뒤에 “$ø$” 기호를 붙여 표기한다.
 
-모든 장조 영역에서 간격적 관계(온 온 반 온 온 온 반)가 동일하듯이, 온음계적 화음과 그 성질도 그러하다. 예를 들어, 으뜸화음#sub[tonic chord]은 항상 장화음이고, 위으뜸화음#sub[supertonic chord]은 항상 단화음이다. 만약 위으뜸화음이 장화음처럼 보인다면, 그것은 위으뜸화음이 아니다. 이 화음은 다른 으뜸음을 나타내기 위해 기능하는 것이다. 예를 들어, 평행단조#sub[parallel minor] 등 다른 조성에서 빌려왔거나, 전조#sub[modulating]하거나, 어떤 코드를 그것의 딸림화음으로 으뜸화음화#sub[tonicizing]하기 위해 사용된 것일 수 있다.
+모든 장조 영역에서 간격적 관계(온 온 반 온 온 온 반)가 동일하듯이, 온음계적 화음과 그 성질도 그러하다. 예를 들어, 으뜸화음#sub[tonic chord]은 항상 장화음이고, 위으뜸화음#sub[supertonic chord]은 항상 단화음이다. 만약 위으뜸화음이 장화음처럼 보인다면, 그것은 위으뜸화음이 아니다. 이 화음은 다른 으뜸음을 나타내기 위해 기능하는 것이다. 예를 들어, 단조인 같은으뜸음조#sub[parallel minor] 등 다른 조성에서 빌려왔거나, 전조#sub[modulating]하거나, 어떤 코드를 그것의 딸림화음으로 으뜸화음화#sub[tonicizing]하기 위해 사용된 것일 수 있다.
 
 다음은 #note("C") 장조의 온음계적 화음과 각각을 로마 숫자로 나타낸 것이다.
 
@@ -247,7 +248,7 @@ C장조에서의 $chord("ii") - chord("V7") - chord("I")$ 진행($chord("Dm7") -
 
 === 제2윤곽
 
-나는 제2윤곽을 "'Round Midnight" 윤곽이라고 부른다. 이는 _'Round Midnight_의 A섹션에서 두 번 등장한다. 제2윤곽은 #chord("ii") 코드(1-3-5)와 그 코드 위에 불안정한 음(7)을 추가한 상행 아르페지오이며, 추가한 음은 #chord("V7") 화음의 3도로 해결된다. 윤곽은 목표인 으뜸음의 3도에 도착하기 위해 음계를 계속해서 내려갈 수 있다.
+필자는 제2윤곽을 "'Round Midnight" 윤곽이라고 부른다. 이는 _'Round Midnight_의 A섹션에서 두 번 등장한다. 제2윤곽은 #chord("ii") 코드(1-3-5)와 그 코드 위에 불안정한 음(7)을 추가한 상행 아르페지오이며, 추가한 음은 #chord("V7") 화음의 3도로 해결된다. 윤곽은 목표인 으뜸음의 3도에 도착하기 위해 음계를 계속해서 내려갈 수 있다.
 
 #align(center)[#image("figures/fig_016.jpg", width: 47%)]
 
@@ -365,8 +366,6 @@ _'Round Midnight_ 윤곽은 일반적으로 #chord("ii") 화음의 근음에서 
 
 == 옥타브 이동
 
-One or more tones placed in another octave. This often makes the line more interesting by introducing a leap. Octave displacement is often necessary due to the ranges of the instruments, dramatic interest becoming a serendipitous result. Leaps most often occur after the main guide-tone, leap from down beat to upbeat; never over the barline and rarely from a weak beat to a strong beat. Leaps may involve arpeggiated tones in unexpected moves. Arpeggiated leaps occur when a moving from a chord tone to another chord tone skipping over a chord tone. Moving from the third of a chord up to its fifth is a movement larger than a step, but does not involve skipping over another chord tone. Moving from the third of a chord _down_ to its fifth involves a leap of a sixth, skipping over the root of the chord.
-
 옥타브 이동#sub[octave displacement]은 한 음 또는 여러 음을 다른 옥타브로 위치시키는 기법이다. 이는 도약을 도입함으로써 선율을 더욱 흥미롭게 만드는 경우가 많다. 옥타브 이동은 종종 악기의 음역 때문에 필요하며, 극적인 흥미는 부수적인 결과로 나타난다. 도약은 주로 주요 가이드음#sub[main guide-tone] 뒤에 발생하며, 다운비트에서 업비트로 도약하는 경우가 많다. 도약은 마디선을 넘지 않으며, 업비트에서 다운비트로 도약하는 경우는 드물다. 도약은 예상치 못한 움직임으로 아르페지오 음을 포함할 수 있다. 아르페지오 도약은 한 화성음에서 다른 화성음으로 이동하면서 중간의 화성음을 건너뛸 때 발생한다. 예를 들어, 화음의 3도에서 5도로 올라가는 경우는 한 단계보다 큰 움직임이지만, 다른 화성음을 건너뛰지는 않는다. 반면, 화음의 3도에서 5도로 내려가는 경우에는 6도의 도약이 발생하며, 화음의 근음을 건너뛰게 된다.
 
 #align(center)[#image("figures/fig_035.jpg", width: 35%)]
@@ -392,58 +391,63 @@ There are several instances of octave displacement included in the musical examp
 
 == 둘러싼음
 
-둘러싼음#sub[encircled tones]은 필수음 전에 두 이웃음을 사용하는 것이다. In some cases the essential tone is approached by several chromatic approach steps above and below. (See examples under chromatic approaches)
+둘러싼음#sub[encircled tones]은 필수음 전에 두 이웃음을 사용하는 것이다. 떄로는 필수 음이 위아래에서 여러 반음계적 접근 단계에 의해 도달된다. (반음계적 접근에 대한 예시 참조)
 
 == C.E.S.H.
 
-Jerry Coker's acronym for Chromatic Elaboration of Static Harmony. The most common example in a ii - V progression is the descending movement from the root of the ii chord to the third of the V7 chord. In the key of C (D minor - G7), the movement of D-#note("C#")-C-B. Other notes (the static harmony) are played in between the chromatic descending tones, sometimes implying compound melodies#footnote[A single melody line that implies two or more independent lines within is a compound melody.]. There are excellent examples of compound melodies throughout the literature, especially Bach solo cello sonatas. (See later examples in this book: Parker: ex.113)
+C.E.S.H.는 '정적 화성의 반음계적 발전(Chromatic Elaboration of Static Harmony)'을 나타내는 제리 코커#sub[Jerry Coker]의 약어이다. $chord("ii")-chord("V")$ 진행에서 가장 일반적인 예는 ii 화음의 근음에서 V7 화음의 3도로 하강하는 움직임이다. C장조($chord("Dm")-chord("G7")$)에서는 $note("D")-note("C#")-note("C")-note("B")$의 움직임을 말한다. 다른 음들(정적 화성)이 이 반음계적 하강 음들 사이에 연주되며, 때로는 복합 선율#sub[compound melodies]을 암시하기도 한다.#footnote[하나의 선율 라인이 두 개 이상의 독립적인 선율을 암시하는 경우를 복합 선율이라고 한다.] 문헌, 특히 바흐의 솔로 첼로 소나타에서 복합 선율의 훌륭한 예들을 찾아볼 수 있다. (찰리 파커의 예시 113 등 이후 예제 참조)
 
 #align(center)[#image("figures/fig_039.jpg", width: 35%)]
 
-== Anticipation
+== 선행음
 
-Arriving at the next chord ahead of time, often creating a small dissonance resolved when the harmony catches up with the melody.
+선행음#sub[anticipation]은 다음 화음에 미리 도달하여 종종 작은 불협화를 만들어내며, 이 불협화는 화성이 선율을 따라잡을 때 해결된다.
 
-== Delayed Resolution
+== 해결 지연
 
-Suspending the resolution of one chord into the next chord. Arriving at the target chord late creating dissonance resolved when the melody catches up with the harmony.
+해결 지연#sub[delayed resolution]은 한 화음의 해결을 다음 화음으로 미루는 기법이다. 목표 화음에 늦게 도달하여, 화성이 선율을 따라잡을 때 불협화가 해결된다.
 
-== Sawtooth
+== 톱니형
 
-A consistent up and down movement like the teeth on a saw. Often involves a pivot note or arpeggiated note: G-D-F-D-E.
+톱니형#sub[sawtooth]은 톱니 모양처럼 일관된 상승과 하강 움직임이다. 종종 중심축음#sub[pivot note]이나 아르페지오 음을 포함한다. 예를 들면, $note("G")-note("D")-note("F")-note("D")-note("E")$이 있다.
+
 #align(center)[#image("figures/fig_040.jpg", width: 69%)]
 
-== Iteration
+== 반복
 
-Repeated notes can create eighth note motion where the outline may only imply quarter notes. Composers have used this device for centuries. (Listen to the Brandenburg concerto in D, by Bach.)
+반복된 음은 윤곽이 4분음표로만 나타날 때 8분음표 움직임을 만들어 낼 수 있다. 작곡가들은 수세기 동안 이 기법을 사용해왔다. (바흐의 D장조 브란덴부르크 협주곡을 들어보라.)
+
 #align(center)[#image("figures/fig_041.jpg", width: 68%)]
 
-== Rhythmic Devices
+== 리듬적 기법
 
-Includes displacement, augmentation, diminution, anticipation, complex combinations of subdivision to add interest to the basic outlines.
+리듬적 기법에는 이동#sub[displacement], 확대#sub[augmentation], 축소#sub[diminution], 선행음#sub[anticipation], 그리고 세분화#sub[subdivision]의 복잡한 조합이 포함되며, 기본 윤곽에 흥미를 더한다.
 
-== Adding Notes
+== 음의 추가
 
-Notes can be added before, within, and after the outline or any motive. Pick up notes begin with one or two notes before the outline begins. The notes can be diatonic or chromatic above or below, or arpeggiated tones.
+윤곽이나 어떤 동기의 앞뒤나 그 안에 음을 추가할 수 있다. 픽업 노트#sub[pick-up notes]는 윤곽이 시작되기 전에 한두 개의 음으로 시작한다. 추가된 음은 온음계적이거나 반음계적일 수 있으며, 위나 아래에서 추가될 수도, 아르페지오 음일 수도 있다.
 
-== Use of Two or More Outlines within Example
+== 하나의 예시에서 두 개 이상의 윤곽 사용
 
-Sometimes the melody includes two or more outlines. The same outline can be used twice sequentially, or one outline can lead into another.
+때때로 선율은 두 개 이상의 윤곽을 포함한다. 동일한 윤곽이 연속적으로 두 번 사용되거나, 하나의 윤곽이 다른 윤곽으로 이어질 수 있다.
 
-== Borrowed Chords and Notes
+== 차용화음과 차용음
 
 (See the discussion on Diatonic chords and Roman numerals.) Some diatonic chords may be altered with tones “borrowed” from another key signature. When the harmony is altered, the lines are altered in the same way. Chords are often borrowed from the parallel minor key. iiø7 for a ii7, iv for IV, etc. Notes from the parallel minor key are often imposed on the dominant, creating more tension that diatonic tones, and therefore creating more release when arriving at the tonic major. Over G7, the dominant of C major, jazz musicians often use A-flat (flat 9) , B-flat (sharp 9) and E-flat (flat 13) from the parallel key of C minor. These borrowed tones, lowered diatonic pitches, have a greater downward pull than their diatonic counterparts. When modulating, chords are borrowed from the destination key. When moving from C major chord to a D minor chord, progressions pointing to the key of D minor often precede the D minor chord: V7 = A7, iiø7 - V7 = Eø7 - A7, or vii°7 = #chord("C#dim7"). The necessary notes to make the key change usually occur in the melodies over these changes: B flat and the leading tone C sharp.
 
-== Change of Direction
+(@sec_diatonic_roman$$를 참조하라.) 일부 온음계 화음은 다른 조에서 "차용한" 음으로 변경될 수 있다. 화성이 바뀌면 선율도 같은 방식으로 변한다. 화음은 종종 단조인 같은으뜸음조#sub[parallel minor]에서 차용된다. #chord("iihalfdim7")가 #chord("ii7")로, #chord("iv")가 #chord("IV")로 바뀌는 식이다. 단조인 같은으뜸음조의 음은 종종 딸림화음에 적용되어, 온음계 음보다 더 큰 긴장을 만들어내고, 으뜸장화음에 도달할 때 더 큰 해소를 만들어낸다. 예를 들어, #note("C")장조의 딸림화음인 #chord("G7") 위에서 재즈 음악가들은 병행 단조 키인 #note("C")단조에서 #note("Ab") (감9도), #note("Bb") (증9도), #note("Eb") (감13도)을 자주 사용한다. 이러한 차용음, 즉 낮아진 온음계 음은 온음계 음보다 더 강한 하향성을 가지고 있다. 전조할 때, 화음은 도착하는 조에서 차용된다. 예를 들어 C장조에서 D단조로 이동할 때, 종종 D단조를 가리키는 진행이 D단조 화음에 앞서 나타난다. 예컨대 $chord("V7")=chord("A7")$이나, $chord("iihalfdim7")-chord("V7") = chord("Ehalfdim7")-chord("A7")$, $chord("viidim7") = chord("C#dim7")$ 등이 사용된다. #note("Bb")과 이끎음 #note("C#")과 같이 전조에 필요한 음은 보통 이러한 변화 위의 선율에서 나타난다.
 
-제2윤곽 typically ascends (1-3-5) the ii chord before playing the seventh. Sometimes a dramatic change is to play the arpeggio descending, 7-5-3-1, before continuing its typical resolution to the 3rd of the V7 chord. The resolution of the seventh of ii to the third of V7 usually occurs in the same octave above the arpeggio. The arpeggio, rather than either ascending or descending, can be “broken”, i.e. played in a different order.
+
+== 방향 전환
+
+제2윤곽은 #chord("ii") 화음의 7도를 연주하기 전에 보통 상행 아르페지오(1-3-5)를 연주한다. 때로는 극적인 변화를 위해 아르페지오를 하행(7-5-3-1)으로 연주한 후 #chord("V7") 화음의 3도로 해결한다. #chord("ii") 화음의 7도에서 #chord("V7") 화음의 3도로의 해결은 보통 아르페지오 위에서 같은 옥타브에서 발생한다. 아르페지오는 상승하거나 하강하는 대신 “끊어질” 수도, 즉 다른 순서로 연주될 수도 있다.
 
 #padbox[
-제2윤곽 typically ascends (1-3-5) before playing the seventh of the ii chord. There are times when the arpeggio descends. The resolution of the seventh of ii to the third of V7 occurs in the same octave above the arpeggio.
+제2윤곽은 보통 #chord("ii") 화음의 7도를 연주하기 전에 상행(1-3-5)한다. 그러나 아르페지오가 하강하는 경우도 있다. 이 경우 아르페지오 위의 같은 옥타브에서 #chord("ii") 화음의 7도가 #chord("V7") 화음의 3도로 해결된다.
 
 #align(center)[#image("figures/fig_042.jpg", width: 68%)]
 
-제3윤곽 typically descends (5-3-1) before playing the seventh of the ii chord. There are times when the arpeggio ascends. The resolution of the seventh of ii to the third of V7 occurs in the same octave below the arpeggio.
+제3윤곽은 보통 #chord("ii") 화음의 7도를 연주하기 전에 하행(5-3-1)한다. 그러나 아르페지오가 상승하는 경우도 있다. 이 경우 아르페지오 아래의 같은 옥타브에서 #chord("ii") 화음의 7도가 #chord("V7") 화음의 3도로 해결된다.
 
 #align(center)[#image("figures/fig_043.jpg", width: 68%)]
 ]
@@ -456,25 +460,25 @@ Sometimes the melody includes two or more outlines. The same outline can be used
 
 Here is the pattern in one of its simplest forms: beginning on the 3rd of the ii chord (G minor) down to the 3rd of the V7 chord (C7) and continuing up the arpeggio. The line comes to rest on the 3rd of the tonic chord.
 
-1. 찰리 파커:
+1. 찰리 파커
 
 #align(center)[#image("figures/fig_044.jpg", width: 41%)]
 
 The triplet gives rhythmic interest to this similar pattern.
 
-2. 찰리 파커:
+2. 찰리 파커
 
 #align(center)[#image("figures/fig_045.jpg", width: 41%)]
 
 Tom Harrell uses the pattern on a iii - V7/ii progression in the key of F. This Am7 chord is not the ii chord of the key of G major, rather the iii of the key of F major. Because of the key signature of one flat, the second note is B flat. The D7 chord is the secondary dominant to G minor the ii chord of F major. To get to G minor he needed to add one flat (E Flat) and add the leading tone to G minor (F sharp). In doing so he spelled out a D7 with a flat nine. Both chromatic tones pointing to the new key are included in the line.
 
-3. 톰 하렐:
+3. 톰 하렐
 
 #align(center)[#image("figures/fig_046.jpg", width: 29%)]
 
 The basic outline with rhythmic anticipation.
 
-4. 톰 하렐:
+4. 톰 하렐
 
 #align(center)[#image("figures/fig_047.jpg", width: 47%)]
 
@@ -482,7 +486,7 @@ The next five examples use rhythmic devices to create interest.
 
 Parker uses diminution of part of the outline. The key is F. The progression is iii - V7/ii in the key of F (see the discussion above).
 
-5. 찰리 파커:
+5. 찰리 파커
 
 #align(center)[#image("figures/fig_048.jpg", width: 32%)]
 
@@ -493,19 +497,19 @@ Hubbard's line has a stop and go feeling with the mixture of quarter and eighth 
 
 Stitt elongates the beginning and compresses the end of his line.
 
-7. Sonny Stitt:
+7. 소니 스팃
 
 #align(center)[#image("figures/fig_050.jpg", width: 41%)]
 
-Harrell anticipates the Gm7 and’ flats the ninth of the dominant, borrowed from the parallel minor key.
+Harrell anticipates the Gm7 and' flats the ninth of the dominant, borrowed from the parallel minor key.
 
-8. 톰 하렐:
+8. 톰 하렐
 
 #align(center)[#image("figures/fig_051.jpg", width: 41%)]
 
-Evans’ line has his signature eighth note on the up beat of one followed by a triplet, but the outline remains simple.
+Evans' line has his signature eighth note on the up beat of one followed by a triplet, but the outline remains simple.
 
-9. Bill Evans:
+9. 빌 에반스
 
 #align(center)[#image("figures/fig_052.jpg", width: 32%)]
 
@@ -527,7 +531,7 @@ These two outlines are almost completely unembellished. Dexter Gordon reverses t
 
 Sonny Stitt begins with an ascending scale on the ii chord before playing the bare outline over just the V7 chord.
 
-13. Sonny Stitt:
+13. 소니 스팃
 
 #align(center)[#image("figures/fig_056.jpg", width: 50%)]
 
@@ -547,40 +551,40 @@ With the outline in quarter note values, an easy way to get eighth note motion i
 
 The simple outline is interrupted by some interesting side maneuvers. The outline begins with eighth note values (B flat down to the E). On beat three of the first measure the values change to half notes (for the E and D). The C is on beat three of the second measure; the B flat on beat four (quarter note values). On beat one the line arrives on the third of the tonic.
 
-17. 캐넌볼 애덜리:
+17. 캐넌볼 애덜리
 #align(center)[#image("figures/fig_060.jpg", width: 62%)]
 
 Parker does two things to add interest to this simple outline. Anticipating the beat by an eighth note gives it momentum. The F is encircled with upper and lower neighbor tones before continuing down. The resolution to the third of B flat is delayed; not arriving on beat one, but on the up beat of two.
 
-18. 찰리 파커:
+18. 찰리 파커
 #align(center)[#image("figures/fig_061.jpg", width: 56%)]
 
 These next three examples begin with many pick up notes. Material has been added before the outline begins. Harrell uses ascending scale material from the root of the ii chord then arpeggiates out to the eleventh before the simple descending scale outline leading to the third of the tonic. Hubbard, in a very similar manner, uses the upper part of the same material Harrell used and descends in the same manner. In ex.21 Harrell begins on the third of the ii chord, but ascends to the seventh rather than descends. He appears to land on the V7 chord on beat three with the D. The simple pattern begins in the second measure with the A flat. The outline is extended by encircling the B flat with its chromatic neighbors A and B natural, and the turn before finally landing on the G, the third of tonic chord.
 
-19. 톰 하렐:
+19. 톰 하렐
 #align(center)[#image("figures/fig_062.jpg", width: 63%)]
 
 20. Freddie Hubbard:
 #align(center)[#image("figures/fig_063.jpg", width: 63%)]
 
-21. 톰 하렐:
+21. 톰 하렐
 #align(center)[#image("figures/fig_064.jpg", width: 63%)]
 
 One note is added to the next two examples. The third of the ii chord is on the upbeat of four, a chromatic lower neighbor tone is played on beat one, followed by the uninterrupted continuation of the outline to the third of the tonic chord.
 
 22. Booker Little:
 #align(center)[#image("figures/fig_065.jpg", width: 56%)]
-23. 톰 하렐:
+23. 톰 하렐
 #align(center)[#image("figures/fig_066.jpg", width: 56%)]
 
 This Harrell example is similar to Ex.23. In place of the chromatic tone is a rest. The ninth is lowered, borrowed from the parallel key of F minor (four flats).
 
-24. 톰 하렐:
+24. 톰 하렐
 #align(center)[#image("figures/fig_067.jpg", width: 56%)]
 
 This Harrell example is also similar to ex.23. In place of the chromatic tone is an arpeggiated leap to a chord tone (the fifth of G minor: D) below. This one device made a descending scale idea into an angular line.
 
-25. 톰 하렐:
+25. 톰 하렐
 #align(center)[#image("figures/fig_068.jpg", width: 56%)]
 
 J. J. Johnson uses a similar leap to a chord tone in ex.26. In this progression, the Am7 (iii) is substituting for the F (I). The D7 is the V7 of ii. The necessary accidentals (F sharp and E flat) needed to tonicize G minor are in the 3-5-7-9 arpeggio of the D7 chord:
@@ -597,7 +601,7 @@ Fats Navarro compresses the first part of the outline and continues adding only 
 
 Parker uses two pick up notes, the root of the ii chord and its chromatic leading tone, one extra lower chord tone, the D, to enhance the bare outline. Note the dramatic leap of the third to the root of the C7 chord.
 
-28. 찰리 파커:
+28. 찰리 파커
 #align(center)[#image("figures/fig_071.jpg", width: 44%)]
 
 Hubbard begins with a turn, skips to the chromatic leading tone before continuing the outline. Hubbard uses a downward leap at the end.
@@ -607,12 +611,12 @@ Hubbard begins with a turn, skips to the chromatic leading tone before continuin
 
 Clark Terry uses two chromatic tones: the chromatic passing tone (g flat) and the chromatic leading tone to E (D sharp). If Terry had not added these two notes, the outline would have been simple, and the E natural would have occurred on beat one. By adding these tones, it not only gave the line chromatic interest, but delayed the resolution to the C7 chord. We expect to hear the E on beat one. Instead we hear the “wrong” note F, and then another “wrong” note D sharp before the resolution to E on beat two.
 
-30. Clark Terry:
+30. 클라크 테리
 #align(center)[#image("figures/fig_073.jpg", width: 44%)]
 
 Parker adds a triplet and a turn on two borrowed tones (the altered ninths to the G7) to the essential outline.
 
-31. 찰리 파커:
+31. 찰리 파커
 #align(center)[#image("figures/fig_074.jpg", width: 47%)]
 
 == 제1윤곽 in a Minor Progression
@@ -620,10 +624,10 @@ Parker adds a triplet and a turn on two borrowed tones (the altered ninths to th
 
 In the key of F, the Aø7 - D7 tonicizes the ii chord (G minor). While not actually in the key of G minor, this excerpt modulates briefly to G minor, and provides an introduction to Outline No. 1 in a minor iiø7 - V7 progression. The outline is unadorned in the first example. In the second, the outline is simple, but resolves to G minor two beats early, returns to the dominant chord for three notes (A - C - A) then to the third of the G minor chord delayed until the second beat of the third measure. The A - C - A can be viewed either as part of the D7 chord (the dominant of G minor) or as the upper and lower neighbor tones to the B flat (the third of G minor).
 
-32. 찰리 파커:
+32. 찰리 파커
 #align(center)[#image("figures/fig_075.jpg", width: 32%)]
 
-33. 찰리 파커:
+33. 찰리 파커
 #align(center)[#image("figures/fig_076.jpg", width: 56%)]
 
 In this line from near the end of a familiar bop tune#footnote[Most credit Parker with composing this bop tune in A flat. In his autobiography, Miles Davis claims authorship, and I've heard that Gil Evans credited Miles.]: in the key of A Flat, the progression shown is iii - V7 /ii - ii. The outline is in its simplest form.
@@ -633,7 +637,7 @@ In this line from near the end of a familiar bop tune#footnote[Most credit Parke
 
 Many of the previous examples showed the descending scale/ascending arpeggio form of 제1윤곽. Here is the skeletal descending scale form. The line begins on the third, descends to the seventh; the seventh resolves to the next third, continues to the seventh, and resolves to the third of the tonic. The thirds occur on all strong beats; the sevenths occur on the last upbeat and resolve in the expected manner.
 
-35. 찰리 파커:
+35. 찰리 파커
 #align(center)[#image("figures/fig_078.jpg", width: 53%)]
 
 Here is a Jackie McLean excerpt in A minor. The third of the iiø7 chord occurs on beat four. An inverted 3-5-7-9 arpeggio breaks up the downward motion of the line which resolves soundly with the third of Fm on the downbeat.
@@ -643,10 +647,10 @@ Here is a Jackie McLean excerpt in A minor. The third of the iiø7 chord occurs 
 
 This Bill Evans excerpt, like many others, has the outline intact, but occurs with pick-up notes, and occurs over just the V7 chord.
 
-37. Bill Evans:
+37. 빌 에반스
 #align(center)[#image("figures/fig_080.jpg", width: 60%)]
 
-Compare the three examples of Chet Baker’s over the same progression. Ex.38 is simple with some slight rhythmic diminution and displacement. Ex.39 begins with two pick-up notes from the scale, arrives at the C7 a beat soon, and uses a chromatic passing tone between the seventh and root of C7, encircling the C. Ex.40 begins with pick-up notes, including a chromatic passing tone (A natural), then continues down the scale to the third of F minor two beats early. The line ends with an often heard jazz quote from “Gone, But Not Forgotten.” Notice the low note in the line and the highest note in the last measure are both the target note A flat, the third of F minor. The notes between the two A flats are a way of filling out the octave.
+Compare the three examples of Chet Baker's over the same progression. Ex.38 is simple with some slight rhythmic diminution and displacement. Ex.39 begins with two pick-up notes from the scale, arrives at the C7 a beat soon, and uses a chromatic passing tone between the seventh and root of C7, encircling the C. Ex.40 begins with pick-up notes, including a chromatic passing tone (A natural), then continues down the scale to the third of F minor two beats early. The line ends with an often heard jazz quote from “Gone, But Not Forgotten.” Notice the low note in the line and the highest note in the last measure are both the target note A flat, the third of F minor. The notes between the two A flats are a way of filling out the octave.
 
 38. Chet Baker:
 #align(center)[#image("figures/fig_081.jpg", width: 41%)]
@@ -659,10 +663,10 @@ Compare the three examples of Chet Baker’s over the same progression. Ex.38 is
 
 These two are straight forward examples from Tom Harrell. The first is quite simple. The second anticipates the iiø7 and the V7 chord and has the chromatic passing tone between B flat and C, like Ex.39.
 
-41. 톰 하렐:
+41. 톰 하렐
 #align(center)[#image("figures/fig_084.jpg", width: 41%)]
 
-42. 톰 하렐:
+42. 톰 하렐
 #align(center)[#image("figures/fig_085.jpg", width: 53%)]
 
 Zawinul begins the outline expectedly on the third of the iiø7 chord, descends to the third of the V7 chord, then changes direction on beat four using an arpeggiated tone. The last two notes are the upper and lower neighbor tones to the G natural. The upper neighbor tone, while being a chromatic tone, is a diatonic note in C minor. The lower neighbor tone is a chromatic leading tone to G.
@@ -672,10 +676,10 @@ Zawinul begins the outline expectedly on the third of the iiø7 chord, descends 
 
 Harrell often adds notes in between the descending scale tones which break up the predictability and straight-line feeling. After sounding the seventh of the C7 chord (B flat which wants to resolve to A flat) in ex.44, he plays three other notes (C, G, B flat), all chord tones of the dominant, and delays the resolution to F minor. In ex.45. Harrell begins above the third of the iiø chord and works his way down to the third of the V7 chord. Instead of continuing to the G flat, or ascending up the arpeggio (3-5-7-9) he octave displaces the fifth of the V7 chord then comes back to the G flat on beat three. Harrell extends the F7 into the last measure using two notes from the dominant before resolving to the D flat. (See the discussion for Ex.32.)
 
-44. 톰 하렐:
+44. 톰 하렐
 #align(center)[#image("figures/fig_087.jpg", width: 53%)]
 
-45. 톰 하렐:
+45. 톰 하렐
 #align(center)[#image("figures/fig_088.jpg", width: 53%)]
 
 == 제1윤곽 in Other Progressions
@@ -718,7 +722,7 @@ This progression can be found throughout traditional literature. Some occurrence
 
 Often to add interest, the improviser will place a pitch in another register than the listener expects. This may be the result of invention or necessity if the player is in the extreme ranges of the horn. Refer to the earlier discussion of octave displacement and leaps.
 
-The best example of 제1윤곽 with octave displacement is from Bach. It is many student’s favorite example, and they are surprised to discover the source of such a jazzy sounding musical example. The descending line is broken by a leap after the downbeats, (third to nine leaps). Leaps rarely occur over the barline. Leaps usually occur after the downbeat like Ex.47.
+The best example of 제1윤곽 with octave displacement is from Bach. It is many student's favorite example, and they are surprised to discover the source of such a jazzy sounding musical example. The descending line is broken by a leap after the downbeats, (third to nine leaps). Leaps rarely occur over the barline. Leaps usually occur after the downbeat like Ex.47.
 
 48. J. S. Bach: Three Part Sinfonia in D major
 #align(center)[#image("figures/fig_095.jpg", width: 41%)]
@@ -745,12 +749,12 @@ There are two leaps in this example. The first breaks up the descending scale wi
 
 Tom Harrell uses a similar arpeggio with octave displacement this time on the ii chord.
 
-53. 톰 하렐:
+53. 톰 하렐
 #align(center)[#image("figures/fig_100.jpg", width: 56%)]
 
 The 3-5 downward leap is evident in the following example. Parker pivots again on the low F before arpeggiating the E flat 7 chord. The thirds are on the beat, except in the first measure which begins with an accented upper nieghbor tone. The sevenths occur within the last beat. The altered ninths on the dominant are borrowed from the parallel key of A flat minor (seven flats) or G sharp minor (Five sharps).
 
-54. 찰리 파커:
+54. 찰리 파커
 #align(center)[#image("figures/fig_101.jpg", width: 56%)]
 
 The following use a similar arpeggio but include a lower neighbor tone to the fifth of the chord. The leap is even more dramatic jumping to a non-harmonic tone which resolves upwards continuing the arpeggio. In both examples, the thirds occur on the downbeats balancing the leaps and chromatic non-harmonic tones in the rest of the line.
@@ -776,7 +780,7 @@ Rollins in this example uses many lower chord tones with their chromatic leading
 
 The use of the chromatic lower neighbor tone to A natural and the last two measures resemble ex.59.
 
-60. Sonny Stitt:
+60. 소니 스팃
 #align(center)[#image("figures/fig_107.jpg", width: 55%)]
 
 Clifford resolves to the third of the V chord late and an octave higher than he first started.
@@ -796,7 +800,7 @@ Dizzy uses several chromatic notes which hold off the resolution to the third of
 
 Parker begins with the same arpeggio form as the previous example; interrupts the outline with only one extra note (the G) and continues arpeggiating the F7 flat 9 chord.
 
-63. 찰리 파커:
+63. 찰리 파커
 #align(center)[#image("figures/fig_110.jpg", width: 53%)]
 
 The following Brown example has more chromatic embellishment than the preceding examples. The target tone is followed by a skip to a arpeggiated tone. The G natural is a chromatic passing tone. The target notes for B7 and E major are approached chromatically from below. In both cases, the line jumps from a chord tone to a chord tone before the chromatic tone leads to the target note. The ii and the V have their target notes on beat one. The I chord arrives on beat two. The seventh of B7 is the last note of the second measure and you would expect the G sharp on beat one. By adding the chromatic approach tones Brown created a delayed resolution.
@@ -815,7 +819,7 @@ Several examples were found that have a basic descending scale outline, but were
 66. Freddie Hubbard:
 #align(center)[#image("figures/fig_113.jpg", width: 59%)]
 
-67. 찰리 파커:
+67. 찰리 파커
 #align(center)[#image("figures/fig_114.jpg", width: 32%)]
 
 Hubbard plays the descending outline to the B flat, He then inserts three notes (an arpeggio with a passing tone) making the register shift and continues the descent with A and G.
@@ -825,7 +829,7 @@ Hubbard plays the descending outline to the B flat, He then inserts three notes 
 
 Byrd uses two outlines over an extended progression in A flat: iii - V7/ii - ii - V. He begins with the chromatic approach tones and plays the simple outline over the iii - V7/ii. The second outline begins immediately with a octave displacement before continuing.
 
-69. Donald Byrd:
+69. 도널드 버드
 #align(center)[#image("figures/fig_116.jpg", width: 68%)]
 
 Brown uses an arpeggiated tone to extend the outline on the third and fourth beats making the target note arrive on time and the line have more sawtooth angularity.
@@ -835,10 +839,10 @@ Brown uses an arpeggiated tone to extend the outline on the third and fourth bea
 
 Stitt and Harrell approach the first target note from above, the second target from below.
 
-71. Sonny Stitt:
+71. 소니 스팃
 #align(center)[#image("figures/fig_118.jpg", width: 50%)]
 
-72. 톰 하렐:
+72. 톰 하렐
 #align(center)[#image("figures/fig_119.jpg", width: 56%)]
 
 Brown begins with chromatic approach notes, circles the G with neighbor tones, uses sawtooth shapes similarly to ex.70 to delay the target note for C7.
@@ -848,7 +852,7 @@ Brown begins with chromatic approach notes, circles the G with neighbor tones, u
 
 The next two involve different rhythmic approaches and several chromatic tones; borrowed tones, and chromatic neighbor tones.
 
-74. Donald Byrd:
+74. 도널드 버드
 #align(center)[#image("figures/fig_121.jpg", width: 57%)]
 
 75. 리 모건:
@@ -856,22 +860,22 @@ The next two involve different rhythmic approaches and several chromatic tones; 
 
 Cannonball seems to get to the C7 on beat three and the F on the up beat of four, then returns to continue the descent to A. The last A anticipates the F chord by two beats.
 
-76. 캐넌볼 애덜리:
+76. 캐넌볼 애덜리
 #align(center)[#image("figures/fig_123.jpg", width: 56%)]
 
 These two are straight forward. Clark Terry manages to get in two outlines in different registers.
 
-77. 톰 하렐:
+77. 톰 하렐
 #align(center)[#image("figures/fig_124.jpg", width: 44%)]
 
-78. Clark Terry:
+78. 클라크 테리
 #align(center)[#image("figures/fig_125.jpg", width: 60%)]
 
-There are so many chromatic approaches it may be difficult to see and hear the simple outline at the core of these examples from Clifford Brown and Kenny Barron. In Brown’s first complete, measure, all of the downbeats suggest a stepwise line. The line continues on beat one of the second measure, is interrupted by two eighth notes and continues to the B natural. Since Barron is playing in sixteenth subdivisions the diatonic outline notes fall on the eighth note downbeats.
+There are so many chromatic approaches it may be difficult to see and hear the simple outline at the core of these examples from Clifford Brown and Kenny Barron. In Brown's first complete, measure, all of the downbeats suggest a stepwise line. The line continues on beat one of the second measure, is interrupted by two eighth notes and continues to the B natural. Since Barron is playing in sixteenth subdivisions the diatonic outline notes fall on the eighth note downbeats.
 
 79. 클리포드 브라운
 #align(center)[#image("figures/fig_126.jpg", width: 59%)]
-80. Kenny Barron:
+80. 케니 배런
 #align(center)[#image("figures/fig_127.jpg", width: 41%)]
 
 Here are two more examples from Brown.
@@ -884,23 +888,23 @@ Here are two more examples from Brown.
 
 Leaps make these next two interesting. Evans leaps from the third to the flat nine of the V7 chord; Cannonball from the third to the ninth of the ii chord.
 
-83. Bill Evans:
+83. 빌 에반스
 #align(center)[#image("figures/fig_130.jpg", width: 68%)]
 
-84. 캐넌볼 애덜리:
+84. 캐넌볼 애덜리
 #align(center)[#image("figures/fig_131.jpg", width: 44%)]
 
 Harrell precedes the chromatic approaches with an arpeggio (5-7-9-11) of the ii chord. These extended arpeggiated notes could be viewed as a superimposed vi chord preceding the ii chord; or the 9th and 11th could be described as upper and lower neighbor tones to the third of the ii chord.
 
-85. 톰 하렐:
+85. 톰 하렐
 #align(center)[#image("figures/fig_132.jpg", width: 44%)]
 
 Harrell uses leaps for a dramatic effect. In the first, an octave leap; in the second a leap down from the third to the fifth of the E7 chord. In the second example, the target tones appear on beat three of the first measure, beat one of the second and third measure. In the last measure the target note is the first and last note, but in different registers.
 
-86. 톰 하렐:
+86. 톰 하렐
 #align(center)[#image("figures/fig_133.jpg", width: 80%)]
 
-87. 톰 하렐:
+87. 톰 하렐
 #align(center)[#image("figures/fig_134.jpg", width: 68%)]
 
 == 제1윤곽 with Double Chromatic Approach Tones
@@ -914,7 +918,7 @@ At first glance, it may seem inexplicable that a C sharp and an E natural would 
 89. Sonny Rollins:
 #align(center)[#image("figures/fig_136.jpg", width: 56%)]
 
-90. 톰 하렐:
+90. 톰 하렐
 #align(center)[#image("figures/fig_137.jpg", width: 56%)]
 
 == 제1윤곽: C.E.S.H.
@@ -933,7 +937,7 @@ This example shows how the introduction of the chromatic leading tone to the B m
 
 Byrd plays the target thirds right on the downbeats. The note preceding the F is the seventh of A flat minor. After the C flat, he using the G natural and encircles the A flat like in ex.91.
 
-92. Donald Byrd:
+92. 도널드 버드
 #align(center)[#image("figures/fig_140.jpg", width: 44%)]
 
 Here are two related examples from Booker Little. In ex.93, he leads up to the first target note with diatonic scale steps. He then pivots off the chromatic seventh (B natural). The diatonic seventh (B flat) comes in where you would expect the A natural, creating a suspension delaying the resolution. The B flat is the diatonic upper neighbor, the G sharp the chromatic lower neighbor to A. The line descends to the target note for the tonic chord. Ex.94 begins on the target note and descends to the target note in almost the same way; the rhythm is changed so that the D natural occurs on beat one.
@@ -951,18 +955,18 @@ The target notes in ex.95 all occur on beat one with the sevenths preceding them
 
 Harrell begins ex.96 with pick up notes like those in ex.93. The last note of the first measure is the diatonic seventh leading to the target A on beat one. Notice that the A occurs twice in the F7 measure; on the strong beats one and three. Again the seventh (E flat) precedes the third (D) landing on beat one. The notes on each downbeat in the first measure of ex.97 form the bare diatonic outline. Note how Harrell uses the F sharp to point to the G, and uses the D natural as a pivot in the first measure of ex.97. Ex.98 resembles ex.97, however this time the resolution to C7 is delayed.
 
-96. 톰 하렐:
+96. 톰 하렐
 #align(center)[#image("figures/fig_144.jpg", width: 69%)]
 
-97. 톰 하렐:
+97. 톰 하렐
 #align(center)[#image("figures/fig_145.jpg", width: 69%)]
 
-98. 톰 하렐:
+98. 톰 하렐
 #align(center)[#image("figures/fig_146.jpg", width: 56%)]
 
 The ii chord is anticipated in this Harrell example. On the D flat 7 chord, tones are borrowed from the parallel key of F sharp minor (the A, E and D naturals from 3 sharps).
 
-99. 톰 하렐:
+99. 톰 하렐
 #align(center)[#image("figures/fig_147.jpg", width: 56%)]
 
 At first glance ex.100 looks complicated, but it is based on 제1윤곽. It begins on the target note, ascends and plays the target note again up the octave. The top notes of the rest of the line follow the outline. The lower notes play around the chromatic leading tone to D and the seventh which finally resolves to the B natural, the target note of the V7 chord.
@@ -992,7 +996,7 @@ First, notice that this example begins by pointing to the target note, the seven
 
 Barron begins with the upper and lower neighbor tones to the target note. The flatted notes over the F7 anticipate the B flat minor. The A flat and G flat give the line more downward momentum. The target notes are still on or near the strong downbeats.
 
-104. Kenny Barron:
+104. 케니 배런
 #align(center)[#image("figures/fig_152.jpg", width: 57%)]
 
 Jackson begins these two similar examples on the target note and fills in with arpeggiated tones. Ex.105 encircles the second target note (B) and chromatically approaches the last target note (E); all target notes occur on the downbeats. Ex.106 includes a little more chromaticism, delays the target note B, and descends to the last note from the seventh. In both examples, Jackson altered the ninths on the dominant chord.
@@ -1005,37 +1009,37 @@ Jackson begins these two similar examples on the target note and fills in with a
 
 Within the first measure of ex.107 is a sequence. The line begins on the target note (B flat), descends one step, chromatic approaches from below to the next note and does the same thing to get to the target note E on the downbeat of the second measure. The next measure is a chromatic scale, but is still harmonically clear: the notes on every down beat spell out the arpeggio of the dominant ninth chord from the third: E - G - B flat - D flat (3-5-7-flat 9). All twelve chromatic pitches are used in this example, yet it remains harmonically clear; it is not random chromaticism. Target notes occur in rhythmically significant spots, non-harmonic chromatic notes resolve when and where we expect them.
 
-107. Donald Byrd:
+107. 도널드 버드
 #align(center)[#image("figures/fig_155.jpg", width: 56%)]
 
 The first note is the target note of ex.108. Harrell restates it an octave higher, adds only one chromatic note (#note("C#")) before moving down through the seventh to the third of the dominant. Take away every other note in the second measure, and the line still sounds good; all the eighth note values are chord tones.
 
-108. 톰 하렐:
+108. 톰 하렐
 #align(center)[#image("figures/fig_156.jpg", width: 68%)]
 
 Ex.109 is a similar line from the same tune as ex.108. The progression is similar but resolves to C major this time. Starting on beat four of the first measure is the outline without alteration (except for the E flat establishing C minor). The outline recurs beginning on the upbeat of two in the second measure. The last note is the target note for C major, and is approached from above through the seventh of G7.
 
-109. 톰 하렐:
+109. 톰 하렐
 #align(center)[#image("figures/fig_157.jpg", width: 69%)]
 
 Harrell approaches the target note encircling it with its upper and lower neighbor tones. The next note of the outline is octave shifted and occurs on the downbeat of the second measure. The first target note on a strong beat occurs in the second measure on beat three. In the last measure the outline appears unmodified, perhaps to balance the ambiguous previous statement.
 
-110. 톰 하렐:
+110. 톰 하렐
 #align(center)[#image("figures/fig_158.jpg", width: 75%)]
 
 Evans uses the outline on the progression V7/V - V7 in the key of F major. He starts on the target third and arrives at the 3-5-7-9 arpeggio of the C7 early. Cannonball arrives at the target notes late on the C7 and F7.
 
-111. Bill Evans:
+111. 빌 에반스
 #align(center)[#image("figures/fig_159.jpg", width: 41%)]
 
-112. 캐넌볼 애덜리:
+112. 캐넌볼 애덜리
 #align(center)[#image("figures/fig_160.jpg", width: 69%)]
 
 The addition of chromatic notes add color and make lines richer rhythmically. They help delay and anticipate target notes, which set up interesting accents, accents indigenous to the jazz style. The next two examples illustrate how adding chromatic embellishment can enliven a simple outline. At the heart of these examples is the simple diatonic descending outline. Play the bare outline with quarter note values and then either of the two examples and you can clearly hear their relationship.
 
 Parker starts and restarts the outline, creating an accent the up beat of two. He plays a C.E.S.H. on the ii chord; the B natural delaying the resolution to the B flat and to the A. On the downbeat of the second measure he avoids the target note but plays two notes that point to the target note. The target note is sounded after its upper and lower neighbor tones, creating an accent on beat two, measure two. Beat four, measure two is accented by the root of the dominant approached chromatically from below. Three notes point to the final target note D, which does not occur until beat three of the third measure. E flat is the upper neighbor tone; C and C sharp approach from below. The top notes of the line spell the simple diatonic outline (indicated by the arrows above the staff). There is a counterline (indicated by the arrows below the staff) implied by some of the lower tones making this a compound melody. G, the last pitch of measure one, ascends to #note("G#") and then to the target note A in measure two. A, the last pitch of measure two ascends to B flat - C - C sharp and the target note D. There is a symmetry in the lower counter line beginning on the upbeat of four and leading up to the target thirds as the rest of the line leads down.
 
-113. 찰리 파커:
+113. 찰리 파커
 #align(center)[#image("figures/fig_161.jpg", width: 62%)]
 
 Garland aims for the third of each chord: ii - V7 - I - V7/ii - ii in this extended and chromatic line. All twelve pitches are used; yet the line is harmonically specific. The line begins and ends on the same target note. Six times diatonic notes are approached from whole step below with a chromatic passing tone. The target notes for F7 (A), B flat (D) and G7 (B natural) are approached in the same way: the preceding seventh leaps down to an arpeggiated note and then chromatically ascends to the target note. Three dramatic leaps occur after the target tone: the third of C minor leaps down to the fifth; the third of F7 leaps down to the fifth and then up the arpeggio (3-5-7-9); and the third of G7 leaps up to the flat nine, octave displacing the descending scale step B - A.
@@ -1043,7 +1047,7 @@ Garland aims for the third of each chord: ii - V7 - I - V7/ii - ii in this exten
 114. Red Garland:
 #align(center)[#image("figures/fig_162.jpg", width: 72%)]
 
-Playing just the notes of the simple outline, with their new rhythmic placement in ex.113. and ex 114 is interesting even without the chromatic additions. Up to now, we have seen how with additions the simple outline becomes more interesting. The opposite is true: taking away the insertions, ornaments, and embellishments also reveals interesting lines by the realignment of the original notes of the outline. Garland’s lines, with chromaticism removed, sound rhythmically more at home in a funk idiom.
+Playing just the notes of the simple outline, with their new rhythmic placement in ex.113. and ex 114 is interesting even without the chromatic additions. Up to now, we have seen how with additions the simple outline becomes more interesting. The opposite is true: taking away the insertions, ornaments, and embellishments also reveals interesting lines by the realignment of the original notes of the outline. Garland's lines, with chromaticism removed, sound rhythmically more at home in a funk idiom.
 
 #align(center)[#image("figures/fig_163.jpg", width: 71%)]
 
@@ -1052,7 +1056,7 @@ Playing just the notes of the simple outline, with their new rhythmic placement 
 
 The outlines are so common in jazz improvisation it is not unusual to see combinations of several outlines. On ex.115, Parker plays the same outline in two registers. The target notes do not occur on the strong beats; however, the highest and lowest notes in the line are the primary target notes.
 
-115. 찰리 파커:
+115. 찰리 파커
 #align(center)[#image("figures/fig_164.jpg", width: 60%)]
 
 From the bridge of a tune written for four tenors is an example of the outlines as a sequence. The progression is: ii - V7 - iii - V7/ii - ii. The first measure has no additional notes or embellishments. It is the outline variation that arpeggiates the V7 chord (3-5-7-9). The second measure is the descending scale variation with octave displacement. One note (E), and arpeggiated tone, is added displacing rhythmically the resolution to the last target note F.
@@ -1066,7 +1070,7 @@ iii (substituting for I) - V7/ii - ii - V7 - I.
 
 In order to modulate and tonicize the ii chord (Cm7), the G7, a secondary dominant, was used. To modulate from B flat (2 flats) to C minor (3 flats) two chromatic alterations are needed: A to A flat, B flat to B natural (the leading tone in C minor.) These two chromatic tones are the first pitches Parker plays on the G7 chord.
 
-117. 찰리 파커:
+117. 찰리 파커
 #align(center)[#image("figures/fig_166.jpg", width: 60%)]
 
 There is a sequence in ex.118 of 제1윤곽 with two different harmonic rhythms. The first measure is the fundamental outline embellished with two simple turns. The second measure begins with a leap from the target note to the note an octave higher. The chromatic turn using the G sharp help elongate the outline to account for the longer harmonic rhythm. Every chord has its third on a downbeat. Each third is preceded by the previous seventh on an upbeat.
@@ -1076,7 +1080,7 @@ There is a sequence in ex.118 of 제1윤곽 with two different harmonic rhythms.
 
 When there are two chords per measure in a jazz waltz, there is a question as to where to play the second chord. It can occur on beat three; but in jazz, often occurs on the upbeat of two. The second chord landing on the upbeat of two divides the measure in half. This kind of subdivision suggests two beats per measure rather than three. The implied time signature is 6/8, compound duple, superimposed over the 3/4 simple triple. Evans divides the first measure in half; the C7 lands on the upbeat of beat two. In the second measure, the B flat chord arrives on beat three.
 
-119. Bill Evans:
+119. 빌 에반스
 #align(center)[#image("figures/fig_168.jpg", width: 80%)]
 
 The next examples feature two outlines of different types.
@@ -1088,7 +1092,7 @@ Navarro uses 제1윤곽, followed by 제2윤곽 (with passing tones) over two ch
 
 Over the same ii -V7 progression, Parker begins with 제2윤곽 (with a chromatic pick up note) and then plays 제1윤곽.
 
-121. 찰리 파커:
+121. 찰리 파커
 #align(center)[#image("figures/fig_170.jpg", width: 75%)]
 
 Brown displaces the first simple outline (no.1) beginning with the upper and lower neighbor tones to the first target note. Chromatic pickups to the G (which begins 제3윤곽) in the second measure gets the line back on time so the seventh of C minor and the target note A on the F7 chord arrive where we expect them. More chromatic pick up notes fill out the measure so that the E flat arrives on the upbeat of four placing the D on the downbeat. The rhythmic displacement is one element that makes this line interesting. Did the addition of extra notes create the rhythmic interest, or did the rhythmic displacement require the addition of extra notes?
@@ -1096,16 +1100,16 @@ Brown displaces the first simple outline (no.1) beginning with the upper and low
 122. 클리포드 브라운
 #align(center)[#image("figures/fig_171.jpg", width: 75%)]
 
-This final combination is from Parker’s solo on a well-known bop tune in A flat major. The progression is iii7 - V7/ii - ii7 - V7 - I in A flat major. The first is 제1윤곽, the second 제3윤곽. The dominant chords have the same pattern: a leap from the third to the flat nine and the chromatic approach to the fifth of the next chord.
+This final combination is from Parker's solo on a well-known bop tune in A flat major. The progression is iii7 - V7/ii - ii7 - V7 - I in A flat major. The first is 제1윤곽, the second 제3윤곽. The dominant chords have the same pattern: a leap from the third to the flat nine and the chromatic approach to the fifth of the next chord.
 
-123. 찰리 파커:
+123. 찰리 파커
 #align(center)[#image("figures/fig_172.jpg", width: 69%)]
 
 #exercisebox[
   + Create your own lines using similar devices from the above examples.
   + Learn some of the above examples in all keys.
   + Write out solos on 스탠다드 재즈 진행s and incorporate some of the above examples. Practice the solos like any etude.
-  + Try improvising over standard progressions and use some of the above examples in your solos.
+  + Try improvising over 스탠다드 진행s and use some of the above examples in your solos.
   + Alter some of the above examples either by adding more notes, rhythmic displacing, fragmenting, etc. to come up with lines of you own.
   + Practice 제1윤곽 with iteration anticipating the thirds over the barline in all major and minor keys.
 
@@ -1133,24 +1137,24 @@ Here are several artists and the bare 제2윤곽.
 127. 클리포드 브라운
 #align(center)[#image("figures/fig_177.jpg", width: 28%)]
 
-128. Paul Chambers:
+128. 폴 챔버스
 #align(center)[#image("figures/fig_178.jpg", width: 41%)]
 
-129. Sonny Stitt:
+129. 소니 스팃
 #align(center)[#image("figures/fig_179.jpg", width: 41%)]
 
-130. John Coltrane:
+130. 존 콜트레인
 #align(center)[#image("figures/fig_180.jpg", width: 41%)]
 
-131. 톰 하렐:
+131. 톰 하렐
 #align(center)[#image("figures/fig_181.jpg", width: 32%)]
 
 These two descend to the seventh of the V7 chord through a chromatic passing tone.
 
-132. 찰리 파커:
+132. 찰리 파커
 #align(center)[#image("figures/fig_182.jpg", width: 44%)]
 
-133. 톰 하렐:
+133. 톰 하렐
 #align(center)[#image("figures/fig_183.jpg", width: 44%)]
 
 The following are more examples of 제2윤곽 in a simple form.
@@ -1158,23 +1162,23 @@ The following are more examples of 제2윤곽 in a simple form.
 134. 클리포드 브라운
 #align(center)[#image("figures/fig_184.jpg", width: 47%)]
 
-135. Bill Evans:
+135. 빌 에반스
 #align(center)[#image("figures/fig_185.jpg", width: 44%)]
 
-136. 캐넌볼 애덜리:
+136. 캐넌볼 애덜리
 #align(center)[#image("figures/fig_186.jpg", width: 44%)]
 
-137. 톰 하렐:
+137. 톰 하렐
 #align(center)[#image("figures/fig_187.jpg", width: 56%)]
 
 Like Tom Harrell in ex.137, Adderley anticipates the ii chord.
 
-138. 캐넌볼 애덜리:
+138. 캐넌볼 애덜리
 #align(center)[#image("figures/fig_188.jpg", width: 56%)]
 
 Parker extends the arpeggio past the seventh to the ninth before aiming for the target note B occurring on beat three of the second measure.
 
-139. 찰리 파커:
+139. 찰리 파커
 #align(center)[#image("figures/fig_189.jpg", width: 57%)]
 
 == 제2윤곽 in Minor
@@ -1195,21 +1199,21 @@ Any musical motive can be embellished by adding notes. Notes can be added before
 
 These three from Tom Harrell all include notes added within the outline. The added notes are the upper and lower neighbor tones to the third of the ii chord. This adds rhythmic and melodic energy to the line. He chooses to encircle the target note, creating a slight tension and ambiguity. In ex.144, the arpeggio occurs first in a descending form, and then, beginning on beat four of the first-measure, begins the ascending form with additional notes: the C and A encircle the B flat; the C a passing tone between B flat and D. The rest of the outline is unaltered.
 
-142. 톰 하렐:
+142. 톰 하렐
 #align(center)[#image("figures/fig_192.jpg", width: 35%)]
 
-143. 톰 하렐:
+143. 톰 하렐
 #align(center)[#image("figures/fig_193.jpg", width: 56%)]
 
-144. 톰 하렐:
+144. 톰 하렐
 #align(center)[#image("figures/fig_194.jpg", width: 57%)]
 
 The next examples begin with pick up notes added before the outline. Adderley and Stitt begin with a chromatic leading tone. Rollins begins with arpeggiated notes and chromatic approach tones to the third of F7. Brown uses an interesting color tone for the B minor; the #note("G#") almost suggests the entire line relates more to E7 than to Bm.
 
-145. 캐넌볼 애덜리:
+145. 캐넌볼 애덜리
 #align(center)[#image("figures/fig_195.jpg", width: 59%)]
 
-146. Sonny Stitt:
+146. 소니 스팃
 #align(center)[#image("figures/fig_196.jpg", width: 32%)]
 
 147. 클리포드 브라운
@@ -1220,7 +1224,7 @@ The next examples begin with pick up notes added before the outline. Adderley an
 
 Stitt starts with a chromatic leading tone. The outline notes in the second measure are chromatically approached from a whole step below.
 
-149. Sonny Stitt:
+149. 소니 스팃
 #align(center)[#image("figures/fig_199.jpg", width: 56%)]
 
 Gillespie begins with several chromatic pick up notes exhibiting nothing harmonically specific, then plays the ii chord arpeggio twice before finally resolving it to the target note of the V7 chord (B).
@@ -1244,31 +1248,31 @@ Passing tones: Since 제2윤곽 is an arpeggiated outline, it lends itself to di
 153. 리 모건:
 #align(center)[#image("figures/fig_203.jpg", width: 59%)]
 
-154. Sonny Stitt:
+154. 소니 스팃
 #align(center)[#image("figures/fig_204.jpg", width: 53%)]
 
 155. Fats Navarro:
 #align(center)[#image("figures/fig_205.jpg", width: 44%)]
 
-156. 톰 하렐:
+156. 톰 하렐
 #align(center)[#image("figures/fig_206.jpg", width: 56%)]
 
-157. 톰 하렐:
+157. 톰 하렐
 #align(center)[#image("figures/fig_207.jpg", width: 44%)]
 
-158. 톰 하렐:
+158. 톰 하렐
 #align(center)[#image("figures/fig_208.jpg", width: 32%)]
 
 Harrell uses the same outline as Coltrane from Ex.130, but with passing tones.
 
-159. 톰 하렐:
+159. 톰 하렐
 #align(center)[#image("figures/fig_209.jpg", width: 44%)]
 === PASSING TONES WITH PICK UP NOTES
 
 
 The following outlines all include passing tones and all begin with added pick up notes. They range from one added diatonic note:
 
-160. 캐넌볼 애덜리:
+160. 캐넌볼 애덜리
 #align(center)[#image("figures/fig_210.jpg", width: 69%)]
 
 two added diatonic notes:
@@ -1281,20 +1285,20 @@ lower neighbor tones:
 162. 클리포드 브라운
 #align(center)[#image("figures/fig_212.jpg", width: 57%)]
 
-163. 톰 하렐:
+163. 톰 하렐
 #align(center)[#image("figures/fig_213.jpg", width: 57%)]
 
 an escape tone:
 
-164. Bill Evans:
+164. 빌 에반스
 #align(center)[#image("figures/fig_214.jpg", width: 60%)]
 
 and encircling upper and lower neighbor tones:
 
-165. 캐넌볼 애덜리:
+165. 캐넌볼 애덜리
 #align(center)[#image("figures/fig_215.jpg", width: 44%)]
 
-166. 톰 하렐:
+166. 톰 하렐
 #align(center)[#image("figures/fig_216.jpg", width: 47%)]
 
 Brown begins this one with chord tones, suggests the dominant of C minor (G7: implied by the tritone F and B natural), then 제2윤곽 with passing tones. The target note for F7 is delayed until the third beat. Notice how effective the E natural is when the B flat chord is expected, and that the “wrong” note is immediately followed by the triad
@@ -1314,18 +1318,18 @@ These next two are similar Clifford Brown examples. They both begin with pick up
 
 These three examples from the same Tom Harrell solo show how similar material can recur in different ways. The first two begin on the root of the ii chord, move through the outline with passing tones, extend through the leading tone of the ii chord (G sharp) to the ninth and back down to the third of D7. The third example breaks the “rule” of playing the target note early: The F sharp appears as a passing tone before the D7 chord, but the negative effect is diminished by the extension of the line to the ninth of the ii chord.
 
-170. 톰 하렐:
+170. 톰 하렐
 #align(center)[#image("figures/fig_220.jpg", width: 44%)]
 
-171. 톰 하렐:
+171. 톰 하렐
 #align(center)[#image("figures/fig_221.jpg", width: 63%)]
 
-172. 톰 하렐:
+172. 톰 하렐
 #align(center)[#image("figures/fig_222.jpg", width: 44%)]
 
 On this example, Harrell plays up the scale from the root to the ninth of the ii chord, using the F7 target note (A natural). The ninth (D) becomes the upper neighbor tone to the root (C) which is encircled before the outline is played in the higher register. The outline uses all the diatonic passing tones in the higher register except for the A natural, which is saved for last.
 
-173. 톰 하렐: Amazon
+173. 톰 하렐 Amazon
 #align(center)[#image("figures/fig_223.jpg", width: 50%)]
 
 == 제2윤곽 in Combinations of More Than One Outline
@@ -1333,7 +1337,7 @@ On this example, Harrell plays up the scale from the root to the ninth of the ii
 
 Parker begins with 제2윤곽 and ends with 제1윤곽. There are many occurrences of this line in different guises throughout Parker solos. They can be found in solos of disciples of Parker, like Sonny Stitt (ex.149). With the addition of chromatic approach tones, the top diatonic step progression has implied accents every dotted quarter note. The additional notes cause the second outline (no.1) to spill over into the F measure; Parker is not through with the C7 until beat three.
 
-174. 찰리 파커:
+174. 찰리 파커
 #align(center)[#image("figures/fig_224.jpg", width: 59%)]
 
 Clifford Brown and Josef Zawinul use 제2윤곽 in these sequential examples. The progression for all three is: iii - V7/ii - ii - V7 - I. Zawinul lands on thirds on strong beats preceded by the seventh of the previous chord every time but one.
@@ -1364,21 +1368,21 @@ Brown uses 제2윤곽 on iii - V7/ii, 제3윤곽 on ii - V7 in the key of B flat
 
 Evans uses three outlines over this passage with rapid harmonic rhythm. 제2윤곽 over the ii - V7; 제3윤곽 over the iii - V7/ii; and anticipating the G minor by three eighth notes, 제3윤곽 over ii - V7 /vi - vi.
 
-181. Bill Evans:
+181. 빌 에반스
 #align(center)[#image("figures/fig_231.jpg", width: 69%)]
 
-제2윤곽 usually begins on the root of the ii chord and spells the arpeggio to the seventh: 1-3-5-7. These two examples demonstrate the “’Round Midnight” outline starting on the third, instead of the root, and arpeggiating 3-5-7-9.
+제2윤곽 usually begins on the root of the ii chord and spells the arpeggio to the seventh: 1-3-5-7. These two examples demonstrate the “'Round Midnight” outline starting on the third, instead of the root, and arpeggiating 3-5-7-9.
 
 182. 클리포드 브라운
 #align(center)[#image("figures/fig_232.jpg", width: 44%)]
 
-183. Bill Evans:
+183. 빌 에반스
 #align(center)[#image("figures/fig_233.jpg", width: 44%)]
 
 == 제2윤곽 with a Change of Direction
 
 
-There are several occurrences of the “’Round Midnight” outline with the direction changed. Instead of ascending the arpeggio of the ii chord, the arpeggio is turned upside down and descends in some way.
+There are several occurrences of the “'Round Midnight” outline with the direction changed. Instead of ascending the arpeggio of the ii chord, the arpeggio is turned upside down and descends in some way.
 
 Rollins changes the direction, adds a C.E.S.H. and delays the resolution of the V7 chord in this example from the melody to an often played blues head.
 
@@ -1387,10 +1391,10 @@ Rollins changes the direction, adds a C.E.S.H. and delays the resolution of the 
 
 The following examples feature a change in the direction of the outline, but the seventh resolves to the third in the same octave.
 
-185. 톰 하렐:
+185. 톰 하렐
 #align(center)[#image("figures/fig_235.jpg", width: 44%)]
 
-186. Bill Evans:
+186. 빌 에반스
 #align(center)[#image("figures/fig_236.jpg", width: 44%)]
 
 187. Freddie Hubbard:
@@ -1403,7 +1407,7 @@ Hamilton uses the upside down outline in a sequence. The progression normally wo
 
 The upside down outline occurs after chromatic pick ups. Chambers played the usual version of this outline elsewhere in this solo. (see Ex.128)
 
-189. Paul Chambers:
+189. 폴 챔버스
 #align(center)[#image("figures/fig_239.jpg", width: 44%)]
 
 These two examples go both directions. Beginning on the seventh of the ii chord, they descend before ascending the arpeggio. Mitchell uses the altered ninths over the F7, borrowed from the key signature of the parallel minor (B flat minor). Hubbard plays the outline in a strict form over the D flat 7 chord.
@@ -1414,7 +1418,7 @@ These two examples go both directions. Beginning on the seventh of the ii chord,
 191. Freddie Hubbard:
 #align(center)[#image("figures/fig_241.jpg", width: 56%)]
 
-The “’Round Midnight” outline is at the heart of this extended C.E.S.H. It occurs in a simple form in the second measure after several ascending and descending statements (with both major [E sharp] and minor [E natural] sevenths) of the ii chord arpeggio.
+The “'Round Midnight” outline is at the heart of this extended C.E.S.H. It occurs in a simple form in the second measure after several ascending and descending statements (with both major [E sharp] and minor [E natural] sevenths) of the ii chord arpeggio.
 
 192. Wes Montgomery:
 #align(center)[#image("figures/fig_242.jpg", width: 69%)]
@@ -1426,10 +1430,10 @@ There are a few notes missing in these next examples to be complete outlines, bu
 
 The first note is omitted in these next three examples. The root of the ii chord is left off. Harrell plays another note which is heard probably heard as the leading tone to the F. Evans and Rollins leave of the first note and begin on the third. These omissions take none of the clarity away from the lines. They all emphasize the target note (third of ii) even more, and the root of the chord is covered by the bass. The sevenths occur on weak beats followed by the thirds on strong beats.
 
-193. 톰 하렐:
+193. 톰 하렐
 #align(center)[#image("figures/fig_243.jpg", width: 38%)]
 
-194. Bill Evans:
+194. 빌 에반스
 #align(center)[#image("figures/fig_244.jpg", width: 32%)]
 
 195. Sonny Rollins:
@@ -1437,7 +1441,7 @@ The first note is omitted in these next three examples. The root of the ii chord
 
 The next three do not have the first two notes of the outline. Harrell begins with a fragment of 제2윤곽 and ends with a statement of 제1윤곽.
 
-196. 톰 하렐:
+196. 톰 하렐
 #align(center)[#image("figures/fig_246.jpg", width: 50%)]
 
 Brown plays this fragment in two ways. The first time with a stop and go feeling created by the quarter and two eighths; the second time with the chromatic lower neighbor tones.
@@ -1453,7 +1457,7 @@ Brown plays this fragment in two ways. The first time with a stop and go feeling
   + Create your own lines using similar devices from the above examples.
   + Learn some of the above examples in all keys.
   + Write out solos on 스탠다드 재즈 진행s and incorporate some of the above examples. Practice the solos like any etude.
-  + Try improvising over standard progressions and use some of the above examples in your solos.
+  + Try improvising over 스탠다드 진행s and use some of the above examples in your solos.
   + Alter some of the above examples either by adding more notes; rhythmic displacing, fragmenting, etc. to come up with lines of you own.
   + Practice 제2윤곽 anticipating the thirds over the barline in all major and minor keys.
     #align(center)[#image("figures/fig_249.jpg", width: 56%)]
@@ -1469,12 +1473,12 @@ These two identical (except for the key) examples of 제3윤곽 in its simplest 
 199. Jimmy Giuffre:
 #align(center)[#image("figures/fig_250.jpg", width: 41%)]
 
-200. 톰 하렐:
+200. 톰 하렐
 #align(center)[#image("figures/fig_251.jpg", width: 41%)]
 
 Many jazz compositions include chords like in the following example. The ii chord is played over the root of the V7 creating a dominant suspension sound. Here is a partial list of chord symbols found to describe this sound (shown for the dominant of C = G): G7 sus, G9 sus, Dm7/G, Dm9/G, F/G. Since this sound is essentially the ii and V7 chord together, any of the outlines will work for this harmony.
 
-201. 톰 하렐:
+201. 톰 하렐
 #align(center)[#image("figures/fig_252.jpg", width: 32%)]
 
 So many of the examples have added passing tones, chromatic approaches, neighbor tones, and rapid sixteenth subdivisions. In this example, Rollins demonstrates how simple rhythms and placement can make the outline interesting.
@@ -1484,26 +1488,26 @@ So many of the examples have added passing tones, chromatic approaches, neighbor
 
 Bill Evans and Tom Harrell illustrate the outline variation where the line continues down the scale. The flatted ninth over the dominant occurs in all three.
 
-203. Bill Evans:
+203. 빌 에반스
 #align(center)[#image("figures/fig_254.jpg", width: 44%)]
 
-204. Bill Evans:
+204. 빌 에반스
 #align(center)[#image("figures/fig_255.jpg", width: 44%)]
 
-205. 톰 하렐:
+205. 톰 하렐
 #align(center)[#image("figures/fig_256.jpg", width: 44%)]
 
 The second variation of 제3윤곽 that continues down the scale with octave displacement is very common. It can be found in many jazz solos in every major and minor key. The credit listed below is from Coltrane, but any number of artists could have been used. The leap from the third to the flat nine on the dominant is one of its attractive elements; giving it characteristics of a compound melody. The first and last four notes sound like the primary melody; the remaining (second through the fifth notes) sound like a secondary answer, or counter melody.
 
-206. John Coltrane:
+206. 존 콜트레인
 #align(center)[#image("figures/fig_257.jpg", width: 44%)]
 
 Parker adds some rhythmic variation and a chromatic approach to F in this example.
 
-207. 찰리 파커:
+207. 찰리 파커
 #align(center)[#image("figures/fig_258.jpg", width: 62%)]
 
-제3윤곽 in simple form within longer lines. Both Mitchell and Brown’s second measures resemble 제2윤곽.
+제3윤곽 in simple form within longer lines. Both Mitchell and Brown's second measures resemble 제2윤곽.
 
 208. 클리포드 브라운
 #align(center)[#image("figures/fig_259.jpg", width: 53%)]
@@ -1518,10 +1522,10 @@ Morgan adds chromatic passing tones and elongates the rhythm to account for the 
 
 The ii chord is anticipated in these three examples. Harrell anticipates the ii and holds on to the V7 chord into the last measure. McLean anticipates the Gm7 chord, delays the resolution to C7 until beat four, the triplet 3-5-7 9 arpeggio hurries the line to the F chord, but its resolution is still delayed until beat three.
 
-211. Bill Evans:
+211. 빌 에반스
 #align(center)[#image("figures/fig_262.jpg", width: 44%)]
 
-212. 톰 하렐:
+212. 톰 하렐
 #align(center)[#image("figures/fig_263.jpg", width: 50%)]
 
 213. Jackie McLean:
@@ -1529,7 +1533,7 @@ The ii chord is anticipated in these three examples. Harrell anticipates the ii 
 
 Stitt begins with an ascending arpeggio, moves down with a C.E.S.H., and then plays the simple 제3윤곽 in the second measure. The change of direction, chromaticism, and resulting accents make this example stimulating.
 
-214. Sonny Stitt:
+214. 소니 스팃
 #align(center)[#image("figures/fig_265.jpg", width: 59%)]
 
 == 제3윤곽: C.E.S.H.
@@ -1537,10 +1541,10 @@ Stitt begins with an ascending arpeggio, moves down with a C.E.S.H., and then pl
 
 제3윤곽 seems to lend itself to the C.E.S.H. more than the other outlines, the chromatic motion often suggesting a compound melody. The following are several examples of the C.E.S.H. based on 제3윤곽. Some use the C.E.S.H. to delay the resolution of the V7 chord; some manage to use the C.E.S.H. and arrive at the V7 on time. Several (ex.215, 216, 217, 218, 219, 221) use the fifth of the ii chord below as a pivot note to give the line more of a sawtooth shape. The range of rhythmic variety in these passages illustrate how much rhythm has to do with personalizing the basic outlines or any musical idea.
 
-215. 캐넌볼 애덜리:
+215. 캐넌볼 애덜리
 #align(center)[#image("figures/fig_266.jpg", width: 50%)]
 
-216. 톰 하렐:
+216. 톰 하렐
 #align(center)[#image("figures/fig_267.jpg", width: 44%)]
 
 217. 클리포드 브라운
@@ -1552,7 +1556,7 @@ Stitt begins with an ascending arpeggio, moves down with a C.E.S.H., and then pl
 219. 리 모건:
 #align(center)[#image("figures/fig_270.jpg", width: 53%)]
 
-220. 찰리 파커:
+220. 찰리 파커
 #align(center)[#image("figures/fig_271.jpg", width: 53%)]
 
 221. Freddie Hubbard:
@@ -1570,10 +1574,10 @@ Notes are often added to the beginning of the outline as pick up notes.
 
 Tom Harrell and Kenny Barron begin their lines on the third and move up the scale to the fifth of the ii chord.
 
-224. 톰 하렐:
+224. 톰 하렐
 #align(center)[#image("figures/fig_275.jpg", width: 44%)]
 
-225. Kenny Barron:
+225. 케니 배런
 #align(center)[#image("figures/fig_276.jpg", width: 57%)]
 
 Hubbard moves down chromatically from the third, ascends the arpeggio before the outline begins. Compare this C.E.S.H. to ex.220.
@@ -1583,15 +1587,15 @@ Hubbard moves down chromatically from the third, ascends the arpeggio before the
 
 Parker begins with a wind up around the root of the ii chord and up the scale before the outline begins.
 
-227. 찰리 파커:
+227. 찰리 파커
 #align(center)[#image("figures/fig_278.jpg", width: 69%)]
 
 Harrell begins ex.228 with the seventh of ii as a pick up. After the C.E.S.H. over the ii - V7, another C.E.S.H. is implied over the I chord. The F natural from the second measure usually moves to the E on beat one. The F sharp changes the direction and delays the resolution to the E until beat three.
 
-228. 톰 하렐:
+228. 톰 하렐
 #align(center)[#image("figures/fig_279.jpg", width: 60%)]
 
-229. 톰 하렐:
+229. 톰 하렐
 #align(center)[#image("figures/fig_280.jpg", width: 65%)]
 
 == 제3윤곽 Using a Lower Pivot Note (Arpeggiated Tone Below)
@@ -1599,16 +1603,16 @@ Harrell begins ex.228 with the seventh of ii as a pick up. After the C.E.S.H. ov
 
 One note added below adds angularity and rhythmic interest to this outline. It was seen in several of the C.E.S.H. examples (ex.215, 216, 217, 218, 219, 221, 225, 226, 227, 228, 229). Here are several more using the fifth of the ii chord, as a pivot in a lower octave than the first note of the outline.
 
-230. 찰리 파커:
+230. 찰리 파커
 #align(center)[#image("figures/fig_281.jpg", width: 56%)]
 
-231. 찰리 파커:
+231. 찰리 파커
 #align(center)[#image("figures/fig_282.jpg", width: 44%)]
 
 232. 클리포드 브라운
 #align(center)[#image("figures/fig_283.jpg", width: 44%)]
 
-233. 캐넌볼 애덜리:
+233. 캐넌볼 애덜리
 #align(center)[#image("figures/fig_284.jpg", width: 44%)]
 
 This line has symmetry with the third to root leap on both of the dominant seventh chords. 제3윤곽 begins before the Fm7, but resolves to the Bb7 on time.
@@ -1618,18 +1622,18 @@ This line has symmetry with the third to root leap on both of the dominant seven
 
 Cannonball uses the same line in the same solo in two key areas.
 
-235. 캐넌볼 애덜리:
+235. 캐넌볼 애덜리
 #align(center)[#image("figures/fig_286.jpg", width: 32%)]
 
-236. 캐넌볼 애덜리:
+236. 캐넌볼 애덜리
 #align(center)[#image("figures/fig_287.jpg", width: 45%)]
 
 == 제3윤곽 in Combinations of More Than One Outline
 
 
-This combination is from Parker’s solo on a well-known bop tune in A flat. The first is 제1윤곽, the second 제3윤곽. The dominant chords have the same pattern: a leap from the third to the flat nine and the chromatic approach to the fifth of the next chord. (This example was also shown as ex.123.)
+This combination is from Parker's solo on a well-known bop tune in A flat. The first is 제1윤곽, the second 제3윤곽. The dominant chords have the same pattern: a leap from the third to the flat nine and the chromatic approach to the fifth of the next chord. (This example was also shown as ex.123.)
 
-237. 찰리 파커:
+237. 찰리 파커
 #align(center)[#image("figures/fig_288.jpg", width: 69%)]
 
 Brown displaces the first simple outline (no.1) beginning with the upper and lower neighbor tones to the first target note. Chromatic pickups to the G (which begins 제3윤곽) in the second measure gets the line back on time so the seventh of C minor and the target note A on the F7 chord arrive where we expect them. More chromatic pick up notes fill out the measure so that the E flat arrives on the upbeat of four placing the D on the downbeat. The rhythmic displacement is one element that makes this line interesting. Did the addition of extra notes create the rhythmic interest, or did the rhythmic displacement require the addition of extra notes? (This example was also shown as ex.122.)
@@ -1644,13 +1648,13 @@ Morgan begins stating the third and seventh of the ii chord before 제3윤곽. I
 
 Evans uses three outlines over this passage with rapid harmonic rhythm. 제2윤곽 over the ii - V7; 제3윤곽 over the iii - V7/ii; and anticipating the G minor by three eighth notes 제3윤곽 over ii - V7 /vi - vi. (This example was also shown as ex.181.)
 
-240. Bill Evans:
+240. 빌 에반스
 #align(center)[#image("figures/fig_291.jpg", width: 68%)]
 
 == 제3윤곽 with Passing Tones
 
 
-The arpeggiated form of this outline lends itself to diatonic passing tones between the chord tones. Adding passing tones blurs the distinction between 제3윤곽 and 제1윤곽. Into which category these next examples fall is anybody’s call as they have elements of both no.1 and no.3. The central point is their harmonic clarity; thirds and seventh delineate the harmony.
+The arpeggiated form of this outline lends itself to diatonic passing tones between the chord tones. Adding passing tones blurs the distinction between 제3윤곽 and 제1윤곽. Into which category these next examples fall is anybody's call as they have elements of both no.1 and no.3. The central point is their harmonic clarity; thirds and seventh delineate the harmony.
 
 241. 클리포드 브라운
 #align(center)[#image("figures/fig_292.jpg", width: 44%)]
@@ -1667,20 +1671,20 @@ The resolution to the dominant chord is delayed until beat three by the sawtooth
 
 Tom Harrell in E flat minor.
 
-244. 톰 하렐:
+244. 톰 하렐
 #align(center)[#image("figures/fig_295.jpg", width: 44%)]
 
 This passage has a wide range and rhythmic contrasts..
 
-245. 톰 하렐:
+245. 톰 하렐
 #align(center)[#image("figures/fig_296.jpg", width: 35%)]
 
 The chord tones always occur on the strong beats in these two examples from Harrell.
 
-246. 톰 하렐:
+246. 톰 하렐
 #align(center)[#image("figures/fig_297.jpg", width: 44%)]
 
-247. 톰 하렐:
+247. 톰 하렐
 #align(center)[#image("figures/fig_298.jpg", width: 44%)]
 
 Hubbard delays the resolution to the B flat for an entire measure. Compare this to Ex.174 of Parker.
@@ -1692,7 +1696,7 @@ Hubbard delays the resolution to the B flat for an entire measure. Compare this 
 + Create your own lines using similar devices from the above examples.
 + Learn some of the above examples in all keys.
 + Write out solos on 스탠다드 재즈 진행s and incorporate some of the above examples. Practice the solos like any etude.
-+ Try improvising over standard progressions and use some of the above examples in your solos.
++ Try improvising over 스탠다드 진행s and use some of the above examples in your solos.
 + Alter some of the above examples either by adding more notes, rhythmic displacing, fragmenting, etc. to come up with lines of you own.
 + Practice 제3윤곽 anticipating the thirds over the barline in all major and minor keys.
   #align(center)[#image("figures/fig_300.jpg", width: 56%)]
@@ -1702,9 +1706,9 @@ Hubbard delays the resolution to the B flat for an entire measure. Compare this 
 
 In the discussion of harmonic clarity, the target notes were the third of ii moving to the seventh of ii, resolving to the third of V7 moving to the seventh of V7, resolving to the third of I. Fragments of outlines have been previously shown where harmonic clarity was still present with some of the elements missing.
 
-Parker’s sequence in ex.249 relies on the seventh of ii resolving to the third of V7 for clarity. The turn, the leap from third to the root, and the rhythmic displacement give life to this example.
+Parker's sequence in ex.249 relies on the seventh of ii resolving to the third of V7 for clarity. The turn, the leap from third to the root, and the rhythmic displacement give life to this example.
 
-249. 찰리 파커:
+249. 찰리 파커
 #align(center)[#image("figures/fig_301.jpg", width: 80%)]
 
 Brown uses similar motion in this sequence. The shape is echoed later, but with an arpeggio on the V7 chord.
@@ -1715,14 +1719,14 @@ Brown uses similar motion in this sequence. The shape is echoed later, but with 
 251. 클리포드 브라운
 #align(center)[#image("figures/fig_303.jpg", width: 44%)]
 
-The only note missing from Morgan’s excerpt is the third of the iiø chord. The V7 chord is anticipated and arpeggiated. The line follows 제1윤곽 one down to the third of C minor.
+The only note missing from Morgan's excerpt is the third of the iiø chord. The V7 chord is anticipated and arpeggiated. The line follows 제1윤곽 one down to the third of C minor.
 
 252. 리 모건:
 #align(center)[#image("figures/fig_304.jpg", width: 45%)]
 
 Harrell begins with an accented upper neighbor tone followed by the third. The leap is an arpeggiated tone to the fifth, The seventh on the upbeat is followed by the next target note on the downbeat.
 
-253. 톰 하렐:
+253. 톰 하렐
 #align(center)[#image("figures/fig_305.jpg", width: 29%)]
 
 #chapter("Outlines In Modal Tunes", l: "chap8")
@@ -1738,10 +1742,10 @@ Some jazz improvisers bring some of the be-bop vocabulary with them when playing
 
 Here are two examples from a classic modal recording. Cannonball Adderley uses this C.E.S.H. version of 제3윤곽 several times in the solo to contrast with his modal, motivic, and down and dirty blues playing on this modal blues tune. The outline is played over G mixolydian.
 
-256. 캐넌볼 애덜리:
+256. 캐넌볼 애덜리
 #align(center)[#image("figures/fig_308.jpg", width: 44%)]
 
-257. 캐넌볼 애덜리:
+257. 캐넌볼 애덜리
 #align(center)[#image("figures/fig_309.jpg", width: 44%)]
 
 
@@ -1765,7 +1769,7 @@ Learn the outlines in their bare form in _all_ major and minor keys. To play the
 + Manipulate and personalize some of your favorites:
   - Change a note or two
   - Change some of the rhythms
-  - Add some turns and ornaments where there weren’t any
+  - Add some turns and ornaments where there weren't any
   - Take some ornaments away
   - Try it in a minor key with the appropriate accidentals, etc.
   - Play in all keys!
@@ -2073,20 +2077,18 @@ Practice the key center cycle with a faster harmonic rhythm. In exercise 7, the 
 
 이 윤곽들을 연주에 통합하기 위해 가장 중요한 일 중 하나는 이를 스탠다드 곡과 진행에 적용하는 것이다. 이전 연습에서는 한 번에 하나의 조에서만 이를 사용하기 시작했다. 그러나 스탠다드 곡들은 가까운 조와 먼 조로 전조하며, 화성 리듬이 다양하게 나타난다. 다음 연습에서는 윤곽을 블루스, "Rhythm Changes", 그리고 스탠다드 재즈 곡의 진행에 적용한다. 먼저 곡의 전체 형식에 대해 단순한 윤곽만 연주하는 것으로 시작하라. 악기 없이 윤곽을 노래하고 화음 변화를 들어보도록 노력하라. 변화를 듣고 실제 음정을 부를 수 있다면, 진행 위에서 좋은 선율을 듣고 즉흥 연주할 준비가 더 잘될 것이다. 단순한 윤곽을 숙달한 후, 형식 위에서 즉흥 연주를 시도하라. 연습할 때는 한 번에 하나의 윤곽으로 자신을 제한하라. 각 윤곽에 대해 형식을 여러 번 연주하며 기본 선율을 꾸미는 연습을 하라. 세 가지 윤곽 모두를 숙달한 후에는 다양한 윤곽의 조합을 시도하라.
 
-== STANDARD PROGRESSION I: BLUES IN B FLAT
+== 스탠다드 진행 I: $bold(#note("Bb"))$ 블루스
 
-=== A SECTION
-
-1. 제1윤곽:
+1. 제1윤곽
 #align(center)[#image("figures/fig_396.jpg", width: 80%)]
-2. 제2윤곽:
+2. 제2윤곽
 #align(center)[#image("figures/fig_397.jpg", width: 80%)]
-3. 제3윤곽:
+3. 제3윤곽
 #align(center)[#image("figures/fig_398.jpg", width: 80%)]
 
-== STANDARD PROGRESSION II: “RHYTHM CHANGES”
+== 스탠다드 진행 II: "Rhythm Changes"
 
-=== A SECTION
+=== A 섹션
 
 1. 제1윤곽:
 #align(center)[#image("figures/fig_399.jpg", width: 80%)]
@@ -2126,29 +2128,21 @@ Practice the key center cycle with a faster harmonic rhythm. In exercise 7, the 
 ]
 
 #fb[
-  Outlines to 스탠다드 재즈 진행 III. _Are You All the Outlines_에 윤곽 적용하기
-
   2. 제2윤곽 beginning in m.1:
   #align(center)[#image("figures/fig_413.jpg", width: 80%)]
 ]
 
 #fb[
-  스탠다드 재즈 진행 III. _Are You All the Outlines_에 윤곽 적용하기
-
   3. 제2윤곽 beginning in m.2:
   #align(center)[#image("figures/fig_414.jpg", width: 80%)]
 ]
 
 #fb[
-  스탠다드 재즈 진행 III. _Are You All the Outlines_에 윤곽 적용하기
-
   4. 제3윤곽 beginning in m.1:
   #align(center)[#image("figures/fig_415.jpg", width: 80%)]
 ]
 
 #fb[
-  스탠다드 재즈 진행 III. _Are You All the Outlines_에 윤곽 적용하기
-
   5. 제3윤곽 beginning in m.2:
   #align(center)[#image("figures/fig_416.jpg", width: 80%)]
 ]
@@ -2161,29 +2155,21 @@ Practice the key center cycle with a faster harmonic rhythm. In exercise 7, the 
 ]
 
 #fb[
-  스탠다드 재즈 진행 _IV.,Outlines by Starlight_에 윤곽 적용하기
-
   2. 제2윤곽 beginning in m.1:
   #align(center)[#image("figures/fig_418.jpg", width: 80%)]
 ]
 
 #fb[
-  스탠다드 재즈 진행 IV. _Outlines by Starlight_에 윤곽 적용하기
-
   3. 제2윤곽 beginning in m.2:
   #align(center)[#image("figures/fig_419.jpg", width: 80%)]
 ]
 
 #fb[
-  스탠다드 재즈 진행 IV. _Outlines by Starlight_에 윤곽 적용하기
-
   4. 제3윤곽 beginning in m.1:
   #align(center)[#image("figures/fig_420.jpg", width: 80%)]
 ]
 
 #fb[
-  스탠다드 재즈 진행 IV. _Outlines by Starlight_에 윤곽 적용하기
-
   5. 제3윤곽 beginning in m.2:
   #align(center)[#image("figures/fig_421.jpg", width: 80%)]
 ]
@@ -2193,22 +2179,14 @@ Practice the key center cycle with a faster harmonic rhythm. In exercise 7, the 
 1. 제1윤곽:
 #align(center)[#image("figures/fig_422.jpg", width: 80%)]
 
-스탠다드 재즈 진행 V. Blues with ii - V substitutions에 윤곽 적용하기
-
 2. 제2윤곽 beginning in first half of measure:
 #align(center)[#image("figures/fig_423.jpg", width: 80%)]
-
-스탠다드 재즈 진행 V. Blues with ii - V substitutions에 윤곽 적용하기
 
 3. 제2윤곽 beginning in second half of measure:
 #align(center)[#image("figures/fig_424.jpg", width: 80%)]
 
-스탠다드 재즈 진행 V. Blues with ii - V substitutions에 윤곽 적용하기
-
 4. 제3윤곽 beginning in first half of measure:
 #align(center)[#image("figures/fig_425.jpg", width: 80%)]
-
-스탠다드 재즈 진행 V. Blues with ii - V substitutions에 윤곽 적용하기
 
 5. 제3윤곽 beginning in second half of measure:
 #align(center)[#image("figures/fig_426.jpg", width: 80%)]
@@ -2220,22 +2198,14 @@ Practice the key center cycle with a faster harmonic rhythm. In exercise 7, the 
 1. 제1윤곽:
 #align(center)[#image("figures/fig_427.jpg", width: 80%)]
 
-스탠다드 재즈 진행 VI. _Big Strides with Outlines_에 윤곽 적용하기
-
 2. 제2윤곽:
 #align(center)[#image("figures/fig_428.jpg", width: 80%)]
-
-스탠다드 재즈 진행 VI, _Big Strides with Outlines_에 윤곽 적용하기
 
 3. 제2윤곽:
 #align(center)[#image("figures/fig_429.jpg", width: 80%)]
 
-스탠다드 재즈 진행 VI. _Big Strides with Outlines_에 윤곽 적용하기
-
 4. 제3윤곽:
 #align(center)[#image("figures/fig_430.jpg", width: 80%)]
-
-스탠다드 재즈 진행 VI. _Big Strides with Outlines_에 윤곽 적용하기
 
 5. 제3윤곽:
 #align(center)[#image("figures/fig_431.jpg", width: 80%)]
@@ -2244,15 +2214,15 @@ Practice the key center cycle with a faster harmonic rhythm. In exercise 7, the 
 
 Learn to identify outlines and recognize the devices used to embellish them. Here are five examples from Cannonball Adderley. Identify which outline is shown, and what devices are used to make them interesting.
 
-1. 캐넌볼 애덜리:
+1. 캐넌볼 애덜리
 #align(center)[#image("figures/fig_432.jpg", width: 47%)]
-2. 캐넌볼 애덜리:
+2. 캐넌볼 애덜리
 #align(center)[#image("figures/fig_433.jpg", width: 47%)]
-3. 캐넌볼 애덜리:
+3. 캐넌볼 애덜리
 #align(center)[#image("figures/fig_434.jpg", width: 47%)]
-4. 캐넌볼 애덜리:
+4. 캐넌볼 애덜리
 #align(center)[#image("figures/fig_435.jpg", width: 47%)]
-5. 캐넌볼 애덜리:
+5. 캐넌볼 애덜리
 #align(center)[#image("figures/fig_436.jpg", width: 35%)]
 
 Find other examples in jazz literature. Practice and learn them in all keys. Answers on page 145.

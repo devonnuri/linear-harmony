@@ -1852,7 +1852,7 @@ For all practice use the metronome. Music is to be played in time. Put the click
 
   #align(center)[#image("figures/fig_315.jpg", width: 80%)]
 
-== aOUTLINES AND EAR TRAINING:
+== OUTLINES AND EAR TRAINING:
 
 #set enum(numbering: n => [2.#n.])
 
