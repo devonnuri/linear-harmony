@@ -76,9 +76,12 @@
 #let maj25 = prog("ii", "V7")
 #let min25 = prog("iihalfdim7", "V7")
 #let maj251 = prog("ii", "V7", "I")
+#let min251 = prog("iihalfdim7", "V7", "I")
 #let maj36 = prog("iii", "V7/ii")
+#let maj362 = prog("iii", "V7/ii", "ii")
 
-#set text(font: ("Times New Roman", "KoPubBatang"), lang: "ko")
+// #set text(font: ("Times New Roman", "KoPubBatang"), lang: "ko")
+#set text(font: ("Tex Gyre Termes", "KoPubBatang"), lang: "ko")
 #set outline(title: [목차])
 
 #show: book.with(
@@ -103,7 +106,6 @@
   lowercase-references: false
 )
 
-#set text(font: ("Times New Roman", "KoPubBatang"), lang: "ko")
 #set par(leading: 0.9em, spacing: 1.2em)
 #set sub(size: 0.9em)
 #set heading(supplement: none)
@@ -321,13 +323,13 @@ C장조에서의 #maj251 진행(#prog("Dm7", "G7", "C"))의 경우, 베이스는
 
 == 경과음
 
-경과음#sub[passing tone]은 필수음들 사이의 반음계적 또는 온음계적 단계이다. 화음에서는 화음 구성원들 사이의 온음계 음을 말한다. (예: #chord("CM")의 경과음 = #note("C") $underline(note("D"))$ #note("E") $underline(note("F"))$ #note("G") $underline(note("A"))$ $underline(note("B"))$ C) 음계에서는 인접 음정 사이의 반음계 음을 말한다. (예: #note("C") $underline(note("C#"))$ #note("D") $underline(note("D#"))$ ...) 반음계 경과음은 온음 간격으로 인접한 온음계 음 사이에 배치될 수 있다. 모든 온음계 음은 반음계 이끎음#sub[chromatic leading tone]을 가질 수 있다. 예를 들어, #note("C#")은 D의 반음계 이끎음이며, #note("Cnat")과 D 사이의 반음계 경과음이다. #note("Db")은 #note("Dnat")과 #note("Cnat") 사이의 반음계 경과음이다. #note("C#")과 #note("Db")의 차이는 임시표가 암시하는 방향에 있다. 반음계적으로 변화된 음은 변화된 방향으로 계속 진행되는 경향이 있다. 내림표가 붙은 음은 내려가는 경향이 있고, 올림표가 붙은 음은 올라가는 경향이 있다.
+#sans[경과음]#sub[passing tone]은 필수음들 사이의 반음계적 또는 온음계적 단계이다. 화음에서는 화음 구성원들 사이의 온음계 음을 말한다. (예: #chord("CM")의 경과음 = #note("C") $underline(note("D"))$ #note("E") $underline(note("F"))$ #note("G") $underline(note("A"))$ $underline(note("B"))$ C) 음계에서는 인접 음정 사이의 반음계 음을 말한다. (예: #note("C") $underline(note("C#"))$ #note("D") $underline(note("D#"))$ ...) 반음계적 경과음은 온음 간격으로 인접한 온음계 음 사이에 배치될 수 있다. 모든 온음계 음은 반음계적 이끎음#sub[chromatic leading tone]을 가질 수 있다. 예를 들어, #note("C#")은 D의 반음계적 이끎음이며, #note("Cnat")과 D 사이의 반음계적 경과음이다. #note("Db")은 #note("Dnat")과 #note("Cnat") 사이의 반음계적 경과음이다. #note("C#")과 #note("Db")의 차이는 임시표가 암시하는 방향에 있다. 반음계적으로 변화된 음은 변화된 방향으로 계속 진행되는 경향이 있다. 내림표가 붙은 음은 내려가는 경향이 있고, 올림표가 붙은 음은 올라가는 경향이 있다.
 
-'Round Midnight 윤곽은 아르페지오 윤곽이기 때문에, 화성음#sub[chord tones] 사이에 경과음을 넣기에 적합하다. 그러나 #chord("ii") 화음의 5도와 7도 사이에는 거의 경과음이 나타나지 않는다. #chord("ii") 화음의 5도와 7도 사이의 음은 #chord("V7") 화음의 필수음이다. 이 음은 보통 V7 화음을 위해 남겨둔다. 이는 이야기의 핵심, 결말, 또는 중요한 순간으로, 이를 미리 경과음으로 사용하여 결론을 드러내지 않는다.
+'Round Midnight 윤곽은 아르페지오 윤곽이기 때문에, 화성음#sub[chord tones] 사이에 경과음을 넣기에 적합하다. 그러나 #chord("ii") 화음의 5도와 7도 사이에는 거의 경과음이 나타나지 않는다. #chord("ii") 화음의 5도와 7도 사이의 음은 #chord("V7") 화음의 필수음이다. 이 음은 보통 #chord("V7") 화음을 위해 남겨둔다. 이는 이야기의 핵심, 결말, 또는 중요한 순간으로, 이를 미리 경과음으로 사용하여 결론을 드러내지 않는다.
 
 == 이웃음
 
-필수음 위와 아래의 음을 이웃음#sub[Neighbor Tones]이라 한다. (모차르트에서 찰리 파커까지) 일반적인 관행은 온음계적 상행 이웃음(Diatonic Upper Neighbor Tone, 이하 UNT)과 반음계적 하행 이웃음(Chromatic Lower Neighbor Tone, 이하 LNT)을 사용하는 것이다.
+필수음 위와 아래의 음을 #sans[이웃음]#sub[Neighbor Tones]이라 한다. (모차르트에서 찰리 파커까지) 일반적인 관행은 #sans[온음계적 상위 이웃음]$$(Diatonic Upper Neighbor Tone, 이하 UNT)과 #sans[반음계적 하위 이웃음]$$(Chromatic Lower Neighbor Tone, 이하 LNT)을 사용하는 것이다.
 
 F #sans[장조]에서의 #note("C") 3화음에서 #note("C"), #note("E"), #note("G")는 필수음이다. #note("Dnat")는 #note("C")의 UNT이고, #note("Bnat")는 LNT이다. #note("Fnat")은 #note("E")의 UNT이고, #note("D#")는 LNT이다. #note("Anat")은 G의 UNT이고, #note("F#")는 LNT이다.
 
@@ -356,7 +358,7 @@ _'Round Midnight_ 윤곽은 일반적으로 #chord("ii") 화음의 근음에서 
 
 == 반음계적 접근
 
-반음계적 접근#sub[chromatic approaches]는 일반적으로 온음계 음과 반음계적으로 변화된 음이 필수음으로 이어지는 형태를 포함한다. 온음계 음으로 시작하여 반음계 음을 경과음으로 사용해 필수음으로 이어질 수도 있고, 반대로 반음계 음으로 시작하여 온음계 이웃음을 통해 필수음으로 이어질 수도 있다. 반음계적 요소는 선율에 색채를 더하고, 추가된 음정이 리듬적으로 흥미롭게 만든다. 목표음은 종종 마디에서 강박에 위치한다. 목표음은 위아래에서 반음계적 접근으로 둘러싸일#sub[encircled] 수 있다. (둘러싼음#sub[encircling tones] 참조)
+#sans[반음계적 접근]#sub[chromatic approaches]는 일반적으로 온음계 음과 반음계적으로 변화된 음이 필수음으로 이어지는 형태를 말한다. 온음계 음으로 시작하여 반음계 음을 경과음으로 사용해 필수음으로 이어질 수도 있고, 반대로 반음계 음으로 시작하여 온음계 이웃음을 통해 필수음으로 이어질 수도 있다. 반음계적 요소는 선율에 색채를 더하고, 추가된 음정이 리듬적으로 흥미롭게 만든다. 목표음은 종종 마디에서 강박에 위치한다. 목표음은 위아래에서 반음계적 접근으로 둘러싸일#sub[encircled] 수 있다. (#link(<sec_encircled_tones>, [둘러싼음]) 참조)
 
 #padbox[
   #chord("ii") 코드의 3도는 온음 위로부터 반음계적으로 접근될 수 있다.
@@ -375,7 +377,7 @@ _'Round Midnight_ 윤곽은 일반적으로 #chord("ii") 화음의 근음에서 
 
   #align(center)[#image("figures/fig_032.jpg", width: 22%)]
 
-  #chord("V") 화음의 3도는 종종 위와 아래에서 반음계적으로 접근된다. (후술할 C.E.S.H.에 대한 논의 참조)
+  #chord("V") 화음의 3도는 종종 위와 아래에서 반음계적으로 접근된다. (후술할 #link(<sec_cesh>, [C.E.S.H.])에 대한 논의 참조)
 
   #align(center)[#image("figures/fig_033.jpg", width: 35%)]
 
@@ -386,11 +388,9 @@ _'Round Midnight_ 윤곽은 일반적으로 #chord("ii") 화음의 근음에서 
 
 == 옥타브 이동
 
-옥타브 이동#sub[octave displacement]은 한 음 또는 여러 음을 다른 옥타브로 위치시키는 기법이다. 이는 도약을 도입함으로써 선율을 더욱 흥미롭게 만드는 경우가 많다. 옥타브 이동은 종종 악기의 음역 때문에 필요하며, 극적인 흥미는 부수적인 결과로 나타난다. 도약은 주로 주요 가이드음#sub[main guide-tone] 뒤에 발생하며, 강박에서 약박로 도약하는 경우가 많다. 도약은 마디선을 넘지 않으며, 약박에서 강박로 도약하는 경우는 드물다. 도약은 예상치 못한 움직임으로 아르페지오 음을 포함할 수 있다. 아르페지오 도약은 한 화성음에서 다른 화성음으로 이동하면서 중간의 화성음을 건너뛸 때 발생한다. 예를 들어, 화음의 3도에서 5도로 올라가는 경우는 한 단계보다 큰 움직임이지만, 다른 화성음을 건너뛰지는 않는다. 반면, 화음의 3도에서 5도로 내려가는 경우에는 6도의 도약이 발생하며, 화음의 근음을 건너뛰게 된다.
+#sans[옥타브 이동]#sub[octave displacement]은 한 음 또는 여러 음을 다른 옥타브로 위치시키는 기법이다. 이는 도약을 도입함으로써 선율을 더욱 흥미롭게 만드는 경우가 많다. 옥타브 이동은 종종 악기의 음역 때문에 필요하며, 극적인 흥미는 부수적인 결과로 나타난다. 도약은 주로 주요 가이드음#sub[main guide-tone] 뒤에 발생하며, 강박에서 약박로 도약하는 경우가 많다. 도약은 마디선을 넘지 않으며, 약박에서 강박로 도약하는 경우는 드물다. 도약은 예상치 못한 움직임으로 아르페지오 음을 포함할 수 있다. 아르페지오 도약은 한 화성음에서 다른 화성음으로 이동하면서 중간의 화성음을 건너뛸 때 발생한다. 예를 들어, 화음의 3도에서 5도로 올라가는 경우는 한 단계보다 큰 움직임이지만, 다른 화성음을 건너뛰지는 않는다. 반면, 화음의 3도에서 5도로 내려가는 경우에는 6도의 도약이 발생하며, 화음의 근음을 건너뛰게 된다.
 
 #align(center)[#image("figures/fig_035.jpg", width: 35%)]
-
-There are several instances of octave displacement included in the musical examples. The three most common occurrences leap after the arriving on the third of the chord.
 
 예시 음악에는 여러 옥타브 이동 사례가 포함되어 있다. 가장 일반적인 세 가지 사례는 화음의 3도에 도달한 후 도약이 발생하는 경우이다.
 
@@ -404,18 +404,18 @@ There are several instances of octave displacement included in the musical examp
   
   #align(center)[#image("figures/fig_037.jpg", width: 35%)]
   
-  3도에서 근음으로 상행: 화음의 3도에서 근음으로의 하행 도약을 5도를 건너뛴 상행 도약으로 대체한다. 이는 보통 라인을 끝마치게 한다. 으뜸화음의 근음을 들은 뒤 움직임이 멈추려 하기 때문이다.
+  3도에서 근음으로 상행: 화음의 3도에서 근음으로의 하향 도약을 5도를 건너뛴 상행 도약으로 대체한다. 이는 보통 라인을 끝마치게 한다. 으뜸화음의 근음을 들은 뒤 움직임이 멈추려 하기 때문이다.
 
   #align(center)[#image("figures/fig_038.jpg", width: 23%)]
 ]
 
-== 둘러싼음
+== 둘러싼음 <sec_encircled_tones>
 
-둘러싼음#sub[encircled tones]은 필수음 전에 두 이웃음을 사용하는 것이다. 떄로는 필수 음이 위아래에서 여러 반음계적 접근 단계에 의해 도달된다. (반음계적 접근에 대한 예시 참조)
+#sans[둘러싼음]#sub[encircled tones]은 필수음 전에 두 이웃음을 사용하는 것이다. 떄로는 필수 음이 위아래에서 여러 반음계적 접근 단계에 의해 도달된다. (반음계적 접근에 대한 예시 참조)
 
-== C.E.S.H.
+== C.E.S.H. <sec_cesh>
 
-C.E.S.H.는 '정적 화성의 반음계적 발전(Chromatic Elaboration of Static Harmony)'을 뜻하는 제리 코커#sub[Jerry Coker]의 약어이다. #maj25 진행에서 가장 일반적인 예는 ii 화음의 근음에서 V7 화음의 3도로 하강하는 움직임이다. C장조($chord("Dm")-chord("G7")$)에서는 #note("D")-#note("C#")-#note("C")-#note("B")의 움직임을 말한다. 다른 음들(정적 화성)이 이 반음계적 하강 음들 사이에 연주되며, 때로는 복합 선율#sub[compound melodies]을 암시하기도 한다.#footnote[하나의 선율이 두 개 이상의 독립적인 선율을 암시하는 경우를 #sans[복합 선율]이라고 한다.] 문헌, 특히 바흐의 솔로 첼로 소나타에서 복합 선율의 훌륭한 예들을 찾아볼 수 있다. (찰리 파커의 예시 113 등 이후 예제 참조)
+C.E.S.H.는 '정적 화성의 반음계적 발전(Chromatic Elaboration of Static Harmony)'을 뜻하는 제리 코커#sub[Jerry Coker]의 약어이다. #maj25 진행에서 가장 일반적인 예는 #chord("ii") 화음의 근음에서 #chord("V7") 화음의 3도로 하강하는 움직임이다. C장조($chord("Dm")-chord("G7")$)에서는 #note("D")-#note("C#")-#note("C")-#note("B")의 움직임을 말한다. 다른 음들(정적 화성)이 이 반음계적 하행 음들 사이에 연주되며, 때로는 복합 선율#footnote[하나의 선율이 두 개 이상의 독립적인 선율을 암시하는 경우를 #sans[복합 선율]#sub[compound melodies]이라고 한다.]을 암시하기도 한다. 문헌, 특히 바흐의 솔로 첼로 소나타에서 복합 선율의 훌륭한 예들을 찾아볼 수 있다. (찰리 파커의 예시 113 등 이후 예제 참조)
 
 #align(center)[#image("figures/fig_039.jpg", width: 35%)]
 
@@ -453,7 +453,7 @@ C.E.S.H.는 '정적 화성의 반음계적 발전(Chromatic Elaboration of Stati
 
 == 차용화음과 차용음
 
-(@sec_diatonic_roman$$를 참조하라.) 일부 온음계 화음은 다른 조에서 "차용한" 음으로 변경될 수 있다. 화성이 바뀌면 선율도 같은 방식으로 변한다. 화음은 종종 단조인 같은으뜸음조#sub[parallel minor]에서 차용된다. #chord("iihalfdim7")가 #chord("ii7")로, #chord("iv")가 #chord("IV")로 바뀌는 식이다. 단조인 같은으뜸음조의 음은 종종 딸림화음에 적용되어, 온음계 음보다 더 큰 긴장을 만들어내고, 으뜸장화음에 도달할 때 더 큰 해소를 만들어낸다. 예를 들어, #note("C")장조의 딸림화음인 #chord("G7") 위에서 재즈 음악가들은 병행 단조 키인 #note("C")단조에서 #note("Ab") ($flat 9$), #note("Bb") ($sharp 9$), #note("Eb") ($flat 13$)을 자주 사용한다. 이러한 차용음, 즉 낮아진 온음계 음은 온음계 음보다 더 강한 하향성을 가지고 있다. 전조할 때, 화음은 도착하는 조에서 차용된다. 예를 들어 C장조에서 D단조로 이동할 때, 종종 D단조를 가리키는 진행이 D단조 화음에 앞서 나타난다. 예컨대 $chord("V7")=chord("A7")$이나, $min25 = chord("Ehalfdim7")-chord("A7")$, $chord("viidim7") = chord("C#dim7")$ 등이 사용된다. #note("Bb")과 이끎음 #note("C#")과 같이 전조에 필요한 음은 보통 이러한 변화 위의 선율에서 나타난다.
+(#link(<sec_diatonic_roman>, [온음계 화음과 로마 숫자])를 참조하라.) 일부 온음계 화음은 다른 조에서 "차용한" 음으로 바꿀 수 있다. 화성이 바뀌면 선율도 같은 방식으로 변한다. 화음은 종종 단조인 같은으뜸음조#sub[parallel minor]에서 차용된다. #chord("iihalfdim7")가 #chord("ii7")로, #chord("iv")가 #chord("IV")로 바뀌는 식이다. 단조인 같은으뜸음조의 음은 종종 딸림화음에 적용되어, 온음계 음보다 더 큰 긴장을 만들어내고, 장화음인 으뜸화음에 도달할 때 더 큰 해소를 만들어낸다. 예를 들어, #note("C")장조의 딸림화음인 #chord("G7") 위에서 재즈 음악가들은 같은으뜸음조인 #note("C")단조에서 #note("Ab") ($flat 9$), #note("Bb") ($sharp 9$), #note("Eb") ($flat 13$)을 자주 사용한다. 이러한 차용음, 즉 낮아진 온음계 음은 온음계 음보다 더 강한 하향성을 가지고 있다. 전조할 때, 화음은 도착하는 조에서 차용된다. 예를 들어 C장조에서 D단조로 이동할 때, 종종 D단조를 가리키는 진행이 D단조 화음에 앞서 나타난다. 예컨대 $chord("V7")=chord("A7")$이나, $min25 = chord("Ehalfdim7")-chord("A7")$, $chord("viidim7") = chord("C#dim7")$ 등이 사용된다. #note("Bb")과 이끎음 #note("C#")과 같이 전조에 필요한 음은 보통 이러한 변화 위의 선율에서 나타난다.
 
 
 == 방향 전환
@@ -587,7 +587,7 @@ C.E.S.H.는 '정적 화성의 반음계적 발전(Chromatic Elaboration of Stati
 21. 톰 하렐
 #align(center)[#image("figures/fig_064.jpg", width: 63%)]
 
-다음 두 예제에서는 한 음이 추가되었다. #chord("ii") 화음의 3도는 네 번째 박자의 약박에 위치하며, 첫 번째 박자에 반음계적 하행 이웃음(lower neighbor tone)이 연주된 후, 윤곽이 끊김 없이 이어져 으뜸화음의 3도로 해결된다.
+다음 두 예제에서는 한 음이 추가되었다. #chord("ii") 화음의 3도는 네 번째 박자의 약박에 위치하며, 첫 번째 박자에 반음계적 하위 이웃음(lower neighbor tone)이 연주된 후, 윤곽이 끊김 없이 이어져 으뜸화음의 3도로 해결된다.
 
 22. 부커 리틀
 #align(center)[#image("figures/fig_065.jpg", width: 56%)]
@@ -613,7 +613,7 @@ J. J. 존슨은 예시 26에서 이와 유사한 화성음으로의 도약을 �
 
 다음 예제들은 단순한 윤곽에 간단한 반음계적 요소를 추가하여 더 흥미롭게 만든 것이다.
 
-패츠 나바로는 윤곽의 첫 부분을 압축한 뒤, 두 번째 마디에서 #note("Eb")에 반음계적 상·하행 이웃음만을 추가하여 선율을 이어간다. 예시 21의 이와 유사한 반음계적 둘러싼음과 비교해 보라.
+패츠 나바로는 윤곽의 첫 부분을 압축한 뒤, 두 번째 마디에서 #note("Eb")에 반음계적 상·하위 이웃음만을 추가하여 선율을 이어간다. 예시 21의 이와 유사한 반음계적 둘러싼음과 비교해 보라.
 
 27. 패츠 나바로
 #align(center)[#image("figures/fig_070.jpg", width: 44%)]
@@ -623,12 +623,12 @@ J. J. 존슨은 예시 26에서 이와 유사한 화성음으로의 도약을 �
 28. 찰리 파커
 #align(center)[#image("figures/fig_071.jpg", width: 44%)]
 
-허버드는 돈꾸밈음으로 시작한 후 반음계적 이끎음으로 건너뛰고 나서 윤곽을 이어간다. 마지막에 하행 도약을 사용한다.
+허버드는 돈꾸밈음으로 시작한 후 반음계적 이끎음으로 건너뛰고 나서 윤곽을 이어간다. 마지막에 하향 도약을 사용한다.
 
 29. 프레디 허버드
 #align(center)[#image("figures/fig_072.jpg", width: 44%)]
 
-클라크 테리는 두 개의 반음계적 음을 사용한다. 반음계 경과음(#note("Gb"))과 #note("E")로 가는 반음계적 이끎음(#note("D#"))이 그것이다. 만약 테리가 이 두 음을 추가하지 않았다면, 윤곽은 단순하게 유지되었을 것이고, #note("Enat")은 첫 번째 박자에 나왔을 것이다. 그러나 이러한 음들을 추가함으로써 선율에 반음계적 흥미를 더할 뿐만 아니라 #chord("C7") 화음으로의 해결을 지연시켰다. 우리는 첫 번째 박자에 #note("E")가 나올 것으로 예상하지만, 대신 “잘못된” 음인 #note("F")가 나오고, 이어서 또 다른 “잘못된” 음인 #note("D#")이 나온 후 두 번째 박자에 #note("E")로 해결된다.
+클라크 테리는 두 개의 반음계적 음을 사용한다. 반음계적 경과음(#note("Gb"))과 #note("E")로 가는 반음계적 이끎음(#note("D#"))이 그것이다. 만약 테리가 이 두 음을 추가하지 않았다면, 윤곽은 단순하게 유지되었을 것이고, #note("Enat")은 첫 번째 박자에 나왔을 것이다. 그러나 이러한 음들을 추가함으로써 선율에 반음계적 흥미를 더할 뿐만 아니라 #chord("C7") 화음으로의 해결을 지연시켰다. 우리는 첫 번째 박자에 #note("E")가 나올 것으로 예상하지만, 대신 “잘못된” 음인 #note("F")가 나오고, 이어서 또 다른 “잘못된” 음인 #note("D#")이 나온 후 두 번째 박자에 #note("E")로 해결된다.
 
 30. 클라크 테리
 #align(center)[#image("figures/fig_073.jpg", width: 44%)]
@@ -640,7 +640,7 @@ J. J. 존슨은 예시 26에서 이와 유사한 화성음으로의 도약을 �
 
 == 단조 진행에서의 제1윤곽
 
-F장조에서 #prog("Ahalfdim7", "D7") 진행은 #chord("ii") 화음(#chord("Gm"))을 으뜸화음화한다. 이 예제가 실제로 #note("G")단조의 조성에 속하지는 않지만, 잠시 #note("G")단조로 전조하며 #min25 단조 진행에서 제1윤곽을 소개한다. 첫 번째 예시에서는 윤곽이 꾸밈 없이 단순하게 나타난다. 두 번째 예제에서는 윤곽이 단순하지만 #note("G")단조로 두 박자 일찍 해결되며, 세 음(#note("A")-#note("C")-#note("A"))을 통해 다시 딸림화음(#chord("D7"))으로 돌아간 후 세 번째 마디의 두 번째 박자에 G단조 화음의 3도(#note("Bb"))로 지연되어 해결된다. #note("A")-#note("C")-#note("A")는 #chord("D7") 화음(#note("G")단조의 딸림화음)의 일부로 볼 수 있으며, 동시에 #note("Bb")$$(#note("G")단조의 3도)의 상·하행 이웃음으로 해석할 수도 있다.
+F장조에서 #prog("Ahalfdim7", "D7") 진행은 #chord("ii") 화음(#chord("Gm"))을 으뜸화음화한다. 이 예제가 실제로 #note("G")단조의 조성에 속하지는 않지만, 잠시 #note("G")단조로 전조하며 #min25 단조 진행에서 제1윤곽을 소개한다. 첫 번째 예시에서는 윤곽이 꾸밈 없이 단순하게 나타난다. 두 번째 예제에서는 윤곽이 단순하지만 #note("G")단조로 두 박자 일찍 해결되며, 세 음(#note("A")-#note("C")-#note("A"))을 통해 다시 딸림화음(#chord("D7"))으로 돌아간 후 세 번째 마디의 두 번째 박자에 G단조 화음의 3도(#note("Bb"))로 지연되어 해결된다. #note("A")-#note("C")-#note("A")는 #chord("D7") 화음(#note("G")단조의 딸림화음)의 일부로 볼 수 있으며, 동시에 #note("Bb")$$(#note("G")단조의 3도)의 상·하위 이웃음으로 해석할 수도 있다.
 
 32. 찰리 파커
 #align(center)[#image("figures/fig_075.jpg", width: 32%)]
@@ -687,7 +687,7 @@ F장조에서 #prog("Ahalfdim7", "D7") 진행은 #chord("ii") 화음(#chord("Gm"
 42. 톰 하렐
 #align(center)[#image("figures/fig_085.jpg", width: 53%)]
 
-자비눌은 예상대로 #chord("iihalfdim7") 화음의 3도에서 윤곽을 시작하여 #chord("V7") 화음의 3도로 하강한 뒤, 네 번째 박자에 아르페지오 음을 사용하여 방향을 바꾼다. 마지막 두 음은 #note("Gnat")의 상행 및 하행 이웃음이다. 상행 이웃음은 반음계적 음이지만, C단조에서는 온음계적 음이다. 하행 이웃음은 G로 가는 반음계적 이끎음이다.
+자비눌은 예상대로 #chord("iihalfdim7") 화음의 3도에서 윤곽을 시작하여 #chord("V7") 화음의 3도로 하강한 뒤, 네 번째 박자에 아르페지오 음을 사용하여 방향을 바꾼다. 마지막 두 음은 #note("Gnat")의 상위 및 하위 이웃음이다. 상위 이웃음은 반음계적 음이지만, C단조에서는 온음계적 음이다. 하위 이웃음은 G로 가는 반음계적 이끎음이다.
 
 43. 조세프 자비눌
 #align(center)[#image("figures/fig_086.jpg", width: 44%)]
@@ -704,78 +704,79 @@ F장조에서 #prog("Ahalfdim7", "D7") 진행은 #chord("ii") 화음(#chord("Gm"
 
 === 일반적인 진행
 
-*Root movement down a fifth (or up a fourth):* The most typical root progression is downward in fifths or upwards in fourths. D minor wants to resolve to G7; G7 wants to resolve to C major. The most frequent progression to lead to a major tonic: ii - V - I; for minor: iiø - V - i. Most of the examples in this book are from a ii - V - I or iiø - V - i progression because of their prevalence in jazz and harmonic music.
+*근음이 5도 하강(또는 4도 상승)하는 진행:* 가장 일반적인 근음 진행은 5도 하강 또는 4도 상승 형태이다. #note("D")단조는 #chord("G7")로 해결되기를 원하며, #chord("G7")은 #chord("CM")로 해결되기를 원한다. 장조 으뜸화음으로 이어지는 가장 빈번한 진행은 #prog("ii", "V", "I")이고, 단조에서는 #prog("iihalfdim", "V", "I")이다. 이 책에 나오는 대부분의 예제는 재즈와 화성 음악에서 매우 자주 등장하기 때문에 #prog("ii", "V", "I") 또는 #prog("iihalfdim", "V", "I") 진행에 기반하고 있다.
 
-*Root movement down a third:* The second most common root movement. (C major to A minor.) Many improvisers will use an outline and treat the C major chord like an E minor, substituting the iii chord for the I chord.
+*근음이 3도 하강하는 진행:* 두 번째로 흔한 근음 진행이다. (#chord("CM")에서 #chord("Am")로 진행하는 경우) 많은 즉흥 연주자들은 윤곽을 사용할 때 #chord("CM") 화음을 #chord("Em")처럼 다루어 #chord("iii") 화음을 #chord("I") 화음으로 대체#sub[substitute]하여 연주한다.
 
 #align(center)[#image("figures/fig_089.jpg", width: 80%)]
 
-*Root movement in steps:* The least common root movement. (F major to G major.) many improvisers will use an outline and treat the F major chord like a D minor chord and progress to G, substituting the ii chord for the IV chord.
+*근음이 한 계단씩 이동하는 진행:* 가장 드물게 나타나는 근음 진행이다. (#chord("FM")에서 #chord("GM")로 진행하는 경우) 많은 즉흥 연주자들은 윤곽을 사용할 때 #chord("FM") 화음을 #chord("D-") 화음처럼 다루어 #chord("G")로 진행하며, #chord("IV") 화음을 #chord("ii") 화음으로 대체#sub[substitute]하여 연주한다.
 
 #align(center)[#image("figures/fig_090.jpg", width: 80%)]
 
-These outlines will work with many other progressions. Anytime the root movement is down in fifths any of theses outlines will work, regardless of the quality of the chord. The above examples include ii - V7 - I, iiø - V7 - i, iii - V7/ii - ii. Here is list of some progressions from traditional harmony where these outlines can function.
+이 윤곽들은 다른 많은 진행에서도 활용할 수 있다. 근음이 5도 하강하는 경우라면 화음의 성질#footnote[quality of a chord. 장화음, 단화음, 감화음, 반감화음 등의 코드의 주요한 특징을 말한다. (역주)]과 관계없이 언제든지 이 윤곽들을 사용할 수 있다. 위의 예시에는 #maj251, #min251, #maj362 진행이 포함되어 있다. 아래는 이러한 윤곽을 적용할 수 있는 전통적인 화성 진행의 일부 목록이다.
 
-In Major Keys:
+장조에서는 다음과 같다.
 
-#maj25, #prog("V7", "I"), #prog("I", "IV"), #prog("IV", "viihalfdim"), [#prog("viihalfdim", "iii")] , #prog("iii", "vi"), #prog("vi", "ii").
+#align(center)[
+  #maj25, #prog("V7", "I"), #prog("I", "IV"), #prog("IV", "viihalfdim"), [#prog("viihalfdim", "iii")] , #prog("iii", "vi"), #prog("vi", "ii")
+]
 
-In Minor Keys:
+단조에서는 다음과 같다.
 
-#prog("iihalfdim", "V"), #prog("V7", "i"), #prog("i", "iv"), #prog("VI", "iihalfdim"),
+#align(center)[
+  #prog("iihalfdim", "V"), #prog("V7", "i"), #prog("i", "iv"), #prog("VI", "iihalfdim")
+]
 
-Here are two extended examples of Outline No. 1. The first example is over the progression $chord("ii") - chord("V7") - chord("I") - chord("IV") - underbracket(chord("iihalfdim") - chord("V7") - chord("i"), chord("vi"))$
+다음은 제1윤곽의 두 확장된 예시이다. 첫 예시는 $display(chord("ii") - chord("V7") - chord("I") - chord("IV") - frac(chord("iihalfdim") - chord("V7") - chord("i"), chord("vi")))$ 진행 위에서 연주된다. 이 진행은 전통 음악 문헌 전반에서 찾아볼 수 있다. 재즈 레퍼토리 중에서는 _Autumn Leaves_, _Spain_, _Alice in Wonderland_, _A Day in the Life of a Fool_과 같은 곡에서 등장한다. 이는 주어진 조성 중심#sub[key center]에서 모든 화음을 순차적으로 순환하는 조성 중심 순환#sub[key center cycle] 진행이다. 이 진행은 장조의 #maj251 종지#sub[cadence], 단조인 나란한조의 #chord("VI") 화음에 해당하는 #chord("IV") 화음, 그리고 단조인 나란한조의 #min251 종지로 이루어진다. 바흐는 첫 음 이후 상위 이웃음을 사용하여 하강 음계를 중단시킨다. 이후 음계는 계속 하강하지만, 베이스 성부로 바뀐다. 소프라노 성부는 두 번째 화음의 3도에서 5도로 도약한 후 다시 순차적으로 진행한다. 두 번째 예제는 느린 블루스의 턴어라운드#sub[turn-around]에서 비롯된 일련의 딸림화음으로 구성되어 있다. #chord("G7") 화음 위의 #note("Bnat")에서 시작하여 모든 음이 순차적으로 하강하지만, 지속적으로 옥타브 이동으로 중단된다. 여러 연주자에게서 이러한 예제를 찾아볼 수 있지만, 이렇게 확장된 형태는 드물다.
 
-This progression can be found throughout traditional literature. Some occurrences in jazz repertoire include: _Autumn Leaves, Spain, Alice in Wonderland,_ and _A Day in the Life of a Fool._ It is a key center cycle because it cycles through all the chords in sequence in a given key center: the ii - V7 - I cadence in major, the IV chord, which is also the VI chord in the relative minor, and then the iiø - V7 - i cadence in the relative minor. Bach interrupts the descending scale with an upper neighbor tone after the first note. The scale continues to descend, but changes to the bass voice. The soprano leaps from the third to the fifth of the second chord before continuing the sequence. The second example is constructed on a series of dominant chords from a turn-around on slow blues. Starting with the B natural over the G7 chord, every note descends stepwise, interrupted consistently with octave displacement. There are several examples of this from many players, but rarely this extended.
-
-46. J. S. Bach: Prelude, English Suite in G Minor
+46. J. S. 바흐: 영국 모음곡 #note("G")단조 중 프렐류드
 #align(center)[#image("figures/fig_092.jpg", width: 80%)]
 
-47. Mike Stern:
+47. 마이크 스턴
 #align(center)[#image("figures/fig_093.jpg", width: 80%)]
 #align(center)[#image("figures/fig_094.jpg", width: 53%)]
 
 == 제1윤곽과 옥타브 이동
 
+즉흥 연주자는 흥미를 더하기 위해 예상하지 못한 음역에 음을 배치하는 경우가 많다. 이는 창의적 발상에 의한 것이거나, 관악기의 극단적인 음역에서 연주할 때 필요에 의해 이루어질 수 있다. 옥타브 이동과 도약에 대한 앞선 논의를 참조하라.
 
-Often to add interest, the improviser will place a pitch in another register than the listener expects. This may be the result of invention or necessity if the player is in the extreme ranges of the horn. Refer to the earlier discussion of octave displacement and leaps.
-
-The best example of 제1윤곽 with octave displacement is from Bach. It is many student's favorite example, and they are surprised to discover the source of such a jazzy sounding musical example. The descending line is broken by a leap after the downbeats, (third to nine leaps). Leaps rarely occur over the barline. Leaps usually occur after the downbeat like Ex.47.
+제1윤곽의 옥타브 이동을 활용한 최고의 예는 바흐에서 찾을 수 있다. 이는 많은 학생들이 좋아하는 예제이며, 이렇게 재즈적인 느낌의 음악 예제가 바흐에서 나왔다는 사실에 놀라곤 한다. 하강 선율은 강박 이후 도약(3도에서 9도로의 도약)으로 중단된다. 도약은 마디선을 넘어 발생하는 경우가 드물며, 예시 47과 같이 도약이 강박 이후에 나타나는 경우가 많다.
 
 48. J. S. 바흐: 3성부 신포니아 #note("D")장조
 #align(center)[#image("figures/fig_095.jpg", width: 41%)]
 
-This begins with the third of the ii chord and after a rest leaps to begins the rest of the descent.
+이 예시는 #chord("ii") 화음의 3도에서 시작하며, 쉼표 후 도약하여 나머지 하행 선율을 시작한다.
 
 49. 덱스터 고든
 #align(center)[#image("figures/fig_096.jpg", width: 41%)]
 
-Through the use of passing tones and arpeggio tones, the octave displacement is somewhat disguised in this example. Still, with all the elaboration, the third of each chord occurs squarely on the downbeat every time.
+이 예제에서는 경과음과 아르페지오 음이 사용되어서 옥타브 이동이 다소 감춰져 있다. 모든 꾸밈이 더해진 상태임에도 각 화음의 3도는 매번 정확히 강박에 위치한다.
 
 50. 블루 미첼
 #align(center)[#image("figures/fig_097.jpg", width: 56%)]
 
-There are some chromatic notes leading to the third of the ii chord. The G flat reaches up to the F natural, like ex.50 and then descends down the diatonic scale with one chromatic passing tone between the root and seventh of the V7 chord. The leap from G flat to F in the second measure echoes the filled in octave displacement from the previous measure.
+#chord("ii") 화음의 3도로 이어지는 몇 개의 반음계적 음이 있다. #note("Gb")은 예시 50과 같이 #note("Fnat")로 도약한 후, 온음계 음계를 따라 하강하며 #chord("V7") 화음의 근음과 7도 사이에 하나의 반음계적 경과음을 포함한다. 두 번째 마디에서 #note("Gb")에서 #note("F")로의 도약은 이전 마디에서 채워졌던 옥타브 이동을 상기시킨다.
 
 51. 클리포드 브라운
 #align(center)[#image("figures/fig_098.jpg", width: 59%)]
 
-There are two leaps in this example. The first breaks up the descending scale with an arpeggio (3-5-7-9) on the F7 chord. The arpeggio exhibits octave displacement by leaping down to the third before continuing up to the seventh and flatted ninth. The G flat descends to the third of B flat minor. The line leaps an octave before continuing the descent to the third of the E flat 7. The progression is in the key of A flat: V7/ii - ii - V7.
+이 예시에는 두 번의 도약이 있다. 첫 번째 도약은 #chord("F7")에서의 하행 아르페지오(3-5-7-9)를 끊는다. 이 아르페지오는 3도로 하향 도약한 후 7도와 플랫 9도로 계속 상승하는 옥타브 이동을 보여준다. #note("Gb")은 하강하여 #chord("Bbm") 화음의 3도로 해결된다. 선율은 옥타브 도약한 후 하강을 이어가며 #chord("Eb7") 화음의 3도에 도달한다. 이 진행은 #note("Ab")장조에서 #prog("V7/ii", "ii", "V7")진행이다.
 
 52. 클리포드 브라운
 #align(center)[#image("figures/fig_099.jpg", width: 53%)]
 
-Tom Harrell uses a similar arpeggio with octave displacement this time on the ii chord.
+톰 하렐은 옥타브 이동을 포함한 비슷한 아르페지오를 사용하지만, 이번에는 #chord("ii") 코드 위에서 나타난다.
 
 53. 톰 하렐
 #align(center)[#image("figures/fig_100.jpg", width: 56%)]
 
-The 3-5 downward leap is evident in the following example. Parker pivots again on the low F before arpeggiating the E flat 7 chord. The thirds are on the beat, except in the first measure which begins with an accented upper nieghbor tone. The sevenths occur within the last beat. The altered ninths on the dominant are borrowed from the parallel key of A flat minor (seven flats) or G sharp minor (Five sharps).
+다음 예시에서 3도에서 5도로의 하향 도약이 분명하게 나타난다. 파커는 낮은 #note("F")에서 다시 방향을 바꾸어 #chord("Eb7") 화음을 아르페지오로 연주한다. 3도는 박자에 맞게 위치하며, 첫 번째 마디에서는 강세가 있는 상위 이웃음으로 시작하는 것을 제외하고는 모두 강박에 놓여 있다. 7도는 마지막 박자에 나타난다. 딸림화음에서의 변형된 9도는 같은으뜸음조인 #note("Ab")단조(내림표 7개) 또는 #note("G#")단조(올림표 5개)에서 차용된 음이다.
 
 54. 찰리 파커
 #align(center)[#image("figures/fig_101.jpg", width: 56%)]
 
-The following use a similar arpeggio but include a lower neighbor tone to the fifth of the chord. The leap is even more dramatic jumping to a non-harmonic tone which resolves upwards continuing the arpeggio. In both examples, the thirds occur on the downbeats balancing the leaps and chromatic non-harmonic tones in the rest of the line.
+다음 예제들은 이와 유사한 아르페지오를 사용하지만, 화음의 5도에 대한 하위 이웃음을 포함하고 있다. 비화성음#sub[non-harmonic tone]으로의 도약은 더욱 극적이며, 이 비화성음은 상행으로 해결되어 아르페지오를 계속 이어간다. 두 예시 모두에서 3도는 강박에 위치하여 도약과 반음계적 비화성음이 포함된 나머지 선율과 균형을 이룬다.
 
 55. 프레디 허버드
 #align(center)[#image("figures/fig_102.jpg", width: 57%)]
@@ -783,7 +784,7 @@ The following use a similar arpeggio but include a lower neighbor tone to the fi
 56. 클리포드 브라운
 #align(center)[#image("figures/fig_103.jpg", width: 45%)]
 
-These two begin on the third of the ii chord, add a lower note before the next note in the outline, ascend up scale passages and arpeggios before the delayed resolution to the third of the V7 chord in the upper octave. Notice that the ascending scale breaks to avoid the upcoming target note. In ex.57, the scale that starts on beat three from C, goes to G, skips the A natural because it is the target note for the F7 chord. In ex.58, the F sharp is skipped because it is the target note for the D7 chord.
+이 두 예시는 #chord("ii") 화음의 3도에서 시작하여 윤곽의 다음 음 전에 하위 음을 추가하고, 음계 진행과 아르페지오로 상승한 후 높은 옥타브에서 #chord("V7") 화음의 3도로 지연되어 해결된다. 상행 음계가 다가오는 목표음을 피하기 위해 끊기는 점에 주목하라. 예시 57에서는 세 번째 박자에 #note("C")에서 시작하는 음계가 #note("G")로 이어지며, #chord("F7") 화음의 목표 음인 #note("Anat")을 건너뛴다. 예시 58에서는 #chord("D7") 화음의 목표음인 #note("F#")을 건너뛴다.
 
 57. 클리포드 브라운
 #align(center)[#image("figures/fig_104.jpg", width: 47%)]
@@ -791,17 +792,17 @@ These two begin on the third of the ii chord, add a lower note before the next n
 58. 클리포드 브라운
 #align(center)[#image("figures/fig_105.jpg", width: 55%)]
 
-Rollins in this example uses many lower chord tones with their chromatic leading tones. The top of the line clearly follows the outline, the lower part provides angularity, rhythmic interest, and a kind of counterpoint compound melody line.
+이 예제에서 롤린스는 많은 하위 화성음과 그것들의 반음계적 이끎음을 사용한다. 선율의 상부는 윤곽을 명확히 따르며, 하부는 각진 느낌을 더하고 리듬적 흥미를 제공하며 일종의 대위 복합 선율을 형성한다.
 
 59. 소니 롤린스
 #align(center)[#image("figures/fig_106.jpg", width: 55%)]
 
-The use of the chromatic lower neighbor tone to A natural and the last two measures resemble ex.59.
+#note("Anat")에 대한 반음계적 하위 이웃음과 마지막 두 마디의 진행이 예시 59와 유사하다.
 
 60. 소니 스팃
 #align(center)[#image("figures/fig_107.jpg", width: 55%)]
 
-Clifford resolves to the third of the V chord late and an octave higher than he first started.
+클리포드는 #chord("V") 화음의 3도로 지연되어 해결하며, 처음 시작했던 것보다 한 옥타브 높게 해결한다.
 
 61. 클리포드 브라운
 #align(center)[#image("figures/fig_108.jpg", width: 32%)]
@@ -2087,7 +2088,7 @@ Practice the key center cycle with a faster harmonic rhythm. In exercise 7, the 
 
 이 윤곽들을 연주에 통합하기 위해 가장 중요한 일 중 하나는 이를 스탠다드 곡과 진행에 적용하는 것이다. 이전 연습에서는 한 번에 하나의 조에서만 이를 사용하기 시작했다. 그러나 스탠다드 곡들은 가까운 조와 먼 조로 전조하며, 화성 리듬이 다양하게 나타난다. 다음 연습에서는 윤곽을 블루스, "Rhythm Changes", 그리고 스탠다드 재즈 곡의 진행에 적용한다. 먼저 곡의 전체 형식에 대해 단순한 윤곽만 연주하는 것으로 시작하라. 악기 없이 윤곽을 노래하고 화음 변화를 들어보도록 노력하라. 변화를 듣고 실제 음정을 부를 수 있다면, 진행 위에서 좋은 선율을 듣고 즉흥 연주할 준비가 더 잘될 것이다. 단순한 윤곽을 숙달한 후, 형식 위에서 즉흥 연주를 시도하라. 연습할 때는 한 번에 하나의 윤곽으로 자신을 제한하라. 각 윤곽에 대해 형식을 여러 번 연주하며 기본 선율을 꾸미는 연습을 하라. 세 가지 윤곽 모두를 숙달한 후에는 다양한 윤곽의 조합을 시도하라.
 
-== 스탠다드 진행 I: $bold(#note("Bb"))$ 블루스
+== 스탠다드 재즈 진행 I: $bold(#note("Bb"))$ 블루스
 
 1. 제1윤곽
 #align(center)[#image("figures/fig_396.jpg", width: 80%)]
@@ -2096,7 +2097,7 @@ Practice the key center cycle with a faster harmonic rhythm. In exercise 7, the 
 3. 제3윤곽
 #align(center)[#image("figures/fig_398.jpg", width: 80%)]
 
-== 스탠다드 진행 II: "Rhythm Changes"
+== 스탠다드 재즈 진행 II: "Rhythm Changes"
 
 === A 섹션
 
