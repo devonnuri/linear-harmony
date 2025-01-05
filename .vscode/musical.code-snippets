@@ -6,19 +6,19 @@
 	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. 
 	// Placeholders with the same ids are connected.
 	// Example:
-	"Note": {
+	"add-typst-note": {
 		"scope": "typst",
 		"prefix": "#nn",
 		"body": [
-			"#note(\"$1\")"
+			"#note(\"$TM_SELECTED_TEXT${1:}\")"
 		],
 		"description": "Display note from string"
 	},
-	"Chord": {
+	"add-typst-chord": {
 		"scope": "typst",
 		"prefix": "#cc",
 		"body": [
-			"#chord(\"$1\")"
+			"#chord(\"$TM_SELECTED_TEXT${1:}\")"
 		],
 		"description": "Display chord from string"
 	}
