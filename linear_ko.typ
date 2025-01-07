@@ -472,7 +472,6 @@ C.E.S.H.는 '정적 화성의 반음계적 발전(Chromatic Elaboration of Stati
 
 #chapter("제1윤곽", l: "chap4")
 
-
 == 간단한 형태의 제1윤곽
 
 다음은 이 패턴의 가장 단순한 형태 중 하나이다. #chord("ii") 화음(#note("G") 단3화음)의 3도에서 시작하여 #chord("V7") 화음(#chord("C7"))의 3도로 내려가고, 아르페지오를 따라 상승하면서 진행한다. 선율은 으뜸 화음의 3도에서 멈춘다.
@@ -509,7 +508,7 @@ C.E.S.H.는 '정적 화성의 반음계적 발전(Chromatic Elaboration of Stati
 
 허버드의 선율에서는 4분음표와 8분음표를 혼합하여 멈췄다 가는 느낌을 준다.
 
-6.  프레디 허버드
+6. 프레디 허버드
 #align(center)[#image("figures/fig_049.jpg", width: 41%)]
 
 스팃은 선율의 시작을 늘리고 끝을 줄인다.
@@ -809,19 +808,19 @@ F장조에서 #prog("Ahalfdim7", "D7") 진행은 #chord("ii") 화음(#chord("Gm"
 
 == 제1윤곽과 아르페지오 음
 
-Several of the previous examples were enhanced with the use of arpeggiated tones. In the following examples the target note is approached or followed by chord tones before moving through the outline.
+앞의 여러 예제는 아르페지오 음을 사용하여 더욱 풍부하게 만들어졌다. 다음 예시들에서는 윤곽을 따라 진행하기 전에 화성음을 통해 목표음에 접근하거나 목표음이 화성음에 뒤따른다.
 
-Dizzy uses several chromatic notes which hold off the resolution to the third of the V7 chord. Two neighbor tones precede the third of D7. Once the F sharp is sounded there is the leap to the root.
+디지는 여러 개의 반음계적 음을 사용하여 #chord("V7") 화음의 3도로의 해결을 지연시킨다. #chord("D7") 화음의 3도(#note("F#")) 앞에 두 개의 이웃음이 배치되어 있다. #note("F#")이 연주된 후에는 근음으로 도약이 이루어진다.
 
 62. 디지 길레스피
 #align(center)[#image("figures/fig_109.jpg", width: 44%)]
 
-Parker begins with the same arpeggio form as the previous example; interrupts the outline with only one extra note (the G) and continues arpeggiating the F7 flat 9 chord.
+파커는 앞의 예시와 동일한 아르페지오 형태로 시작하며, #note("G")음 하나만 추가하여 윤곽을 잠시 중단한 후 #chord("F7b9") 화음을 아르페지오로 이어간다.
 
 63. 찰리 파커
 #align(center)[#image("figures/fig_110.jpg", width: 53%)]
 
-The following Brown example has more chromatic embellishment than the preceding examples. The target tone is followed by a skip to a arpeggiated tone. The G natural is a chromatic passing tone. The target notes for B7 and E major are approached chromatically from below. In both cases, the line jumps from a chord tone to a chord tone before the chromatic tone leads to the target note. The ii and the V have their target notes on beat one. The I chord arrives on beat two. The seventh of B7 is the last note of the second measure and you would expect the G sharp on beat one. By adding the chromatic approach tones Brown created a delayed resolution.
+다음 브라운의 예시는 앞의 예시들보다 더 많은 반음계적 꾸밈음을 포함하고 있다. 목표음 이후 아르페지오 음으로 도약이 이루어진다. #note("Gnat")은 반음계적 경과음이다. #chord("B7")과 #chord("EM")의 목표 음은 아래에서 반음계적으로 접근한다. 두 경우 모두 반음계적 음에서 목표음으로 가기 전에 화성음에서 화성음으로 도약한다. #chord("ii") 화음과 #chord("V") 화음의 목표음은 첫 번째 박자에 위치하고, #chord("I") 화음은 두 번째 박자에 도달한다. #chord("B7") 화음의 7도는 두 번째 마디의 마지막 음이며, 첫 번째 박자에 #note("G#")이 나올 것으로 예상된다. 그러나 브라운은 반음계적 접근음을 추가하여 해결을 지연시키는 효과를 만들었다.
 
 64. 클리포드 브라운
 #align(center)[#image("figures/fig_111.jpg", width: 60%)]
@@ -2024,7 +2023,7 @@ Practice this progression with all of the outlines for practice connecting all c
 // #align(center)[#image("figures/fig_376.jpg", width: 23%)]
 
 #set math.equation(numbering: none)
-$ chord("ii")-chord("V7")-chord("I")-chord("IV")-underbracket(chord("iihalfdim")-chord("V7"), chord("vi"))-chord("vi") $
+$ chord("ii")-chord("V7")-chord("I")-chord("IV")-frac(chord("iihalfdim")-chord("V7"), chord("vi"))-chord("vi") $
 
 Practice these exercises slowly until comfortable, then speed them up. Practice goal should be to play them in all twelve major keys without hesitation or error at any tempo you begin.
 
@@ -2041,28 +2040,28 @@ Practice these exercises slowly until comfortable, then speed them up. Practice 
 
 The progression from exercise 7 is shown here with some elaboration. Can you determine what devices are used?
 
-+ 8.1 제1윤곽:
+1. 제1윤곽:
 #align(center)[#image("figures/fig_381.jpg", width: 80%)]
-+ 8.2 제2윤곽:
+2. 제2윤곽:
 #align(center)[#image("figures/fig_382.jpg", width: 80%)]
-+ 8.3 제3윤곽:
+3. 제3윤곽:
 #align(center)[#image("figures/fig_383.jpg", width: 80%)]
 
 == 턴어라운드 진행에서 윤곽 사용하기
 
 Practice the outlines over turnaround progressions.. Turnaround progressions occur as the last two measures of the blues and countless jazz and pop standard tunes, and as the basis for tunes like _I Got Rhythm_ and _Heart and Soul._ Practice these exercises in all twelve keys.
 
-1.  Typical turnaround progression (I - V/ii - ii - V etc., in the key of F major):
+1. Typical turnaround progression (I - V/ii - ii - V etc., in the key of F major):
 #align(center)[#image("figures/fig_384.jpg", width: 80%)]
-2.  Turnaround progression with more secondary dominants (I - V7/ii - V7/V - V7 - V/vi etc., in the key of F major):
+2. Turnaround progression with more secondary dominants (I - V7/ii - V7/V - V7 - V/vi etc., in the key of F major):
 #align(center)[#image("figures/fig_385.jpg", width: 80%)]
-3.  제1윤곽 in a cycle (iii - V/ii - ii - V - I - [tritone substitute dominant of iii] in the key of C major):
+3. 제1윤곽 in a cycle (iii - V/ii - ii - V - I - [tritone substitute dominant of iii] in the key of C major):
 #align(center)[#image("figures/fig_386.jpg", width: 80%)]
-4.  제2윤곽 in a cycle (iii - V/ii - ii - V - I - [tritone substitute dominant of iii] in the key of C major):
+4. 제2윤곽 in a cycle (iii - V/ii - ii - V - I - [tritone substitute dominant of iii] in the key of C major):
 #align(center)[#image("figures/fig_387.jpg", width: 80%)]
-5.  제3윤곽 in a cycle (iii - V/ii - ii - V - I - [tritone substitute dominant of iii] in the key of C major):
+5. 제3윤곽 in a cycle (iii - V/ii - ii - V - I - [tritone substitute dominant of iii] in the key of C major):
 #align(center)[#image("figures/fig_388.jpg", width: 80%)]
-6.  The longer harmonic rhythm makes it possible to embellish this cycle with chromatic leading tones. The progression is iii - V/ii - ii - V in the key of C major:
+6. The longer harmonic rhythm makes it possible to embellish this cycle with chromatic leading tones. The progression is iii - V/ii - ii - V in the key of C major:
 #align(center)[#image("figures/fig_389.jpg", width: 80%)]
 
 == 조성 중심 순환에서의 윤곽
@@ -2072,17 +2071,17 @@ Practice the outlines over turnaround progressions.. Turnaround progressions occ
 Practice the key center cycle with a faster harmonic rhythm. In exercise 7, the chords changed every measure; here they change every two beats.
 
 1. 제1윤곽 through key center cycle:
-#align(center)[#image("figures/fig_390.jpg", width: 80%)]
+  #align(center)[#image("figures/fig_390.jpg", width: 80%)]
 2. 제1윤곽 variation through cycle:
-#align(center)[#image("figures/fig_391.jpg", width: 80%)]
+  #align(center)[#image("figures/fig_391.jpg", width: 80%)]
 3. 제2윤곽 through cycle:
-#align(center)[#image("figures/fig_392.jpg", width: 80%)]
+  #align(center)[#image("figures/fig_392.jpg", width: 80%)]
 4. 제2윤곽 variation through cycle:
-#align(center)[#image("figures/fig_393.jpg", width: 80%)]
+  #align(center)[#image("figures/fig_393.jpg", width: 80%)]
 5. 제3윤곽 through cycle:
-#align(center)[#image("figures/fig_394.jpg", width: 80%)]
+  #align(center)[#image("figures/fig_394.jpg", width: 80%)]
 6. 제3윤곽 variation through cycle:
-#align(center)[#image("figures/fig_395.jpg", width: 80%)]
+  #align(center)[#image("figures/fig_395.jpg", width: 80%)]
 
 === 스탠다드 재즈 진행에서 윤곽 적용하기
 
@@ -2134,91 +2133,91 @@ Practice the key center cycle with a faster harmonic rhythm. In exercise 7, the 
 == 스탠다드 재즈 진행 III: _Are You All the Outlines_#footnote[스탠다드 재즈 곡 "All the Things You Are"의 제목을 변형한 언어유희 (역주)]
 
 #fb[
-  1. 제1윤곽:
+  1. 제1윤곽
   #align(center)[#image("figures/fig_412.jpg", width: 80%)]
 ]
 
 #fb[
-  2. 제2윤곽 beginning in m.1:
+  2. 제2윤곽 (첫 번쨰 마디에서 시작)
   #align(center)[#image("figures/fig_413.jpg", width: 80%)]
 ]
 
 #fb[
-  3. 제2윤곽 beginning in m.2:
+  3. 제2윤곽 (두 번쨰 마디에서 시작)
   #align(center)[#image("figures/fig_414.jpg", width: 80%)]
 ]
 
 #fb[
-  4. 제3윤곽 beginning in m.1:
+  4. 제3윤곽 (첫 번쨰 마디에서 시작)
   #align(center)[#image("figures/fig_415.jpg", width: 80%)]
 ]
 
 #fb[
-  5. 제3윤곽 beginning in m.2:
+  5. 제3윤곽 (두 번쨰 마디에서 시작)
   #align(center)[#image("figures/fig_416.jpg", width: 80%)]
 ]
 
 == 스탠다드 재즈 진행 IV: _Outlines by Starlight_#footnote[스탠다드 재즈 곡 "Stella by Starlight"의 제목을 변형한 언어유희 (역주)]
 
 #fb[
-  1. 제1윤곽:
+  1. 제1윤곽
   #align(center)[#image("figures/fig_417.jpg", width: 80%)]
 ]
 
 #fb[
-  2. 제2윤곽 beginning in m.1:
+  2. 제2윤곽 (첫 번쨰 마디에서 시작)
   #align(center)[#image("figures/fig_418.jpg", width: 80%)]
 ]
 
 #fb[
-  3. 제2윤곽 beginning in m.2:
+  3. 제2윤곽 (두 번쨰 마디에서 시작)
   #align(center)[#image("figures/fig_419.jpg", width: 80%)]
 ]
 
 #fb[
-  4. 제3윤곽 beginning in m.1:
+  4. 제3윤곽 (첫 번쨰 마디에서 시작)
   #align(center)[#image("figures/fig_420.jpg", width: 80%)]
 ]
 
 #fb[
-  5. 제3윤곽 beginning in m.2:
+  5. 제3윤곽 (두 번쨰 마디에서 시작)
   #align(center)[#image("figures/fig_421.jpg", width: 80%)]
 ]
 
 == 스탠다드 재즈 진행 V: $bold(chord("ii")-chord("V"))$로 대체한 $bold(note("F"))$ 블루스
 
-1. 제1윤곽:
+1. 제1윤곽
 #align(center)[#image("figures/fig_422.jpg", width: 80%)]
 
-2. 제2윤곽 beginning in first half of measure:
+2. 제2윤곽 (첫 번째 반마디에서 시작)
 #align(center)[#image("figures/fig_423.jpg", width: 80%)]
 
-3. 제2윤곽 beginning in second half of measure:
+3. 제2윤곽 (두 번째 반마디에서 시작)
 #align(center)[#image("figures/fig_424.jpg", width: 80%)]
 
-4. 제3윤곽 beginning in first half of measure:
+4. 제3윤곽 (첫 번째 반마디에서 시작)
 #align(center)[#image("figures/fig_425.jpg", width: 80%)]
 
-5. 제3윤곽 beginning in second half of measure:
+5. 제3윤곽 (두 번째 반마디에서 시작)
 #align(center)[#image("figures/fig_426.jpg", width: 80%)]
 
 == 스탠다드 재즈 진행 VI.: _Big Strides with Outlines_#footnote[스탠다드 재즈 곡 "Giant Step"의 제목을 변형한 언어유희 (역주)]
 
 #set enum(numbering: n => [16.#n.])
 
-1. 제1윤곽:
+1. 제1윤곽
 #align(center)[#image("figures/fig_427.jpg", width: 80%)]
 
-2. 제2윤곽:
+2. 제2윤곽
 #align(center)[#image("figures/fig_428.jpg", width: 80%)]
 
-3. 제2윤곽:
+3. 제2윤곽
 #align(center)[#image("figures/fig_429.jpg", width: 80%)]
 
-4. 제3윤곽:
+4. 제3윤곽
 #align(center)[#image("figures/fig_430.jpg", width: 80%)]
 
-5. 제3윤곽:
+5. 제3윤곽
 #align(center)[#image("figures/fig_431.jpg", width: 80%)]
 
 == 윤곽 인식하기
