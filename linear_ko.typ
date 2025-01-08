@@ -23,6 +23,8 @@
 #let sans(body) = text(font: ("Helvetica", "KoPubDotum"),body)
 
 #let note(notestr) = {
+  set text(fill: cmyk(0%, 100%, 0%, 20%))
+
   let pat = regex("([A-Ga-g]|[IViv]+)(#|b|nat)?")
   let match = notestr.match(pat)
   assert(match != none, message: "Invalid note string")
@@ -36,6 +38,8 @@
 
 
 #let chord(chordstr, jazz: true) = {
+  set text(fill: cmyk(0%, 100%, 0%, 20%))
+
   let pat = regex("((?:[A-G]|[IViv]+)(?:#|b)?)(M|m|dim|aug|halfdim|sus2|sus4|sus)?((?:[#b]?\d+)*)?(?:\/((?:[A-G]|[IViv]+)(?:#|b)?))?(?:\|(.+))?")
   let match = chordstr.match(pat)
   assert(match != none, message: "Invalid chord string")
@@ -70,6 +74,8 @@
 }
 
 #let prog(..chords, jazz: true) = {
+  set text(fill: cmyk(0%, 100%, 0%, 20%))
+
   chords.pos().map(ch => chord(ch, jazz: jazz)).join($thin-thin$)
 }
 
@@ -82,6 +88,7 @@
 
 // #set text(font: ("Times New Roman", "KoPubBatang"), lang: "ko")
 #set text(font: ("Tex Gyre Termes", "KoPubBatang"), lang: "ko")
+// #show math.equation: set text(font: "Euler Math")
 #set outline(title: [목차])
 
 #show: book.with(
@@ -169,7 +176,7 @@
 
 === 전조와 부딸림화음
 
-바로크 시대부터 현대의 팝과 재즈 스타일에 이르기까지의 조화로운 음악에서 전조는 거의 항상 한 계단 위나 아래로만 이동하는 경우가 많다. 예를 들어 곡이 #note("C")장조에 있다면 1개의 올림표(G장조/E단조) 또는 1개의 내림표(F장조/D단조)으로 전조하거나, 나란한조인 단조#sub[relative minor]로 전조할 가능성이 높다. 새로운 조를 으뜸음화하기 위해 딸림화음이 사용되는데, 이러한 화음들을 부딸림화음#sub[secondary dominants]이라고 한다. 이는 새로운 조를 가리키는 역할을 하기 때문이다. 이러한 부딸림화음 위에서 즉흥 연주를 하려면 새로운 조의 음들을 고려해야 한다. 예를 들어, C장조에서 다음과 같은 부딸림화음과 그것이 가리키는 조, 그리고 필수 임시표#sub[accidentals]를 볼 수 있다. 이를 완전히 이해하기 위해 모든 조에 대한 부딸림화음을 목록으로 만들어 보아야 한다.
+바로크 시대부터 현대의 팝과 재즈 스타일에 이르기까지의 조화로운 음악에서 전조는 거의 항상 온음 한 개 위나 아래로만 이동하는 경우가 많다. 예를 들어 곡이 #note("C")장조에 있다면 1개의 올림표(G장조/E단조) 또는 1개의 내림표(F장조/D단조)으로 전조하거나, 나란한조인 단조#sub[relative minor]로 전조할 가능성이 높다. 새로운 조를 으뜸음화하기 위해 딸림화음이 사용되는데, 이러한 화음들을 부딸림화음#sub[secondary dominants]이라고 한다. 이는 새로운 조를 가리키는 역할을 하기 때문이다. 이러한 부딸림화음 위에서 즉흥 연주를 하려면 새로운 조의 음들을 고려해야 한다. 예를 들어, C장조에서 다음과 같은 부딸림화음과 그것이 가리키는 조, 그리고 필수 임시표#sub[accidentals]를 볼 수 있다. 이를 완전히 이해하기 위해 모든 조에 대한 부딸림화음을 목록으로 만들어 보아야 한다.
 
 부딸림화음, 또는 차용화음#sub[borrowed chords]는 그 기능과의 관계에서 설명된다. 예를 들어, #note("C")장조에서 #note("D")단조의 딸림화음인 #chord("A7") 화음이 진행에 나타난다면, 이는 #chord("V7/ii")로 표시된다. 이 화음은 #note("C")장조에서 #chord("VI") 화음으로 나타나지 않는다. 왜냐하면 #note("C")장조의 #chord("vi") 화음은 단조 화음이기 때문이다. #chord("A7")은 #note("D")단조의 딸림화음이고, #note("D")단조는 주어진 #note("C")장조에서 #chord("ii") 화음에 해당하므로, #chord("A7")은 #chord("ii") 화음의 딸림화음, 즉 #chord("V7/ii")이다.
 
@@ -474,7 +481,7 @@ C.E.S.H.는 '정적 화성의 반음계적 발전(Chromatic Elaboration of Stati
 
 == 간단한 형태의 제1윤곽
 
-다음은 이 패턴의 가장 단순한 형태 중 하나이다. #chord("ii") 화음(#note("G") 단3화음)의 3도에서 시작하여 #chord("V7") 화음(#chord("C7"))의 3도로 내려가고, 아르페지오를 따라 상승하면서 진행한다. 선율은 으뜸 화음의 3도에서 멈춘다.
+다음은 이 패턴의 가장 단순한 형태 중 하나이다. #chord("ii") 화음(#chord("Gm"))의 3도에서 시작하여 #chord("V7") 화음(#chord("C7"))의 3도로 내려가고, 아르페지오를 따라 상승하면서 진행한다. 선율은 으뜸 화음의 3도에서 멈춘다.
 
 1. 찰리 파커
 
@@ -575,7 +582,7 @@ C.E.S.H.는 '정적 화성의 반음계적 발전(Chromatic Elaboration of Stati
 18. 찰리 파커
 #align(center)[#image("figures/fig_061.jpg", width: 56%)]
 
-다음 세 가지 예제는 많은 픽업음으로 시작한다. 윤곽이 시작되기 전에 선율 재료가 추가되었다. 하렐은 #chord("ii") 화음의 근음에서 시작하여 상행 음계를 사용한 후 11도까지 아르페지오로 연주하고, 단순한 하행 음계 윤곽을 통해 으뜸화음의 3도로 이어진다. 허버드는 매우 유사한 방식으로 하렐이 사용한 동일한 재료의 상부를 사용하여 같은 방식으로 하행한다. 예시 21에서 하렐은 #chord("ii") 화음의 3도에서 시작하지만 하강하지 않고 7도로 상승한다. 그는 세 번째 박자의 #note("D")로 #chord("V7") 화음에 도달하는 것으로 보인다. 단순한 패턴은 두 번째 마디에서 #note("Ab")으로 시작한다. 윤곽은 #note("Bb")을 반음계 이웃음 #note("A")와 #note("Bnat")로 둘러싸고, 돈꾸밈음을 추가하여 확장되며, 마지막으로 으뜸 화음의 3도인 G에 도달한다.
+다음 세 가지 예제는 많은 픽업음으로 시작한다. 윤곽이 시작되기 전에 선율 재료가 추가되었다. 하렐은 #chord("ii") 화음의 근음에서 시작하여 상행 음계를 사용한 후 11도까지 아르페지오로 연주하고, 단순한 하행 음계 윤곽을 통해 으뜸화음의 3도로 이어진다. 허버드는 매우 유사한 방식으로 하렐이 사용한 동일한 재료의 상부를 사용하여 같은 방식으로 하행한다. 예시 21에서 하렐은 #chord("ii") 화음의 3도에서 시작하지만 하강하지 않고 7도로 상승한다. 그는 세 번째 박자의 #note("D")로 #chord("V7") 화음에 도달하는 것으로 보인다. 단순한 패턴은 두 번째 마디에서 #note("Ab")으로 시작한다. 윤곽은 #note("Bb")을 반음계적 이웃음 #note("A")와 #note("Bnat")로 둘러싸고, 돈꾸밈음을 추가하여 확장되며, 마지막으로 으뜸 화음의 3도인 G에 도달한다.
 
 19. 톰 하렐
 #align(center)[#image("figures/fig_062.jpg", width: 63%)]
@@ -605,7 +612,7 @@ C.E.S.H.는 '정적 화성의 반음계적 발전(Chromatic Elaboration of Stati
 #align(center)[#image("figures/fig_068.jpg", width: 56%)]
 
 J. J. 존슨은 예시 26에서 이와 유사한 화성음으로의 도약을 사용한다. 이 진행에서 #chord("Am7") 
-(#chord("iii"))은 #chord("F") (#chord("I"))를 대체한다. #chord("D7")은 #chord("ii")의 #chord("V7")이다. #chord("G-")를 으뜸화음화하기 위해 필요한 필수 임시표(#note("F#")과 #note("Eb"))은 #chord("D7") 화음의 3-5-7-9 아르페지오에 있다.
+(#chord("iii"))은 #chord("F") (#chord("I"))를 대체한다. #chord("D7")은 #chord("ii")의 #chord("V7")이다. #chord("Gm")를 으뜸화음화하기 위해 필요한 필수 임시표(#note("F#")과 #note("Eb"))은 #chord("D7") 화음의 3-5-7-9 아르페지오에 있다.
 
 26. J. J. 존슨
 #align(center)[#image("figures/fig_069.jpg", width: 44%)]
@@ -709,19 +716,19 @@ F장조에서 #prog("Ahalfdim7", "D7") 진행은 #chord("ii") 화음(#chord("Gm"
 
 #align(center)[#image("figures/fig_089.jpg", width: 80%)]
 
-*근음이 한 계단씩 이동하는 진행:* 가장 드물게 나타나는 근음 진행이다. (#chord("FM")에서 #chord("GM")로 진행하는 경우) 많은 즉흥 연주자들은 윤곽을 사용할 때 #chord("FM") 화음을 #chord("D-") 화음처럼 다루어 #chord("G")로 진행하며, #chord("IV") 화음을 #chord("ii") 화음으로 대체#sub[substitute]하여 연주한다.
+*근음이 온음 1개씩 이동하는 진행:* 가장 드물게 나타나는 근음 진행이다. (#chord("FM")에서 #chord("GM")로 진행하는 경우) 많은 즉흥 연주자들은 윤곽을 사용할 때 #chord("FM") 화음을 #chord("Dm") 화음처럼 다루어 #chord("G")로 진행하며, #chord("IV") 화음을 #chord("ii") 화음으로 대체하여 연주한다.
 
 #align(center)[#image("figures/fig_090.jpg", width: 80%)]
 
 이 윤곽들은 다른 많은 진행에서도 활용할 수 있다. 근음이 5도 하강하는 경우라면 화음의 성질#footnote[quality of a chord. 장화음, 단화음, 감화음, 반감화음 등의 코드의 주요한 특징을 말한다. (역주)]과 관계없이 언제든지 이 윤곽들을 사용할 수 있다. 위의 예시에는 #maj251, #min251, #maj362 진행이 포함되어 있다. 아래는 이러한 윤곽을 적용할 수 있는 전통적인 화성 진행의 일부 목록이다.
 
-장조에서는 다음과 같다.
+장조:
 
 #align(center)[
   #maj25, #prog("V7", "I"), #prog("I", "IV"), #prog("IV", "viihalfdim"), [#prog("viihalfdim", "iii")] , #prog("iii", "vi"), #prog("vi", "ii")
 ]
 
-단조에서는 다음과 같다.
+단조:
 
 #align(center)[
   #prog("iihalfdim", "V"), #prog("V7", "i"), #prog("i", "iv"), #prog("VI", "iihalfdim")
@@ -783,7 +790,7 @@ F장조에서 #prog("Ahalfdim7", "D7") 진행은 #chord("ii") 화음(#chord("Gm"
 56. 클리포드 브라운
 #align(center)[#image("figures/fig_103.jpg", width: 45%)]
 
-이 두 예시는 #chord("ii") 화음의 3도에서 시작하여 윤곽의 다음 음 전에 하위 음을 추가하고, 음계 진행과 아르페지오로 상승한 후 높은 옥타브에서 #chord("V7") 화음의 3도로 지연되어 해결된다. 상행 음계가 다가오는 목표음을 피하기 위해 끊기는 점에 주목하라. 예시 57에서는 세 번째 박자에 #note("C")에서 시작하는 음계가 #note("G")로 이어지며, #chord("F7") 화음의 목표 음인 #note("Anat")을 건너뛴다. 예시 58에서는 #chord("D7") 화음의 목표음인 #note("F#")을 건너뛴다.
+이 두 예시는 #chord("ii") 화음의 3도에서 시작하여 윤곽의 다음 음 전에 하위 음을 추가하고, 음계 진행과 아르페지오로 상승한 후 높은 옥타브에서 #chord("V7") 화음의 3도로 지연되어 해결된다. 상행 음계가 다가오는 목표음을 피하기 위해 끊기는 점에 주목하라. 예시 57에서는 세 번째 박자에 #note("C")에서 시작하는 음계가 #note("G")로 이어지며, #chord("F7") 화음의 목표음인 #note("Anat")을 건너뛴다. 예시 58에서는 #chord("D7") 화음의 목표음인 #note("F#")을 건너뛴다.
 
 57. 클리포드 브라운
 #align(center)[#image("figures/fig_104.jpg", width: 47%)]
@@ -820,14 +827,14 @@ F장조에서 #prog("Ahalfdim7", "D7") 진행은 #chord("ii") 화음(#chord("Gm"
 63. 찰리 파커
 #align(center)[#image("figures/fig_110.jpg", width: 53%)]
 
-다음 브라운의 예시는 앞의 예시들보다 더 많은 반음계적 꾸밈음을 포함하고 있다. 목표음 이후 아르페지오 음으로 도약이 이루어진다. #note("Gnat")은 반음계적 경과음이다. #chord("B7")과 #chord("EM")의 목표 음은 아래에서 반음계적으로 접근한다. 두 경우 모두 반음계적 음에서 목표음으로 가기 전에 화성음에서 화성음으로 도약한다. #chord("ii") 화음과 #chord("V") 화음의 목표음은 첫 번째 박자에 위치하고, #chord("I") 화음은 두 번째 박자에 도달한다. #chord("B7") 화음의 7도는 두 번째 마디의 마지막 음이며, 첫 번째 박자에 #note("G#")이 나올 것으로 예상된다. 그러나 브라운은 반음계적 접근음을 추가하여 해결을 지연시키는 효과를 만들었다.
+다음 브라운의 예시는 앞의 예시들보다 더 많은 반음계적 꾸밈음을 포함하고 있다. 목표음 이후 아르페지오 음으로 도약이 이루어진다. #note("Gnat")은 반음계적 경과음이다. #chord("B7")과 #chord("EM")의 목표음은 아래에서 반음계적으로 접근한다. 두 경우 모두 반음계적 음에서 목표음으로 가기 전에 화성음에서 화성음으로 도약한다. #chord("ii") 화음과 #chord("V") 화음의 목표음은 첫 번째 박자에 위치하고, #chord("I") 화음은 두 번째 박자에 도달한다. #chord("B7") 화음의 7도는 두 번째 마디의 마지막 음이며, 첫 번째 박자에 #note("G#")이 나올 것으로 예상된다. 그러나 브라운은 반음계적 접근음을 추가하여 해결을 지연시키는 효과를 만들었다.
 
 64. 클리포드 브라운
 #align(center)[#image("figures/fig_111.jpg", width: 60%)]
 
 == 제1윤곽과 반음계적 접근음
 
-Several examples were found that have a basic descending scale outline, but were preceded with chromatic pick-up notes beginning a whole step above the target note. Starting a whole step above the target note means the chromatic note will be the major third over the ii chord. It is never heard as a major third; it is heard as a passing tone between two diatonic scale tones. Here are three simple examples: the first in major; the second in minor; the third, in diminution, tonicizing the ii chord in F major.
+다음은 기본적인 하행 음계 윤곽을 가진 여러 예시로, 목표음보다 온음 위에서 시작하는 반음계적 픽업음이 앞에 배치된 형태이다. 목표음보다 온음 위에서 시작하면 반음계적 음이 #chord("ii") 화음 위에서 장3도가 되지만, 장3도로 들리지는 않는다. 대신 두 개의 온음계 음 사이의 경과음으로 들린다. 다음은 세 가지 간단한 예시이다. 첫 번째는 장조에서, 두 번째는 단조에서, 세 번째는 축소된 형태로 #note("F")장조에서 #chord("ii") 화음을 으뜸음화하는 예시이다.
 
 65. 부커 리틀
 #align(center)[#image("figures/fig_112.jpg", width: 60%)]
@@ -838,22 +845,22 @@ Several examples were found that have a basic descending scale outline, but were
 67. 찰리 파커
 #align(center)[#image("figures/fig_114.jpg", width: 32%)]
 
-Hubbard plays the descending outline to the B flat, He then inserts three notes (an arpeggio with a passing tone) making the register shift and continues the descent with A and G.
+허버드는 #note("Bb")까지 하강하는 윤곽을 연주한 후, 세 개의 음(경과음을 포함한 아르페지오)을 삽입하여 음역을 옮긴 뒤 #note("A")와 #note("G")로 하강을 이어간다.
 
 68. 프레디 허버드
 #align(center)[#image("figures/fig_115.jpg", width: 56%)]
 
-Byrd uses two outlines over an extended progression in A flat: iii - V7/ii - ii - V. He begins with the chromatic approach tones and plays the simple outline over the iii - V7/ii. The second outline begins immediately with a octave displacement before continuing.
+버드는 #note("Ab")장조의 확장된 진행(#prog("iii", "V7/ii", "ii", "V")) 위에서 두 개의 윤곽을 사용한다. 그는 반음계적 접근음으로 시작한 후 #prog("iii", "V7/ii") 위에서 단순한 윤곽을 연주한다. 두 번째 윤곽은 옥타브 이동으로 바로 시작한 후 계속 진행된다.
 
 69. 도널드 버드
 #align(center)[#image("figures/fig_116.jpg", width: 68%)]
 
-Brown uses an arpeggiated tone to extend the outline on the third and fourth beats making the target note arrive on time and the line have more sawtooth angularity.
+브라운은 아르페지오 음을 사용하여 세 번째와 네 번째 박자에 윤곽을 확장함으로써 목표음이 제시간에 도달하도록 하고, 선율에 더 톱니형의 각진 느낌을 부여한다.
 
 70. 클리포드 브라운
 #align(center)[#image("figures/fig_117.jpg", width: 50%)]
 
-Stitt and Harrell approach the first target note from above, the second target from below.
+스팃과 하렐은 첫 번째 목표음에는 위로부터 접근하고, 두 번째 목표음에는 아래에서 접근한다.
 
 71. 소니 스팃
 #align(center)[#image("figures/fig_118.jpg", width: 50%)]
@@ -861,12 +868,12 @@ Stitt and Harrell approach the first target note from above, the second target f
 72. 톰 하렐
 #align(center)[#image("figures/fig_119.jpg", width: 56%)]
 
-Brown begins with chromatic approach notes, circles the G with neighbor tones, uses sawtooth shapes similarly to ex.70 to delay the target note for C7.
+브라운은 반음계적 접근음으로 시작하여 #note("G")를 이웃음으로 둘러싸고, 예시 70과 유사한 톱니형 선율을 사용하여 #chord("C7") 화음의 목표음 도달을 지연시킨다.
 
 73. 클리포드 브라운
 #align(center)[#image("figures/fig_120.jpg", width: 56%)]
 
-The next two involve different rhythmic approaches and several chromatic tones; borrowed tones, and chromatic neighbor tones.
+다음 두 예시는 서로 다른 리듬적 접근과 여러 반음계적 음을 포함한다. 여기에는 차용음과 반음계적 이웃음이 사용된다.
 
 74. 도널드 버드
 #align(center)[#image("figures/fig_121.jpg", width: 57%)]
@@ -874,12 +881,12 @@ The next two involve different rhythmic approaches and several chromatic tones; 
 75. 리 모건
 #align(center)[#image("figures/fig_122.jpg", width: 57%)]
 
-Cannonball seems to get to the C7 on beat three and the F on the up beat of four, then returns to continue the descent to A. The last A anticipates the F chord by two beats.
+캐넌볼은 세 번째 박자에 #chord("C7") 화음에 도달하고 네 번째 박자의 약박에 #note("F")로 도약한 후, 다시 돌아와 #note("A")로 하강을 이어간다. 마지막 #note("A")는 #chord("F") 화음을 두 박자 앞서 예고한다.
 
 76. 캐넌볼 애덜리
 #align(center)[#image("figures/fig_123.jpg", width: 56%)]
 
-These two are straight forward. Clark Terry manages to get in two outlines in different registers.
+다음 두 예시는 비교적 단순하다. 클라크 테리는 서로 다른 음역에서 두 개의 윤곽을 사용하여 연주한다.
 
 77. 톰 하렐
 #align(center)[#image("figures/fig_124.jpg", width: 44%)]
@@ -887,14 +894,14 @@ These two are straight forward. Clark Terry manages to get in two outlines in di
 78. 클라크 테리
 #align(center)[#image("figures/fig_125.jpg", width: 60%)]
 
-There are so many chromatic approaches it may be difficult to see and hear the simple outline at the core of these examples from Clifford Brown and Kenny Barron. In Brown's first complete, measure, all of the downbeats suggest a stepwise line. The line continues on beat one of the second measure, is interrupted by two eighth notes and continues to the B natural. Since Barron is playing in sixteenth subdivisions the diatonic outline notes fall on the eighth note downbeats.
+클리포드 브라운과 케니 배런의 예시에서 반음계적 접근이 너무 많아 단순한 윤곽이 보이거나 들리기 어려울 수 있다. 브라운의 첫 번째 마디에서 모든 강박은 순차적 선율을 암시한다. 선율은 두 번째 마디의 첫 번째 박자에서 계속되다가 두 개의 8분음표로 중단된 후 #note("Bnat")으로 이어진다. 배런의 경우 16분음표로 세분화된 리듬을 사용하기 때문에 온음계 윤곽의 음은 8분음표의 강박에 위치한다.
 
 79. 클리포드 브라운
 #align(center)[#image("figures/fig_126.jpg", width: 59%)]
 80. 케니 배런
 #align(center)[#image("figures/fig_127.jpg", width: 41%)]
 
-Here are two more examples from Brown.
+다음은 브라운의 또 다른 두 개의 예시이다.
 
 81. 클리포드 브라운
 #align(center)[#image("figures/fig_128.jpg", width: 44%)]
@@ -902,7 +909,7 @@ Here are two more examples from Brown.
 82. 클리포드 브라운
 #align(center)[#image("figures/fig_129.jpg", width: 68%)]
 
-Leaps make these next two interesting. Evans leaps from the third to the flat nine of the V7 chord; Cannonball from the third to the ninth of the ii chord.
+도약은 다음 두 예시를 흥미롭게 만든다. 에반스는 #chord("V7") 화음의 $flat 9$으로 도약하며, 캐넌볼은 #chord("ii") 화음의 3도에서 9도로 도약한다.
 
 83. 빌 에반스
 #align(center)[#image("figures/fig_130.jpg", width: 68%)]
@@ -910,12 +917,12 @@ Leaps make these next two interesting. Evans leaps from the third to the flat ni
 84. 캐넌볼 애덜리
 #align(center)[#image("figures/fig_131.jpg", width: 44%)]
 
-Harrell precedes the chromatic approaches with an arpeggio (5-7-9-11) of the ii chord. These extended arpeggiated notes could be viewed as a superimposed vi chord preceding the ii chord; or the 9th and 11th could be described as upper and lower neighbor tones to the third of the ii chord.
+하렐은 반음계적 접근 전에 #chord("ii") 화음의 아르페지오(5-7-9-11)를 사용한다. 이러한 확장된 아르페지오 음은 #chord("ii") 화음에 앞서 중첩된 #chord("vi") 화음으로 해석될 수 있으며, 9도와 11도는 #chord("ii") 화음의 3도에 대한 상·하위 이웃음으로 설명될 수 있다.
 
 85. 톰 하렐
 #align(center)[#image("figures/fig_132.jpg", width: 44%)]
 
-Harrell uses leaps for a dramatic effect. In the first, an octave leap; in the second a leap down from the third to the fifth of the E7 chord. In the second example, the target tones appear on beat three of the first measure, beat one of the second and third measure. In the last measure the target note is the first and last note, but in different registers.
+하렐은 극적인 효과를 위해 도약을 사용한다. 첫 번째 예시에서는 옥타브 도약을, 두 번째 예시에서는 #chord("E7") 화음의 3도에서 5도로 내려가는 도약을 사용한다. 두 번째 예시에서는 목표음이 첫 번째 마디의 세 번째 박자, 두 번째와 세 번째 마디의 첫 번째 박자에 나타난다. 마지막 마디에서는 목표음이 첫 번째 음과 마지막 음에 위치하지만 서로 다른 음역에서 연주된다.
 
 86. 톰 하렐
 #align(center)[#image("figures/fig_133.jpg", width: 80%)]
@@ -925,7 +932,7 @@ Harrell uses leaps for a dramatic effect. In the first, an octave leap; in the s
 
 == 제1윤곽과 이중 반음계적 접근음
 
-At first glance, it may seem inexplicable that a C sharp and an E natural would sound good over a C minor 7. Viewing harmony as strictly vertical, these notes would not sound good; but when viewing them in a linear context we see and hear how these notes point to the target notes and make the line more interesting by creating and releasing tension. These next three examples exhibit chromatic approach tones a whole step above and below the target note for the ii chord. Over the C minor 7, the C sharp leads through D to the E flat, the F natural descends through the E natural to E flat. Note that Brown's arpeggiating the Cm7 chord (3-5-7-9) after arriving at the target note E flat breaks the descending scale idea and delays the F7 until beat two of the second measure.
+처음 보기에는 #chord("Cm7") 위에서 #chord("C#")과 #chord("Enat")이 잘 어울린다는 것이 설명하기 어려워 보일 수 있다. 화성을 수직적으로만 본다면 이러한 음들은 어울리지 않을 수 있다. 그러나 화성을 선형적으로 바라보면, 이 음들이 목표음을 가리키며 긴장과 해소를 만들어 선율을 더욱 흥미롭게 만든다는 것을 알 수 있다. 다음 세 가지 예시는 #chord("ii") 화음의 목표음보다 온음 위와 아래에서 반음계적 접근음을 사용하는 예시를 보여준다. #chord("Cm7") 위에서 #note("C#")은 #note("D")를 거쳐 #note("Eb")으로 이끌고, #note("Fnat")은 #note("Enat")을 거쳐 #note("Eb")으로 하강한다. 브라운이 목표음인 #note("Eb")에 도달한 후 #chord("Cm7") 화음을 아르페지오(3-5-7-9)로 연주하는 부분에 주목하라. 이는 하행 음계 아이디어를 중단시키고, 두 번째 마디의 두 번째 박자까지 #chord("F7") 화음으로의 해결을 지연시킨다.
 
 88. 클리포드 브라운
 #align(center)[#image("figures/fig_135.jpg", width: 56%)]
@@ -938,24 +945,23 @@ At first glance, it may seem inexplicable that a C sharp and an E natural would 
 
 == 제1윤곽과 C.E.S.H.
 
-
-The following examples all share similar chromatic elaboration. With only diatonic notes, 제1윤곽 moves downward from the third of the ii chord to the seventh of the ii chord and on to the third of the V chord. These examples (and some previously shown) have one added chromatic tone: the leading tone to the ii chord. In a ii - V progression in the key of C, the chromatic movement would be: D - #note("C#") - C - B.
+다음 예시들은 모두 유사한 반음계적 발전을 공유한다. 온음계 음만 사용하면 제1윤곽은 #chord("ii") 화음의 3도에서 시작하여 7도로 하강한 후, #chord("V") 화음의 3도로 이어진다. 이 예시들(그리고 앞선 몇몇 예시)은 하나의 반음계적 음을 추가로 포함하는데, 그것은 #chord("ii") 화음의 이끎음이다. #note("C")장조의 #prog("ii", "V") 진행에서 반음계적 진행은 #note("D")-#note("C#")-#note("C")-#note("B")가 된다.
 
 #align(center)[#image("figures/fig_138.jpg", width: 35%)]
 
-The chromatic altered tone stops the descent of the line; since it is a leading tone to the ii chord it pulls upwards. Often this momentarily changes the direction of the line, encircling the root of the ii chord before descending through the diatonic tones and finally resolving to the third of the V chord. Jerry Coker and others refer to this type of line as a _chromatic elaboration of static harmony,_ or C.E.S.H. This type of chromatic elaboration is found with all three outlines.
+반음계적으로 변형한 음은 선율의 하강을 멈추게 한다. 이는 #chord("ii") 화음의 이끎음이기 때문에 상행으로 끌어당기는 역할을 한다. 이 음은 종종 순간적으로 선율의 방향을 바꾸며, #chord("ii") 화음의 근음을 둘러싼 후(온음계적 상위 이웃음과 반음계적 하위 이웃음을 사용하여) 온음계 음을 따라 하강하고, 마지막으로 #chord("V") 화음의 3도로 해결된다. 제리 코커와 다른 이들은 이러한 선율을 #sans[정적 화성의 반음계적 발전]#sub[C.E.S.H.]이라고 부른다. 이러한 유형의 반음계적 발전은 세 가지 윤곽 모두에서 발견된다.
 
-This example shows how the introduction of the chromatic leading tone to the B minor chord changes the direction of the line, encircles the B (with its diatonic upper neighbor and chromatic lower neighbor) before moving down through the tones to the G sharp.
+이 예시는 #chord("Bm") 화음으로의 반음계적 이끎음을 도입하여 선율의 방향을 바꾸고, #note("B")를 온음계적 상위 이웃음과 반음계적 하위 이웃음으로 둘러싼 후 음들을 따라 #note("G#")으로 하강하는 과정을 보여준다.
 
 91. 부커 리틀
 #align(center)[#image("figures/fig_139.jpg", width: 44%)]
 
-Byrd plays the target thirds right on the downbeats. The note preceding the F is the seventh of A flat minor. After the C flat, he using the G natural and encircles the A flat like in ex.91.
+버드는 목표음인 3도를 강박에 정확히 연주한다. #note("F") 앞의 음은 #chord("Abm")의 7도이며, #note("Cb") 이후에 #note("Gnat")을 사용하여 #note("Ab")을 예시 91과 같이 둘러싼다.
 
 92. 도널드 버드
 #align(center)[#image("figures/fig_140.jpg", width: 44%)]
 
-Here are two related examples from Booker Little. In ex.93, he leads up to the first target note with diatonic scale steps. He then pivots off the chromatic seventh (B natural). The diatonic seventh (B flat) comes in where you would expect the A natural, creating a suspension delaying the resolution. The B flat is the diatonic upper neighbor, the G sharp the chromatic lower neighbor to A. The line descends to the target note for the tonic chord. Ex.94 begins on the target note and descends to the target note in almost the same way; the rhythm is changed so that the D natural occurs on beat one.
+다음은 부커 리틀의 연관된 두 개의 예시이다. 예시 93에서 그는 첫 번째 목표음으로 올라가기 전에 온음계를 사용한다. 이후 반음계적 7도(#note("Bnat"))를 중심축음으로 사용한다. 온음계적 7도(#note("Bb"))는 예상되는 #note("Anat") 대신 나타나 해결을 지연시키며 계류를 만든다. #note("Bb")은 온음계적 상위 이웃음이며, #note("G#")은 #note("A")에 대한 반음계적 하위 이웃음이다. 선율은 하행하여 으뜸화음의 목표음으로 해결된다. 예시 94는 목표음에서 시작하여 거의 동일한 방식으로 하강한다. 단, 리듬이 변경되어 #note("Dnat")이 첫 번째 박자에 위치한다.
 
 93. 부커 리틀
 #align(center)[#image("figures/fig_141.jpg", width: 57%)]
@@ -963,12 +969,12 @@ Here are two related examples from Booker Little. In ex.93, he leads up to the f
 94. 부커 리틀
 #align(center)[#image("figures/fig_142.jpg", width: 57%)]
 
-The target notes in ex.95 all occur on beat one with the sevenths preceding them. Farmer uses the B natural to change the direction briefly encircling the C. He uses a similar device with the G flat (borrowed from B flat minor) and E natural (LNT) encircling the F before continuing down to the target note D.
+예시 95의 목표음은 모두 첫 번째 박자에 위치하며, 7도가 그 전에 나타난다. 파머는 #note("Bnat")을 사용하여 방향을 잠시 바꾸며 #note("C")를 둘러싸고, (#note("Bb")단조에서 차용한) #note("Gb")과 #note("Enat")$$(LNT)을 사용하여 F를 둘러싼 후 목표음인 D로 하강한다.
 
-95. Art Farmer:
+95. 아트 파머
 #align(center)[#image("figures/fig_143.jpg", width: 57%)]
 
-Harrell begins ex.96 with pick up notes like those in ex.93. The last note of the first measure is the diatonic seventh leading to the target A on beat one. Notice that the A occurs twice in the F7 measure; on the strong beats one and three. Again the seventh (E flat) precedes the third (D) landing on beat one. The notes on each downbeat in the first measure of ex.97 form the bare diatonic outline. Note how Harrell uses the F sharp to point to the G, and uses the D natural as a pivot in the first measure of ex.97. Ex.98 resembles ex.97, however this time the resolution to C7 is delayed.
+하렐은 예시 96을 예시 93과 유사한 픽업음으로 시작한다. 첫 번째 마디의 마지막 음은 목표음 #note("A")로 이어지는 온음계적 7도이다. #note("A")는 #chord("F7") 화음에서 두 번 등장하며, 첫 번째와 세 번째 박자의 강박에 위치한다. 다시 한 번 7도(#note("Eb"))가 3도(#note("D")) 앞에 나타나 첫 번째 박자에 도달한다. 예시 97의 첫 번째 마디에서 각 강박에 위치한 음들은 단순한 온음계 윤곽을 형성한다. 하렐이 #note("F#")을 사용하여 #note("G")를 가리키고, #note("Dnat")을 중심축음으로 사용하는 방식에 주목하라. 예시 98은 예시 97과 유사하지만, 이번에는 #chord("C7") 화음으로의 해결이 지연된다.
 
 96. 톰 하렐
 #align(center)[#image("figures/fig_144.jpg", width: 69%)]
@@ -979,22 +985,22 @@ Harrell begins ex.96 with pick up notes like those in ex.93. The last note of th
 98. 톰 하렐
 #align(center)[#image("figures/fig_146.jpg", width: 56%)]
 
-The ii chord is anticipated in this Harrell example. On the D flat 7 chord, tones are borrowed from the parallel key of F sharp minor (the A, E and D naturals from 3 sharps).
+하렐의 이 예시에서는 #chord("ii") 화음을 미리 연주한다. #chord("Db7") 화음 위에서는 같은으뜸음조인 #note("F#")단조에서 차용한 음(#note("A"), #note("E"), #note("Dnat"))을 사용한다.
 
 99. 톰 하렐
 #align(center)[#image("figures/fig_147.jpg", width: 56%)]
 
-At first glance ex.100 looks complicated, but it is based on 제1윤곽. It begins on the target note, ascends and plays the target note again up the octave. The top notes of the rest of the line follow the outline. The lower notes play around the chromatic leading tone to D and the seventh which finally resolves to the B natural, the target note of the V7 chord.
+처음 보기에는 예시 100이 복잡해 보일 수 있지만, 제1윤곽에 기반하고 있다. 목표음에서 시작하여 상승한 후 목표음을 한 옥타브 위에서 다시 연주한다. 선율의 나머지 상부 음들은 윤곽을 따른다. 하부 음들은 #note("D")로 가는 반음계적 이끎음과 7도 주변에서 움직이며 마침내 #chord("V7") 화음의 목표음인 #note("Bnat")로 해결된다.
 
 100. 랜디 브레커
 #align(center)[#image("figures/fig_148.jpg", width: 53%)]
 
-In ex.101 the broken thirds seem to be a string of neighbor tones. The first notes probably belong to the preceding G major chord. The last two notes in the first measure are the clearest; the third and seventh of C minor (ii). The seventh (B flat) resolves unexpectedly, made more so by the length it is held, to the B natural, before encircling C and continuing down the scale. Beats one and two are non-harmonic tones of the F7, but the next three down beats clearly spell a descending F triad.
+예시 101에서 끊어진 3도들은 이웃음들의 연속처럼 보인다. 첫 번째 음들은 아마도 앞선 #chord("GM") 화음에 속할 것이다. 첫 번째 마디의 마지막 두 음은 #chord("Cm")$$(#chord("ii"))의 3도와 7도로 가장 명확하다. 7도(#note("Bb"))는 예상치 못하게 #note("Bnat")으로 해결되며, 이것이 길게 지속되는 것은 그 의외로움을 더한다. 이후 #note("C")를 둘러싸며 음계를 따라 하강한다. 첫 번째와 두 번째 박자의 음들은 #chord("F7") 화음의 비화성음이지만, 다음 세 개의 강박 음들은 명확하게 하강하는 F 삼화음을 이룬다.
 
 101. 클리포드 브라운
 #align(center)[#image("figures/fig_149.jpg", width: 54%)]
 
-Hubbard anticipates the ii chord, uses the B natural to change the direction of the line, plays the B flat and continues to descend to the third of the I chord. The target note for F7 occurs on beat three, the target note for B flat occurs on beat one. The G flat is borrowed from the parallel key of B flat minor, with the recognizable augmented second sound. Lowering the G provides the line with more downward thrust; G flat pulls strongly into the F. There is an interesting balance with the two chromatic tones in this line. The raised tone (B natural) made the line move up, the lowered tone helped it move down.
+허버드는 #chord("ii") 화음을 미리 예고하며, #note("Bnat")을 사용하여 선율의 방향을 바꾸고 #note("Bb")을 연주한 후 #chord("I") 화음의 3도로 하강을 이어간다. #chord("F7") 화음의 목표음은 세 번째 박자에, #chord("Bb") 화음의 목표음은 첫 번째 박자에 위치한다. #note("Gb")은 같은으뜸음조인 #note("Bb")단조에서 차용한 음으로, 익숙한 증2도 소리를 만들어낸다. #note("G")를 내림으로써 선율에 더 강한 하강하려는 힘을 부여하여, #note("Gb")은 #note("F")로 강하게 끌어당긴다. 이 선율에서는 두 개의 반음계적 음 사이에 흥미로운 균형이 있다. 올려진 #note("Bnat")은 선율을 상승시키고, 내려진 #note("Gb")은 선율을 하강시킨다.
 
 102. 프레디 허버드
 #align(center)[#image("figures/fig_150.jpg", width: 66%)]
@@ -1202,7 +1208,7 @@ All the outlines work as well for iiø - V7 in minor as they do in major. As sho
 140. Jimmy Heath:
 #align(center)[#image("figures/fig_190.jpg", width: 44%)]
 
-141. Art Farmer:
+141. 아트 파머
 #align(center)[#image("figures/fig_191.jpg", width: 44%)]
 
 == 제2윤곽과 음의 추가
