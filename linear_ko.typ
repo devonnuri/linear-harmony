@@ -33,9 +33,12 @@
 
   root_fs = if root_fs == "#" { $sharp$ } else if root_fs == "b" { $flat$ } else if root_fs == "nat" { $natural$ } else { $$ }
 
-  $upright(#root)^#root_fs$
+  if root_fs == $$ { // needed because empty sub/superscript causes horizontal space
+    $upright(#root)$
+  } else {
+    $upright(#root)^#root_fs$
+  }
 }
-
 
 #let chord(chordstr, jazz: true) = {
   set text(fill: cmyk(0%, 100%, 0%, 20%))
@@ -54,20 +57,22 @@
     quality = if quality == "M" { $upright(M)$ } else if quality == "m" { $upright(m)$ } else if quality == "dim" { $degree$ } else if quality == "aug" { $+$ } else if quality == "halfdim" { $ø$ } else if quality == "sus2" { $upright(sus2)$ } else if quality == "sus4" { $upright(sus4)$ } else if quality == "sus" { $upright(sus)$ } else { $$ }
   }
   
-  let extalt = extalt_str.matches(regex("([#b])?(\d+)")).map(x => (x.captures.at(0), x.captures.at(1))).map(x => (if x.at(0) == "#" { $sharp$ } else if x.at(0) == "b" { $flat$ } else { $$ }, x.at(1))).map(x => $#x.at(0) #x.at(1)$).join()
+  let extalt = extalt_str.matches(regex("([#b])?(\d+)")).map(x => (x.captures.at(0), x.captures.at(1))).map(x => (if x.at(0) == "#" { $sharp$ } else if x.at(0) == "b" { $flat$ } else { $$ }, x.at(1))).map(x => $#x.at(0) #x.at(1)$)
   
-  slash = if slash != none { $\/ #note(slash)$ } else { $$ }
+  slash = if slash != none { $\/#note(slash)$ } else { $$ }
   
   let denom_chord = if denom != none { chord(denom) } else { $$ }
 
-  let num_chord = if jazz { 
-    $root_(quality extalt) slash$
+  let num_chord = if quality == $$ and extalt.len() == 0 { // needed because empty sub/superscript causes horizontal space
+    $root slash$
+  } else if jazz { 
+    $root_(quality extalt.join()) slash$
   } else {
-    $root quality extalt slash$
+    $root quality extalt.join() slash$
   }
 
   if denom != none {
-    $#num_chord / #denom_chord$
+    $frac(#num_chord, #denom_chord)$
   } else {
     $#num_chord$
   }
@@ -77,6 +82,12 @@
   set text(fill: cmyk(0%, 100%, 0%, 20%))
 
   chords.pos().map(ch => chord(ch, jazz: jazz)).join($thin-thin$)
+}
+
+#let pageref(label) = context {
+  let loc = locate(label)
+  let nums = counter(page).at(loc)
+  link(loc, numbering("1", ..nums))
 }
 
 #let maj25 = prog("ii", "V7")
@@ -89,6 +100,7 @@
 // #set text(font: ("Times New Roman", "KoPubBatang"), lang: "ko")
 #set text(font: ("Tex Gyre Termes", "KoPubBatang"), lang: "ko")
 // #show math.equation: set text(font: "Euler Math")
+
 #set outline(title: [목차])
 
 #show: book.with(
@@ -113,12 +125,13 @@
   lowercase-references: false
 )
 
-#set par(leading: 0.9em, spacing: 1.2em)
 #set sub(size: 0.9em)
 #set heading(supplement: none)
 
 #show footnote.entry: set par(leading: 0.7em)
 #set footnote.entry(gap: 0.7em)
+
+#counter(footnote).update(0) // this is for
 
 #chapter("개요", l: "chap1")
 
@@ -162,15 +175,15 @@
 
 이 책 전반에서, 화음은 으뜸음#sub[tonic]$$(또는 음조 중심#sub[tonal center])과의 관계를 기준으로 설명된다. 이 관계를 나타내기 위해 로마 숫자가 사용됩니다. 장조의 화성을 다룰 때, 화음은 기본적으로 장조 음계(major scale)에서 파생된 것으로 간주된다. 반면, 단조의 화성을 다룰 때는 화음이 #sans[화성] 단음계#sub[_harmonic_ minor scale]에서 파생된 것으로 간주된다. 다른 단음계도 존재하지만, 이 책에서는 화성 단음계만 논의한다. 화성 단음계는 3도와 6도가 낮아져 있지만, 이끎음#sub[leading tone]은 유지되어 5도 음 위에 형성된 화음이 딸림화음#sub[dominant chord]가 되도록 한다. 이 7도 음은 또한 3도와 7도 음 위에 형성된 화음에도 영향을 미친다.
 
-장조와 단조 음계 모두에서 7개의 음이 있으므로, 각 음에 기반한 화음은 1부터 7까지의 로마 숫자로 표시됩니다. 대문자 로마 숫자는 장화음에 할당되며, 소문자 로마 숫자는 단화음 및 감화음에 할당된다. 감화음의 경우 숫자 뒤에 "$degree$" 기호가 추가된다. 반감화음은 $-7flat 5$로 표현하지 #sans[않는다]. 이는 변화($flat 5$)가 일어났음을 의미하지만, 실제로는 그렇지 않기 때문이다. (이 화음은 장조 및 화성 단음계 모두에서 자연스럽게 나타난다.) 반감화음은 소문자 로마 숫자 뒤에 “$ø$” 기호를 붙여 표기한다.
+장조와 단조 음계 모두에서 7개의 음이 있으므로, 각 음에 기반한 화음은 1부터 7까지의 로마 숫자로 표시된다. 대문자 로마 숫자는 장화음에 할당되며, 소문자 로마 숫자는 단화음 및 감화음에 할당된다. 감화음의 경우 숫자 뒤에 "$degree$" 기호가 추가된다. 반감화음은 $-7flat 5$로 표현하지 #sans[않는다]. 이는 변화($flat 5$)가 일어났음을 의미하지만, 실제로는 그렇지 않기 때문이다. (이 화음은 장조 및 화성 단음계 모두에서 자연스럽게 나타난다.) 반감화음은 소문자 로마 숫자 뒤에 “$ø$” 기호를 붙여 표기한다.
 
 모든 장조 영역에서 간격적 관계(온 온 반 온 온 온 반)가 동일하듯이, 온음계적 화음과 그 성질도 그러하다. 예를 들어, 으뜸화음#sub[tonic chord]은 항상 장화음이고, 위으뜸화음#sub[supertonic chord]은 항상 단화음이다. 만약 위으뜸화음이 장화음처럼 보인다면, 그것은 위으뜸화음이 아니다. 이 화음은 다른 으뜸음을 나타내기 위해 기능하는 것이다. 예를 들어, 단조인 같은으뜸음조#sub[parallel minor] 등 다른 조성에서 빌려왔거나, 전조#sub[modulating]하거나, 어떤 코드를 그것의 딸림화음으로 으뜸화음화#sub[tonicizing]하기 위해 사용된 것일 수 있다.
 
-다음은 #note("C") 장조의 온음계적 화음과 각각을 로마 숫자로 나타낸 것이다.
+다음은 #note("C")장조의 온음계적 화음과 각각을 로마 숫자로 나타낸 것이다.
 
 #align(center)[#image("figures/fig_006.jpg", width: 50%)]
 
-다음은 #note("C") (화성) 단조의 온음계적 화음과 각각을 로마 숫자로 나타낸 것이다.
+다음은 #note("C") (화성)단조의 온음계적 화음과 각각을 로마 숫자로 나타낸 것이다.
 
 #align(center)[#image("figures/fig_007.jpg", width: 50%)]
 
@@ -225,7 +238,7 @@
 
 조 중심을 결정하면 선택 범위를 더 좁힐 수 있다. 조 중심에는 7개의 음이 있다. 이미 근음은 제외했으므로(베이스가 이를 다루니까), 6개의 음이 남는다. 대부분의 경우 이 6개의 음 중 어느 것을 사용해도 괜찮지만, 항상 화성적으로 명확하지 않을 수 있다. 예를 들어, C장조에서 F는 조의 음이지만, 화성적 명확성을 위해 C 화음 위에서 강조할 첫 번째 선택은 아니다.
 
-화음 기호는 보통 3\~4개의 음을 제안한다. 예를 들어, #chord("Dm7")은 #note("D")-#note("F")-#note("A")-#note("C")를 제안한다. 이러한 음들은 화성적으로 명확하며, 대선율을 위한 선택으로 고려해야 한다. D는 베이스가 이미 처리하고 있다. #note("A")는 화음의 특성을 알려주지 않는다. #note("C")는 불안정한 음으로, 자연스럽게 #note("B")로 끌려 내려가기를 원한다. #note("F")는 화음의 단조 특성을 드러내며, 베이스의 #note("D") 위에서 화성적으로 명확한 대위법을 위한 최고의 선택이다. 베이스의 #note("D") 위에 #note("F")만 연주해도, 두 음만으로도 완전한 단조 화음처럼 들린다.
+화음 기호는 보통 3\~4개의 음을 제안한다. 예를 들어, #chord("Dm7")은 #note("D")-#note("F")-#note("A")-#note("C")를 제안한다. 이러한 음들은 화성적으로 명확하며, 대선율을 위한 선택으로 고려해야 한다. #note("D")는 베이스가 이미 처리하고 있다. #note("A")는 화음의 특성을 알려주지 않는다. #note("C")는 불안정한 음으로, 자연스럽게 #note("B")로 끌려 내려가기를 원한다. #note("F")는 화음의 단조 특성을 드러내며, 베이스의 #note("D") 위에서 화성적으로 명확한 대위법을 위한 최고의 선택이다. 베이스의 #note("D") 위에 #note("F")만 연주해도, 두 음만으로도 완전한 단조 화음처럼 들린다.
 
 C장조에서의 #maj251 진행(#prog("Dm7", "G7", "C"))의 경우, 베이스는 #note("D")에서 시작하여 #note("G")로 이어지는 선율을 즉흥 연주한다. #note("F")$$(화음의 3도)는 대위선율을 시작하기 위한 좋은 선택이다. #note("D") 위에서 #note("F")가 울리면, 단조 화음이 들린다. 같은 이유로, #chord("G") 화음에서는 #note("B")가 가장 명확한 선택이며, #chord("C") 화음에서는 #chord("E")가 가장 명확하다. 이러한 목표음을 결정한 뒤에는, 이 음들을 흥미로운 방식으로 연결하는 것이 남은 과제이다.
 
@@ -248,7 +261,7 @@ C장조에서의 #maj251 진행(#prog("Dm7", "G7", "C"))의 경우, 베이스는
 === 제1윤곽
 
 #padbox[
-  3도를 첫 번째 박자에 배치하고 7도를 네 번째 박자에 연주하면, 베이스 워킹 라인에 대위하는 워킹 4분음표 선율을 만들기 위해 채울 박자가 두 개 남게 된다. 음계에서 내려가며 움직이면, #chord("ii") 화음의 3도에서 #chord("V7") 화음을 거쳐 #chord("I") 화음의 3도로 이어지는 순차적 선율이 만들어진다.
+  3도를 첫 번째 박자에 배치하고 7도를 네 번째 박자에 연주하면, 베이스 워킹 라인에 대위하는 4분음표 워킹 선율을 만들기 위해 채울 박자가 두 개 남게 된다. 음계에서 내려가며 움직이면, #chord("ii") 화음의 3도에서 #chord("V7") 화음을 거쳐 #chord("I") 화음의 3도로 이어지는 순차적 선율이 만들어진다.
 
   #align(center)[#image("figures/fig_011.jpg", width: 47%)]
 ]
@@ -330,7 +343,7 @@ C장조에서의 #maj251 진행(#prog("Dm7", "G7", "C"))의 경우, 베이스는
 
 == 경과음
 
-#sans[경과음]#sub[passing tone]은 필수음들 사이의 반음계적 또는 온음계적 단계이다. 화음에서는 화음 구성원들 사이의 온음계 음을 말한다. (예: #chord("CM")의 경과음 = #note("C") $underline(note("D"))$ #note("E") $underline(note("F"))$ #note("G") $underline(note("A"))$ $underline(note("B"))$ C) 음계에서는 인접 음정 사이의 반음계 음을 말한다. (예: #note("C") $underline(note("C#"))$ #note("D") $underline(note("D#"))$ ...) 반음계적 경과음은 온음 간격으로 인접한 온음계 음 사이에 배치될 수 있다. 모든 온음계 음은 반음계적 이끎음#sub[chromatic leading tone]을 가질 수 있다. 예를 들어, #note("C#")은 D의 반음계적 이끎음이며, #note("Cnat")과 D 사이의 반음계적 경과음이다. #note("Db")은 #note("Dnat")과 #note("Cnat") 사이의 반음계적 경과음이다. #note("C#")과 #note("Db")의 차이는 임시표가 암시하는 방향에 있다. 반음계적으로 변화된 음은 변화된 방향으로 계속 진행되는 경향이 있다. 내림표가 붙은 음은 내려가는 경향이 있고, 올림표가 붙은 음은 올라가는 경향이 있다.
+#sans[경과음]#sub[passing tone]은 필수음들 사이의 반음계적 또는 온음계적 단계이다. 화음에서는 화음 구성원들 사이의 온음계 음을 말한다. (예: #chord("CM")의 경과음 = #note("C") $underline(note("D"))$ #note("E") $underline(note("F"))$ #note("G") $underline(note("A"))$ $underline(note("B"))$ C) 음계에서는 인접 음정 사이의 반음계 음을 말한다. (예: #note("C") $underline(note("C#"))$ #note("D") $underline(note("D#"))$ ...) 반음계적 경과음은 온음 간격으로 인접한 온음계 음 사이에 배치될 수 있다. 모든 온음계 음은 반음계적 이끎음#sub[chromatic leading tone]을 가질 수 있다. 예를 들어, #note("C#")은 #note("D")의 반음계적 이끎음이며, #note("Cnat")과 #note("D") 사이의 반음계적 경과음이다. #note("Db")은 #note("Dnat")과 #note("Cnat") 사이의 반음계적 경과음이다. #note("C#")과 #note("Db")의 차이는 임시표가 암시하는 방향에 있다. 반음계적으로 변화된 음은 변화된 방향으로 계속 진행되는 경향이 있다. 내림표가 붙은 음은 내려가는 경향이 있고, 올림표가 붙은 음은 올라가는 경향이 있다.
 
 'Round Midnight 윤곽은 아르페지오 윤곽이기 때문에, 화성음#sub[chord tones] 사이에 경과음을 넣기에 적합하다. 그러나 #chord("ii") 화음의 5도와 7도 사이에는 거의 경과음이 나타나지 않는다. #chord("ii") 화음의 5도와 7도 사이의 음은 #chord("V7") 화음의 필수음이다. 이 음은 보통 #chord("V7") 화음을 위해 남겨둔다. 이는 이야기의 핵심, 결말, 또는 중요한 순간으로, 이를 미리 경과음으로 사용하여 결론을 드러내지 않는다.
 
@@ -338,11 +351,11 @@ C장조에서의 #maj251 진행(#prog("Dm7", "G7", "C"))의 경우, 베이스는
 
 필수음 위와 아래의 음을 #sans[이웃음]#sub[Neighbor Tones]이라 한다. (모차르트에서 찰리 파커까지) 일반적인 관행은 #sans[온음계적 상위 이웃음]$$(Diatonic Upper Neighbor Tone, 이하 UNT)과 #sans[반음계적 하위 이웃음]$$(Chromatic Lower Neighbor Tone, 이하 LNT)을 사용하는 것이다.
 
-F #sans[장조]에서의 #note("C") 3화음에서 #note("C"), #note("E"), #note("G")는 필수음이다. #note("Dnat")는 #note("C")의 UNT이고, #note("Bnat")는 LNT이다. #note("Fnat")은 #note("E")의 UNT이고, #note("D#")는 LNT이다. #note("Anat")은 G의 UNT이고, #note("F#")는 LNT이다.
+#note("F") #sans[장조]에서의 #note("C") 3화음에서 #note("C"), #note("E"), #note("G")는 필수음이다. #note("Dnat")는 #note("C")의 UNT이고, #note("Bnat")는 LNT이다. #note("Fnat")은 #note("E")의 UNT이고, #note("D#")는 LNT이다. #note("Anat")은 G의 UNT이고, #note("F#")는 LNT이다.
 
 #align(center)[#image("figures/fig_025.jpg", width: 47%)]
 
-F #sans[단조]에서의 #note("C") 3화음에서 #note("C"), #note("E"), #note("G")는 필수음이다. #note("Db")는 #note("C")의 UNT이고, #note("Bnat")는 LNT이다. #note("Fnat")은 #note("E")의 UNT이고, #note("D#")는 LNT이다. #note("Ab")은 G의 UNT이고, #note("F#")는 LNT이다.
+#note("F") #sans[단조]에서의 #note("C") 3화음에서 #note("C"), #note("E"), #note("G")는 필수음이다. #note("Db")는 #note("C")의 UNT이고, #note("Bnat")는 LNT이다. #note("Fnat")은 #note("E")의 UNT이고, #note("D#")는 LNT이다. #note("Ab")은 G의 UNT이고, #note("F#")는 LNT이다.
 
 
 #align(center)[#image("figures/fig_026.jpg", width: 47%)]
@@ -577,7 +590,7 @@ C.E.S.H.는 '정적 화성의 반음계적 발전(Chromatic Elaboration of Stati
 17. 캐넌볼 애덜리
 #align(center)[#image("figures/fig_060.jpg", width: 62%)]
 
-파커는 이 단순한 윤곽에 흥미를 더하기 위해 두 가지를 사용한다. 8분음표만큼 박자를 앞당겨#sub[anticipating] 연주하여 선율에 추진력을 더한다. #note("F")는 위와 아래 이웃음으로 둘러싸인 후 하행 선율을 이어간다. #note("B♭") 화음의 3도로의 해결은 지연되며, 첫 번째 박자가 아닌 두 번째 박자의 약박에 도달한다.
+파커는 이 단순한 윤곽에 흥미를 더하기 위해 두 가지를 사용한다. 8분음표만큼 박자를 앞당겨#sub[anticipating] 연주하여 선율에 추진력을 더한다. #note("F")는 위와 아래 이웃음으로 둘러싸인 후 하행 선율을 이어간다. #note("Bb") 화음의 3도로의 해결은 지연되며, 첫 번째 박자가 아닌 두 번째 박자의 약박에 도달한다.
 
 18. 찰리 파커
 #align(center)[#image("figures/fig_061.jpg", width: 56%)]
@@ -714,11 +727,11 @@ F장조에서 #prog("Ahalfdim7", "D7") 진행은 #chord("ii") 화음(#chord("Gm"
 
 *근음이 3도 하강하는 진행:* 두 번째로 흔한 근음 진행이다. (#chord("CM")에서 #chord("Am")로 진행하는 경우) 많은 즉흥 연주자들은 윤곽을 사용할 때 #chord("CM") 화음을 #chord("Em")처럼 다루어 #chord("iii") 화음을 #chord("I") 화음으로 대체#sub[substitute]하여 연주한다.
 
-#align(center)[#image("figures/fig_089.jpg", width: 80%)]
+#align(center)[#image("figures/fig_089.jpg", width: 90%)]
 
 *근음이 온음 1개씩 이동하는 진행:* 가장 드물게 나타나는 근음 진행이다. (#chord("FM")에서 #chord("GM")로 진행하는 경우) 많은 즉흥 연주자들은 윤곽을 사용할 때 #chord("FM") 화음을 #chord("Dm") 화음처럼 다루어 #chord("G")로 진행하며, #chord("IV") 화음을 #chord("ii") 화음으로 대체하여 연주한다.
 
-#align(center)[#image("figures/fig_090.jpg", width: 80%)]
+#align(center)[#image("figures/fig_090.jpg", width: 90%)]
 
 이 윤곽들은 다른 많은 진행에서도 활용할 수 있다. 근음이 5도 하강하는 경우라면 화음의 성질#footnote[quality of a chord. 장화음, 단화음, 감화음, 반감화음 등의 코드의 주요한 특징을 말한다. (역주)]과 관계없이 언제든지 이 윤곽들을 사용할 수 있다. 위의 예시에는 #maj251, #min251, #maj362 진행이 포함되어 있다. 아래는 이러한 윤곽을 적용할 수 있는 전통적인 화성 진행의 일부 목록이다.
 
@@ -737,10 +750,10 @@ F장조에서 #prog("Ahalfdim7", "D7") 진행은 #chord("ii") 화음(#chord("Gm"
 다음은 제1윤곽의 두 확장된 예시이다. 첫 예시는 $display(chord("ii") - chord("V7") - chord("I") - chord("IV") - frac(chord("iihalfdim") - chord("V7") - chord("i"), chord("vi")))$ 진행 위에서 연주된다. 이 진행은 전통 음악 문헌 전반에서 찾아볼 수 있다. 재즈 레퍼토리 중에서는 _Autumn Leaves_, _Spain_, _Alice in Wonderland_, _A Day in the Life of a Fool_과 같은 곡에서 등장한다. 이는 주어진 조성 중심#sub[key center]에서 모든 화음을 순차적으로 순환하는 조성 중심 순환#sub[key center cycle] 진행이다. 이 진행은 장조의 #maj251 종지#sub[cadence], 단조인 나란한조의 #chord("VI") 화음에 해당하는 #chord("IV") 화음, 그리고 단조인 나란한조의 #min251 종지로 이루어진다. 바흐는 첫 음 이후 상위 이웃음을 사용하여 하강 음계를 중단시킨다. 이후 음계는 계속 하강하지만, 베이스 성부로 바뀐다. 소프라노 성부는 두 번째 화음의 3도에서 5도로 도약한 후 다시 순차적으로 진행한다. 두 번째 예제는 느린 블루스의 턴어라운드#sub[turn-around]에서 비롯된 일련의 딸림화음으로 구성되어 있다. #chord("G7") 화음 위의 #note("Bnat")에서 시작하여 모든 음이 순차적으로 하강하지만, 지속적으로 옥타브 이동으로 중단된다. 여러 연주자에게서 이러한 예제를 찾아볼 수 있지만, 이렇게 확장된 형태는 드물다.
 
 46. J. S. 바흐: 영국 모음곡 #note("G")단조 중 프렐류드
-#align(center)[#image("figures/fig_092.jpg", width: 80%)]
+#align(center)[#image("figures/fig_092.jpg", width: 90%)]
 
 47. 마이크 스턴
-#align(center)[#image("figures/fig_093.jpg", width: 80%)]
+#align(center)[#image("figures/fig_093.jpg", width: 90%)]
 #align(center)[#image("figures/fig_094.jpg", width: 53%)]
 
 == 제1윤곽과 옥타브 이동
@@ -925,7 +938,7 @@ F장조에서 #prog("Ahalfdim7", "D7") 진행은 #chord("ii") 화음(#chord("Gm"
 하렐은 극적인 효과를 위해 도약을 사용한다. 첫 번째 예시에서는 옥타브 도약을, 두 번째 예시에서는 #chord("E7") 화음의 3도에서 5도로 내려가는 도약을 사용한다. 두 번째 예시에서는 목표음이 첫 번째 마디의 세 번째 박자, 두 번째와 세 번째 마디의 첫 번째 박자에 나타난다. 마지막 마디에서는 목표음이 첫 번째 음과 마지막 음에 위치하지만 서로 다른 음역에서 연주된다.
 
 86. 톰 하렐
-#align(center)[#image("figures/fig_133.jpg", width: 80%)]
+#align(center)[#image("figures/fig_133.jpg", width: 90%)]
 
 87. 톰 하렐
 #align(center)[#image("figures/fig_134.jpg", width: 68%)]
@@ -1021,10 +1034,10 @@ Barron begins with the upper and lower neighbor tones to the target note. The fl
 
 Jackson begins these two similar examples on the target note and fills in with arpeggiated tones. Ex.105 encircles the second target note (B) and chromatically approaches the last target note (E); all target notes occur on the downbeats. Ex.106 includes a little more chromaticism, delays the target note B, and descends to the last note from the seventh. In both examples, Jackson altered the ninths on the dominant chord.
 
-105. Milt Jackson:
+105. 밀트 잭슨
 #align(center)[#image("figures/fig_153.jpg", width: 57%)]
 
-106. Milt Jackson:
+106. 밀트 잭슨
 #align(center)[#image("figures/fig_154.jpg", width: 57%)]
 
 Within the first measure of ex.107 is a sequence. The line begins on the target note (B flat), descends one step, chromatic approaches from below to the next note and does the same thing to get to the target note E on the downbeat of the second measure. The next measure is a chromatic scale, but is still harmonically clear: the notes on every down beat spell out the arpeggio of the dominant ninth chord from the third: E - G - B flat - D flat (3-5-7-flat 9). All twelve chromatic pitches are used in this example, yet it remains harmonically clear; it is not random chromaticism. Target notes occur in rhythmically significant spots, non-harmonic chromatic notes resolve when and where we expect them.
@@ -1095,12 +1108,12 @@ In order to modulate and tonicize the ii chord (Cm7), the G7, a secondary domina
 There is a sequence in ex.118 of 제1윤곽 with two different harmonic rhythms. The first measure is the fundamental outline embellished with two simple turns. The second measure begins with a leap from the target note to the note an octave higher. The chromatic turn using the G sharp help elongate the outline to account for the longer harmonic rhythm. Every chord has its third on a downbeat. Each third is preceded by the previous seventh on an upbeat.
 
 118. 클리포드 브라운
-#align(center)[#image("figures/fig_167.jpg", width: 80%)]
+#align(center)[#image("figures/fig_167.jpg", width: 90%)]
 
 When there are two chords per measure in a jazz waltz, there is a question as to where to play the second chord. It can occur on beat three; but in jazz, often occurs on the upbeat of two. The second chord landing on the upbeat of two divides the measure in half. This kind of subdivision suggests two beats per measure rather than three. The implied time signature is 6/8, compound duple, superimposed over the 3/4 simple triple. Evans divides the first measure in half; the C7 lands on the upbeat of beat two. In the second measure, the B flat chord arrives on beat three.
 
 119. 빌 에반스
-#align(center)[#image("figures/fig_168.jpg", width: 80%)]
+#align(center)[#image("figures/fig_168.jpg", width: 90%)]
 
 The next examples feature two outlines of different types.
 
@@ -1365,7 +1378,7 @@ Clifford Brown and Josef Zawinul use 제2윤곽 in these sequential examples. Th
 #align(center)[#image("figures/fig_226.jpg", width: 69%)]
 
 177. 클리포드 브라운
-#align(center)[#image("figures/fig_227.jpg", width: 80%)]
+#align(center)[#image("figures/fig_227.jpg", width: 90%)]
 
 Zawinul plays 제2윤곽 on the ii - V, followed by 제1윤곽 on the iii - V7/ii.
 
@@ -1380,7 +1393,7 @@ Brown uses 제2윤곽 on iii - V7/ii, 제3윤곽 on ii - V7 in the key of B flat
 제2윤곽 begins ex.180. The 3-5-7-9 arpeggio of A7 begins on beat four, but skips down from the third to the fifth before continuing up. 제1윤곽 is implied over the ii - V7, even though the target note for D minor is missing. The V7 arrives two beats early. 제1윤곽 occurs in the last two measure over V7 - I starting on the B natural, stepping down to the E and extending out the 3-5-7-9 arpeggio of C major. There are four arpeggios in this example: E minor, 3-5-7-9 of A7 and C, and an inversion of G7. Three of the arpeggios occur early: the A7, G7, and C major.
 
 180. 클리포드 브라운
-#align(center)[#image("figures/fig_230.jpg", width: 80%)]
+#align(center)[#image("figures/fig_230.jpg", width: 90%)]
 
 Evans uses three outlines over this passage with rapid harmonic rhythm. 제2윤곽 over the ii - V7; 제3윤곽 over the iii - V7/ii; and anticipating the G minor by three eighth notes, 제3윤곽 over ii - V7 /vi - vi.
 
@@ -1722,7 +1735,7 @@ In the discussion of harmonic clarity, the target notes were the third of ii mov
 Parker's sequence in ex.249 relies on the seventh of ii resolving to the third of V7 for clarity. The turn, the leap from third to the root, and the rhythmic displacement give life to this example.
 
 249. 찰리 파커
-#align(center)[#image("figures/fig_301.jpg", width: 80%)]
+#align(center)[#image("figures/fig_301.jpg", width: 90%)]
 
 Brown uses similar motion in this sequence. The shape is echoed later, but with an arpeggio on the V7 chord.
 
@@ -1806,27 +1819,27 @@ Here are two examples from a classic modal recording. Cannonball Adderley uses t
 
   Whole-note harmonic rhythm:
 
-  #align(center)[#image("figures/fig_311.jpg", width: 80%)]
+  #align(center)[#image("figures/fig_311.jpg", width: 90%)]
 
 + Play through this 8 measure exercise in each major key. Repeat in each key until comfortable. Your goal should be to start in any key, play non-stop without error or hesitation through this exercise modulating through all twelve major keys.
 
   Half-note harmonic rhythm:
 
-  #align(center)[#image("figures/fig_312.jpg", width: 80%)]
+  #align(center)[#image("figures/fig_312.jpg", width: 90%)]
 + Play through exercise no. 1.1 one time as shown. The second time, improvise using the exercise as a guide. Your goal should be to start in any key, play non-stop without error or hesitation through this exercise modulating through all twelve major keys.
 
 + Here is an exercise using some variations on the outlines.
-  #align(center)[#image("figures/fig_313.jpg", width: 80%)]
+  #align(center)[#image("figures/fig_313.jpg", width: 90%)]
 
 + Take exercises 1.1—1.3 and apply to minor keys. As shown, use harmonic minor with a raised leading tone.
 
   Whole-note harmonic rhythm:
 
-  #align(center)[#image("figures/fig_314.jpg", width: 80%)]
+  #align(center)[#image("figures/fig_314.jpg", width: 90%)]
 
   Half-note harmonic rhythm:
 
-  #align(center)[#image("figures/fig_315.jpg", width: 80%)]
+  #align(center)[#image("figures/fig_315.jpg", width: 90%)]
 
 == 윤곽과 청각 훈련
 
@@ -1840,75 +1853,75 @@ Here are two examples from a classic modal recording. Cannonball Adderley uses t
 
 === 제1윤곽을 사용하여 C 장조와 밀접한 조로 전조하기
 
-#padbox[Give yourself a starting pitch and sing the exercises. At the end check yourself for accuracy. After mastering these, try modulating to more remote keys: C to E flat, C to A flat, C to E, C to A, C to B flat, C to D, C to Gm, C to Fm, etc.]
+#padbox[시작 음정을 정하고 연습문제를 노래하라. 끝난 후 자신이 정확했는지를 확인하라. 이러한 연습을 숙달한 후에는 더 먼 조로 전조하는 연습을 시도하라. 예를 들면, #note("C")장조에서 #note("Eb")장조, #note("C")장조에서 #note("Ab")장조, #note("C")장조에서 #note("E")장조, #note("C")장조에서 #note("A")장조, #note("C")장조에서 #note("Bb")장조, #note("C")장조에서 #note("D")장조, #note("C")장조에서 #note("G")단조, #note("C")장조에서 #note("F")단조 등으로 전조해보라.]
 
-Modulate from C major (I) to the key of D minor (ii):
+#note("C")장조(#chord("I"))에서 #note("D")단조(#chord("ii"))로 전조:
 
-#align(center)[#image("figures/fig_316.jpg", width: 80%)]
+#align(center)[#image("figures/fig_316.jpg", width: 90%)]
 
-Modulate from C major (I) to the key of E minor (iii):
+#note("C")장조(#chord("I"))에서 #note("E")단조(#chord("iii"))로 전조:
 
-#align(center)[#image("figures/fig_317.jpg", width: 80%)]
+#align(center)[#image("figures/fig_317.jpg", width: 90%)]
 
-Modulate from C major (I) to the key of F major (IV):
+#note("C")장조(#chord("I"))에서 #note("F")장조(#chord("IV"))로 전조:
 
-#align(center)[#image("figures/fig_318.jpg", width: 80%)]
+#align(center)[#image("figures/fig_318.jpg", width: 90%)]
 
-Modulate from C major (I) to the key of G major (V):
+#note("C")장조(#chord("I"))에서 #note("G")장조(#chord("V"))로 전조:
 
-#align(center)[#image("figures/fig_319.jpg", width: 80%)]
+#align(center)[#image("figures/fig_319.jpg", width: 90%)]
 
-Modulate from C major (I) to the key of A minor (vi):
+#note("C")장조(#chord("I"))에서 #note("A")단조(#chord("vi"))로 전조:
 
-#align(center)[#image("figures/fig_320.jpg", width: 80%)]
+#align(center)[#image("figures/fig_320.jpg", width: 90%)]
 
 === 제2윤곽을 사용하여 C 장조와 밀접한 조로 전조하기
 
-#padbox[>Give yourself a starting pitch and sing the exercises. At the end check yourself for accuracy. After mastering these, try modulating to more remote keys: C to E flat, C to A flat, C to E, C to A, C to B flat, C to D, C to Gm, C to Fm, etc.]
+#padbox[시작 음정을 정하고 연습문제를 노래하라. 끝난 후 자신이 정확했는지를 확인하라. 이러한 연습을 숙달한 후에는 더 먼 조로 전조하는 연습을 시도하라. 예를 들면, #note("C")장조에서 #note("Eb")장조, #note("C")장조에서 #note("Ab")장조, #note("C")장조에서 #note("E")장조, #note("C")장조에서 #note("A")장조, #note("C")장조에서 #note("Bb")장조, #note("C")장조에서 #note("D")장조, #note("C")장조에서 #note("G")단조, #note("C")장조에서 #note("F")단조 등으로 전조해보라.]
 
-Modulate from C major (I) to the key of D minor (ii):
+#note("C")장조(#chord("I"))에서 #note("D")단조(#chord("ii"))로 전조:
 
-#align(center)[#image("figures/fig_321.jpg", width: 80%)]
+#align(center)[#image("figures/fig_321.jpg", width: 90%)]
 
-Modulate from C major (I) to the key of E minor (iii):
+#note("C")장조(#chord("I"))에서 #note("E")단조(#chord("iii"))로 전조:
 
-#align(center)[#image("figures/fig_322.jpg", width: 80%)]
+#align(center)[#image("figures/fig_322.jpg", width: 90%)]
 
-Modulate from C major (I) to the key of F major (IV):
+#note("C")장조(#chord("I"))에서 #note("F")장조(#chord("IV"))로 전조:
 
-#align(center)[#image("figures/fig_323.jpg", width: 80%)]
+#align(center)[#image("figures/fig_323.jpg", width: 90%)]
 
-Modulate from C major (I) to the key of G major (V):
+#note("C")장조(#chord("I"))에서 #note("G")장조(#chord("V"))로 전조:
 
-#align(center)[#image("figures/fig_324.jpg", width: 80%)]
+#align(center)[#image("figures/fig_324.jpg", width: 90%)]
 
-Modulate from C major (I) to the key of A minor (vi):
+#note("C")장조(#chord("I"))에서 #note("A")단조(#chord("vi"))로 전조:
 
-#align(center)[#image("figures/fig_325.jpg", width: 80%)]
+#align(center)[#image("figures/fig_325.jpg", width: 90%)]
 
 === 제3윤곽을 사용하여 C 장조와 밀접한 조로 전조하기
 
-#padbox[Give yourself a starting pitch and sing the exercises. At the end check yourself for accuracy. After mastering these, try modulating to more remote keys: C to E flat, C to A flat, C to E, C to A, C to B flat, C to D, C to Gm, C to Fm, etc.]
+#padbox[시작 음정을 정하고 연습문제를 노래하라. 끝난 후 자신이 정확했는지를 확인하라. 이러한 연습을 숙달한 후에는 더 먼 조로 전조하는 연습을 시도하라. 예를 들면, #note("C")장조에서 #note("Eb")장조, #note("C")장조에서 #note("Ab")장조, #note("C")장조에서 #note("E")장조, #note("C")장조에서 #note("A")장조, #note("C")장조에서 #note("Bb")장조, #note("C")장조에서 #note("D")장조, #note("C")장조에서 #note("G")단조, #note("C")장조에서 #note("F")단조 등으로 전조해보라.]
 
-Modulate from C major (I) to the key of D minor (ii):
+#note("C")장조(#chord("I"))에서 #note("D")단조(#chord("ii"))로 전조:
 
-#align(center)[#image("figures/fig_326.jpg", width: 80%)]
+#align(center)[#image("figures/fig_326.jpg", width: 90%)]
 
-Modulate from C major (I) to the key of E minor (iii):
+#note("C")장조(#chord("I"))에서 #note("E")단조(#chord("iii"))로 전조:
 
-#align(center)[#image("figures/fig_327.jpg", width: 80%)]
+#align(center)[#image("figures/fig_327.jpg", width: 90%)]
 
-Modulate from C major (I) to the key of F major (IV):
+#note("C")장조(#chord("I"))에서 #note("F")장조(#chord("IV"))로 전조:
 
-#align(center)[#image("figures/fig_328.jpg", width: 80%)]
+#align(center)[#image("figures/fig_328.jpg", width: 90%)]
 
-Modulate from C major (I) to the key of G major (V):
+#note("C")장조(#chord("I"))에서 #note("G")장조(#chord("V"))로 전조:
 
-#align(center)[#image("figures/fig_329.jpg", width: 80%)]
+#align(center)[#image("figures/fig_329.jpg", width: 90%)]
 
-Modulate from C major (I) to the key of A minor (vi):
+#note("C")장조(#chord("I"))에서 #note("A")단조(#chord("vi"))로 전조:
 
-#align(center)[#image("figures/fig_330.jpg", width: 80%)]
+#align(center)[#image("figures/fig_330.jpg", width: 90%)]
 
 == 제1윤곽에 특정 기법 적용하기
 
@@ -1971,7 +1984,7 @@ Take the simple outline and apply one or more devices to create a more interesti
 1. Begins with two scale steps, PT:
 #align(center)[#image("figures/fig_354.jpg", width: 69%)]
 2. Scalar passages:
-#align(center)[#image("figures/fig_355.jpg", width: 80%)]
+#align(center)[#image("figures/fig_355.jpg", width: 90%)]
 3. LNT sequence:
 #align(center)[#image("figures/fig_356.jpg", width: 69%)]
 4. LNT, encircling, octave displacement:
@@ -1987,9 +2000,9 @@ Take the simple outline and apply one or more devices to create a more interesti
 9. LNT with extended arpeggio, chromatic encircling:
 #align(center)[#image("figures/fig_362.jpg", width: 69%)]
 10. Unexpected chromatic resolution (The C — #note("C#") pulls up to the D, the E — E flat pull down), chromatic encircling:
-#align(center)[#image("figures/fig_363.jpg", width: 80%)]
+#align(center)[#image("figures/fig_363.jpg", width: 90%)]
 11. Series of encircled notes:
-#align(center)[#image("figures/fig_364.jpg", width: 80%)]
+#align(center)[#image("figures/fig_364.jpg", width: 90%)]
 12. Root of the ii chord preceded and encircled by its dominant, extended arpeggio, encircled B:
 #align(center)[#image("figures/fig_365.jpg", width: 68%)]
 13. Arpeggio begins from below, displaced arpeggios. The second measure is two arpeggios: G7 from the third (3-5-7-9) and from the root (1-3-5-7). The displacement creates a jagged line and at the same time emphasizes the step progression C — B — A — G — F — E.
@@ -2000,17 +2013,17 @@ Take the simple outline and apply one or more devices to create a more interesti
 Take the simple outline and apply one or more devices to create a more interesting, more musical line. Practice them in all major keys. Try doing the same lines in the minor keys. Here are a few examples. Invent and practice several of your own.
 
 1. Begins with scalar passages (inversion of 4.2) sequenced:
-#align(center)[#image("figures/fig_367.jpg", width: 80%)]
+#align(center)[#image("figures/fig_367.jpg", width: 90%)]
 2. LNT, stop and go rhythmic feel:
-#align(center)[#image("figures/fig_368.jpg", width: 80%)]
+#align(center)[#image("figures/fig_368.jpg", width: 90%)]
 3. LNT, PT, C.E.S.H., octave displacement, encircling:
-#align(center)[#image("figures/fig_369.jpg", width: 80%)]
+#align(center)[#image("figures/fig_369.jpg", width: 90%)]
 4. Pick up notes, outline delayed until the second measure:
-#align(center)[#image("figures/fig_370.jpg", width: 80%)]
+#align(center)[#image("figures/fig_370.jpg", width: 90%)]
 5. Chromatic pick up notes, encircling tones:
-#align(center)[#image("figures/fig_371.jpg", width: 80%)]
+#align(center)[#image("figures/fig_371.jpg", width: 90%)]
 6. Chromatic encircling tones:
-#align(center)[#image("figures/fig_372.jpg", width: 80%)]
+#align(center)[#image("figures/fig_372.jpg", width: 90%)]
 7. Encirling, arpeggiated tone, chromatic approaches. The leap from D down to F in m.1 is mirrored in the last measure:
 #align(center)[#image("figures/fig_373.jpg", width: 69%)]
 8. LNTs. The rhythmic accents sometimes suggest a dotted quarter rhythm:
@@ -2020,7 +2033,7 @@ Take the simple outline and apply one or more devices to create a more interesti
 
 Invent short exercises over typical progressions and follow the outlines. This example uses all three outlines. The first two measures (ii - V7) use 제3윤곽 with many chromatic approaches and encircling tones. A fairly simple 제1윤곽 is in the second two measures (iii - V7/ii). In mm.5—6 (ii - V7) is 제2윤곽 with some pick up notes.
 
-#align(center)[#image("figures/fig_375.jpg", width: 80%)]
+#align(center)[#image("figures/fig_375.jpg", width: 90%)]
 
 == 윤곽으로 다른 코드 연결하기 (1)
 
@@ -2034,41 +2047,41 @@ $ chord("ii")-chord("V7")-chord("I")-chord("IV")-frac(chord("iihalfdim")-chord("
 Practice these exercises slowly until comfortable, then speed them up. Practice goal should be to play them in all twelve major keys without hesitation or error at any tempo you begin.
 
 1. Using 제1윤곽 to connect the target notes:
-#align(center)[#image("figures/fig_377.jpg", width: 80%)]
+#align(center)[#image("figures/fig_377.jpg", width: 90%)]
 2. Using 제2윤곽. The outline starts on the odd measures in the first half, and the even measures on the last half of this exercise:
-#align(center)[#image("figures/fig_378.jpg", width: 80%)]
+#align(center)[#image("figures/fig_378.jpg", width: 90%)]
 3. Using 제3윤곽. The outline starts on the odd measures in the first half, and is inverted on the last half of this exercise:
-#align(center)[#image("figures/fig_379.jpg", width: 80%)]
+#align(center)[#image("figures/fig_379.jpg", width: 90%)]
 4. This exercise is based on 제1윤곽. The third of each chord occurs on the downbeat of every measure followed by an arpeggio, before continuing down the scale. The arpeggio is octave displaced in every other measure.
-#align(center)[#image("figures/fig_380.jpg", width: 80%)]
+#align(center)[#image("figures/fig_380.jpg", width: 90%)]
 
 == 윤곽으로 다른 코드 연결하기 (2)
 
 The progression from exercise 7 is shown here with some elaboration. Can you determine what devices are used?
 
 1. 제1윤곽:
-#align(center)[#image("figures/fig_381.jpg", width: 80%)]
+#align(center)[#image("figures/fig_381.jpg", width: 90%)]
 2. 제2윤곽:
-#align(center)[#image("figures/fig_382.jpg", width: 80%)]
+#align(center)[#image("figures/fig_382.jpg", width: 90%)]
 3. 제3윤곽:
-#align(center)[#image("figures/fig_383.jpg", width: 80%)]
+#align(center)[#image("figures/fig_383.jpg", width: 90%)]
 
 == 턴어라운드 진행에서 윤곽 사용하기
 
 Practice the outlines over turnaround progressions.. Turnaround progressions occur as the last two measures of the blues and countless jazz and pop standard tunes, and as the basis for tunes like _I Got Rhythm_ and _Heart and Soul._ Practice these exercises in all twelve keys.
 
 1. Typical turnaround progression (I - V/ii - ii - V etc., in the key of F major):
-#align(center)[#image("figures/fig_384.jpg", width: 80%)]
+#align(center)[#image("figures/fig_384.jpg", width: 90%)]
 2. Turnaround progression with more secondary dominants (I - V7/ii - V7/V - V7 - V/vi etc., in the key of F major):
-#align(center)[#image("figures/fig_385.jpg", width: 80%)]
+#align(center)[#image("figures/fig_385.jpg", width: 90%)]
 3. 제1윤곽 in a cycle (iii - V/ii - ii - V - I - [tritone substitute dominant of iii] in the key of C major):
-#align(center)[#image("figures/fig_386.jpg", width: 80%)]
+#align(center)[#image("figures/fig_386.jpg", width: 90%)]
 4. 제2윤곽 in a cycle (iii - V/ii - ii - V - I - [tritone substitute dominant of iii] in the key of C major):
-#align(center)[#image("figures/fig_387.jpg", width: 80%)]
+#align(center)[#image("figures/fig_387.jpg", width: 90%)]
 5. 제3윤곽 in a cycle (iii - V/ii - ii - V - I - [tritone substitute dominant of iii] in the key of C major):
-#align(center)[#image("figures/fig_388.jpg", width: 80%)]
+#align(center)[#image("figures/fig_388.jpg", width: 90%)]
 6. The longer harmonic rhythm makes it possible to embellish this cycle with chromatic leading tones. The progression is iii - V/ii - ii - V in the key of C major:
-#align(center)[#image("figures/fig_389.jpg", width: 80%)]
+#align(center)[#image("figures/fig_389.jpg", width: 90%)]
 
 == 조성 중심 순환에서의 윤곽
 
@@ -2077,17 +2090,17 @@ Practice the outlines over turnaround progressions.. Turnaround progressions occ
 Practice the key center cycle with a faster harmonic rhythm. In exercise 7, the chords changed every measure; here they change every two beats.
 
 1. 제1윤곽 through key center cycle:
-  #align(center)[#image("figures/fig_390.jpg", width: 80%)]
+  #align(center)[#image("figures/fig_390.jpg", width: 90%)]
 2. 제1윤곽 variation through cycle:
-  #align(center)[#image("figures/fig_391.jpg", width: 80%)]
+  #align(center)[#image("figures/fig_391.jpg", width: 90%)]
 3. 제2윤곽 through cycle:
-  #align(center)[#image("figures/fig_392.jpg", width: 80%)]
+  #align(center)[#image("figures/fig_392.jpg", width: 90%)]
 4. 제2윤곽 variation through cycle:
-  #align(center)[#image("figures/fig_393.jpg", width: 80%)]
+  #align(center)[#image("figures/fig_393.jpg", width: 90%)]
 5. 제3윤곽 through cycle:
-  #align(center)[#image("figures/fig_394.jpg", width: 80%)]
+  #align(center)[#image("figures/fig_394.jpg", width: 90%)]
 6. 제3윤곽 variation through cycle:
-  #align(center)[#image("figures/fig_395.jpg", width: 80%)]
+  #align(center)[#image("figures/fig_395.jpg", width: 90%)]
 
 === 스탠다드 재즈 진행에서 윤곽 적용하기
 
@@ -2096,139 +2109,139 @@ Practice the key center cycle with a faster harmonic rhythm. In exercise 7, the 
 == 스탠다드 재즈 진행 I: $bold(#note("Bb"))$ 블루스
 
 1. 제1윤곽
-#align(center)[#image("figures/fig_396.jpg", width: 80%)]
+#align(center)[#image("figures/fig_396.jpg", width: 90%)]
 2. 제2윤곽
-#align(center)[#image("figures/fig_397.jpg", width: 80%)]
+#align(center)[#image("figures/fig_397.jpg", width: 90%)]
 3. 제3윤곽
-#align(center)[#image("figures/fig_398.jpg", width: 80%)]
+#align(center)[#image("figures/fig_398.jpg", width: 90%)]
 
 == 스탠다드 재즈 진행 II: "Rhythm Changes"
 
 === A 섹션
 
 1. 제1윤곽:
-#align(center)[#image("figures/fig_399.jpg", width: 80%)]
+#align(center)[#image("figures/fig_399.jpg", width: 90%)]
 2. 제2윤곽:
-#align(center)[#image("figures/fig_400.jpg", width: 80%)]
+#align(center)[#image("figures/fig_400.jpg", width: 90%)]
 3. 제3윤곽:
-#align(center)[#image("figures/fig_401.jpg", width: 80%)]
+#align(center)[#image("figures/fig_401.jpg", width: 90%)]
 
 === B 섹션
 
 4. 제1윤곽 with half note values:
-#align(center)[#image("figures/fig_402.jpg", width: 80%)]
+#align(center)[#image("figures/fig_402.jpg", width: 90%)]
 5. 제1윤곽 implying a ii - V in mm.1—2, and mm.5—6:
-#align(center)[#image("figures/fig_403.jpg", width: 80%)]
+#align(center)[#image("figures/fig_403.jpg", width: 90%)]
 6. 제1윤곽 implying a ii - V in mm.3—4, and mm.7—8:
-#align(center)[#image("figures/fig_404.jpg", width: 80%)]
+#align(center)[#image("figures/fig_404.jpg", width: 90%)]
 7. 제2윤곽 with half notes values:
-#align(center)[#image("figures/fig_405.jpg", width: 80%)]
+#align(center)[#image("figures/fig_405.jpg", width: 90%)]
 8. 제2윤곽 implying a ii - V in mm.1—2, and mm.5—6:
-#align(center)[#image("figures/fig_406.jpg", width: 80%)]
+#align(center)[#image("figures/fig_406.jpg", width: 90%)]
 9. 제2윤곽 implying a ii - V in mm.3—4, and mm.7—8:
-#align(center)[#image("figures/fig_407.jpg", width: 80%)]
+#align(center)[#image("figures/fig_407.jpg", width: 90%)]
 10. 제3윤곽 with half note values:
-#align(center)[#image("figures/fig_408.jpg", width: 80%)]
+#align(center)[#image("figures/fig_408.jpg", width: 90%)]
 11. 제3윤곽 with half note values:
-#align(center)[#image("figures/fig_409.jpg", width: 80%)]
+#align(center)[#image("figures/fig_409.jpg", width: 90%)]
 12. 제3윤곽 implying a ii - V in mm.1—2, and mm.5—6:
-#align(center)[#image("figures/fig_410.jpg", width: 80%)]
+#align(center)[#image("figures/fig_410.jpg", width: 90%)]
 13. 제3윤곽 implying a ii - V in mm.3—4, and mm.7—8:
-#align(center)[#image("figures/fig_411.jpg", width: 80%)]
+#align(center)[#image("figures/fig_411.jpg", width: 90%)]
 
 == 스탠다드 재즈 진행 III: _Are You All the Outlines_#footnote[스탠다드 재즈 곡 "All the Things You Are"의 제목을 변형한 언어유희 (역주)]
 
 #fb[
   1. 제1윤곽
-  #align(center)[#image("figures/fig_412.jpg", width: 80%)]
+  #align(center)[#image("figures/fig_412.jpg", width: 90%)]
 ]
 
 #fb[
-  2. 제2윤곽 (첫 번쨰 마디에서 시작)
-  #align(center)[#image("figures/fig_413.jpg", width: 80%)]
+  2. 제2윤곽 (첫 번째 마디에서 시작)
+  #align(center)[#image("figures/fig_413.jpg", width: 90%)]
 ]
 
 #fb[
-  3. 제2윤곽 (두 번쨰 마디에서 시작)
-  #align(center)[#image("figures/fig_414.jpg", width: 80%)]
+  3. 제2윤곽 (두 번째 마디에서 시작)
+  #align(center)[#image("figures/fig_414.jpg", width: 90%)]
 ]
 
 #fb[
-  4. 제3윤곽 (첫 번쨰 마디에서 시작)
-  #align(center)[#image("figures/fig_415.jpg", width: 80%)]
+  4. 제3윤곽 (첫 번째 마디에서 시작)
+  #align(center)[#image("figures/fig_415.jpg", width: 90%)]
 ]
 
 #fb[
-  5. 제3윤곽 (두 번쨰 마디에서 시작)
-  #align(center)[#image("figures/fig_416.jpg", width: 80%)]
+  5. 제3윤곽 (두 번째 마디에서 시작)
+  #align(center)[#image("figures/fig_416.jpg", width: 90%)]
 ]
 
 == 스탠다드 재즈 진행 IV: _Outlines by Starlight_#footnote[스탠다드 재즈 곡 "Stella by Starlight"의 제목을 변형한 언어유희 (역주)]
 
 #fb[
   1. 제1윤곽
-  #align(center)[#image("figures/fig_417.jpg", width: 80%)]
+  #align(center)[#image("figures/fig_417.jpg", width: 90%)]
 ]
 
 #fb[
-  2. 제2윤곽 (첫 번쨰 마디에서 시작)
-  #align(center)[#image("figures/fig_418.jpg", width: 80%)]
+  2. 제2윤곽 (첫 번째 마디에서 시작)
+  #align(center)[#image("figures/fig_418.jpg", width: 90%)]
 ]
 
 #fb[
-  3. 제2윤곽 (두 번쨰 마디에서 시작)
-  #align(center)[#image("figures/fig_419.jpg", width: 80%)]
+  3. 제2윤곽 (두 번째 마디에서 시작)
+  #align(center)[#image("figures/fig_419.jpg", width: 90%)]
 ]
 
 #fb[
-  4. 제3윤곽 (첫 번쨰 마디에서 시작)
-  #align(center)[#image("figures/fig_420.jpg", width: 80%)]
+  4. 제3윤곽 (첫 번째 마디에서 시작)
+  #align(center)[#image("figures/fig_420.jpg", width: 90%)]
 ]
 
 #fb[
-  5. 제3윤곽 (두 번쨰 마디에서 시작)
-  #align(center)[#image("figures/fig_421.jpg", width: 80%)]
+  5. 제3윤곽 (두 번째 마디에서 시작)
+  #align(center)[#image("figures/fig_421.jpg", width: 90%)]
 ]
 
-== 스탠다드 재즈 진행 V: $bold(chord("ii")-chord("V"))$로 대체한 $bold(note("F"))$ 블루스
+== 스탠다드 재즈 진행 V: $bold(prog("ii", "V"))$로 대체한 $bold(note("F"))$ 블루스
 
 1. 제1윤곽
-#align(center)[#image("figures/fig_422.jpg", width: 80%)]
+#align(center)[#image("figures/fig_422.jpg", width: 90%)]
 
 2. 제2윤곽 (첫 번째 반마디에서 시작)
-#align(center)[#image("figures/fig_423.jpg", width: 80%)]
+#align(center)[#image("figures/fig_423.jpg", width: 90%)]
 
 3. 제2윤곽 (두 번째 반마디에서 시작)
-#align(center)[#image("figures/fig_424.jpg", width: 80%)]
+#align(center)[#image("figures/fig_424.jpg", width: 90%)]
 
 4. 제3윤곽 (첫 번째 반마디에서 시작)
-#align(center)[#image("figures/fig_425.jpg", width: 80%)]
+#align(center)[#image("figures/fig_425.jpg", width: 90%)]
 
 5. 제3윤곽 (두 번째 반마디에서 시작)
-#align(center)[#image("figures/fig_426.jpg", width: 80%)]
+#align(center)[#image("figures/fig_426.jpg", width: 90%)]
 
 == 스탠다드 재즈 진행 VI.: _Big Strides with Outlines_#footnote[스탠다드 재즈 곡 "Giant Step"의 제목을 변형한 언어유희 (역주)]
 
 #set enum(numbering: n => [16.#n.])
 
 1. 제1윤곽
-#align(center)[#image("figures/fig_427.jpg", width: 80%)]
+#align(center)[#image("figures/fig_427.jpg", width: 90%)]
 
 2. 제2윤곽
-#align(center)[#image("figures/fig_428.jpg", width: 80%)]
+#align(center)[#image("figures/fig_428.jpg", width: 90%)]
 
 3. 제2윤곽
-#align(center)[#image("figures/fig_429.jpg", width: 80%)]
+#align(center)[#image("figures/fig_429.jpg", width: 90%)]
 
 4. 제3윤곽
-#align(center)[#image("figures/fig_430.jpg", width: 80%)]
+#align(center)[#image("figures/fig_430.jpg", width: 90%)]
 
 5. 제3윤곽
-#align(center)[#image("figures/fig_431.jpg", width: 80%)]
+#align(center)[#image("figures/fig_431.jpg", width: 90%)]
 
 == 윤곽 인식하기
 
-Learn to identify outlines and recognize the devices used to embellish them. Here are five examples from Cannonball Adderley. Identify which outline is shown, and what devices are used to make them interesting.
+윤곽을 식별하고 이를 꾸미는 데 사용된 기법을 알아보는 연습을 하라. 다음은 캐넌볼 애덜리의 다섯 가지 예시이다. 각각의 예시에서 어떤 윤곽이 사용되었는지 식별하고, 선율을 더 흥미롭게 만드는 데 사용된 기법이 무엇인지 분석하라.
 
 1. 캐넌볼 애덜리
 #align(center)[#image("figures/fig_432.jpg", width: 47%)]
@@ -2241,7 +2254,7 @@ Learn to identify outlines and recognize the devices used to embellish them. Her
 5. 캐넌볼 애덜리
 #align(center)[#image("figures/fig_436.jpg", width: 35%)]
 
-Find other examples in jazz literature. Practice and learn them in all keys. Answers on page 145.
+재즈 문헌에서 다른 예시들을 찾아 보아라. 그것들을 모든 조성에서 연습하여 익혀라. 답은 #pageref(<chapI>)쪽에 있다.
 
 #chapter("다음에 무엇을 할 것인가?", l: "chap11")
 
