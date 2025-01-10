@@ -107,7 +107,7 @@
   title: "선형적 화성을 통한 화성 연결",
   author: "버트 라이곤",
   main-color: main-color,
-  paper-size: "a4",
+  paper-size: "a5",
   lang: "en",
   font-size: 11pt,
   // list-of-figure-title: "List of Figures",
@@ -241,7 +241,7 @@
 
 조 중심을 결정하면 선택 범위를 더 좁힐 수 있다. 조 중심에는 7개의 음이 있다. 이미 근음은 제외했으므로(베이스가 이를 다루니까), 6개의 음이 남는다. 대부분의 경우 이 6개의 음 중 어느 것을 사용해도 괜찮지만, 항상 화성적으로 명확하지 않을 수 있다. 예를 들어, C장조에서 F는 조의 음이지만, 화성적 명확성을 위해 C 화음 위에서 강조할 첫 번째 선택은 아니다.
 
-화음 기호는 보통 3\~4개의 음을 제안한다. 예를 들어, #chord("Dm7")은 #note("D")-#note("F")-#note("A")-#note("C")를 제안한다. 이러한 음들은 화성적으로 명확하며, 대선율을 위한 선택으로 고려해야 한다. #note("D")는 베이스가 이미 처리하고 있다. #note("A")는 화음의 특성을 알려주지 않는다. #note("C")는 불안정한 음으로, 자연스럽게 #note("B")로 끌려 내려가기를 원한다. #note("F")는 화음의 단조 특성을 드러내며, 베이스의 #note("D") 위에서 화성적으로 명확한 대위법을 위한 최고의 선택이다. 베이스의 #note("D") 위에 #note("F")만 연주해도, 두 음만으로도 완전한 단조 화음처럼 들린다.
+화음 기호는 보통 3\~4개의 음을 제안한다. 예를 들어, #chord("Dm7")은 #note("D")-#note("F")-#note("A")-#note("C")를 제안한다. 이러한 음들은 화성적으로 명확하며, 대위선율을 위한 선택으로 고려해야 한다. #note("D")는 베이스가 이미 처리하고 있다. #note("A")는 화음의 특성을 알려주지 않는다. #note("C")는 불안정한 음으로, 자연스럽게 #note("B")로 끌려 내려가기를 원한다. #note("F")는 화음의 단조 특성을 드러내며, 베이스의 #note("D") 위에서 화성적으로 명확한 대위법을 위한 최고의 선택이다. 베이스의 #note("D") 위에 #note("F")만 연주해도, 두 음만으로도 완전한 단조 화음처럼 들린다.
 
 C장조에서의 #maj251 진행(#prog("Dm7", "G7", "C"))의 경우, 베이스는 #note("D")에서 시작하여 #note("G")로 이어지는 선율을 즉흥 연주한다. #note("F")$$(화음의 3도)는 대위선율을 시작하기 위한 좋은 선택이다. #note("D") 위에서 #note("F")가 울리면, 단조 화음이 들린다. 같은 이유로, #chord("G") 화음에서는 #note("B")가 가장 명확한 선택이며, #chord("C") 화음에서는 #chord("E")가 가장 명확하다. 이러한 목표음을 결정한 뒤에는, 이 음들을 흥미로운 방식으로 연결하는 것이 남은 과제이다.
 
@@ -1023,19 +1023,20 @@ F장조에서 #prog("Ahalfdim7", "D7") 진행은 #chord("ii") 화음(#chord("Gm"
 
 == 제1윤곽과 반음계적·리듬적 복잡성
 
-Several of the next group of examples have more chromaticism than previous examples. The types of chromaticism fall into the traditional categories discussed before. Some are just more complicated rhythmically.
+다음에 살펴볼 여러 예시들은 앞선 예시들보다 더 많은 반음계적 요소를 포함하고 있다. 이러한 반음계적 요소는 이전에 논의된 전통적인 범주에 속하며, 일부는 리듬적으로 더 복잡할 뿐이다.
 
-First, notice that this example begins by pointing to the target note, the seventh is the last note and it resolves on the next downbeat, as we expect, to the third of the V7 chord, the next target note. The two altered tones are descending (notated as flatted notes) chromatic passing tones between diatonic tones a whole step apart.
+먼저, 이 예시는 목표음을 가리키며 시작하고, 마지막 음인 7도가 다음 강박에서 예상대로 #chord("V7") 화음의 3도, 즉 다음 목표음으로 해결된다는 점에 주목하라. (내림표로 기보된) 두 개의 변형된 음은 온음계 음들 사이에서 하강하며, 온음 간격을 메우는 반음계적 경과음이다.
 
 103. 디지 길레스피
 #align(center)[#image("figures/fig_151.jpg", width: 44%)]
 
-Barron begins with the upper and lower neighbor tones to the target note. The flatted notes over the F7 anticipate the B flat minor. The A flat and G flat give the line more downward momentum. The target notes are still on or near the strong downbeats.
+배런은 목표음에 대한 상·하위 이웃음으로 시작한다. #chord("F7") 화음 위의 내림표가 붙은 음들은 다음에 나올 #chord("Bbm")를 예고한다. #note("Ab")과 #note("Gb")은 선율에 더 강한 하강 동력을 부여한다. 목표음들은 여전히 강박이나 강박 근처에 위치한다.
 
 104. 케니 배런
 #align(center)[#image("figures/fig_152.jpg", width: 57%)]
 
-Jackson begins these two similar examples on the target note and fills in with arpeggiated tones. Ex.105 encircles the second target note (B) and chromatically approaches the last target note (E); all target notes occur on the downbeats. Ex.106 includes a little more chromaticism, delays the target note B, and descends to the last note from the seventh. In both examples, Jackson altered the ninths on the dominant chord.
+
+잭슨은 이 두 유사한 예시에서 목표음으로 시작하여 아르페지오 음으로 채운다. 예시 105는 두 번째 목표음(#note("B"))을 둘러싸고 마지막 목표음(#note("E"))에 반음계적으로 접근한다. 모든 목표음은 강박에 위치한다. 예시 106은 더 많은 반음계적 요소를 포함하고 목표음 #note("B")의 등장을 지연시킨 뒤, 7도에서 마지막 음으로 하강한다. 두 예시 모두에서 잭슨은 딸림화음의 9도를 변형하였다.
 
 105. 밀트 잭슨
 #align(center)[#image("figures/fig_153.jpg", width: 57%)]
@@ -1043,27 +1044,27 @@ Jackson begins these two similar examples on the target note and fills in with a
 106. 밀트 잭슨
 #align(center)[#image("figures/fig_154.jpg", width: 57%)]
 
-Within the first measure of ex.107 is a sequence. The line begins on the target note (B flat), descends one step, chromatic approaches from below to the next note and does the same thing to get to the target note E on the downbeat of the second measure. The next measure is a chromatic scale, but is still harmonically clear: the notes on every down beat spell out the arpeggio of the dominant ninth chord from the third: E - G - B flat - D flat (3-5-7-flat 9). All twelve chromatic pitches are used in this example, yet it remains harmonically clear; it is not random chromaticism. Target notes occur in rhythmically significant spots, non-harmonic chromatic notes resolve when and where we expect them.
+예시 107의 첫 번째 마디에는 반복 구절이 있다. 선율은 목표음(#note("Bb"))에서 시작하여 한 음 내려가고, 아래에서 반음계적으로 접근하여 다음 음에 도달한 후 같은 방식으로 진행하여 두 번째 마디의 강박에서 목표음 #note("E")에 도달한다. 다음 마디는 반음계 음계이지만 여전히 화성적으로 명확하다. 모든 강박에 위치한 음들은 딸림9화음의 아르페지오(#note("E")-#note("G")-#note("Bb")-#note("Db"), 3-5-7-$flat$9)를 형성한다. 이 예시에서는 12개의 반음계 음이 모두 사용되었지만 여전히 화성적으로 명확하다. 무작위적인 반음계가 아니라는 것이다. 목표음은 리듬적으로 중요한 위치에 있고, 반음계 비화성음은 예상된 시간과 장소에서 해결된다.
 
 107. 도널드 버드
 #align(center)[#image("figures/fig_155.jpg", width: 56%)]
 
-The first note is the target note of ex.108. Harrell restates it an octave higher, adds only one chromatic note (#note("C#")) before moving down through the seventh to the third of the dominant. Take away every other note in the second measure, and the line still sounds good; all the eighth note values are chord tones.
+예시 108의 첫 번째 음은 목표음이다. 하렐은 이를 한 옥타브 위에서 다시 연주하고, 반음계적 음(#note("C#")) 하나만 추가한 후 7도를 거쳐 딸림화음의 3도로 하강한다. 두 번째 마디에서 한 음씩 건너뛰면서 보면, 8분음표가 모두 화성음이기에 선율은 여전히 잘 들린다.
 
 108. 톰 하렐
 #align(center)[#image("figures/fig_156.jpg", width: 68%)]
 
-Ex.109 is a similar line from the same tune as ex.108. The progression is similar but resolves to C major this time. Starting on beat four of the first measure is the outline without alteration (except for the E flat establishing C minor). The outline recurs beginning on the upbeat of two in the second measure. The last note is the target note for C major, and is approached from above through the seventh of G7.
+예시 109는 예시 108과 동일한 곡에서 나온 유사한 선율이다. 진행은 유사하지만 이번에는 #chord("CM")으로 해결된다. 첫 번째 마디의 네 번째 박자에서 (#chord("Cm")를 구성하는 #note("Eb")는 제외하고) 변형되지 않은 윤곽이 시작된다. 이 윤곽은 두 번째 마디의 두 번째 박자의 약박에서 반복된다. 마지막 음은 #note("C")장조의 목표음이며 #chord("G7")의 7도를 통해 위에서 접근한다.
 
 109. 톰 하렐
 #align(center)[#image("figures/fig_157.jpg", width: 69%)]
 
-Harrell approaches the target note encircling it with its upper and lower neighbor tones. The next note of the outline is octave shifted and occurs on the downbeat of the second measure. The first target note on a strong beat occurs in the second measure on beat three. In the last measure the outline appears unmodified, perhaps to balance the ambiguous previous statement.
+하렐은 목표음에 상·하위 이웃음으로 둘러싸며 접근한다. 윤곽의 다음 음은 옥타브 이동되어 두 번째 마디의 강박에 위치한다. 강박에 위치한 첫 번째 목표음은 두 번째 마디의 세 번째 박자에 나타난다. 마지막 마디에서는 윤곽이 바뀌지 않은 형태로 나타나며, 이전의 모호한 구절과 균형을 이룬다.
 
 110. 톰 하렐
 #align(center)[#image("figures/fig_158.jpg", width: 75%)]
 
-Evans uses the outline on the progression V7/V - V7 in the key of F major. He starts on the target third and arrives at the 3-5-7-9 arpeggio of the C7 early. Cannonball arrives at the target notes late on the C7 and F7.
+에반스는 #note("F")장조에서 #prog("V7/V","V7") 진행 위에 윤곽을 사용한다. 그는 목표음인 3도에서 시작하여 #chord("C7")의 3-5-7-9 아르페지오에 일찍 도달한다. 캐넌볼은 #chord("C7")과 #chord("F7")에서 목표음에 늦게 도달한다.
 
 111. 빌 에반스
 #align(center)[#image("figures/fig_159.jpg", width: 41%)]
@@ -1071,19 +1072,19 @@ Evans uses the outline on the progression V7/V - V7 in the key of F major. He st
 112. 캐넌볼 애덜리
 #align(center)[#image("figures/fig_160.jpg", width: 69%)]
 
-The addition of chromatic notes add color and make lines richer rhythmically. They help delay and anticipate target notes, which set up interesting accents, accents indigenous to the jazz style. The next two examples illustrate how adding chromatic embellishment can enliven a simple outline. At the heart of these examples is the simple diatonic descending outline. Play the bare outline with quarter note values and then either of the two examples and you can clearly hear their relationship.
+반음계적 음을 추가하면 선율에 색채가 더해지고 리듬적으로 더욱 풍부해진다. 이러한 음들은 목표음의 해결을 지연시키거나 예고하여 재즈 스타일에 고유한 흥미로운 강세를 만든다. 다음 두 예시는 단순한 윤곽에 반음계적 꾸밈음을 추가하여 선율을 어떻게 생동감 있게 만드는지 보여준다. 예시의 핵심은 단순한 온음계 하강 윤곽이다. 4분음표로 구성된 윤곽만 연주한 후 두 예시 중 하나를 연주하면 그 관계가 명확하게 들린다.
 
-Parker starts and restarts the outline, creating an accent the up beat of two. He plays a C.E.S.H. on the ii chord; the B natural delaying the resolution to the B flat and to the A. On the downbeat of the second measure he avoids the target note but plays two notes that point to the target note. The target note is sounded after its upper and lower neighbor tones, creating an accent on beat two, measure two. Beat four, measure two is accented by the root of the dominant approached chromatically from below. Three notes point to the final target note D, which does not occur until beat three of the third measure. E flat is the upper neighbor tone; C and C sharp approach from below. The top notes of the line spell the simple diatonic outline (indicated by the arrows above the staff). There is a counterline (indicated by the arrows below the staff) implied by some of the lower tones making this a compound melody. G, the last pitch of measure one, ascends to #note("G#") and then to the target note A in measure two. A, the last pitch of measure two ascends to B flat - C - C sharp and the target note D. There is a symmetry in the lower counter line beginning on the upbeat of four and leading up to the target thirds as the rest of the line leads down.
+파커는 윤곽을 시작하고 다시 시작하여 두 번째 박자의 약박에 악센트를 만든다. 그는 #chord("ii") 화음 위에서 C.E.S.H.를 연주하며 #note("Bnat")로 #note("Bb")과 #note("A")로의 해결을 지연시킨다. 두 번째 마디의 강박에서 목표음을 피하고 목표음을 가리키는 두 음을 연주한다. 목표음은 상·하위 이웃음 이후에 들리며 두 번째 마디의 두 번째 박자에 악센트를 만든다. 두 번째 마디의 네 번째 박자에는 아래로부터 반음계적으로 접근됨으로써 딸림화음의 근음이 악센트를 받는다. 세 음이 마지막 목표음 #note("D")를 가리키며, 이는 세 번째 마디의 세 번째 박자에 이르러서야 나타난다. #note("Eb")은 상위 이웃음이고 #note("C")와 #note("C#")은 아래에서 접근한다. 선율의 상위 음들은 단순한 온음계 윤곽을 형성한다(오선 위의 화살표로 표시). 하위 음들은 일부 낮은 음들에 의해 암시된 대위선율(오선 아래의 화살표로 표시)을 형성하여 복합 선율이 된다. 첫 번째 마디의 마지막 음 #note("G")는 #note("G#")으로 상승한 후 두 번째 마디에서 목표음 #note("A")로 이어진다. 두 번째 마디의 마지막 음 #note("A")는 #note("Bb")-#note("C")-#note("C#")으로 상승하여 목표음 #note("D")로 이어진다. 하위 대위선율은 네 번째 박자의 약박에서 시작하여 목표 3도로 올라가며, 나머지 선율은 내려가는 대칭을 보인다.
 
 113. 찰리 파커
 #align(center)[#image("figures/fig_161.jpg", width: 62%)]
 
-Garland aims for the third of each chord: ii - V7 - I - V7/ii - ii in this extended and chromatic line. All twelve pitches are used; yet the line is harmonically specific. The line begins and ends on the same target note. Six times diatonic notes are approached from whole step below with a chromatic passing tone. The target notes for F7 (A), B flat (D) and G7 (B natural) are approached in the same way: the preceding seventh leaps down to an arpeggiated note and then chromatically ascends to the target note. Three dramatic leaps occur after the target tone: the third of C minor leaps down to the fifth; the third of F7 leaps down to the fifth and then up the arpeggio (3-5-7-9); and the third of G7 leaps up to the flat nine, octave displacing the descending scale step B - A.
+갈랜드는 확장된 반음계 선율에서 #prog("ii", "V7", "I", "V7/ii", "ii") 진행의 각 화음의 3도를 목표로 한다. 12개의 음이 모두 사용되었으나 선율은 여전히 화성적으로 명확하다. 선율은 동일한 목표음에서 시작하여 끝난다. 여섯 번 온음계 음이 반음계적 경과음을 통해 온음 아래에서 접근된다. #chord("F7"), #note("Bb"), #chord("G7")의 목표음(각각 #note("A"), #note("D"), #note("Bnat"))은 동일한 방식으로 접근된다. 선두의 7도는 아르페지오 음으로 하강한 후 반음계적으로 상승하여 목표음에 도달한다. 목표음 이후 세 번의 극적인 도약이 발생한다. #chord("Cm")의 3도는 5도를 향해 아래로 도약하며, #chord("F7")의 3도는 5도를 향해 아래로 도약한 후 아르페지오로 상승한다(3-5-7-9). #chord("G7")의 3도는 $flat 9$로 도약하며 하강 음계를 옥타브 이동(#note("B")-#note("A"))시킨다.
 
 114. 레드 갈랜드
 #align(center)[#image("figures/fig_162.jpg", width: 72%)]
 
-Playing just the notes of the simple outline, with their new rhythmic placement in ex.113. and ex 114 is interesting even without the chromatic additions. Up to now, we have seen how with additions the simple outline becomes more interesting. The opposite is true: taking away the insertions, ornaments, and embellishments also reveals interesting lines by the realignment of the original notes of the outline. Garland's lines, with chromaticism removed, sound rhythmically more at home in a funk idiom.
+단순한 윤곽의 음들만을 새로운 리듬 배치로 예시 113과 114에서 연주해도, 반음계적 요소가 추가되지 않은 상태에서도 흥미롭게 들린다. 지금까지는 꾸밈음과 추가 요소를 통해 단순한 윤곽이 어떻게 더 흥미로워지는지를 보았다. 반대로, 삽입된 음, 장식음, 꾸밈음을 제거해보면, 원래 윤곽의 음들을 재배열하는 것만으로도 흥미로운 선율을 만들어낼 수 있다는 것도 사실이다. 반음계적 요소가 제거된 갈랜드의 선율은 리듬적으로 펑크 스타일에 더 잘 어울린다.
 
 #align(center)[#image("figures/fig_163.jpg", width: 71%)]
 
