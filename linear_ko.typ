@@ -18,7 +18,7 @@
 
 #let fb(body) = box(width: 100%, body)
 
-#let padbox(body) = block(inset: (x: 20pt, y: 20pt), body)
+#let padbox(body) = block(inset: (x: 20pt, y: 10pt), body)
 
 #let sans(body) = text(font: ("Helvetica", "KoPubDotum"),body)
 
@@ -132,6 +132,9 @@
 #set footnote.entry(gap: 0.7em)
 
 #counter(footnote).update(0) // this is for
+
+#show list: set par(first-line-indent: 0pt)
+#show enum: set par(first-line-indent: 0pt)
 
 #chapter("개요", l: "chap1")
 
@@ -473,7 +476,7 @@ C.E.S.H.는 '정적 화성의 반음계적 발전(Chromatic Elaboration of Stati
 
 == 차용화음과 차용음
 
-(#link(<sec_diatonic_roman>, [온음계 화음과 로마 숫자])를 참조하라.) 일부 온음계 화음은 다른 조에서 "차용한" 음으로 바꿀 수 있다. 화성이 바뀌면 선율도 같은 방식으로 변한다. 화음은 종종 단조인 같은으뜸음조#sub[parallel minor]에서 차용된다. #chord("iihalfdim7")가 #chord("ii7")로, #chord("iv")가 #chord("IV")로 바뀌는 식이다. 단조인 같은으뜸음조의 음은 종종 딸림화음에 적용되어, 온음계 음보다 더 큰 긴장을 만들어내고, 장화음인 으뜸화음에 도달할 때 더 큰 해소를 만들어낸다. 예를 들어, #note("C")장조의 딸림화음인 #chord("G7") 위에서 재즈 음악가들은 같은으뜸음조인 #note("C")단조에서 #note("Ab") ($flat 9$), #note("Bb") ($sharp 9$), #note("Eb") ($flat 13$)을 자주 사용한다. 이러한 차용음, 즉 낮아진 온음계 음은 온음계 음보다 더 강한 하향성을 가지고 있다. 전조할 때, 화음은 도착하는 조에서 차용된다. 예를 들어 C장조에서 D단조로 이동할 때, 종종 D단조를 가리키는 진행이 D단조 화음에 앞서 나타난다. 예컨대 $chord("V7")=chord("A7")$이나, $min25 = chord("Ehalfdim7")-chord("A7")$, $chord("viidim7") = chord("C#dim7")$ 등이 사용된다. #note("Bb")과 이끎음 #note("C#")과 같이 전조에 필요한 음은 보통 이러한 변화 위의 선율에서 나타난다.
+(#link(<sec_diatonic_roman>, [온음계 화음과 로마 숫자])를 참조하라.) 일부 온음계 화음은 다른 조에서 '차용한' 음으로 바꿀 수 있다. 화성이 바뀌면 선율도 같은 방식으로 변한다. 화음은 종종 단조인 같은으뜸음조#sub[parallel minor]에서 차용된다. #chord("iihalfdim7")가 #chord("ii7")로, #chord("iv")가 #chord("IV")로 바뀌는 식이다. 단조인 같은으뜸음조의 음은 종종 딸림화음에 적용되어, 온음계 음보다 더 큰 긴장을 만들어내고, 장화음인 으뜸화음에 도달할 때 더 큰 해소를 만들어낸다. 예를 들어, #note("C")장조의 딸림화음인 #chord("G7") 위에서 재즈 음악가들은 같은으뜸음조인 #note("C")단조에서 #note("Ab") ($flat 9$), #note("Bb") ($sharp 9$), #note("Eb") ($flat 13$)을 자주 사용한다. 이러한 차용음, 즉 낮아진 온음계 음은 온음계 음보다 더 강한 하향성을 가지고 있다. 전조할 때, 화음은 도착하는 조에서 차용된다. 예를 들어 C장조에서 D단조로 이동할 때, 종종 D단조를 가리키는 진행이 D단조 화음에 앞서 나타난다. 예컨대 $chord("V7")=chord("A7")$이나, $min25 = chord("Ehalfdim7")-chord("A7")$, $chord("viidim7") = chord("C#dim7")$ 등이 사용된다. #note("Bb")과 이끎음 #note("C#")과 같이 전조에 필요한 음은 보통 이러한 변화 위의 선율에서 나타난다.
 
 
 == 방향 전환
@@ -555,7 +558,7 @@ C.E.S.H.는 '정적 화성의 반음계적 발전(Chromatic Elaboration of Stati
 
 #align(center)[#image("figures/fig_053.jpg", width: 41%)]
 
-다음 두 윤곽은 거의 꾸밈이 없이 단순하게 유지되어 있다. 덱스터 고든은 첫 두 음의 순서를 바꿔 연주한다. 허버드는 #chord("ii") 화음의 3도 주변에서 연주한 후 음계를 따라 내려온다. #chord("V7") 화음의 3도는 세번째 박자까지 지연되고, #chord("I") 화음으로의 해결은 정확히 첫 박자에서 이루어진다. #chord("C7") 화음의 $flat 9$인 #note("Db")의 사용에 주목하라. 이 음은 같은으뜸음조인 F단조(내림표 4개)에서 "차용"한 것이다.
+다음 두 윤곽은 거의 꾸밈이 없이 단순하게 유지되어 있다. 덱스터 고든은 첫 두 음의 순서를 바꿔 연주한다. 허버드는 #chord("ii") 화음의 3도 주변에서 연주한 후 음계를 따라 내려온다. #chord("V7") 화음의 3도는 세번째 박자까지 지연되고, #chord("I") 화음으로의 해결은 정확히 첫 박자에서 이루어진다. #chord("C7") 화음의 $flat 9$인 #note("Db")의 사용에 주목하라. 이 음은 같은으뜸음조인 F단조(내림표 4개)에서 '차용'한 것이다.
 
 11. 덱스터 고든
 
@@ -595,7 +598,7 @@ C.E.S.H.는 '정적 화성의 반음계적 발전(Chromatic Elaboration of Stati
 18. 찰리 파커
 #align(center)[#image("figures/fig_061.jpg", width: 56%)]
 
-다음 세 가지 예제는 많은 픽업음으로 시작한다. 윤곽이 시작되기 전에 선율 재료가 추가되었다. 하렐은 #chord("ii") 화음의 근음에서 시작하여 상행 음계를 사용한 후 11도까지 아르페지오로 연주하고, 단순한 하행 음계 윤곽을 통해 으뜸화음의 3도로 이어진다. 허버드는 매우 유사한 방식으로 하렐이 사용한 동일한 재료의 상부를 사용하여 같은 방식으로 하행한다. 예시 21에서 하렐은 #chord("ii") 화음의 3도에서 시작하지만 하강하지 않고 7도로 상승한다. 그는 세 번째 박자의 #note("D")로 #chord("V7") 화음에 도달하는 것으로 보인다. 단순한 패턴은 두 번째 마디에서 #note("Ab")으로 시작한다. 윤곽은 #note("Bb")을 반음계적 이웃음 #note("A")와 #note("Bnat")로 둘러싸고, 돈꾸밈음을 추가하여 확장되며, 마지막으로 으뜸 화음의 3도인 G에 도달한다.
+다음 세 가지 예제는 많은 픽업음으로 시작한다. 윤곽이 시작되기 전에 선율 재료가 추가되었다. 하렐은 #chord("ii") 화음의 근음에서 시작하여 상행 음계를 사용한 후 11도까지 아르페지오로 연주하고, 단순한 하행 음계 윤곽을 통해 으뜸화음의 3도로 이어진다. 허버드는 매우 유사한 방식으로 하렐이 사용한 동일한 재료의 상부를 사용하여 같은 방식으로 하행한다. 예시 21에서 하렐은 #chord("ii") 화음의 3도에서 시작하지만 하강하지 않고 7도로 상승한다. 그는 세 번째 박자의 #note("D")로 #chord("V7") 화음에 도달하는 것으로 보인다. 단순한 패턴은 두 번째 마디에서 #note("Ab")으로 시작한다. 윤곽은 #note("Bb")을 반음계적 이웃음 #note("A")와 #note("Bnat")로 둘러싸고, 돈꾸밈음#sub[turns]을 추가하여 확장되며, 마지막으로 으뜸 화음의 3도인 G에 도달한다.
 
 19. 톰 하렐
 #align(center)[#image("figures/fig_062.jpg", width: 63%)]
@@ -1781,31 +1784,28 @@ Here are two examples from a classic modal recording. Cannonball Adderley uses t
 
 윤곽을 모든 장조와 단조에서 기본 형태로 익혀라. 단조에서 연주할 때는 화성 단음계를 사용하라(단조 조성의 조표를 사용하고 이끎음을 올려라). 이를 충분히 숙지하기 전에는 아무것도 발전시키기 어렵거나 불가능하다.
 
-+ 윤곽을 올바른 재즈 발음법과 느낌으로 연습하라. 8분음표를 스윙 스타일로 연주하고, 약박를 강하게 강조하라. 먼저 4분음표 값으로 연주해 리듬을 확실히 고정하라. 4분음표 속도가 빨라지면 그것이 8분음표처럼 느껴질 것이다.
++ 윤곽을 올바른 재즈 아티큘레이션과 느낌으로 연습하라. 8분음표를 스윙 스타일로 연주하고, 약박를 강하게 강조하라. 먼저 4분음표 값으로 연주해 리듬을 확실히 고정하라. 4분음표 속도가 빨라지면 그것이 8분음표처럼 느껴질 것이다.
 + 스탠다드 곡과 진행에 기본 윤곽을 적용하라. 예를 들어 블루스에서는,
-  #block[
-    #set text(size: 0.9em)
-    - 블루스 진행을 여러 코러스 연주하면서, #maj25$$가 나올 때마다 반드시 제1윤곽을 연주하라.
-    - 몇 개의 코러스를 연주하고 나서, 제2윤곽으로 바꾼 다음, 제3윤곽으로 바꿔라.
-    - 9-10마디와 12마디의 일반적인 #maj25 외에도, 4마디에서 #chord("IV") 화음으로 가는 #maj25, 8마디에서 #chord("ii") 화음으로 가는 $chord("iidim")-chord("V7")$을 시도하라.
-    - 첫 두 마디에서도 모든 윤곽이 적용 가능하다.
+  - 블루스 진행을 여러 코러스 연주하면서, #maj25$$가 나올 때마다 반드시 제1윤곽을 연주하라.
+  - 몇 개의 코러스를 연주하고 나서, 제2윤곽으로 바꾼 다음, 제3윤곽으로 바꿔라.
+  - 9-10마디와 12마디의 일반적인 #maj25 외에도, 4마디에서 #chord("IV") 화음으로 가는 #maj25, 8마디에서 #chord("ii") 화음으로 가는 $chord("iidim")-chord("V7")$을 시도하라.
+  - 첫 두 마디에서도 모든 윤곽이 적용 가능하다.
 
-    F조에서 블루스 진행은 다음과 같다.
-  
-    #align(center)[#image("figures/fig_310.jpg", width: 60%)]
-  ]
+  F조에서 블루스 진행은 다음과 같다.
+
+  #align(center)[#image("figures/fig_310.jpg", width: 60%)]
 + 이 책이나 자신만의 컬렉션에서 좋아하는 예제를 모든 조성에서 연습하라. 모든 음이 스윙 느낌을 갖게 하고, 선율의 꼭대기와 방향 전환 부분을 강조하라. 대충 연습하면 대충 연주하게 될 것이다.
 + 좋아하는 예제를 변형하고 개인화하라.
   - 음 하나나 두 개를 바꿔라.
   - 리듬을 일부 변경하라.
-  - 원래 없던 돈꾸밈음#sub[turns]과 꾸밈음을 추가하라.
+  - 원래 없던 돈꾸밈음과 꾸밈음을 추가하라.
   - 꾸밈음을 제거해 보라.
   - 적절한 임시표를 사용해 단조 키로 연주해보라.
   - 모든 조에서 연주하라!
 + 자신만의 것을 만들어라. 각 윤곽에서 여러 예시를 만들어라. 윤곽 하나와 기법 하나(이웃음, 경과음, 아르페지오 음 등)를 조합해 창작해 보라. 다시 말하지만, 모든 조에서 연습하라.
 + 자신의, 또는 다른 이들의 예시를 곡과 스탠다드 진행에 적용하라. 미리 준비하여 그들이 잘 작동하도록 하라.
-+ 윤곽에 대한 지식을 활용해 화성을 들을 수 있도록 하라. 진행 위에서 윤곽을 노래 불러라. 낯선 진행을 들을 때도 도움이 될 것이다. 대부분의 스탠다드 곡은 위로든 아래로든 한 번에 하나의 임시표를 초과해 전조하지 않는다. C장조(올림표나 내림표 없음)에서 가장 자주 전조되는 조는 A단조(올림표나 내림표 없음), F장조와 D단조(내림표 하나), G장조와 E단조(올림표 하나)이다. 이러한 조는 C장조의 온음계 삼화음과 대응한다. 즉, $chord("Dm")=chord("ii")$, $chord("Em")=chord("iii")$, $chord("F")=chord("IV")$, $chord("G")=chord("V")$, $chord("Am")=chord("vi")$이다. #chord("I")에서 #chord("ii"), #chord("iii"), #chord("IV"), #chord("V"), #chord("vi")로, 그리고 다시 #chord("I")로 전조하며 노래하는 연습을 하라.
-+ 들어라! 이 페이지는 음정과 리듬의 대략적인 정보를 담고 있을 뿐이다. 강세, 실제 배치, 억양, 발음, 음색, 이 모든 요소들이 이러한 선율에 스윙감을 부여하며, 이는 위대한 재즈 아티스트들을 듣고 모방함으로써 배울 수 있다. 이를 대체할 방법은 없다.
++ 윤곽에 대한 지식을 활용해 화성을 들을 수 있도록 하라. 진행 위에서 윤곽을 노래 불러라. 낯선 진행을 들을 때도 도움이 될 것이다. 대부분의 스탠다드 곡은 위로든 아래로든 한 번에 하나의 임시표를 초과해 전조하지 않는다. #note("C")장조(올림표나 내림표 없음)에서 가장 자주 전조되는 조는 #note("A")단조(올림표나 내림표 없음), #note("F")장조와 #note("D")단조(내림표 하나), #note("G")장조와 #note("E")단조(올림표 하나)이다. 이러한 조는 #note("C")장조의 온음계 삼화음과 대응한다. 즉, $chord("Dm")=chord("ii")$, $chord("Em")=chord("iii")$, $chord("F")=chord("IV")$, $chord("G")=chord("V")$, $chord("Am")=chord("vi")$이다. #chord("I")에서 #chord("ii"), #chord("iii"), #chord("IV"), #chord("V"), #chord("vi")로, 그리고 다시 #chord("I")로 전조하며 노래하는 연습을 하라.
++ 들어라! 이 페이지는 음정과 리듬의 대략적인 정보를 담고 있을 뿐이다. 강세, 실제 배치, 억양, 아티큘레이션, 음색, 이 모든 요소들이 이러한 선율에 스윙감을 부여하며, 이는 위대한 재즈 아티스트들을 듣고 모방함으로써 배울 수 있다. 이를 대체할 방법은 없다.
 
 #chapter("윤곽 예제", l: "chap10")
 
@@ -2068,7 +2068,7 @@ The progression from exercise 7 is shown here with some elaboration. Can you det
 
 == 턴어라운드 진행에서 윤곽 사용하기
 
-Practice the outlines over turnaround progressions.. Turnaround progressions occur as the last two measures of the blues and countless jazz and pop standard tunes, and as the basis for tunes like _I Got Rhythm_ and _Heart and Soul._ Practice these exercises in all twelve keys.
+Practice the outlines over turnaround progressions. Turnaround progressions occur as the last two measures of the blues and countless jazz and pop standard tunes, and as the basis for tunes like _I Got Rhythm_ and _Heart and Soul._ Practice these exercises in all twelve keys.
 
 1. Typical turnaround progression (I - V/ii - ii - V etc., in the key of F major):
 #align(center)[#image("figures/fig_384.jpg", width: 90%)]
@@ -2087,19 +2087,19 @@ Practice the outlines over turnaround progressions.. Turnaround progressions occ
 
 // key center cycle = 조성 중심 순환
 
-Practice the key center cycle with a faster harmonic rhythm. In exercise 7, the chords changed every measure; here they change every two beats.
+더 빠른 화성 리듬으로 조성 중심 순환을 연습하라. 연습문제 7에서는 화음이 매 마디마다 바뀌었지만, 여기서는 두 박자마다 바뀐다.
 
-1. 제1윤곽 through key center cycle:
+1. 조성 중심 순환을 관통하는 제1윤곽
   #align(center)[#image("figures/fig_390.jpg", width: 90%)]
-2. 제1윤곽 variation through cycle:
+2. 조성 중심 순환을 관통하는 제1윤곽의 변형
   #align(center)[#image("figures/fig_391.jpg", width: 90%)]
-3. 제2윤곽 through cycle:
+3. 조성 중심 순환을 관통하는 제2윤곽
   #align(center)[#image("figures/fig_392.jpg", width: 90%)]
-4. 제2윤곽 variation through cycle:
+4. 조성 중심 순환을 관통하는 제2윤곽의 변형
   #align(center)[#image("figures/fig_393.jpg", width: 90%)]
-5. 제3윤곽 through cycle:
+5. 조성 중심 순환을 관통하는 제3윤곽
   #align(center)[#image("figures/fig_394.jpg", width: 90%)]
-6. 제3윤곽 variation through cycle:
+6. 조성 중심 순환을 관통하는 제3윤곽의 변형
   #align(center)[#image("figures/fig_395.jpg", width: 90%)]
 
 === 스탠다드 재즈 진행에서 윤곽 적용하기
@@ -2119,34 +2119,34 @@ Practice the key center cycle with a faster harmonic rhythm. In exercise 7, the 
 
 === A 섹션
 
-1. 제1윤곽:
+1. 제1윤곽
 #align(center)[#image("figures/fig_399.jpg", width: 90%)]
-2. 제2윤곽:
+2. 제2윤곽
 #align(center)[#image("figures/fig_400.jpg", width: 90%)]
-3. 제3윤곽:
+3. 제3윤곽
 #align(center)[#image("figures/fig_401.jpg", width: 90%)]
 
 === B 섹션
 
-4. 제1윤곽 with half note values:
+4. 2분음표로 나타낸 제1윤곽
 #align(center)[#image("figures/fig_402.jpg", width: 90%)]
-5. 제1윤곽 implying a ii - V in mm.1—2, and mm.5—6:
+5. #prog("ii", "V")를 함의하는 제1윤곽 (1\~2마디와 5\~6마디)
 #align(center)[#image("figures/fig_403.jpg", width: 90%)]
-6. 제1윤곽 implying a ii - V in mm.3—4, and mm.7—8:
+6. #prog("ii", "V")를 함의하는 제1윤곽 (3\~4마디와 7\~8마디)
 #align(center)[#image("figures/fig_404.jpg", width: 90%)]
-7. 제2윤곽 with half notes values:
+7. 2분음표로 나타낸 제2윤곽
 #align(center)[#image("figures/fig_405.jpg", width: 90%)]
-8. 제2윤곽 implying a ii - V in mm.1—2, and mm.5—6:
+8. #prog("ii", "V")를 함의하는 제2윤곽 (1\~2마디와 5\~6마디)
 #align(center)[#image("figures/fig_406.jpg", width: 90%)]
-9. 제2윤곽 implying a ii - V in mm.3—4, and mm.7—8:
+9. #prog("ii", "V")를 함의하는 제2윤곽 (3\~4마디와 7\~8마디)
 #align(center)[#image("figures/fig_407.jpg", width: 90%)]
-10. 제3윤곽 with half note values:
+10. 2분음표로 나타낸 제3윤곽
 #align(center)[#image("figures/fig_408.jpg", width: 90%)]
-11. 제3윤곽 with half note values:
+11. 2분음표로 나타낸 제3윤곽
 #align(center)[#image("figures/fig_409.jpg", width: 90%)]
-12. 제3윤곽 implying a ii - V in mm.1—2, and mm.5—6:
+12. #prog("ii", "V")를 함의하는 제3윤곽 (1\~2마디와 5\~6마디)
 #align(center)[#image("figures/fig_410.jpg", width: 90%)]
-13. 제3윤곽 implying a ii - V in mm.3—4, and mm.7—8:
+13. #prog("ii", "V")를 함의하는 제3윤곽 (3\~4마디와 7\~8마디)
 #align(center)[#image("figures/fig_411.jpg", width: 90%)]
 
 == 스탠다드 재즈 진행 III: _Are You All the Outlines_#footnote[스탠다드 재즈 곡 "All the Things You Are"의 제목을 변형한 언어유희 (역주)]
@@ -2254,7 +2254,7 @@ Practice the key center cycle with a faster harmonic rhythm. In exercise 7, the 
 5. 캐넌볼 애덜리
 #align(center)[#image("figures/fig_436.jpg", width: 35%)]
 
-재즈 문헌에서 다른 예시들을 찾아 보아라. 그것들을 모든 조성에서 연습하여 익혀라. 답은 #pageref(<chapI>)쪽에 있다.
+재즈 문헌에서 다른 예시들을 찾아 보아라. 그것들을 모든 조성에서 연습하여 익혀라. 답은 #pageref(<sec_cannonball_answer>)쪽에 있다.
 
 #chapter("다음에 무엇을 할 것인가?", l: "chap11")
 
@@ -2279,3 +2279,109 @@ Practice the key center cycle with a faster harmonic rhythm. In exercise 7, the 
 == 연주하라
 
 연주하라. 그것이 우리가 하는 일이다. 연습과 공연에 있어 놀이하듯 접근하라. 다른 연주자들의 연주를 듣고 반응할 준비를 하라. 음악적으로 무엇을 해야 하고 무엇을 할 수 있을지에 대해 충분히 연습하고 고민했다면, 자신의 본능을 신뢰할 수 있을 것이다.
+
+#show: appendices.with("부록", hide-parent: false)
+
+#chapter("스탠다드 진행에서의 세 연습곡")
+
+이 세 개의 연습곡은 10장에서 다룬 표준 진행을 기반으로 창작된 즉흥 솔로의 예시이다. 윤곽과 다른 재료들을 사용하여 자신만의 솔로를 만들어 보라. 창의적으로 접근하라. 세 가지 윤곽을 모두 활용하여 음악적으로 들리도록 구성하라.
+
+#box[
+연습곡 1. 스탠다드 진행 II: _“Rhythm Changes”_
+#align(center)[#image("figures/fig_438.jpg", width: 90%)]
+]
+
+#box[
+연습곡 2. 스탠다드 진행 III: _Are You All the Outlines?_
+#align(center)[#image("figures/fig_439.jpg", width: 90%)]
+]
+
+#box[
+연습곡 3. 스탠다드 진행 IV: _Outlines by Starlight_
+#align(center)[#image("figures/fig_440.jpg", width: 90%)]
+]
+
+#chapter("스탠다드 재즈 진행에서의 루 도널드슨 솔로")
+
+루 도널드슨은 아트 블레이키의 음반 _Live at Birdland_에서 연주한 이 솔로에서 세 가지 윤곽에 크게 의존한다. 도널드슨 이후 솔로를 연주하는 클리포드 브라운은 거의 전적으로 제1윤곽을 활용하여 솔로를 구성한다.
+
+#align(center)[#image("figures/fig_441.jpg", width: 100%)]
+#align(center)[#image("figures/fig_442.jpg", width: 100%)]
+#align(center)[#image("figures/fig_443.jpg", width: 100%)]
+#align(center)[#image("figures/fig_444.jpg", width: 100%)]
+
+#chapter("스탠다드 재즈 진행에서의 톰 하렐 솔로")
+
+하렐은 이 현대적 솔로를 흥미롭게 만들기 위해 다양한 기법을 사용하지만, 세 가지 윤곽에 여러 번 의존한다. 솔로를 분석하고, 세 가지 윤곽을 찾아내어 그것들이 전체적인 맥락에서 어떻게 연결되고 활용되는지 살펴보라.
+
+#align(center)[#image("figures/fig_445.jpg", width: 100%)]
+#align(center)[#image("figures/fig_446.jpg", width: 100%)]
+#align(center)[#image("figures/fig_447.jpg", width: 100%)]
+#align(center)[#image("figures/fig_448.jpg", width: 100%)]
+#align(center)[#image("figures/fig_449.jpg", width: 100%)]
+#align(center)[#image("figures/fig_450.jpg", width: 100%)]
+
+#chapter("재즈 즉흥연주 수업에서 윤곽 활용을 위한 제안")
+
+== 서면 연습
+
+- 학생들에게 수업에서 배울 새로운 곡마다 윤곽을 작성하게 하라. 이전에 배운 스탠다드 재즈 진행에 대해 작성한 것과 같은 방식으로 작성하도록 한다.
+
+  이는 학생들이 서면 형태로 패턴을 인식하는 데 도움을 주며, 화성 진행을 배우고 전조에 필요한 음을 식별함으로써 즉흥 연주를 준비하도록 돕는다.
+
+- 학생들에게 각 윤곽에 대한 자신만의 변형을 작성하게 하라.
+
+  학기 동안 각 윤곽에 대해 한두 개의 새로운 선율을 작성하면 학생들은 상당한 양의 음악적 아이디어를 갖추게 된다. 이를 연습하면 기술과 민첩성이 향상된다.
+
+- 학생들이 윤곽, 책의 아이디어, 연습곡을 모델로 삼아 솔로를 작성하고 익히도록 하라.
+
+  이를 통해 학생들은 지식을 창의적으로 통합하고 활용할 수 있다.
+
+== 청음 훈련
+
+- 수업 중 한 번에 한 윤곽씩 곡 위에서 윤곽을 부르게 하라. 모든 음을 4분음표 길이로 부르는 대신 네 번쨰 박자의 약박에서 강박을 미리 부르게 하라.
+- 학생 개개인이 윤곽을 기반으로 한 스캣 솔로를 하게 하라. 두#sub[doo]와 닷#sub[daht]$$(재즈에서 사용하는 '가변 두#sub[doo]') 음절을 사용하여 재즈 아티큘레이션을 강조하도록 도와라.
+
+  이는 학생들이 청각적으로 음을 식별할 수 있도록 준비시킨다. 음을 청각적으로 인식할 수 있게 되면 화성을 통해 선율을 만드는 것이 쉬워진다.
+
+== 기술 연습
+
+- 수업 중 한 번에 한 윤곽씩 곡 위에서 윤곽을 부르게 하라. 모든 음을 4분음표 길이로 부르는 대신 네 번쨰 박자의 약박에서 강박을 미리 부르게 하라. 각 장에서 다룬 연습 문제를 진행한다.
+- 윤곽을 바탕으로 더 흥미로운 선율을 만들어 곡에 적용하게 하라.
+
+  학생들에게 명확하고 실용적인 연습 과제를 제공한다.
+
+== 제한된 즉흥 연주
+
+- 학생 개개인이 한 번에 한 윤곽만을 사용하여 곡 위에서 즉흥 연주하도록 하라. 모든 학생이 제1윤곽을 연주한 뒤, 제2윤곽으로 넘어가고, 그다음 제3윤곽으로 진행한다.
+
+  제한을 두는 것은 통제력을 배우는 방법이다. 통제력은 모든 음악가와 작곡가가 어떤 스타일이나 분야에서든 추구하는 핵심 요소이다.
+
+== 통합된 즉흥 연주
+
+- 학생들이 세 가지 윤곽과 다른 자료를 자유롭게 사용하여 곡 위에서 즉흥 연주하게 하라.
+
+  윤곽은 학생들이 명확한 화성 아이디어를 선형적으로 듣고 연주할 수 있도록 튼튼한 틀을 제공한다. 기본적인 경로를 듣고 이해할 수 있게 되면, 그 경로에서 벗어나 탐색하더라도 돌아올 지점과 방향을 알고 들을 수 있어 더 쉽게 연주할 수 있다.
+
+== 17. 윤곽 인식하기 <sec_cannonball_answer>
+
+윤곽을 식별하고 이를 꾸미는 데 사용된 기법을 알아보는 연습을 하라. 다음은 캐넌볼 애덜리의 다섯 가지 예시이다. 각각의 예시에서 어떤 윤곽이 사용되었는지 식별하고, 선율을 더 흥미롭게 만드는 데 사용된 기법이 무엇인지 분석하라.
+
+#set enum(numbering: n => "17." + str(n) + ".")
+
+1. 캐넌볼 애덜리\
+  제2윤곽: 픽업 노트와 함께 방향이 반전됨.
+  
+#align(center)[#image("figures/fig_451.jpg", width: 47%)]
+2. 캐넌볼 애덜리\
+  제3윤곽: #chord("C7") 화음에서 옥타브 이동을 포함한 3-5-7-9 아르페지오.
+#align(center)[#image("figures/fig_452.jpg", width: 47%)]
+3. 캐넌볼 애덜리\
+  제1윤곽: 멈췄다 가는#sub[stop and go] 리듬으로 인해 #chord("E7") 화음의 해결이 세 번째 박자까지 지연됨. #chord("E7") 화음의 아르페지오(3-5-7-9)로 #chord("Am") 화음의 해결이 지연됨.
+#align(center)[#image("figures/fig_453.jpg", width: 47%)]
+4. 캐넌볼 애덜리\
+  제2윤곽: 화성음으로 도약하여 톱니형 모양을 만들고 #chord("C7") 화음의 해결을 지연시킴; 목표음(#note("E")) 앞에 반음계적 이끎음(#note("D#"))이 위치함; #chord("C7") 화음의 3도에서 근음으로 도약함.
+#align(center)[#image("figures/fig_454.jpg", width: 47%)]
+5. 캐넌볼 애덜리\
+  제3윤곽: 아래에서 아르페지오 음을 사용함. 목표 음(#note("A"))은 상·하위 이웃음에 의해 지연됨. 목표음(#note("A"))은 위(#note("C")-#note("Bb")-#note("A"))와 아래(#note("G")-#note("G#")-#note("A"))에서 접근함.
+#align(center)[#image("figures/fig_455.jpg", width: 35%)]
