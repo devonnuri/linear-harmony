@@ -20,7 +20,7 @@
 
 #let padbox(body) = block(inset: (x: 20pt, y: 10pt), body)
 
-#let sans(body) = text(font: ("Helvetica", "KoPubDotum"),body)
+#let sans(body) = text(font: ("Helvetica", "KoPubDotum"), body)
 
 #let note(notestr) = {
   set text(fill: cmyk(0%, 100%, 0%, 20%))
@@ -99,7 +99,7 @@
 
 // #set text(font: ("Times New Roman", "KoPubBatang"), lang: "ko")
 #set text(font: ("Tex Gyre Termes", "KoPubBatang"), lang: "ko")
-// #show math.equation: set text(font: "Euler Math")
+#show math.equation: set text(font: ("New Computer Modern Math", "KoPubBatang"))
 
 #set outline(title: [목차])
 
@@ -135,6 +135,8 @@
 
 #show list: set par(first-line-indent: 0pt)
 #show enum: set par(first-line-indent: 0pt)
+
+#set math.equation(numbering: none)
 
 #chapter("개요", l: "chap1")
 
@@ -1095,48 +1097,54 @@ F장조에서 #prog("Ahalfdim7", "D7") 진행은 #chord("ii") 화음(#chord("Gm"
 115. 찰리 파커
 #align(center)[#image("figures/fig_164.jpg", width: 60%)]
 
-From the bridge of a tune written for four tenors is an example of the outlines as a sequence. The progression is: ii - V7 - iii - V7/ii - ii. The first measure has no additional notes or embellishments. It is the outline variation that arpeggiates the V7 chord (3-5-7-9). The second measure is the descending scale variation with octave displacement. One note (E), and arpeggiated tone, is added displacing rhythmically the resolution to the last target note F.
+테너 4대를 위한 이 곡의 브릿지에서 나온 이 예시는 윤곽을 순차적으로 사용한 예시이다. 진행은 다음과 같다.
+
+$ prog("ii", "V7", "iii", "V7/ii", "ii") $
+
+첫 번째 마디에는 추가한 음이나 꾸밈음이 없다. #chord("V7") 화음을 아르페지오(3-5-7-9)로 연주한 윤곽 변형이다. 두 번째 마디는 옥타브 이동을 포함한 하강 음계 변형이다. 한 음(#note("E"))과 아르페지오 음이 추가되어 마지막 목표음 F로의 해결이 리듬적으로 지연된다.
 
 116. 지미 주프리
 #align(center)[#image("figures/fig_165.jpg", width: 59%)]
 
 This is a classic sequence from Parker. The example can be found in many other Parker solos. Measure one is the descending scale variation with octave displacement (a third up to flat nine leap). Measure two arpeggiates the C minor from the third (with a third down to five leap), then descends to the target note A, and arpeggiates the F7 chord. The rhythm is compressed on the fourth beat to compensate for the extra inserted notes B flat and G. The progression is:
 
-iii (substituting for I) - V7/ii - ii - V7 - I.
+이 예시는 파커의 대표적인 선율이다. 이 예시는 다른 여러 파커의 솔로에서도 찾을 수 있다. 첫 번째 마디는 옥타브 이동을 포함한 하강 음계 변형(3도에서 $flat 9$으로 도약)이다. 두 번째 마디에서는 #chord("Cm") 화음을 3도에서 아르페지오(3도에서 5도를 향해 아래로 도약)로 연주한 후 목표음 #note("A")로 하강하고, #chord("F7") 화음을 아르페지오로 연주한다. 네 번째 박자에서 추가된 #note("Bb")과 #note("G") 음을 보상하기 위해 리듬이 압축된다. 진행은 다음과 같다.
 
-In order to modulate and tonicize the ii chord (Cm7), the G7, a secondary dominant, was used. To modulate from B flat (2 flats) to C minor (3 flats) two chromatic alterations are needed: A to A flat, B flat to B natural (the leading tone in C minor.) These two chromatic tones are the first pitches Parker plays on the G7 chord.
+$ underbracket(prog("iii"), upright("I")text("의 대체"))-prog("V7/ii", "ii", "V7", "I") $
+
+#chord("ii") 화음(#chord("Cm7"))으로 전조하고 으뜸음화하기 위해 #chord("G7"), 즉 부딸림화음이 사용되었다. #note("Bb")$$(내림표 2개)에서 #note("C")단조(내림표 3개)로 전조하려면 두 개의 반음계적 변화가 필요하다. #note("A")를 #note("Ab")으로, #note("Bb")을 #note("C")단조의 이끎음인 #note("Bnat")로 바꾸는 것이 그것이다. 이 두 반음계적 음이 파커가 #chord("G7") 화음 위에서 처음 연주하는 음이다.
 
 117. 찰리 파커
 #align(center)[#image("figures/fig_166.jpg", width: 60%)]
 
-There is a sequence in ex.118 of 제1윤곽 with two different harmonic rhythms. The first measure is the fundamental outline embellished with two simple turns. The second measure begins with a leap from the target note to the note an octave higher. The chromatic turn using the G sharp help elongate the outline to account for the longer harmonic rhythm. Every chord has its third on a downbeat. Each third is preceded by the previous seventh on an upbeat.
+예시 118에서는 두 가지 다른 화성 리듬으로 제1윤곽을 순차적으로 사용한 예시가 있다. 첫 번째 마디는 두 개의 단순한 돈꾸밈음을 더한 기본 윤곽이다. 두 번째 마디는 목표음에서 한 옥타브 위의 음으로 도약하여 시작된다. #note("G#")을 사용한 반음계적 돈꾸밈음이 윤곽을 길게 늘려 더 긴 화성 리듬에 맞춘다. 모든 화음의 3도는 강박에 위치하며, 각각 약박에서의 7도에 뒤따른다.
 
 118. 클리포드 브라운
 #align(center)[#image("figures/fig_167.jpg", width: 90%)]
 
-When there are two chords per measure in a jazz waltz, there is a question as to where to play the second chord. It can occur on beat three; but in jazz, often occurs on the upbeat of two. The second chord landing on the upbeat of two divides the measure in half. This kind of subdivision suggests two beats per measure rather than three. The implied time signature is 6/8, compound duple, superimposed over the 3/4 simple triple. Evans divides the first measure in half; the C7 lands on the upbeat of beat two. In the second measure, the B flat chord arrives on beat three.
+재즈 왈츠에서 한 마디에 두 개의 화음이 있을 때 두 번째 화음을 어디에 연주할지에 대한 문제가 있다. 이는 세 번째 박자에 연주할 수 있지만, 재즈에서는 종종 두 번째 박자의 약박에 연주된다. 두 번째 화음이 두 번째 박자의 약박에 도달하면 마디가 절반으로 나뉜다. 이러한 세분화는 한 마디가 세 박자 대신 두 박자로 이루어져 있음을 암시한다. 함의하는 박자표는 $3/4$의 단순 3박자#sub[simple triple] 위에 겹쳐진 복합 2박자#sub[compound duple], $6/8$이다. 에반스는 첫 번째 마디를 절반으로 나누고 #chord("C7") 화음을 두 번째 박자의 약박에 위치시킨다. 두 번째 마디에서는 #chord("Bb") 화음이 세 번째 박자에 도달한다.
 
 119. 빌 에반스
 #align(center)[#image("figures/fig_168.jpg", width: 90%)]
 
-The next examples feature two outlines of different types.
+다음 예시들은 특히 서로 다른 유형의 두 윤곽이 등장한다.
 
-Navarro uses 제1윤곽, followed by 제2윤곽 (with passing tones) over two chromatic ii - V7 progressions.
+나바로는 두 개의 반음계적 #maj25 진행 위에 제1윤곽을 연주한 후 경과음을 포함한 제2윤곽을 연주한다.
 
-120. Fats Navarro:
+120. 패츠 나바로
 #align(center)[#image("figures/fig_169.jpg", width: 74%)]
 
-Over the same ii -V7 progression, Parker begins with 제2윤곽 (with a chromatic pick up note) and then plays 제1윤곽.
+같은 #maj25 진행 위에서 파커는 반음계적 픽업음으로 시작하여 제2윤곽을 연주한 후 제1윤곽을 연주한다.
 
 121. 찰리 파커
 #align(center)[#image("figures/fig_170.jpg", width: 75%)]
 
-Brown displaces the first simple outline (no.1) beginning with the upper and lower neighbor tones to the first target note. Chromatic pickups to the G (which begins 제3윤곽) in the second measure gets the line back on time so the seventh of C minor and the target note A on the F7 chord arrive where we expect them. More chromatic pick up notes fill out the measure so that the E flat arrives on the upbeat of four placing the D on the downbeat. The rhythmic displacement is one element that makes this line interesting. Did the addition of extra notes create the rhythmic interest, or did the rhythmic displacement require the addition of extra notes?
+브라운은 첫 번째 단순한 (제1)윤곽을 첫 번째 목표음에 대한 상·하위 이웃음으로 시작하여 리듬적으로 이동시킨다. 두 번째 마디에서 (제3윤곽이 시작되는) #note("G")로의 반음계적 픽업음이 선율을 제자리에 돌려 놓아 #chord("Cm7")의 7도와 #chord("F7") 화음의 목표음 #note("A")가 예상한 위치에 도달하도록 한다. 더 많은 반음계적 픽업음이 마디를 채워 #note("Eb")이 네 번째 박자의 약박에 도달하고 #note("D")가 강박에 위치하도록 한다. 리듬적 이동은 이 선율을 흥미롭게 만드는 요소 중 하나이다. 추가된 음들이 리듬적 흥미를 만든 것인가, 아니면 리듬적 이동이 추가적인 음을 필요로 한 것인가?
 
 122. 클리포드 브라운
 #align(center)[#image("figures/fig_171.jpg", width: 75%)]
 
-This final combination is from Parker's solo on a well-known bop tune in A flat major. The progression is iii7 - V7/ii - ii7 - V7 - I in A flat major. The first is 제1윤곽, the second 제3윤곽. The dominant chords have the same pattern: a leap from the third to the flat nine and the chromatic approach to the fifth of the next chord.
+이 마지막 조합은 파커가 #note("Ab")장조에서 잘 알려진 비밥 곡에서 연주한 솔로의 일부이다. 진행은 #note("Ab")장조에서 #prog("iii7", "V7/ii", "ii7", "V7", "I")이다. 첫 번째는 제1윤곽, 두 번째는 제3윤곽이다. 딸림화음들은 3도에서 $flat 9$으로 도약한 후 다음 화음의 5도로 반음계적으로 접근한다는 동일한 패턴을 가진다.
 
 123. 찰리 파커
 #align(center)[#image("figures/fig_172.jpg", width: 69%)]
@@ -1285,7 +1293,7 @@ Passing tones: Since 제2윤곽 is an arpeggiated outline, it lends itself to di
 154. 소니 스팃
 #align(center)[#image("figures/fig_204.jpg", width: 53%)]
 
-155. Fats Navarro:
+155. 패츠 나바로
 #align(center)[#image("figures/fig_205.jpg", width: 44%)]
 
 156. 톰 하렐
@@ -2042,7 +2050,6 @@ Practice this progression with all of the outlines for practice connecting all c
 
 // #align(center)[#image("figures/fig_376.jpg", width: 23%)]
 
-#set math.equation(numbering: none)
 $ chord("ii")-chord("V7")-chord("I")-chord("IV")-frac(chord("iihalfdim")-chord("V7"), chord("vi"))-chord("vi") $
 
 Practice these exercises slowly until comfortable, then speed them up. Practice goal should be to play them in all twelve major keys without hesitation or error at any tempo you begin.
@@ -2371,7 +2378,7 @@ Practice the outlines over turnaround progressions. Turnaround progressions occu
 #set enum(numbering: n => "17." + str(n) + ".")
 
 1. 캐넌볼 애덜리\
-  제2윤곽: 픽업 노트와 함께 방향이 반전됨.
+  제2윤곽: 픽업음과 함께 방향이 반전됨.
   
 #align(center)[#image("figures/fig_451.jpg", width: 47%)]
 2. 캐넌볼 애덜리\
@@ -2384,5 +2391,5 @@ Practice the outlines over turnaround progressions. Turnaround progressions occu
   제2윤곽: 화성음으로 도약하여 톱니형 모양을 만들고 #chord("C7") 화음의 해결을 지연시킴; 목표음(#note("E")) 앞에 반음계적 이끎음(#note("D#"))이 위치함; #chord("C7") 화음의 3도에서 근음으로 도약함.
 #align(center)[#image("figures/fig_454.jpg", width: 47%)]
 5. 캐넌볼 애덜리\
-  제3윤곽: 아래에서 아르페지오 음을 사용함. 목표 음(#note("A"))은 상·하위 이웃음에 의해 지연됨. 목표음(#note("A"))은 위(#note("C")-#note("Bb")-#note("A"))와 아래(#note("G")-#note("G#")-#note("A"))에서 접근함.
+  제3윤곽: 아래에서 아르페지오 음을 사용함. 목표음(#note("A"))은 상·하위 이웃음에 의해 지연됨. 목표음(#note("A"))은 위(#note("C")-#note("Bb")-#note("A"))와 아래(#note("G")-#note("G#")-#note("A"))에서 접근함.
 #align(center)[#image("figures/fig_455.jpg", width: 35%)]
