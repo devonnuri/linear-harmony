@@ -1374,12 +1374,16 @@ $ underbracket(prog("iii"), upright("I")text("의 대체"))-prog("V7/ii", "ii", 
 
 == 제2윤곽과 여러 윤곽의 조합
 
-Parker begins with 제2윤곽 and ends with 제1윤곽. There are many occurrences of this line in different guises throughout Parker solos. They can be found in solos of disciples of Parker, like Sonny Stitt (ex.149). With the addition of chromatic approach tones, the top diatonic step progression has implied accents every dotted quarter note. The additional notes cause the second outline (no.1) to spill over into the F measure; Parker is not through with the C7 until beat three.
+파커는 제2윤곽으로 시작하여 제1윤곽으로 끝맺는다. 파커의 여러 솔로에서 이 선율이 다양한 형태로 자주 등장하며, 파커의 제자인 소니 스팃의 솔로(예시 149)에서도 발견할 수 있다. 반음계적 접근음을 추가함으로써 상위 온음계 진행은 점4분음표마다 암시된 강세를 갖게 된다. 추가된 음들로 인해 두 번째 윤곽(제1윤곽)이 #chord("F") 마디까지 넘어가게 되며, 파커는 세 번째 박자에서야 #chord("C7")을 다룬다.
 
 174. 찰리 파커
 #align(center)[#image("figures/fig_224.jpg", width: 59%)]
 
-Clifford Brown and Josef Zawinul use 제2윤곽 in these sequential examples. The progression for all three is: iii - V7/ii - ii - V7 - I. Zawinul lands on thirds on strong beats preceded by the seventh of the previous chord every time but one.
+클리포드 브라운과 조세프 자비눌은 잇따르는 예시에서 제2윤곽을 사용한다. 세 가지 예시 모두 다음 진행을 따른다.
+
+$ prog("iii", "V7/ii", "ii", "V7", "I") $
+
+자비눌은 강박에 3도를 위치시키고, 이전 화음의 7도를 그 앞에 위치시킨다. 단 한 번을 제외하고 모든 경우에 이 패턴이 유지된다.
 
 175. 클리포드 브라운
 #align(center)[#image("figures/fig_225.jpg", width: 60%)]
@@ -1390,27 +1394,27 @@ Clifford Brown and Josef Zawinul use 제2윤곽 in these sequential examples. Th
 177. 클리포드 브라운
 #align(center)[#image("figures/fig_227.jpg", width: 90%)]
 
-Zawinul plays 제2윤곽 on the ii - V, followed by 제1윤곽 on the iii - V7/ii.
+자비눌은 #prog("ii", "V") 진행 위에서 제2윤곽을 연주한 후 #prog("iii", "V7/ii") 위에서 제1윤곽을 연주한다.
 
 178. 조세프 자비눌
 #align(center)[#image("figures/fig_228.jpg", width: 69%)]
 
-Brown uses 제2윤곽 on iii - V7/ii, 제3윤곽 on ii - V7 in the key of B flat. The leap from B natural up to the A flat (third to flat nine) is much more dramatic (especially on the trumpet) than stepping down. Notice the third of each dominant seventh is encircled with upper and lower neighbor tones. The F7 chord has a delayed resolution.
+브라운은 #note("Bb")장조에서 #maj36 위에서 제2윤곽을, #maj25 위에서 제3윤곽을 사용한다. #note("Bnat")에서 #note("Ab")으로의 도약(3도에서 $flat 9$)은 (특히 트럼펫에서) 음계를 내려가는 것보다 훨씬 극적인 효과를 준다. 각 딸림7화음의 3도는 상·하위 이웃음으로 둘러싸여 있다. #chord("F7") 화음은 해결이 지연된다.
 
 179. 클리포드 브라운
 #align(center)[#image("figures/fig_229.jpg", width: 57%)]
 
-제2윤곽 begins ex.180. The 3-5-7-9 arpeggio of A7 begins on beat four, but skips down from the third to the fifth before continuing up. 제1윤곽 is implied over the ii - V7, even though the target note for D minor is missing. The V7 arrives two beats early. 제1윤곽 occurs in the last two measure over V7 - I starting on the B natural, stepping down to the E and extending out the 3-5-7-9 arpeggio of C major. There are four arpeggios in this example: E minor, 3-5-7-9 of A7 and C, and an inversion of G7. Three of the arpeggios occur early: the A7, G7, and C major.
+예시 180은 제2윤곽으로 시작한다. #chord("A7") 화음의 3-5-7-9 아르페지오는 첫 번째 마디의 네 번째 박자에서 시작하지만, 3도에서 5도로 아래로 도약한 후 상행한다. #chord("Dm")의 목표음이 등장하지 않더라도 #maj25 위에 제1윤곽이 암시된다. #chord("V7")은 두 박자 일찍 도달한다. 마지막 두 마디에서는 #prog("V7", "I") 진행 위에 제1윤곽이 나타나며 #note("Bnat")에서 시작하여 #note("E")로 내려가고 #chord("CM")의 3-5-7-9 아르페지오로 확장된다. 이 예시에는 #chord("Em"), #chord("A7")과 #chord("C")의 3-5-7-9, #chord("G7")의 전위, 이렇게 총 네 개의 아르페지오가 있다. 이 중 #chord("A7"), #chord("G7"), #chord("CM") 아르페지오 세 개는 일찍 연주된다.
 
 180. 클리포드 브라운
 #align(center)[#image("figures/fig_230.jpg", width: 90%)]
 
-Evans uses three outlines over this passage with rapid harmonic rhythm. 제2윤곽 over the ii - V7; 제3윤곽 over the iii - V7/ii; and anticipating the G minor by three eighth notes, 제3윤곽 over ii - V7 /vi - vi.
+에반스는 빠른 화성 리듬이 있는 이 구절에서 세 개의 윤곽을 사용한다. #maj25 위에 제2윤곽, #maj36 위에 제3윤곽, #chord("Gm")를 세 개의 8분음표 앞당겨 예고하면서 #prog("ii", "V7/vi", "vi") 위에 제3윤곽을 사용한다.
 
 181. 빌 에반스
 #align(center)[#image("figures/fig_231.jpg", width: 69%)]
 
-제2윤곽 usually begins on the root of the ii chord and spells the arpeggio to the seventh: 1-3-5-7. These two examples demonstrate the “'Round Midnight” outline starting on the third, instead of the root, and arpeggiating 3-5-7-9.
+제2윤곽은 보통 #chord("ii") 화음의 근음에서 시작하여 7도까지 아르페지오로 구성된다(1-3-5-7). 이 두 예시는 "'Round Midnight" 윤곽이 근음 대신 3도에서 시작하여 3-5-7-9로 아르페지오화되는 것을 보여준다.
 
 182. 클리포드 브라운
 #align(center)[#image("figures/fig_232.jpg", width: 44%)]
@@ -1476,7 +1480,7 @@ The first note is omitted in these next three examples. The root of the ii chord
 195. 소니 롤린스
 #align(center)[#image("figures/fig_245.jpg", width: 50%)]
 
-The next three do not have the first two notes of the outline. Harrell begins with a fragment of 제2윤곽 and ends with a statement of 제1윤곽.
+The next three do not have the first two notes of the outline. Harrell begins with a fragment of Outline No.2 and ends with a statement of Outline No.1.
 
 196. 톰 하렐
 #align(center)[#image("figures/fig_246.jpg", width: 50%)]
@@ -1505,7 +1509,7 @@ Brown plays this fragment in two ways. The first time with a stop and go feeling
 == 단순한 형태의 제3윤곽
 
 
-These two identical (except for the key) examples of 제3윤곽 in its simplest form. Harrell uses the flatted ninth over the dominant chord (borrowed from the parallel minor key of F minor).
+These two identical (except for the key) examples of Outline No.3 in its simplest form. Harrell uses the flatted ninth over the dominant chord (borrowed from the parallel minor key of F minor).
 
 199. 지미 주프리
 #align(center)[#image("figures/fig_250.jpg", width: 41%)]
@@ -1534,7 +1538,7 @@ Bill Evans and Tom Harrell illustrate the outline variation where the line conti
 205. 톰 하렐
 #align(center)[#image("figures/fig_256.jpg", width: 44%)]
 
-The second variation of 제3윤곽 that continues down the scale with octave displacement is very common. It can be found in many jazz solos in every major and minor key. The credit listed below is from Coltrane, but any number of artists could have been used. The leap from the third to the flat nine on the dominant is one of its attractive elements; giving it characteristics of a compound melody. The first and last four notes sound like the primary melody; the remaining (second through the fifth notes) sound like a secondary answer, or counter melody.
+The second variation of Outline No.3 that continues down the scale with octave displacement is very common. It can be found in many jazz solos in every major and minor key. The credit listed below is from Coltrane, but any number of artists could have been used. The leap from the third to the flat nine on the dominant is one of its attractive elements; giving it characteristics of a compound melody. The first and last four notes sound like the primary melody; the remaining (second through the fifth notes) sound like a secondary answer, or counter melody.
 
 206. 존 콜트레인
 #align(center)[#image("figures/fig_257.jpg", width: 44%)]
@@ -1544,7 +1548,7 @@ Parker adds some rhythmic variation and a chromatic approach to F in this exampl
 207. 찰리 파커
 #align(center)[#image("figures/fig_258.jpg", width: 62%)]
 
-제3윤곽 in simple form within longer lines. Both Mitchell and Brown's second measures resemble 제2윤곽.
+제3윤곽 in simple form within longer lines. Both Mitchell and Brown's second measures resemble Outline No.2.
 
 208. 클리포드 브라운
 #align(center)[#image("figures/fig_259.jpg", width: 53%)]
