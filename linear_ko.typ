@@ -43,32 +43,34 @@
 #let chord(chordstr, jazz: true) = {
   set text(fill: cmyk(0%, 100%, 0%, 20%))
 
-  let pat = regex("((?:[A-G]|[IViv]+)(?:#|b)?)(M|m|dim|aug|halfdim|sus2|sus4|sus)?((?:[#b]?\d+)*)?(?:\/((?:[A-G]|[IViv]+)(?:#|b)?))?(?:\|(.+))?")
+  let pat = regex("((?:[A-G]|[IViv]+)(?:#|b)?)(M|m|dim|aug|halfdim|sus2|sus4)?((?:[#b]?\d+)*)?(sus)?(?:\/((?:[A-G]|[IViv]+)(?:#|b)?))?(?:\|(.+))?")
   let match = chordstr.match(pat)
   assert(match != none, message: "Invalid chord string")
 
-  let (root, quality, extalt_str, slash, denom) = match.captures
+  let (root, quality, extalt_str, sus, slash, denom) = match.captures
 
   root = note(root)
 
   if jazz {
-    quality = if quality == "M" { $triangle.small$ } else if quality == "m" { $-$ } else if quality == "dim" { $circle.small$ } else if quality == "aug" { $+$ } else if quality == "halfdim" { $ø$ } else if quality == "sus2" { $upright(sus2)$ } else if quality == "sus4" { $upright(sus4)$ } else if quality == "sus" { $upright(sus)$ } else { $$ }
+    quality = if quality == "M" { $triangle.small$ } else if quality == "m" { $-$ } else if quality == "dim" { $circle.small$ } else if quality == "aug" { $+$ } else if quality == "halfdim" { $ø$ } else if quality == "sus2" { $upright(sus2)$ } else if quality == "sus4" { $upright(sus4)$ } else { $$ }
   } else {
-    quality = if quality == "M" { $upright(M)$ } else if quality == "m" { $upright(m)$ } else if quality == "dim" { $degree$ } else if quality == "aug" { $+$ } else if quality == "halfdim" { $ø$ } else if quality == "sus2" { $upright(sus2)$ } else if quality == "sus4" { $upright(sus4)$ } else if quality == "sus" { $upright(sus)$ } else { $$ }
+    quality = if quality == "M" { $upright(M)$ } else if quality == "m" { $upright(m)$ } else if quality == "dim" { $degree$ } else if quality == "aug" { $+$ } else if quality == "halfdim" { $ø$ } else if quality == "sus2" { $upright(sus2)$ } else if quality == "sus4" { $upright(sus4)$ } else { $$ }
   }
   
   let extalt = extalt_str.matches(regex("([#b])?(\d+)")).map(x => (x.captures.at(0), x.captures.at(1))).map(x => (if x.at(0) == "#" { $sharp$ } else if x.at(0) == "b" { $flat$ } else { $$ }, x.at(1))).map(x => $#x.at(0) #x.at(1)$)
   
   slash = if slash != none { $\/#note(slash)$ } else { $$ }
+
+  sus = if sus == "sus" { $upright("sus")$ } else { $$ }
   
   let denom_chord = if denom != none { chord(denom) } else { $$ }
 
   let num_chord = if quality == $$ and extalt.len() == 0 { // needed because empty sub/superscript causes horizontal space
     $root slash$
   } else if jazz { 
-    $root_(quality extalt.join()) slash$
+    $root_(quality extalt.join()sus) slash$
   } else {
-    $root quality extalt.join() slash$
+    $root quality extalt.join()sus slash$
   }
 
   if denom != none {
@@ -1508,8 +1510,7 @@ $ prog("iii", "V7/ii", "ii", "V7", "I") $
 
 == 단순한 형태의 제3윤곽
 
-
-These two identical (except for the key) examples of Outline No.3 in its simplest form. Harrell uses the flatted ninth over the dominant chord (borrowed from the parallel minor key of F minor).
+이 두 예시는 제3윤곽의 가장 단순한 형태로, 조만 다를 뿐 동일한 윤곽이다. 하렐은 (같은으뜸음조인 #note("F")단조에서 차용한) 딸림화음 위에서 $flat 9$을 사용하며, 이 윤곽을 연주한다.
 
 199. 지미 주프리
 #align(center)[#image("figures/fig_250.jpg", width: 41%)]
@@ -1517,17 +1518,23 @@ These two identical (except for the key) examples of Outline No.3 in its simples
 200. 톰 하렐
 #align(center)[#image("figures/fig_251.jpg", width: 41%)]
 
-Many jazz compositions include chords like in the following example. The ii chord is played over the root of the V7 creating a dominant suspension sound. Here is a partial list of chord symbols found to describe this sound (shown for the dominant of C = G): G7 sus, G9 sus, Dm7/G, Dm9/G, F/G. Since this sound is essentially the ii and V7 chord together, any of the outlines will work for this harmony.
+다음 예시와 같은 화음 진행은 많은 재즈 곡에서 발견된다. #chord("ii") 화음이 #chord("V7")의 근음 위에서 연주되어 딸림화음이 계류하는 소리를 만들어낸다. 이 소리를 나타내는 코드의 일부를 나열하자면 다음과 같다. (#chord("C")의 딸림화음인 #chord("G")에 대해 나타냈다.)
+
+#align(center)[
+  #chord("G7sus"), #chord("G9sus"), #chord("Dm7/G"), #chord("Dm9/G"), #chord("F/G")
+]
+
+이 소리는 기본적으로 #chord("ii")와 #chord("V7") 화음이 함께 연주되는 것이기 때문에, 윤곽 중 어느 것이든 이 화음에 적합하다.
 
 201. 톰 하렐
 #align(center)[#image("figures/fig_252.jpg", width: 32%)]
 
-So many of the examples have added passing tones, chromatic approaches, neighbor tones, and rapid sixteenth subdivisions. In this example, Rollins demonstrates how simple rhythms and placement can make the outline interesting.
+지금까지 살펴본 많은 예시에서 경과음, 반음계적 접근음, 이웃음, 빠른 16분음표 세분화가 추가되었다. 이 예시에서 롤린스는 간단한 리듬과 배치만으로 윤곽을 흥미롭게 만드는 방법을 보여준다.
 
 202. 소니 롤린스
 #align(center)[#image("figures/fig_253.jpg", width: 44%)]
 
-Bill Evans and Tom Harrell illustrate the outline variation where the line continues down the scale. The flatted ninth over the dominant occurs in all three.
+빌 에반스와 톰 하렐은 선율이 음계를 따라 계속 내려가는 윤곽 변형을 보여준다. 딸림화음 위에서 $flat 9$은 세 예시 모두에서 발견된다.
 
 203. 빌 에반스
 #align(center)[#image("figures/fig_254.jpg", width: 44%)]
@@ -1538,17 +1545,17 @@ Bill Evans and Tom Harrell illustrate the outline variation where the line conti
 205. 톰 하렐
 #align(center)[#image("figures/fig_256.jpg", width: 44%)]
 
-The second variation of Outline No.3 that continues down the scale with octave displacement is very common. It can be found in many jazz solos in every major and minor key. The credit listed below is from Coltrane, but any number of artists could have been used. The leap from the third to the flat nine on the dominant is one of its attractive elements; giving it characteristics of a compound melody. The first and last four notes sound like the primary melody; the remaining (second through the fifth notes) sound like a secondary answer, or counter melody.
+음계 하행과 옥타브 이동을 포함하는 제3윤곽의 두 번째 변형은 매우 일반적이며, 모든 장조 및 단조 키에서 많은 재즈 솔로에 등장한다. 아래에 표시된 예시는 콜트레인의 것으로, 다른 많은 연주자들이 연주한 것일 수도 있다. 딸림화음 위에서 3도에서 $flat 9$으로 도약하는 부분은 이 윤곽의 매력적인 요소 중 하나로, 복합 선율의 특성을 부여한다. 첫 음과 마지막 네 음은 주된 선율처럼 들리며, 나머지 음들(두 번째부터 다섯 번째까지)은 보조 응답#sub[secondary answer] 또는 대위선율로 들린다.
 
 206. 존 콜트레인
 #align(center)[#image("figures/fig_257.jpg", width: 44%)]
 
-Parker adds some rhythmic variation and a chromatic approach to F in this example.
+파커는 이 예시에서 리듬 변화를 추가하고 #note("F")로 향하는 반음계적 접근음을 사용한다.
 
 207. 찰리 파커
 #align(center)[#image("figures/fig_258.jpg", width: 62%)]
 
-Outline No.3 in simple form within longer lines. Both Mitchell and Brown's second measures resemble Outline No.2.
+다음에는 긴 선율 내에 단순한 형태의 제3윤곽이 등장한다. 미첼과 브라운의 두 번째 마디는 제2윤곽과 유사하다.
 
 208. 클리포드 브라운
 #align(center)[#image("figures/fig_259.jpg", width: 53%)]
@@ -1556,12 +1563,12 @@ Outline No.3 in simple form within longer lines. Both Mitchell and Brown's secon
 209. 블루 미첼
 #align(center)[#image("figures/fig_260.jpg", width: 54%)]
 
-Morgan adds chromatic passing tones and elongates the rhythm to account for the longer harmonic rhythm. All the sevenths and their target thirds occur where we expect them. Morgan avoids playing any type of B natural before the third measure, making the surprise resolution to G major more effective.
+모건은 반음계적 경과음을 추가하고 더 긴 화성 리듬에 맞춰 리듬을 길게 늘린다. 모든 7도와 그 목표 3도는 예상되는 위치에 나타난다. 모건은 세 번째 마디 이전에 #note("Bnat")을 연주하는 것을 피함으로써 #chord("GM")로의 해결이 더 효과적으로 다가오게 만든다.
 
 210. 리 모건
 #align(center)[#image("figures/fig_261.jpg", width: 60%)]
 
-The ii chord is anticipated in these three examples. Harrell anticipates the ii and holds on to the V7 chord into the last measure. McLean anticipates the Gm7 chord, delays the resolution to C7 until beat four, the triplet 3-5-7 9 arpeggio hurries the line to the F chord, but its resolution is still delayed until beat three.
+이 세 예시에서 #chord("ii") 화음은 미리 연주된다. 하렐은 ii 화음을 미리 연주하고 V7 화음을 마지막 마디까지 유지한다. 맥린은 #chord("Gm7") 화음을 미리 연주하고 #chord("C7")으로의 해결을 네 번째 박자까지 지연시킨다. 3-5-7-9 아르페지오가 선율을 #chord("F") 화음으로 급하게 이끌지만, 해결은 여전히 세 번째 박자까지 지연된다.
 
 211. 빌 에반스
 #align(center)[#image("figures/fig_262.jpg", width: 44%)]
@@ -1572,14 +1579,14 @@ The ii chord is anticipated in these three examples. Harrell anticipates the ii 
 213. 재키 맥린
 #align(center)[#image("figures/fig_264.jpg", width: 56%)]
 
-Stitt begins with an ascending arpeggio, moves down with a C.E.S.H., and then plays the simple Outline No.3 in the second measure. The change of direction, chromaticism, and resulting accents make this example stimulating.
+스팃은 상행 아르페지오로 시작하여 C.E.S.H.를 사용한 후, 두 번째 마디에서 단순한 제3윤곽을 연주한다. 방향 전환, 반음계적 요소, 그로 인한 강세가 이 예시를 더욱 흥미롭게 만든다.
 
 214. 소니 스팃
 #align(center)[#image("figures/fig_265.jpg", width: 59%)]
 
 == 제3윤곽과 C.E.S.H.
 
-Outline No.3 seems to lend itself to the C.E.S.H. more than the other outlines, the chromatic motion often suggesting a compound melody. The following are several examples of the C.E.S.H. based on Outline No.3. Some use the C.E.S.H. to delay the resolution of the V7 chord; some manage to use the C.E.S.H. and arrive at the V7 on time. Several (ex.215, 216, 217, 218, 219, 221) use the fifth of the ii chord below as a pivot note to give the line more of a sawtooth shape. The range of rhythmic variety in these passages illustrate how much rhythm has to do with personalizing the basic outlines or any musical idea.
+제3윤곽은 다른 윤곽보다 C.E.S.H.에 더 잘 맞는 것처럼 보이며, 반음계적 움직임이 종종 복합 선율을 암시한다. 다음은 제3윤곽을 기반으로 한 여러 C.E.S.H. 예시이다. 일부는 C.E.S.H.를 사용하여 #chord("V7") 화음의 해결을 지연시키며, 일부는 C.E.S.H.를 사용하면서도 제시간에 #chord("V7")에 도달한다. 몇몇 예시(215, 216, 217, 218, 219, 221)는 하위 옥타브의 #chord("ii") 화음 5도를 중심축음으로 사용하여 선율에 톱니형을 더한다. 이 구절들에 등장하는 리듬적 다양성은 기본 윤곽이나 어떤 음악적 아이디어를 개인화하는 데 있어 리듬이 얼마나 중요한지를 보여준다.
 
 215. 캐넌볼 애덜리
 #align(center)[#image("figures/fig_266.jpg", width: 50%)]
@@ -1602,17 +1609,17 @@ Outline No.3 seems to lend itself to the C.E.S.H. more than the other outlines, 
 221. 프레디 허버드
 #align(center)[#image("figures/fig_272.jpg", width: 59%)]
 
-These two examples involve a change of direction. Even though they both begin with an _ascending_ arpeggio, like Outline No.2, they are included with Outline No.3 because the seventh resolves to the third below the arpeggio. The chromatic line (G-#note("F#")-F-E and F-E-Eb-D) in these passages are rhythmically almost identical and are interesting when played by themselves.
+이 두 예시는 방향 전환이 포함된다. 두 예시 모두 상행 아르페지오로 시작하지만 제2윤곽처럼 보이는 대신 제3윤곽으로 분류된다. 이유는 7도가 아르페지오 아래의 3도로 해결되기 때문이다. 이 구절에서 반음계적 선율(#note("G")-#note("F#")-#note("F")-#note("E")와 #note("F")-#note("E")-#note("Eb")-#note("D"))은 리듬적으로 거의 동일하며, 단독으로 연주할 때 흥미롭다.
 
 222. 덱스터 고든
 #align(center)[#image("figures/fig_273.jpg", width: 44%)]
 
-223. Typical Latin Piano Ostinato:
+223. 전형적인 라틴 피아노 오스티나토#footnote[동일한 선율의 저음 악구를 계속해서 반복하는 음악적 기법]
 #align(center)[#image("figures/fig_274.jpg", width: 45%)]
 
-Notes are often added to the beginning of the outline as pick up notes.
+윤곽의 시작에 자주 추가 음이 픽업음으로 추가된다.
 
-Tom Harrell and Kenny Barron begin their lines on the third and move up the scale to the fifth of the ii chord.
+톰 하렐과 케니 배런은 #chord("ii") 화음의 3도에서 선율을 시작하여 5도까지 음계를 따라 상행한다.
 
 224. 톰 하렐
 #align(center)[#image("figures/fig_275.jpg", width: 44%)]
@@ -1620,28 +1627,27 @@ Tom Harrell and Kenny Barron begin their lines on the third and move up the scal
 225. 케니 배런
 #align(center)[#image("figures/fig_276.jpg", width: 57%)]
 
-Hubbard moves down chromatically from the third, ascends the arpeggio before the outline begins. Compare this C.E.S.H. to ex.220.
+허버드는 3도에서 반음계적으로 하강한 후 아르페지오로 상행한 후 윤곽을 시작한다. 이 C.E.S.H.를 예시 220과 비교해보라.
 
 226. 프레디 허버드
 #align(center)[#image("figures/fig_277.jpg", width: 57%)]
 
-Parker begins with a wind up around the root of the ii chord and up the scale before the outline begins.
+파커는 #chord("ii") 화음의 근음을 중심으로 선율을 감싼 후 음계를 따라 상행하며 윤곽을 시작한다.
 
 227. 찰리 파커
 #align(center)[#image("figures/fig_278.jpg", width: 69%)]
 
-Harrell begins ex.228 with the seventh of ii as a pick up. After the C.E.S.H. over the ii - V7, another C.E.S.H. is implied over the I chord. The F natural from the second measure usually moves to the E on beat one. The F sharp changes the direction and delays the resolution to the E until beat three.
+하렐은 예시 228에서 픽업 노트로 #chord("ii") 화음의 7도에서 시작한다. #maj25 진행 위에서 C.E.S.H.를 연주한 후, #chord("I") 화음 위에서도 또 다른 C.E.S.H.가 암시된다. 두 번째 마디의 F 내추럴은 보통 첫 번째 박자의 #note("E")로 해결된다. #note("F#")은 방향을 바꾸고 해결을 세 번째 박자까지 지연시킨다.
 
 228. 톰 하렐
 #align(center)[#image("figures/fig_279.jpg", width: 60%)]
 
 229. 톰 하렐
-#align(center)[#image("figures/fig_280.jpg", width: 65%)]
+#align(center)[#image("figures/fig_280.jpg", width: 60%)]
 
 == 제3윤곽과 낮은 중심축음 (낮은 아르페지오 음)
 
-
-One note added below adds angularity and rhythmic interest to this outline. It was seen in several of the C.E.S.H. examples (ex.215, 216, 217, 218, 219, 221, 225, 226, 227, 228, 229). Here are several more using the fifth of the ii chord, as a pivot in a lower octave than the first note of the outline.
+하위에 추가된 한 음은 이 윤곽에 각진 느낌과 리듬적 흥미를 더한다. 이러한 형태는 여러 C.E.S.H. 예시(215, 216, 217, 218, 219, 221, 225, 226, 227, 228, 229)에서도 볼 수 있다. 아래는 제3윤곽 첫 음보다 낮은 옥타브에서 중심축으로 사용된 #chord("ii") 화음의 5도를 활용한 몇 가지 추가 예시이다.
 
 230. 찰리 파커
 #align(center)[#image("figures/fig_281.jpg", width: 56%)]
@@ -1655,12 +1661,12 @@ One note added below adds angularity and rhythmic interest to this outline. It w
 233. 캐넌볼 애덜리
 #align(center)[#image("figures/fig_284.jpg", width: 44%)]
 
-This line has symmetry with the third to root leap on both of the dominant seventh chords. Outline No.3 begins before the Fm7, but resolves to the Bb7 on time.
+이 선율은 두 딸림7화음 모두에서 3도에서 근음으로 도약하는 대칭성을 가진다. 제3윤곽은 #chord("Fm7") 이전에 시작되지만 #chord("Bb7")에 제시간에 해결된다.
 
 234. 클리포드 브라운
 #align(center)[#image("figures/fig_285.jpg", width: 44%)]
 
-Cannonball uses the same line in the same solo in two key areas.
+캐넌볼은 동일한 솔로에서 두 개의 키 영역에서 동일한 선율을 사용한다.
 
 235. 캐넌볼 애덜리
 #align(center)[#image("figures/fig_286.jpg", width: 32%)]
@@ -1670,54 +1676,54 @@ Cannonball uses the same line in the same solo in two key areas.
 
 == 제3윤곽과 여러 윤곽의 조합
 
-This combination is from Parker's solo on a well-known bop tune in A flat. The first is Outline No.1, the second Outline No.3. The dominant chords have the same pattern: a leap from the third to the flat nine and the chromatic approach to the fifth of the next chord. (This example was also shown as ex.123.)
+이 조합은 #note("Ab")조의 잘 알려진 비밥 곡에서 파커의 솔로에서 나온 것이다. 첫 번째는 제1윤곽, 두 번째는 제3윤곽이다. 딸림화음들은 동일한 패턴을 가진다: 3도에서 $flat 9$으로 도약한 후 다음 화음의 5도로 반음계적 접근이 이루어진다. (이 예시는 예시 123으로도 등장했다.)
 
 237. 찰리 파커
 #align(center)[#image("figures/fig_288.jpg", width: 69%)]
 
-Brown displaces the first simple outline (no.1) beginning with the upper and lower neighbor tones to the first target note. Chromatic pickups to the G (which begins Outline No.3) in the second measure gets the line back on time so the seventh of C minor and the target note A on the F7 chord arrive where we expect them. More chromatic pick up notes fill out the measure so that the E flat arrives on the upbeat of four placing the D on the downbeat. The rhythmic displacement is one element that makes this line interesting. Did the addition of extra notes create the rhythmic interest, or did the rhythmic displacement require the addition of extra notes? (This example was also shown as ex.122.)
+브라운은 첫 번째 단순한 (제1)윤곽을 상·하위 이웃음으로 시작하여 이동시킨다. 두 번째 마디에서 #note("G")로 가는 반음계 픽업음은 제3윤곽을 시작하며 선율을 제시간에 맞추어 되돌린다. 이로 인해 #chord("Cm")의 7도와 #chord("F7") 화음의 목표음 #note("A")가 우리가 예상한 위치에 도달하게 된다. 추가된 더 많은 반음계 픽업음은 마디를 채워서 #note("Eb")이 네 번째 박자의 약박에 도달하게 하고 #note("D")는 강박에 배치된다. 리듬 이동은 이 선율을 흥미롭게 만드는 요소 중 하나이다. 추가된 음이 리듬적 흥미를 만들어냈는가, 아니면 리듬 이동이 추가적인 음을 필요로 했는가?
 
 238. 클리포드 브라운
 #align(center)[#image("figures/fig_289.jpg", width: 68%)]
 
-Morgan begins stating the third and seventh of the ii chord before Outline No.3. In the last two measures he uses Outline No.1 with some interesting added chromatic tones. The #note("C#") — D point up to and the F — D point down to the E flat, the fifth of A flat 7.
+모건은 제3윤곽 이전에 #chord("ii") 화음의 3도와 7도를 연주하면서 시작한다. 마지막 두 마디에서 그는 제1윤곽을 사용하며 흥미로운 반음계적 음을 추가한다. #note("C#")-#note("D")는 위로, #note("F")-#note("D")는 아래로 #note("Eb")$$(#chord("Ab7")의 5도)를 지시한다.
 
 239. 리 모건
 #align(center)[#image("figures/fig_290.jpg", width: 68%)]
 
-Evans uses three outlines over this passage with rapid harmonic rhythm. Outline No.2 over the ii - V7; Outline No.3 over the iii - V7/ii; and anticipating the G minor by three eighth notes Outline No.3 over ii - V7 /vi - vi. (This example was also shown as ex.181.)
+에반스는 빠른 화성 리듬을 가진 이 구절에서 세 개의 윤곽을 사용한다. 제2윤곽은 #maj25 위에, 제3윤곽은 #maj36 위에, 그리고 #chord("Gm")를 8분음표 세 박자 미리 예고하며 제3윤곽은 #prog("ii", "V7/vi", "vi") 위에 연주된다. (이 예시는 예시 181로도 표시되었다.)
 
 240. 빌 에반스
 #align(center)[#image("figures/fig_291.jpg", width: 68%)]
 
 == 제3윤곽과 경과음
 
-The arpeggiated form of this outline lends itself to diatonic passing tones between the chord tones. Adding passing tones blurs the distinction between Outline No.3 and Outline No.1. Into which category these next examples fall is anybody's call as they have elements of both no.1 and no.3. The central point is their harmonic clarity; thirds and seventh delineate the harmony.
+이 윤곽의 아르페지오 형태는 화성음을 잇는 온음계 경과음과 잘 어울린다. 경과음을 추가함으로써 제3윤곽과 제1윤곽 사이의 구분이 흐려진다. 다음 예시들은 두 윤곽의 요소를 모두 포함하고 있어 어느 범주에 속하는지 쉽게 결정할 수 없다. 핵심은 이들의 화성적 명확성이다. 3도와 7도가 화성을 명확히 드러낸다.
 
 241. 클리포드 브라운
 #align(center)[#image("figures/fig_292.jpg", width: 44%)]
 
-These chromatic passing tones do not blur the distinct harmonic clarity as the diatonic notes fall on strong beats..
+이 반음계 경과음들은 강박에 있는 온음계 음들이 화성적 명확성을 흐리지 않는다.
 
 242. 클리포드 브라운
 #align(center)[#image("figures/fig_293.jpg", width: 44%)]
 
-The resolution to the dominant chord is delayed until beat three by the sawtooth shape. The leap at the end of the line mirrors the leap at the beginning of the line.
+톱니형 선율로 인해 딸림화음으로의 해결이 세 번째 박자까지 지연된다. 선율 끝의 도약은 선율 시작의 도약과 대칭을 이룬다.
 
 243. 클리포드 브라운
 #align(center)[#image("figures/fig_294.jpg", width: 44%)]
 
-Tom Harrell in E flat minor.
+#note("Eb") 단조에서의 톰 하렐의 선율이다.
 
 244. 톰 하렐
 #align(center)[#image("figures/fig_295.jpg", width: 44%)]
 
-This passage has a wide range and rhythmic contrasts..
+이 구절은 넓은 음역과 리듬적 대비를 가진다.
 
 245. 톰 하렐
 #align(center)[#image("figures/fig_296.jpg", width: 35%)]
 
-The chord tones always occur on the strong beats in these two examples from Harrell.
+하렐의 이 두 예시에서 화음음은 항상 강박에 나타난다.
 
 246. 톰 하렐
 #align(center)[#image("figures/fig_297.jpg", width: 44%)]
@@ -1725,7 +1731,7 @@ The chord tones always occur on the strong beats in these two examples from Harr
 247. 톰 하렐
 #align(center)[#image("figures/fig_298.jpg", width: 44%)]
 
-Hubbard delays the resolution to the B flat for an entire measure. Compare this to Ex.174 of Parker.
+허버드는 #chord("Bb")로의 해결을 한 마디 내내 지연시킨다. 이를 파커의 예시 174와 비교해보라.
 
 248. 프레디 허버드
 #align(center)[#image("figures/fig_299.jpg", width: 56%)]
