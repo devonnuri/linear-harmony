@@ -107,7 +107,7 @@
   title: "선형적 화성을 통한 화성 연결",
   author: "버트 라이곤",
   main-color: main-color,
-  paper-size: "a5",
+  paper-size: "iso-b5",
   lang: "en",
   font-size: 11pt,
   // list-of-figure-title: "List of Figures",
@@ -1164,8 +1164,7 @@ $ underbracket(prog("iii"), upright("I")text("의 대체"))-prog("V7/ii", "ii", 
 
 == 간단한 형태의 제2윤곽
 
-
-Here is an occurrence of 제2윤곽 from a well known jazz composition, followed by and example of a Wes Montgomery embellishment from his recording of the same tune. Montgomery uses a chord tone for a pick up note, triplets, and a chromatic approach to the target note C.
+다음은 잘 알려진 재즈 곡에서 제2윤곽이 사용된 예시이며, 이어서 같은 곡에 대한 웨스 몽고메리의 연주에서 나온 꾸밈이 예시로 제시된다. 몽고메리는 픽업음으로 화성음을 사용하고, 셋잇단음표와 목표음 #note("C")로의 반음계적 접근을 활용한다.
 
 124. 텔로니어스 몽크
 #align(center)[#image("figures/fig_174.jpg", width: 32%)]
@@ -1173,7 +1172,7 @@ Here is an occurrence of 제2윤곽 from a well known jazz composition, followed
 125. 웨스 몽고메리
 #align(center)[#image("figures/fig_175.jpg", width: 32%)]
 
-Here are several artists and the bare 제2윤곽.
+다음은 여러 아티스트가 연주한 단순한 형태의 제2윤곽이다.
 
 126. 클리포드 브라운
 #align(center)[#image("figures/fig_176.jpg", width: 41%)]
@@ -1193,7 +1192,7 @@ Here are several artists and the bare 제2윤곽.
 131. 톰 하렐
 #align(center)[#image("figures/fig_181.jpg", width: 32%)]
 
-These two descend to the seventh of the V7 chord through a chromatic passing tone.
+이 둘은 반음계적 경과음을 통해 #chord("V7") 화음의 7도까지 하강한다.
 
 132. 찰리 파커
 #align(center)[#image("figures/fig_182.jpg", width: 44%)]
@@ -1201,7 +1200,7 @@ These two descend to the seventh of the V7 chord through a chromatic passing ton
 133. 톰 하렐
 #align(center)[#image("figures/fig_183.jpg", width: 44%)]
 
-The following are more examples of 제2윤곽 in a simple form.
+다음은 단순한 형태로 제시된 제2윤곽의 추가 예시들이다.
 
 134. 클리포드 브라운
 #align(center)[#image("figures/fig_184.jpg", width: 47%)]
@@ -1215,22 +1214,21 @@ The following are more examples of 제2윤곽 in a simple form.
 137. 톰 하렐
 #align(center)[#image("figures/fig_187.jpg", width: 56%)]
 
-Like Tom Harrell in ex.137, Adderley anticipates the ii chord.
+예시 137의 톰 하렐처럼 애덜리는 #chord("ii") 화음을 미리 예고한다.
 
 138. 캐넌볼 애덜리
 #align(center)[#image("figures/fig_188.jpg", width: 56%)]
 
-Parker extends the arpeggio past the seventh to the ninth before aiming for the target note B occurring on beat three of the second measure.
+파커는 목표음 #note("B")를 겨냥하기 전에 아르페지오를 7도 너머 9도까지 확장하여 두 번째 마디의 세 번째 박자에 목표음에 도달한다.
 
 139. 찰리 파커
 #align(center)[#image("figures/fig_189.jpg", width: 57%)]
 
 == 단조에서의 제2윤곽
 
+모든 윤곽은 단조에서의 #min25 진행에서도 장조에서와 마찬가지로 잘 작동한다. 앞서 설명한 것처럼, 이러한 윤곽은 근음이 완전 5도로 하강하는 모든 진행에 적용할 수 있다. 예시 140은 C단조를 가리키지만 C장조로 해결된다. 히스는 #chord("C")의 장3도에 도달한 후 화음을 아르페지오(3-5-7-9)로 연주하지만, 상행하기 전에 5도로 하강한다.
 
-All the outlines work as well for iiø - V7 in minor as they do in major. As shown before, they work for any progression with root movement downward in fifths. Ex.140 points to C minor, but resolves to C major. Heath arrives on the major third of C and arpeggiates the chord (3-5-7-9), but leaps down to the fifth before ascending.
-
-140. Jimmy Heath:
+140. 지미 히스
 #align(center)[#image("figures/fig_190.jpg", width: 44%)]
 
 141. 아트 파머
@@ -1238,9 +1236,9 @@ All the outlines work as well for iiø - V7 in minor as they do in major. As sho
 
 == 제2윤곽과 음의 추가
 
-Any musical motive can be embellished by adding notes. Notes can be added before, within, and after the motive.
+모든 음악적 동기는 음을 추가함으로써 꾸밀 수 있다. 음은 동기 이전, 동기 내에, 그리고 동기 이후에 추가할 수 있다.
 
-These three from Tom Harrell all include notes added within the outline. The added notes are the upper and lower neighbor tones to the third of the ii chord. This adds rhythmic and melodic energy to the line. He chooses to encircle the target note, creating a slight tension and ambiguity. In ex.144, the arpeggio occurs first in a descending form, and then, beginning on beat four of the first-measure, begins the ascending form with additional notes: the C and A encircle the B flat; the C a passing tone between B flat and D. The rest of the outline is unaltered.
+톰 하렐의 다음 세 가지 예시는 모두 윤곽 내에 추가된 음을 포함한다. 추가된 음은 #chord("ii") 화음의 3도에 대한 상·하위 이웃음이다. 이는 선율에 리듬적, 선율적 에너지를 더한다. 그는 목표음을 둘러싸는 방식을 선택하여 약간의 긴장감과 모호함을 만들어낸다. 예시 144에서 아르페지오는 먼저 하행하는 형태로 나타난 후 첫 번째 마디 네 번째 박자부터 상행 형태로 시작되며, 추가된 음이 포함된다. #note("C")와 #note("A")가 #note("Bb")을 둘러싸고, #note("C")는 #note("Bb")과 #note("D") 사이의 경과음 역할을 한다. 나머지 윤곽은 변형되지 않았다.
 
 142. 톰 하렐
 #align(center)[#image("figures/fig_192.jpg", width: 35%)]
@@ -1251,7 +1249,7 @@ These three from Tom Harrell all include notes added within the outline. The add
 144. 톰 하렐
 #align(center)[#image("figures/fig_194.jpg", width: 57%)]
 
-The next examples begin with pick up notes added before the outline. Adderley and Stitt begin with a chromatic leading tone. Rollins begins with arpeggiated notes and chromatic approach tones to the third of F7. Brown uses an interesting color tone for the B minor; the #note("G#") almost suggests the entire line relates more to E7 than to Bm.
+다음 예시들은 윤곽 이전에 추가된 픽업 노트로 시작한다. 애덜리와 스팃은 반음계적 이끎음으로 시작한다. 롤린스는 아르페지오 음과 #chord("F7") 화음의 3도의 반음계적 접근음들로 시작한다. 브라운은 #chord("Bm")에 대해 흥미로운 색채 음을 사용한다. #note("G#")은 전체 선율이 #chord("Bm")보다 #chord("E7")과 더 관련이 있는 것처럼 보이게 한다.
 
 145. 캐넌볼 애덜리
 #align(center)[#image("figures/fig_195.jpg", width: 59%)]
@@ -1265,12 +1263,12 @@ The next examples begin with pick up notes added before the outline. Adderley an
 148. 소니 롤린스
 #align(center)[#image("figures/fig_198.jpg", width: 56%)]
 
-Stitt starts with a chromatic leading tone. The outline notes in the second measure are chromatically approached from a whole step below.
+스팃은 반음계적 이끎음으로 시작한다. 두 번째 마디의 윤곽 음들은 온음 아래에서 반음계적으로 접근한다.
 
 149. 소니 스팃
 #align(center)[#image("figures/fig_199.jpg", width: 56%)]
 
-Gillespie begins with several chromatic pick up notes exhibiting nothing harmonically specific, then plays the ii chord arpeggio twice before finally resolving it to the target note of the V7 chord (B).
+길레스피는 화성적으로 명확하지 않은 몇 개의 반음계적 픽업음으로 시작한 후, #chord("ii") 화음을 두 번 아르페지오로 연주하고, 마침내 #chord("V7") 화음의 목표 음(#note("B"))으로 해결한다.
 
 150. 디지 길레스피
 #align(center)[#image("figures/fig_200.jpg", width: 56%)]
@@ -1279,7 +1277,7 @@ Gillespie begins with several chromatic pick up notes exhibiting nothing harmoni
 
 === 단순 경과음
 
-Passing tones: Since 제2윤곽 is an arpeggiated outline, it lends itself to diatonic passing tones between the chord tones. However, there is rarely a passing tone between the 5th and 7th of the ii chord. The tone between the 5th and 7th of the ii chord is the target note of the V7 chord. This tone is usually saved for the V7 chord. It is the punch line, the denouement of the story, that is not given away by using it ahead of time as a passing tone. Notice the similarity of these examples and the differences determined by when in the measure they begin.
+제2윤곽은 아르페지오 윤곽이기 때문에 화성음 사이에 온음계 경과음을 사용하는 데에 적합하다. 그러나 #chord("ii") 화음의 5도와 7도 사이에는 거의 경과음이 사용되지 않는다. #chord("ii") 화음의 5도와 7도 사이의 음은 #chord("V7") 화음의 목표 음이다. 이 음은 보통 #chord("V7") 화음을 위해 남겨둔다. 이는 이야기의 결말을 미리 알려주지 않고 마지막에 드러내는 펀치라인이다. 이 예시들이 마디 내에 어디에서 시작하느냐에 따라 유사성과 차이가 어떻게 결정되는지 주목하라.
 
 151. 클리포드 브라운
 #align(center)[#image("figures/fig_201.jpg", width: 44%)]
@@ -1305,24 +1303,24 @@ Passing tones: Since 제2윤곽 is an arpeggiated outline, it lends itself to di
 158. 톰 하렐
 #align(center)[#image("figures/fig_208.jpg", width: 32%)]
 
-Harrell uses the same outline as Coltrane from Ex.130, but with passing tones.
+하렐은 예시 130에서 콜트레인이 사용한 것과 동일한 윤곽을 사용하지만, 경과음을 추가하였다.
 
 159. 톰 하렐
 #align(center)[#image("figures/fig_209.jpg", width: 44%)]
 
 === 경과음과 픽업음
 
-The following outlines all include passing tones and all begin with added pick up notes. They range from one added diatonic note:
+다음 윤곽들은 모두 경과음을 포함하며 추가된 픽업음으로 시작한다. 한 개의 온음계 음이 추가된 경우:
 
 160. 캐넌볼 애덜리
 #align(center)[#image("figures/fig_210.jpg", width: 69%)]
 
-two added diatonic notes:
+두 개의 온음계 음이 추가된 경우:
 
 161. 클리포드 브라운
 #align(center)[#image("figures/fig_211.jpg", width: 56%)]
 
-lower neighbor tones:
+하위 이웃음이 추가된 경우:
 
 162. 클리포드 브라운
 #align(center)[#image("figures/fig_212.jpg", width: 57%)]
@@ -1330,12 +1328,12 @@ lower neighbor tones:
 163. 톰 하렐
 #align(center)[#image("figures/fig_213.jpg", width: 57%)]
 
-an escape tone:
+도피음#sub[escape tone]이 추가된 경우:
 
 164. 빌 에반스
 #align(center)[#image("figures/fig_214.jpg", width: 60%)]
 
-and encircling upper and lower neighbor tones:
+상하위 이웃음으로 둘러싸는 경우:
 
 165. 캐넌볼 애덜리
 #align(center)[#image("figures/fig_215.jpg", width: 44%)]
@@ -1343,14 +1341,14 @@ and encircling upper and lower neighbor tones:
 166. 톰 하렐
 #align(center)[#image("figures/fig_216.jpg", width: 47%)]
 
-Brown begins this one with chord tones, suggests the dominant of C minor (G7: implied by the tritone F and B natural), then 제2윤곽 with passing tones. The target note for F7 is delayed until the third beat. Notice how effective the E natural is when the B flat chord is expected, and that the “wrong” note is immediately followed by the triad
+브라운은 화성음으로 시작하여 #note("C")단조의 딸림화음(#chord("G7"): 셋온음#sub[tritone] #note("F")와 #note("Bnat")로 암시됨)을 제시한 후, 경과음을 포함한 제2윤곽을 연주한다. #chord("F7") 화음의 목표음은 세 번째 박자까지 지연된다. #chord("Bb") 화음이 예상될 때 #note("Enat")이 얼마나 효과적인지, 그리고 그 '잘못된' 음이 바로 삼화음으로 이어지는 것에 주목하라.
 
 167. 클리포드 브라운
 #align(center)[#image("figures/fig_217.jpg", width: 56%)]
 
 === 경과음과 제2윤곽의 아르페지오 확장
 
-These next two are similar Clifford Brown examples. They both begin with pick up notes. The tones on the first two beats are diatonic scale tones interrupted by arpeggiated tones in ex.168 and an arpeggiated and chromatic leading tone in ex.169. Ex.168 extends the arpeggio out to the ninth of the ii chord.
+다음 두 예시는 클리포드 브라운의 유사한 예시이다. 둘 다 픽업음으로 시작한다. 첫 두 박자의 음은 온음계 음이며, 이는 예시 168에서는 아르페지오 음으로, 예시 169에서는 아르페지오 음과 반음계적 이끎음으로 끊어진다. 예시 168은 아르페지오를 #chord("ii") 화음의 9도까지 확장한다.
 
 168. 클리포드 브라운
 #align(center)[#image("figures/fig_218.jpg", width: 44%)]
@@ -1358,7 +1356,7 @@ These next two are similar Clifford Brown examples. They both begin with pick up
 169. 클리포드 브라운
 #align(center)[#image("figures/fig_219.jpg", width: 57%)]
 
-These three examples from the same Tom Harrell solo show how similar material can recur in different ways. The first two begin on the root of the ii chord, move through the outline with passing tones, extend through the leading tone of the ii chord (G sharp) to the ninth and back down to the third of D7. The third example breaks the “rule” of playing the target note early: The F sharp appears as a passing tone before the D7 chord, but the negative effect is diminished by the extension of the line to the ninth of the ii chord.
+톰 하렐의 같은 솔로에서 나온 세 개의 예시는 유사한 소재가 어떻게 다른 방식으로 반복될 수 있는지를 보여준다. 처음 두 개의 예시는 #chord("ii") 화음의 근음에서 시작하여 경과음과 함께 윤곽을 따라 진행한 후, #chord("ii") 화음의 이끎음(#note("G#"))을 지나 9도까지 확장한 후 #chord("D7") 화음의 3도로 다시 하강한다. 세 번째 예시는 목표 음을 일찍 연주하지 않는 '규칙'을 깨뜨린다. #note("F#")은 #chord("D7") 화음 이전에 경과음으로 나타나지만, 선율이 #chord("ii") 화음의 9도까지 확장되면서 부정적인 효과가 줄어든다.
 
 170. 톰 하렐
 #align(center)[#image("figures/fig_220.jpg", width: 44%)]
@@ -1369,9 +1367,9 @@ These three examples from the same Tom Harrell solo show how similar material ca
 172. 톰 하렐
 #align(center)[#image("figures/fig_222.jpg", width: 44%)]
 
-On this example, Harrell plays up the scale from the root to the ninth of the ii chord, using the F7 target note (A natural). The ninth (D) becomes the upper neighbor tone to the root (C) which is encircled before the outline is played in the higher register. The outline uses all the diatonic passing tones in the higher register except for the A natural, which is saved for last.
+이 예시에서 하렐은 #chord("ii") 화음의 근음에서 9도까지 음계를 따라 올라가며 #chord("F7") 화음의 목표 음(#note("Anat"))을 사용한다. 9도(#note("D"))는 근음(#note("C"))의 상위 이웃음이 되어 이를 둘러싼 후, 윤곽이 높은 음역에서 연주된다. 윤곽은 높은 음역에서 #note("Anat")을 제외한 모든 온음계 경과음을 사용하며, #note("Anat")은 마지막에 사용된다.
 
-173. 톰 하렐 Amazon
+173. 톰 하렐: Amazon
 #align(center)[#image("figures/fig_223.jpg", width: 50%)]
 
 == 제2윤곽과 여러 윤곽의 조합
