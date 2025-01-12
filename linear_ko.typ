@@ -1424,14 +1424,14 @@ $ prog("iii", "V7/ii", "ii", "V7", "I") $
 
 == 제2윤곽과 방향 전환
 
-There are several occurrences of the “'Round Midnight” outline with the direction changed. Instead of ascending the arpeggio of the ii chord, the arpeggio is turned upside down and descends in some way.
+"'Round Midnight" 윤곽의 방향이 바뀌는 여러 예시가 있다. #chord("ii") 화음의 아르페지오를 상행하는 대신, 아르페지오가 뒤집혀 하행 형태로 나타난다.
 
-Rollins changes the direction, adds a C.E.S.H. and delays the resolution of the V7 chord in this example from the melody to an often played blues head.
+롤린스는 방향을 바꾸고 C.E.S.H.을 추가하여 이 예시에서 V7 화음의 해결을 지연시킨다. 이 예시는 자주 연주되는 블루스 헤드 선율에서 가져온 것이다.
 
 184. 소니 롤린스
 #align(center)[#image("figures/fig_234.jpg", width: 44%)]
 
-The following examples feature a change in the direction of the outline, but the seventh resolves to the third in the same octave.
+다음 예시들은 윤곽의 방향 변화가 특징이지만, 7도는 같은 옥타브에서 3도로 해결된다.
 
 185. 톰 하렐
 #align(center)[#image("figures/fig_235.jpg", width: 44%)]
@@ -1442,17 +1442,17 @@ The following examples feature a change in the direction of the outline, but the
 187. 프레디 허버드
 #align(center)[#image("figures/fig_237.jpg", width: 56%)]
 
-Hamilton uses the upside down outline in a sequence. The progression normally would have been: iii - V7 /ii - ii - V7 - I. The #chord("C#m7") chord itself is a chromatic passing chord used in place of the G7.
+해밀턴은 뒤집힌 윤곽을 순차적으로 사용한다. 진행은 원래 #prog("iii", "V7/ii", "ii", "V7", "I")였을 것이다. #chord("C#m7") 화음 자체는 #chord("G7") 대신 사용된 반음계적 경과화음이다.
 
-188. Scott Hamilton:
+188. 스콧 해밀턴
 #align(center)[#image("figures/fig_238.jpg", width: 56%)]
 
-The upside down outline occurs after chromatic pick ups. Chambers played the usual version of this outline elsewhere in this solo. (see Ex.128)
+뒤집힌 윤곽은 반음계적 픽업음 이후에 나타난다. 챔버스는 이 솔로의 다른 부분에서 일반적인 버전의 윤곽을 연주하였다(예시 128 참조).
 
 189. 폴 챔버스
 #align(center)[#image("figures/fig_239.jpg", width: 44%)]
 
-These two examples go both directions. Beginning on the seventh of the ii chord, they descend before ascending the arpeggio. Mitchell uses the altered ninths over the F7, borrowed from the key signature of the parallel minor (B flat minor). Hubbard plays the outline in a strict form over the D flat 7 chord.
+이 두 예시는 양방향으로 진행한다. #chord("ii") 화음의 7도에서 시작하여 하행한 후 아르페지오로 상행한다. 미첼은 같은으뜸음조(#note("Bb") 단조)의 조표에서 가져온 변형된 9도를 #chord("F7") 화음 위에서 사용한다. 허버드는 #chord("Db7") 화음 위에서 윤곽을 엄밀하게 연주한다.
 
 190. 블루 미첼
 #align(center)[#image("figures/fig_240.jpg", width: 57%)]
@@ -1460,16 +1460,16 @@ These two examples go both directions. Beginning on the seventh of the ii chord,
 191. 프레디 허버드
 #align(center)[#image("figures/fig_241.jpg", width: 56%)]
 
-The “'Round Midnight” outline is at the heart of this extended C.E.S.H. It occurs in a simple form in the second measure after several ascending and descending statements (with both major [E sharp] and minor [E natural] sevenths) of the ii chord arpeggio.
+“'Round Midnight” 윤곽은 이 확장된 C.E.S.H.의 핵심에 있다. 이는 #chord("ii") 화음 아르페지오의 (장7도[#note("E#")]와 단7도[#note("Enat")]을 모두 포함하는) 여러 상행 및 하행 구절 이후 두 번째 마디에서 간단한 형태로 나타난다.
 
 192. 웨스 몽고메리
 #align(center)[#image("figures/fig_242.jpg", width: 69%)]
 
 == 제2윤곽 조각
 
-There are a few notes missing in these next examples to be complete outlines, but enough remains of the shape and character to include in this discussion.
+다음 예시들은 완전한 윤곽으로 간주하기에는 몇 개의 음이 빠져 있지만, 형상과 특성이 충분히 남아 있어 논의에 포함할 수 있다.
 
-The first note is omitted in these next three examples. The root of the ii chord is left off. Harrell plays another note which is heard probably heard as the leading tone to the F. Evans and Rollins leave of the first note and begin on the third. These omissions take none of the clarity away from the lines. They all emphasize the target note (third of ii) even more, and the root of the chord is covered by the bass. The sevenths occur on weak beats followed by the thirds on strong beats.
+다음 세 예시에서는 첫 번째 음이 생략되었다. #chord("ii") 화음의 근음이 빠져 있다. 하렐은 아마도 F로 향하는 이끎음으로 들릴 다른 음을 연주한다. 에반스와 롤린스는 첫 번째 음을 생략하고 3도에서 시작한다. 이러한 생략은 선율의 명확성을 전혀 손상시키지 않으며, 오히려 모두 목표음(#chord("ii") 화음의 3도)을 더욱 강조하고 화음의 근음은 베이스가 담당한다. 7도는 약박에 나타나고, 그 뒤에 강박에서 3도가 등장한다.
 
 193. 톰 하렐
 #align(center)[#image("figures/fig_243.jpg", width: 38%)]
@@ -1480,12 +1480,12 @@ The first note is omitted in these next three examples. The root of the ii chord
 195. 소니 롤린스
 #align(center)[#image("figures/fig_245.jpg", width: 50%)]
 
-The next three do not have the first two notes of the outline. Harrell begins with a fragment of Outline No.2 and ends with a statement of Outline No.1.
+다음 세 예시는 윤곽의 첫 두 음이 없다. 하렐은 제2윤곽의 조각으로 시작하고 제1윤곽으로 마무리한다.
 
 196. 톰 하렐
 #align(center)[#image("figures/fig_246.jpg", width: 50%)]
 
-Brown plays this fragment in two ways. The first time with a stop and go feeling created by the quarter and two eighths; the second time with the chromatic lower neighbor tones.
+브라운은 이 조각을 두 가지 방식으로 연주한다. 첫 번째에서는 4분음표와 두 개의 8분음표로 만들어진 멈췄다 가는 느낌을 주며, 두 번째는 반음계적 하위 이웃음을 사용하여 연주한다.
 
 197. 클리포드 브라운
 #align(center)[#image("figures/fig_247.jpg", width: 41%)]
@@ -1548,7 +1548,7 @@ Parker adds some rhythmic variation and a chromatic approach to F in this exampl
 207. 찰리 파커
 #align(center)[#image("figures/fig_258.jpg", width: 62%)]
 
-제3윤곽 in simple form within longer lines. Both Mitchell and Brown's second measures resemble Outline No.2.
+Outline No.3 in simple form within longer lines. Both Mitchell and Brown's second measures resemble Outline No.2.
 
 208. 클리포드 브라운
 #align(center)[#image("figures/fig_259.jpg", width: 53%)]
@@ -1572,15 +1572,14 @@ The ii chord is anticipated in these three examples. Harrell anticipates the ii 
 213. 재키 맥린
 #align(center)[#image("figures/fig_264.jpg", width: 56%)]
 
-Stitt begins with an ascending arpeggio, moves down with a C.E.S.H., and then plays the simple 제3윤곽 in the second measure. The change of direction, chromaticism, and resulting accents make this example stimulating.
+Stitt begins with an ascending arpeggio, moves down with a C.E.S.H., and then plays the simple Outline No.3 in the second measure. The change of direction, chromaticism, and resulting accents make this example stimulating.
 
 214. 소니 스팃
 #align(center)[#image("figures/fig_265.jpg", width: 59%)]
 
 == 제3윤곽과 C.E.S.H.
 
-
-제3윤곽 seems to lend itself to the C.E.S.H. more than the other outlines, the chromatic motion often suggesting a compound melody. The following are several examples of the C.E.S.H. based on 제3윤곽. Some use the C.E.S.H. to delay the resolution of the V7 chord; some manage to use the C.E.S.H. and arrive at the V7 on time. Several (ex.215, 216, 217, 218, 219, 221) use the fifth of the ii chord below as a pivot note to give the line more of a sawtooth shape. The range of rhythmic variety in these passages illustrate how much rhythm has to do with personalizing the basic outlines or any musical idea.
+Outline No.3 seems to lend itself to the C.E.S.H. more than the other outlines, the chromatic motion often suggesting a compound melody. The following are several examples of the C.E.S.H. based on Outline No.3. Some use the C.E.S.H. to delay the resolution of the V7 chord; some manage to use the C.E.S.H. and arrive at the V7 on time. Several (ex.215, 216, 217, 218, 219, 221) use the fifth of the ii chord below as a pivot note to give the line more of a sawtooth shape. The range of rhythmic variety in these passages illustrate how much rhythm has to do with personalizing the basic outlines or any musical idea.
 
 215. 캐넌볼 애덜리
 #align(center)[#image("figures/fig_266.jpg", width: 50%)]
@@ -1603,7 +1602,7 @@ Stitt begins with an ascending arpeggio, moves down with a C.E.S.H., and then pl
 221. 프레디 허버드
 #align(center)[#image("figures/fig_272.jpg", width: 59%)]
 
-These two examples involve a change of direction. Even though they both begin with an _ascending_ arpeggio, like 제2윤곽, they are included with 제3윤곽 because the seventh resolves to the third below the arpeggio. The chromatic line (G-#note("F#")-F-E and F-E-Eb-D) in these passages are rhythmically almost identical and are interesting when played by themselves.
+These two examples involve a change of direction. Even though they both begin with an _ascending_ arpeggio, like Outline No.2, they are included with Outline No.3 because the seventh resolves to the third below the arpeggio. The chromatic line (G-#note("F#")-F-E and F-E-Eb-D) in these passages are rhythmically almost identical and are interesting when played by themselves.
 
 222. 덱스터 고든
 #align(center)[#image("figures/fig_273.jpg", width: 44%)]
@@ -1656,7 +1655,7 @@ One note added below adds angularity and rhythmic interest to this outline. It w
 233. 캐넌볼 애덜리
 #align(center)[#image("figures/fig_284.jpg", width: 44%)]
 
-This line has symmetry with the third to root leap on both of the dominant seventh chords. 제3윤곽 begins before the Fm7, but resolves to the Bb7 on time.
+This line has symmetry with the third to root leap on both of the dominant seventh chords. Outline No.3 begins before the Fm7, but resolves to the Bb7 on time.
 
 234. 클리포드 브라운
 #align(center)[#image("figures/fig_285.jpg", width: 44%)]
@@ -1671,29 +1670,29 @@ Cannonball uses the same line in the same solo in two key areas.
 
 == 제3윤곽과 여러 윤곽의 조합
 
-This combination is from Parker's solo on a well-known bop tune in A flat. The first is 제1윤곽, the second 제3윤곽. The dominant chords have the same pattern: a leap from the third to the flat nine and the chromatic approach to the fifth of the next chord. (This example was also shown as ex.123.)
+This combination is from Parker's solo on a well-known bop tune in A flat. The first is Outline No.1, the second Outline No.3. The dominant chords have the same pattern: a leap from the third to the flat nine and the chromatic approach to the fifth of the next chord. (This example was also shown as ex.123.)
 
 237. 찰리 파커
 #align(center)[#image("figures/fig_288.jpg", width: 69%)]
 
-Brown displaces the first simple outline (no.1) beginning with the upper and lower neighbor tones to the first target note. Chromatic pickups to the G (which begins 제3윤곽) in the second measure gets the line back on time so the seventh of C minor and the target note A on the F7 chord arrive where we expect them. More chromatic pick up notes fill out the measure so that the E flat arrives on the upbeat of four placing the D on the downbeat. The rhythmic displacement is one element that makes this line interesting. Did the addition of extra notes create the rhythmic interest, or did the rhythmic displacement require the addition of extra notes? (This example was also shown as ex.122.)
+Brown displaces the first simple outline (no.1) beginning with the upper and lower neighbor tones to the first target note. Chromatic pickups to the G (which begins Outline No.3) in the second measure gets the line back on time so the seventh of C minor and the target note A on the F7 chord arrive where we expect them. More chromatic pick up notes fill out the measure so that the E flat arrives on the upbeat of four placing the D on the downbeat. The rhythmic displacement is one element that makes this line interesting. Did the addition of extra notes create the rhythmic interest, or did the rhythmic displacement require the addition of extra notes? (This example was also shown as ex.122.)
 
 238. 클리포드 브라운
 #align(center)[#image("figures/fig_289.jpg", width: 68%)]
 
-Morgan begins stating the third and seventh of the ii chord before 제3윤곽. In the last two measures he uses 제1윤곽 with some interesting added chromatic tones. The #note("C#") — D point up to and the F — D point down to the E flat, the fifth of A flat 7.
+Morgan begins stating the third and seventh of the ii chord before Outline No.3. In the last two measures he uses Outline No.1 with some interesting added chromatic tones. The #note("C#") — D point up to and the F — D point down to the E flat, the fifth of A flat 7.
 
 239. 리 모건
 #align(center)[#image("figures/fig_290.jpg", width: 68%)]
 
-Evans uses three outlines over this passage with rapid harmonic rhythm. 제2윤곽 over the ii - V7; 제3윤곽 over the iii - V7/ii; and anticipating the G minor by three eighth notes 제3윤곽 over ii - V7 /vi - vi. (This example was also shown as ex.181.)
+Evans uses three outlines over this passage with rapid harmonic rhythm. Outline No.2 over the ii - V7; Outline No.3 over the iii - V7/ii; and anticipating the G minor by three eighth notes Outline No.3 over ii - V7 /vi - vi. (This example was also shown as ex.181.)
 
 240. 빌 에반스
 #align(center)[#image("figures/fig_291.jpg", width: 68%)]
 
 == 제3윤곽과 경과음
 
-The arpeggiated form of this outline lends itself to diatonic passing tones between the chord tones. Adding passing tones blurs the distinction between 제3윤곽 and 제1윤곽. Into which category these next examples fall is anybody's call as they have elements of both no.1 and no.3. The central point is their harmonic clarity; thirds and seventh delineate the harmony.
+The arpeggiated form of this outline lends itself to diatonic passing tones between the chord tones. Adding passing tones blurs the distinction between Outline No.3 and Outline No.1. Into which category these next examples fall is anybody's call as they have elements of both no.1 and no.3. The central point is their harmonic clarity; thirds and seventh delineate the harmony.
 
 241. 클리포드 브라운
 #align(center)[#image("figures/fig_292.jpg", width: 44%)]
@@ -1759,7 +1758,7 @@ Brown uses similar motion in this sequence. The shape is echoed later, but with 
 251. 클리포드 브라운
 #align(center)[#image("figures/fig_303.jpg", width: 44%)]
 
-The only note missing from Morgan's excerpt is the third of the iiø chord. The V7 chord is anticipated and arpeggiated. The line follows 제1윤곽 one down to the third of C minor.
+The only note missing from Morgan's excerpt is the third of the iiø chord. The V7 chord is anticipated and arpeggiated. The line follows Outline No.1 one down to the third of C minor.
 
 252. 리 모건
 #align(center)[#image("figures/fig_304.jpg", width: 45%)]
@@ -1772,7 +1771,7 @@ Harrell begins with an accented upper neighbor tone followed by the third. The l
 #chapter("모달 곡에서의 윤곽", l: "chap8")
 Most of the music and examples discussed in this book refer to music with harmonic progressions. Many jazz compositions and improvisations are based on modal structures. There are many things to discuss regarding modal music, which will be the topic of another book.
 
-Some jazz improvisers bring some of the be-bop vocabulary with them when playing on modal pieces. Here are two examples of 제1윤곽 used over G dorian from Randy Brecker. In the ex.254, the third of the G minor chord is approached by its leading tone. The #note("F#") and A encircle the root. E natural implies C7 and is approached from above and below. In the next example, 제1윤곽 can be clearly heard on the downbeats; leading tones have been added giving the line more of a sawtooth shape.
+Some jazz improvisers bring some of the be-bop vocabulary with them when playing on modal pieces. Here are two examples of Outline No.1 used over G dorian from Randy Brecker. In the ex.254, the third of the G minor chord is approached by its leading tone. The F\# and A encircle the root. E natural implies C7 and is approached from above and below. In the next example, Outline No.1 can be clearly heard on the downbeats; leading tones have been added giving the line more of a sawtooth shape.
 
 254. 랜디 브레커: _Passenger_
 #align(center)[#image("figures/fig_306.jpg", width: 44%)]
@@ -1780,7 +1779,7 @@ Some jazz improvisers bring some of the be-bop vocabulary with them when playing
 255. 랜디 브레커: _Passenger_
 #align(center)[#image("figures/fig_307.jpg", width: 56%)]
 
-Here are two examples from a classic modal recording. Cannonball Adderley uses this C.E.S.H. version of 제3윤곽 several times in the solo to contrast with his modal, motivic, and down and dirty blues playing on this modal blues tune. The outline is played over G mixolydian.
+Here are two examples from a classic modal recording. Cannonball Adderley uses this C.E.S.H. version of Outline No.3 several times in the solo to contrast with his modal, motivic, and down and dirty blues playing on this modal blues tune. The outline is played over G mixolydian.
 
 256. 캐넌볼 애덜리
 #align(center)[#image("figures/fig_308.jpg", width: 44%)]
@@ -2042,7 +2041,7 @@ Take the simple outline and apply one or more devices to create a more interesti
 
 == 일반적인 진행에서의 짧은 예제
 
-Invent short exercises over typical progressions and follow the outlines. This example uses all three outlines. The first two measures (ii - V7) use 제3윤곽 with many chromatic approaches and encircling tones. A fairly simple 제1윤곽 is in the second two measures (iii - V7/ii). In mm.5—6 (ii - V7) is 제2윤곽 with some pick up notes.
+Invent short exercises over typical progressions and follow the outlines. This example uses all three outlines. The first two measures (ii - V7) use Outline No.3 with many chromatic approaches and encircling tones. A fairly simple Outline No.1 is in the second two measures (iii - V7/ii). In mm.5—6 (ii - V7) is Outline No.2 with some pick up notes.
 
 #align(center)[#image("figures/fig_375.jpg", width: 90%)]
 
