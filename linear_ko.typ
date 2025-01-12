@@ -1637,7 +1637,7 @@ $ prog("iii", "V7/ii", "ii", "V7", "I") $
 227. 찰리 파커
 #align(center)[#image("figures/fig_278.jpg", width: 69%)]
 
-하렐은 예시 228에서 픽업 노트로 #chord("ii") 화음의 7도에서 시작한다. #maj25 진행 위에서 C.E.S.H.를 연주한 후, #chord("I") 화음 위에서도 또 다른 C.E.S.H.가 암시된다. 두 번째 마디의 F 내추럴은 보통 첫 번째 박자의 #note("E")로 해결된다. #note("F#")은 방향을 바꾸고 해결을 세 번째 박자까지 지연시킨다.
+하렐은 예시 228에서 픽업 노트로 #chord("ii") 화음의 7도에서 시작한다. #maj25 진행 위에서 C.E.S.H.를 연주한 후, #chord("I") 화음 위에서도 또 다른 C.E.S.H.가 암시된다. 두 번째 마디의 #note("Fnat")은 보통 첫 번째 박자의 #note("E")로 해결된다. #note("F#")은 방향을 바꾸고 해결을 세 번째 박자까지 지연시킨다.
 
 228. 톰 하렐
 #align(center)[#image("figures/fig_279.jpg", width: 60%)]
@@ -1666,7 +1666,7 @@ $ prog("iii", "V7/ii", "ii", "V7", "I") $
 234. 클리포드 브라운
 #align(center)[#image("figures/fig_285.jpg", width: 44%)]
 
-캐넌볼은 동일한 솔로에서 두 개의 키 영역에서 동일한 선율을 사용한다.
+캐넌볼은 동일한 솔로에서 두 개의 조성 영역에서 동일한 선율을 사용한다.
 
 235. 캐넌볼 애덜리
 #align(center)[#image("figures/fig_286.jpg", width: 32%)]
@@ -1749,14 +1749,14 @@ $ prog("iii", "V7/ii", "ii", "V7", "I") $
 
 #chapter("윤곽 조각", l: "chap7")
 
-In the discussion of harmonic clarity, the target notes were the third of ii moving to the seventh of ii, resolving to the third of V7 moving to the seventh of V7, resolving to the third of I. Fragments of outlines have been previously shown where harmonic clarity was still present with some of the elements missing.
+화성적 명확성에 대한 논의에서 목표음은 #chord("ii") 화음의 3도에서 7도로 이동하고, #chord("V7") 화음의 3도로 해결된 후 7도로 이동하여 다시 #chord("I") 화음의 3도로 해결되는 구조였다. 이전에 제시된 윤곽의 일부 조각에서는 일부 요소가 빠져 있음에도 불구하고 화성적 명확성이 유지되었다.
 
-Parker's sequence in ex.249 relies on the seventh of ii resolving to the third of V7 for clarity. The turn, the leap from third to the root, and the rhythmic displacement give life to this example.
+예시 249에서 파커의 연속된 선율은 #chord("ii") 화음의 7도가 #chord("V7") 화음의 3도로 해결되는 것을 중심으로 화성적 명확성을 보여준다. 돈꾸밈음, 3도에서 근음으로의 도약, 리듬적 이동이 이 예시에 생동감을 더한다.
 
 249. 찰리 파커
 #align(center)[#image("figures/fig_301.jpg", width: 90%)]
 
-Brown uses similar motion in this sequence. The shape is echoed later, but with an arpeggio on the V7 chord.
+브라운은 이 연속된 선율에서 유사한 움직임을 사용한다. 이러한 형태는 이후에 반복되며, #chord("V7") 화음에서 아르페지오로 변형된다.
 
 250. 클리포드 브라운
 #align(center)[#image("figures/fig_302.jpg", width: 44%)]
@@ -1764,20 +1764,21 @@ Brown uses similar motion in this sequence. The shape is echoed later, but with 
 251. 클리포드 브라운
 #align(center)[#image("figures/fig_303.jpg", width: 44%)]
 
-The only note missing from Morgan's excerpt is the third of the iiø chord. The V7 chord is anticipated and arpeggiated. The line follows Outline No.1 one down to the third of C minor.
+모건의 발췌문에서 유일하게 누락된 음은 #chord("iihalfdim") 화음의 3도이다. #chord("V7") 화음은 미리 연주되며 아르페지오로 진행된다. 선율은 제1윤곽을 따라 내려가 #chord("Cm")의 3도에 도달한다.
 
 252. 리 모건
 #align(center)[#image("figures/fig_304.jpg", width: 45%)]
 
-Harrell begins with an accented upper neighbor tone followed by the third. The leap is an arpeggiated tone to the fifth, The seventh on the upbeat is followed by the next target note on the downbeat.
+하렐은 강세가 있는 상위 이웃음을 시작으로 3도를 연주한다. 도약은 5도로 이어지는 아르페지오 음이며, 약박에 7도가 연주된 후 강박에 다음 목표음이 나타난다.
 
 253. 톰 하렐
 #align(center)[#image("figures/fig_305.jpg", width: 29%)]
 
 #chapter("모달 곡에서의 윤곽", l: "chap8")
-Most of the music and examples discussed in this book refer to music with harmonic progressions. Many jazz compositions and improvisations are based on modal structures. There are many things to discuss regarding modal music, which will be the topic of another book.
 
-Some jazz improvisers bring some of the be-bop vocabulary with them when playing on modal pieces. Here are two examples of Outline No.1 used over G dorian from Randy Brecker. In the ex.254, the third of the G minor chord is approached by its leading tone. The F\# and A encircle the root. E natural implies C7 and is approached from above and below. In the next example, Outline No.1 can be clearly heard on the downbeats; leading tones have been added giving the line more of a sawtooth shape.
+이 책에서 다룬 대부분의 음악과 예시들은 화성 진행이 있는 음악에 관한 것이다. 그러나 많은 재즈 곡과 즉흥 연주는 모달 구조에 기반을 두고 있다. 모달 음악에 대해 논의할 내용이 많으며, 이는 다른 책에서 다뤄야 할 주제일 것이다.
+
+일부 재즈 즉흥 연주자들은 모달 곡을 연주할 때 비밥 어휘를 함께 가져오기도 한다. 다음은 랜디 브레커가 #note("G") 도리안 스케일 위에서 제1윤곽을 사용한 두 가지 예시이다. 예시 254에서는 #note("Gm") 화음의 3도가 이끎음으로 접근된다. #note("F#")과 #note("A")는 근음을 둘러싸며, #note("Enat")은 #chord("C7") 화음을 암시하며 위아래에서 접근된다. 다음 예시에서는 제1윤곽이 강박에서 명확히 들리며, 이끎음이 추가되어 선율에 톱니형 형태가 더해진다.
 
 254. 랜디 브레커: _Passenger_
 #align(center)[#image("figures/fig_306.jpg", width: 44%)]
@@ -1785,7 +1786,7 @@ Some jazz improvisers bring some of the be-bop vocabulary with them when playing
 255. 랜디 브레커: _Passenger_
 #align(center)[#image("figures/fig_307.jpg", width: 56%)]
 
-Here are two examples from a classic modal recording. Cannonball Adderley uses this C.E.S.H. version of Outline No.3 several times in the solo to contrast with his modal, motivic, and down and dirty blues playing on this modal blues tune. The outline is played over G mixolydian.
+고전적인 모달 녹음에서 두 가지 예시를 볼 수 있다. 캐넌볼 애덜리는 이 모달 블루스 곡의 솔로에서 제3윤곽의 C.E.S.H. 버전을 여러 번 사용하여 모달적, 동기적, 그리고 블루스적 연주와 대비를 이루었다. 이 윤곽은 G 믹솔리디안 스케일 위에서 연주된다.
 
 256. 캐넌볼 애덜리
 #align(center)[#image("figures/fig_308.jpg", width: 44%)]
@@ -1816,7 +1817,7 @@ Here are two examples from a classic modal recording. Cannonball Adderley uses t
   - 리듬을 일부 변경하라.
   - 원래 없던 돈꾸밈음과 꾸밈음을 추가하라.
   - 꾸밈음을 제거해 보라.
-  - 적절한 임시표를 사용해 단조 키로 연주해보라.
+  - 적절한 임시표를 사용해 단조로 연주해보라.
   - 모든 조에서 연주하라!
 + 자신만의 것을 만들어라. 각 윤곽에서 여러 예시를 만들어라. 윤곽 하나와 기법 하나(이웃음, 경과음, 아르페지오 음 등)를 조합해 창작해 보라. 다시 말하지만, 모든 조에서 연습하라.
 + 자신의, 또는 다른 이들의 예시를 곡과 스탠다드 진행에 적용하라. 미리 준비하여 그들이 잘 작동하도록 하라.
