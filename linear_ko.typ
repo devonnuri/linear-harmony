@@ -109,7 +109,7 @@
   title: "선형적 화성을 통한 화성 연결",
   author: "버트 라이곤",
   main-color: main-color,
-  paper-size: "iso-b5",
+  paper-size: "a4",
   lang: "en",
   font-size: 11pt,
   // list-of-figure-title: "List of Figures",
@@ -684,7 +684,7 @@ F장조에서 #prog("Ahalfdim7", "D7") 진행은 #chord("ii") 화음(#chord("Gm"
 35. 찰리 파커
 #align(center)[#image("figures/fig_078.jpg", width: 53%)]
 
-다음은 재키 맥린의 #note("A")단조에서의 발췌본이다. #chord("iihalfdim7") 화음의 3도는 네 번째 박자에 나타난다. 반전된 3-5-7-9 아르페지오가 선율의 하강 진행을 중단시키며, #chord("Fm") 화음의 3도로 강박에 확실하게 해결한다.
+다음은 재키 맥린의 #note("A")단조에서의 발췌본이다. #chord("iihalfdim7") 화음의 3도는 네 번째 박자에 나타난다. 전위된 3-5-7-9 아르페지오가 선율의 하강 진행을 중단시키며, #chord("Fm") 화음의 3도로 강박에 확실하게 해결한다.
 
 36. 재키 맥린
 #align(center)[#image("figures/fig_079.jpg", width: 57%)]
@@ -1107,8 +1107,6 @@ $ prog("ii", "V7", "iii", "V7/ii", "ii") $
 
 116. 지미 주프리
 #align(center)[#image("figures/fig_165.jpg", width: 59%)]
-
-This is a classic sequence from Parker. The example can be found in many other Parker solos. Measure one is the descending scale variation with octave displacement (a third up to flat nine leap). Measure two arpeggiates the C minor from the third (with a third down to five leap), then descends to the target note A, and arpeggiates the F7 chord. The rhythm is compressed on the fourth beat to compensate for the extra inserted notes B flat and G. The progression is:
 
 이 예시는 파커의 대표적인 선율이다. 이 예시는 다른 여러 파커의 솔로에서도 찾을 수 있다. 첫 번째 마디는 옥타브 이동을 포함한 하강 음계 변형(3도에서 $flat 9$으로 도약)이다. 두 번째 마디에서는 #chord("Cm") 화음을 3도에서 아르페지오(3도에서 5도를 향해 아래로 도약)로 연주한 후 목표음 #note("A")로 하강하고, #chord("F7") 화음을 아르페지오로 연주한다. 네 번째 박자에서 추가된 #note("Bb")과 #note("G") 음을 보상하기 위해 리듬이 압축된다. 진행은 다음과 같다.
 
@@ -1805,12 +1803,26 @@ $ prog("iii", "V7/ii", "ii", "V7", "I") $
 + 스탠다드 곡과 진행에 기본 윤곽을 적용하라. 예를 들어 블루스에서는,
   - 블루스 진행을 여러 코러스 연주하면서, #maj25$$가 나올 때마다 반드시 제1윤곽을 연주하라.
   - 몇 개의 코러스를 연주하고 나서, 제2윤곽으로 바꾼 다음, 제3윤곽으로 바꿔라.
-  - 9-10마디와 12마디의 일반적인 #maj25 외에도, 4마디에서 #chord("IV") 화음으로 가는 #maj25, 8마디에서 #chord("ii") 화음으로 가는 $chord("iidim")-chord("V7")$을 시도하라.
+  - 9\~10마디와 12마디의 일반적인 #maj25 외에도, 4마디에서 #chord("IV") 화음으로 가는 #maj25, 8마디에서 #chord("ii") 화음으로 가는 $chord("iidim")-chord("V7")$을 시도하라.
   - 첫 두 마디에서도 모든 윤곽이 적용 가능하다.
 
   F조에서 블루스 진행은 다음과 같다.
 
-  #align(center)[#image("figures/fig_310.jpg", width: 60%)]
+  // #align(center)[#image("figures/fig_310.jpg", width: 60%)]
+
+  #align(center)[
+    #set text(size: 0.9em)
+    #table(
+      columns: (5em, 5em, 5em, 2.5em, 2.5em),
+      inset: (y: 2pt),
+      align: left + horizon,
+      row-gutter: 3pt,
+      stroke: (x, y) => if (x != 4) { (left: 0.5pt) } else { (right: 0.5pt) },
+      chord("F"), chord("Bb7"), chord("F"), chord("Cm7"), chord("F7"),
+      chord("Bb7"), chord("Bdim7"), chord("F"), chord("Ahalfdim7"), chord("D7"),
+      chord("Gm7"), chord("C7"), chord("F"), chord("Gm7"), chord("C7"),
+    )
+  ]
 + 이 책이나 자신만의 컬렉션에서 좋아하는 예제를 모든 조성에서 연습하라. 모든 음이 스윙 느낌을 갖게 하고, 선율의 꼭대기와 방향 전환 부분을 강조하라. 대충 연습하면 대충 연주하게 될 것이다.
 + 좋아하는 예제를 변형하고 개인화하라.
   - 음 하나나 두 개를 바꿔라.
@@ -1832,41 +1844,40 @@ $ prog("iii", "V7/ii", "ii", "V7", "I") $
 
 == 기본 윤곽 익히기
 
-+ Play through this 16 measure exercise in each major key. Repeat in each key until comfortable. Your goal should be to start in any key, play non-stop without error or hesitation through this exercise modulating through all twelve major keys.
++ 이 16마디 연습곡을 모든 장조에서 연주하라. 각 조에서 편안해질 때까지 반복하라. 목표는 어떤 조에서 시작하든 이 연습곡을 모든 12개의 장조로 전조하여 오류나 망설임 없이 멈추지 않고 연주하는 것이다.
 
-  Whole-note harmonic rhythm:
+  온음표 화성 리듬:
 
   #align(center)[#image("figures/fig_311.jpg", width: 90%)]
 
-+ Play through this 8 measure exercise in each major key. Repeat in each key until comfortable. Your goal should be to start in any key, play non-stop without error or hesitation through this exercise modulating through all twelve major keys.
++ 이 8마디 연습곡을 모든 장조에서 연주하라. 각 조에서 편안해질 때까지 반복하라. 목표는 어떤 조에서 시작하든 이 연습곡을 모든 12개의 장조로 전조하여 오류나 망설임 없이 멈추지 않고 연주하는 것이다.
 
-  Half-note harmonic rhythm:
+  2분음표 화성 리듬:
 
   #align(center)[#image("figures/fig_312.jpg", width: 90%)]
-+ Play through exercise no. 1.1 one time as shown. The second time, improvise using the exercise as a guide. Your goal should be to start in any key, play non-stop without error or hesitation through this exercise modulating through all twelve major keys.
 
-+ Here is an exercise using some variations on the outlines.
++ 연습곡 1.1을 한 번은 예시대로 연주하라. 그 다음에는 이 연습곡을 가이드로 삼아 즉흥 연주하라. 목표는 어떤 조에서 시작하든 이 연습곡을 모든 12개의 장조로 전조하여 오류나 망설임 없이 멈추지 않고 연주하는 것이다.
+
++ 다음은 변형된 윤곽을 활용한 연습곡이다.
+
   #align(center)[#image("figures/fig_313.jpg", width: 90%)]
 
-+ Take exercises 1.1—1.3 and apply to minor keys. As shown, use harmonic minor with a raised leading tone.
++ 연습곡 1.1\~1.3을 단조에 적용하라. 앞서 말한 대로, 선행음을 올린 화성 단음계를 사용하라.
 
-  Whole-note harmonic rhythm:
+  온음표 화성 리듬:
 
   #align(center)[#image("figures/fig_314.jpg", width: 90%)]
 
-  Half-note harmonic rhythm:
+  2분음표 화성 리듬:
 
   #align(center)[#image("figures/fig_315.jpg", width: 90%)]
 
 == 윤곽과 청각 훈련
 
-+ Sing through the first set of exercises.
-
-+ Vocally improvise lines using exercises 1.1 and 1.2 as your guide.
-
-+ Write down and learn some of your vocal improvisations.
-
-+ Start in a major key and modulate to the closely related keys. (If you choose C major, modulate to D minor, E minor, F major, G major, and A minor.) Use ii7 - V7 or iiø7 - V7 of the new key to get there. Practice singing modulations to closely related keys using all three outlines as shown on the following pages.
++ 첫 번째 세트의 연습곡을 따라 부르며 연습하라.
++ 연습곡 1.1과 1.2를 가이드로 삼아 선율을 목소리로 즉흥연주하라.
++ 자신의 보컬 즉흥 연주를 기보하고 익혀라.
++ 장조에서 시작하여 밀접한 조로 전조하라. (예를 들어 #note("C")장조를 선택했다면, #note("D")단조, #note("E")단조, #note("F")장조, #note("G")장조, #note("A")단조로 변조하라.) 새로운 조로 변조할 때 해당 조의 #prog("ii7", "V7") 또는 #min25$$을 사용하라. 다음 페이지에 나와 있는 세 가지 윤곽을 활용하여 밀접한 조로 변조하는 연습을 하라.
 
 === 제1윤곽을 사용하여 C 장조와 밀접한 조로 전조하기
 
@@ -1942,138 +1953,138 @@ $ prog("iii", "V7/ii", "ii", "V7", "I") $
 
 == 제1윤곽에 특정 기법 적용하기
 
-Take the simple outline and apply one or more devices to create a more interesting, more musical line. Practice them in all major keys. Try doing the same lines in the minor keys. Here are a few examples. Invent and practice several of your own.
+단순한 윤곽을 활용하여 한 가지 이상의 기법을 적용해 더 흥미롭고 음악적인 선율을 만들어라. 모든 장조에서 연습하라. 같은 선율을 단조에서도 시도해보라. 다음은 몇 가지 예시이다. 자신만의 선율을 만들어 연습하라.
 
-1. Scale motion used to fill out the measure:
+1. 마디를 채우기 위해 스케일 움직임의 사용
 #align(center)[#image("figures/fig_331.jpg", width: 69%)]
-2. Using arpeggiated tones:
+2. 아르페지오 음의 사용
 #align(center)[#image("figures/fig_332.jpg", width: 69%)]
-3. Upper neighbor tones (UNT) used to create a sequence:
+3. 상위 이웃음(UNT)의 반복 사용
 #align(center)[#image("figures/fig_333.jpg", width: 68%)]
-4. Similar to the previous exercise, but with upper arpeggiated tones instead of upper neighbors. This line is reminiscent of Baroque music.
+4. 이전 연습과 유사하지만 상위 아르페지오 음을 상위 이웃음 대신 사용. 이 선율은 바로크 음악을 연상시킨다.
 #align(center)[#image("figures/fig_334.jpg", width: 69%)]
-5. Combination of simple devices. Encircling and arpeggiated tones.
+5. 단순한 기법(둘러싼음과 아르페지오 음)의 조합
 #align(center)[#image("figures/fig_335.jpg", width: 69%)]
-6. Upper and lower neighbor tones (LNT). The target notes for G7 and C major are rhythmically anticipated.
+6. 상위 및 하위 이웃음(LNT). #chord("G7")과 #chord("CM")의 목표음이 리듬적으로 미리 연주된다.
 #align(center)[#image("figures/fig_336.jpg", width: 68%)]
-7. Third to flat-nine leap in the second measure:
+7. 두 번째 마디에서 3도에서 $flat 9$으로의 도약
 #align(center)[#image("figures/fig_337.jpg", width: 68%)]
-8. Simple outline with pick up notes:
+8. 픽업음이 포함된 단순한 윤곽
 #align(center)[#image("figures/fig_338.jpg", width: 68%)]
-9. Arpeggio used for octave displacement, chromatic approaches, displaced arpeggio on the G7 chord:
+9. 옥타브 이동을 위한 아르페지오 사용, 반음계적 접근, #chord("G7") 화음에서의 이동된 아르페지오
 #align(center)[#image("figures/fig_339.jpg", width: 68%)]
-10. Encircling, UNT, anticipated last target note:
+10. 둘러싸기, UNT, 마지막 목표음을 미리 연주
 #align(center)[#image("figures/fig_340.jpg", width: 68%)]
-11. Encircling, UNT, chromatic approach to last target note:
+11. 둘러싸기, UNT, 마지막 목표음으로의 반음계적 접근
 #align(center)[#image("figures/fig_341.jpg", width: 68%)]
-12. Encircling:
+12. 둘러싸기
 #align(center)[#image("figures/fig_342.jpg", width: 69%)]
-13. Encircling using many more chromatic passing tones (PT), borrowed tones, and LNT:
+13. 더 많은 반음계적 경과음(PT), 차용음, LNT를 사용한 둘러싸기
 #align(center)[#image("figures/fig_343.jpg", width: 69%)]
-14. Chromatic approach from below and above:
+14. 위와 아래로부터의 반음계적 접근
 #align(center)[#image("figures/fig_344.jpg", width: 69%)]
-15. Encircling. (The arpeggio in the second measure suggests 제2윤곽 in the middle of 제1윤곽):
+15. 둘러싸기 (두 번째 마디의 아르페지오는 제1윤곽 중간에 제2윤곽을 암시한다)
 #align(center)[#image("figures/fig_345.jpg", width: 69%)]
-16. Chromatic passing tones, C.E.S.H.:
+16. 반음계적 경과음, C.E.S.H.
 #align(center)[#image("figures/fig_346.jpg", width: 69%)]
-17. Chromatic passing tones, arpeggiated tones, C.E.S.H., and encircling:
+17. 반음계적 경과음, 아르페지오 음, C.E.S.H., 둘러싸기
 #align(center)[#image("figures/fig_347.jpg", width: 69%)]
-18. Octave displacement, chromatic approaches, delayed resolution to tonic:
+18. 옥타브 이동, 반음계적 접근, 으뜸화음으로의 지연된 해결
 #align(center)[#image("figures/fig_348.jpg", width: 68%)]
 
-Here is how a simple outline can be transformed into a more complex line.
+다음은 단순한 윤곽이 더 복잡한 선율로 변형될 수 있는 방법을 보여준다.
 
-19. The simple outline is first shown with some added rhythmic interest:
+19. 단순한 윤곽이 일부 리듬적 흥미를 더한 형태로 나타난다.
 #align(center)[#image("figures/fig_349.jpg", width: 44%)]
-20. The F is octave displaced:
+20. #note("F")가 옥타브 이동되었다.
 #align(center)[#image("figures/fig_350.jpg", width: 44%)]
-21. An arpeggio is used to fill in the octave:
+21. 옥타브를 채우기 위해 아르페지오가 사용되었다.
 #align(center)[#image("figures/fig_351.jpg", width: 44%)]
-22. The F is displaced again, giving the line a more angular shape:
+22. #note("F")가 다시 이동되어 선율에 더 각진 형태를 부여한다.
 #align(center)[#image("figures/fig_352.jpg", width: 44%)]
-23. Chromatic pick-ups are added from above to the F, from below to the B.
+23. #note("F") 위쪽에서 반음계적 픽업음, #note("B") 아래쪽에서 반음계적 픽업음이 추가되었다.
 #align(center)[#image("figures/fig_353.jpg", width: 69%)]
 
 == 제2윤곽에 특정 기법 적용하기
 
-Take the simple outline and apply one or more devices to create a more interesting, more musical line. Practice them in all major keys. Try doing the same lines in the minor keys. Here are a few examples. Invent and practice several of your own.
+단순한 윤곽을 활용하여 한 가지 이상의 기법을 적용해 더 흥미롭고 음악적인 선율을 만들어라. 모든 장조에서 연습하라. 같은 선율을 단조에서도 시도해보라. 다음은 몇 가지 예시이다. 자신만의 선율을 만들어 연습하라.
 
-1. Begins with two scale steps, PT:
+1. 두 개의 음계 음으로 시작, PT
 #align(center)[#image("figures/fig_354.jpg", width: 69%)]
-2. Scalar passages:
+2. 음계 구절
 #align(center)[#image("figures/fig_355.jpg", width: 90%)]
-3. LNT sequence:
+3. LNT의 반복 사용
 #align(center)[#image("figures/fig_356.jpg", width: 69%)]
-4. LNT, encircling, octave displacement:
+4. LNT, 둘러싸기, 옥타브 이동
 #align(center)[#image("figures/fig_357.jpg", width: 69%)]
-5. PT, arpeggiated tone:
+5. PT, 아르페지오 음
 #align(center)[#image("figures/fig_358.jpg", width: 69%)]
-6. Four-note cycle returns to the first note.
+6. 네 음을 가지고 순환하다 첫 음으로 돌아온다.
 #align(center)[#image("figures/fig_359.jpg", width: 69%)]
-7. Pick up notes from the scale:
+7. 음계로부터 온 픽업음
 #align(center)[#image("figures/fig_360.jpg", width: 69%)]
-8. Pickup notes from the fifth:
+8. 5도로부터 온 픽업음
 #align(center)[#image("figures/fig_361.jpg", width: 69%)]
-9. LNT with extended arpeggio, chromatic encircling:
+9. LNT와 확장된 아르페지오, 반음계적 둘러싸기
 #align(center)[#image("figures/fig_362.jpg", width: 69%)]
-10. Unexpected chromatic resolution (The C — #note("C#") pulls up to the D, the E — E flat pull down), chromatic encircling:
+10. 예기치 않은 반음계적 해결(#note("C")-#note("C#")이 #note("D")로 끌어 올리고, #note("E")-#note("Eb")은 끌어 내린다.), 반음계적 둘러싸기
 #align(center)[#image("figures/fig_363.jpg", width: 90%)]
-11. Series of encircled notes:
+11. 연속적인 둘러싼음
 #align(center)[#image("figures/fig_364.jpg", width: 90%)]
-12. Root of the ii chord preceded and encircled by its dominant, extended arpeggio, encircled B:
+12. #note("ii") 화음의 근음이 그 딸림화음에 의해 앞서 둘러싸임, 확장된 아르페지오, 둘러싸인 #note("B")
 #align(center)[#image("figures/fig_365.jpg", width: 68%)]
-13. Arpeggio begins from below, displaced arpeggios. The second measure is two arpeggios: G7 from the third (3-5-7-9) and from the root (1-3-5-7). The displacement creates a jagged line and at the same time emphasizes the step progression C — B — A — G — F — E.
+13. 아래에서 시작하는 아르페지오, 이동된 아르페지오. 두 번째 마디에는 두 개의 #chord("G7") 아르페지오로 구성된다. 하나는 3도에서 시작하고(3-5-7-9), 나머지 하나는 근음에서 시작한다(1-3-5-7). 이동은 각진 선율을 만들고 동시에 단계적인 진행 #note("C")-#note("B")-#note("A")-#note("G")-#note("F")-#note("E")를 강조한다.
 #align(center)[#image("figures/fig_366.jpg", width: 69%)]
 
 == 제3윤곽에 특정 기법 적용하기
 
-Take the simple outline and apply one or more devices to create a more interesting, more musical line. Practice them in all major keys. Try doing the same lines in the minor keys. Here are a few examples. Invent and practice several of your own.
+단순한 윤곽을 활용하여 한 가지 이상의 기법을 적용해 더 흥미롭고 음악적인 선율을 만들어라. 모든 장조에서 연습하라. 같은 선율을 단조에서도 시도해보라. 다음은 몇 가지 예시이다. 자신만의 선율을 만들어 연습하라.
 
-1. Begins with scalar passages (inversion of 4.2) sequenced:
+1. 반복되는 음계 구절로 시작(4.2의 전위)
 #align(center)[#image("figures/fig_367.jpg", width: 90%)]
-2. LNT, stop and go rhythmic feel:
+2. LNT, 멈췄다 가는 리듬적 느낌
 #align(center)[#image("figures/fig_368.jpg", width: 90%)]
-3. LNT, PT, C.E.S.H., octave displacement, encircling:
+3. LNT, PT, C.E.S.H., 옥타브 이동, 둘러싸기
 #align(center)[#image("figures/fig_369.jpg", width: 90%)]
-4. Pick up notes, outline delayed until the second measure:
+4. 픽업음, 두 번째 마디까지 지연된 윤곽
 #align(center)[#image("figures/fig_370.jpg", width: 90%)]
-5. Chromatic pick up notes, encircling tones:
+5. 반음계적 픽업음, 둘러싼음
 #align(center)[#image("figures/fig_371.jpg", width: 90%)]
-6. Chromatic encircling tones:
+6. 반음계적 둘러싼음
 #align(center)[#image("figures/fig_372.jpg", width: 90%)]
-7. Encirling, arpeggiated tone, chromatic approaches. The leap from D down to F in m.1 is mirrored in the last measure:
+7. 둘러싸기, 아르페지오 음, 반음계적 접근음. 첫 마디의 D에서 F로 하행 도약이 마지막 마디에서 반복된다.
 #align(center)[#image("figures/fig_373.jpg", width: 69%)]
-8. LNTs. The rhythmic accents sometimes suggest a dotted quarter rhythm:
+8. LNT. 리듬적 강세가 때때로 점4분음표 리듬을 암시한다.
 #align(center)[#image("figures/fig_374.jpg", width: 68%)]
 
 == 일반적인 진행에서의 짧은 예제
 
-Invent short exercises over typical progressions and follow the outlines. This example uses all three outlines. The first two measures (ii - V7) use Outline No.3 with many chromatic approaches and encircling tones. A fairly simple Outline No.1 is in the second two measures (iii - V7/ii). In mm.5—6 (ii - V7) is Outline No.2 with some pick up notes.
+일반적인 진행에 윤곽을 따르는 짧은 연습곡을 만들어라. 이 예시는 세 가지 윤곽을 모두 사용한다. 첫 두 마디(#maj25)는 여러 반음계적 접근음과 둘러싼음을 포함한 제3윤곽을 사용한다. 비교적 단순한 제1윤곽이 3\~4번째 마디(#prog("iii", "V7/ii"))에 나타난다. 5\~6마디(#maj25)에서는 몇 개의 픽업음과 함께 제2윤곽이 사용되었다.
 
 #align(center)[#image("figures/fig_375.jpg", width: 90%)]
 
 == 윤곽으로 다른 코드 연결하기 (1)
 
-Practice this progression with all of the outlines for practice connecting all chord types. The progression is:
+다음 진행을 모든 윤곽을 활용하여 연습하며 다양한 코드 유형을 연결하는 연습을 하라.
 
 // #align(center)[#image("figures/fig_376.jpg", width: 23%)]
 
 $ chord("ii")-chord("V7")-chord("I")-chord("IV")-frac(chord("iihalfdim")-chord("V7"), chord("vi"))-chord("vi") $
 
-Practice these exercises slowly until comfortable, then speed them up. Practice goal should be to play them in all twelve major keys without hesitation or error at any tempo you begin.
+이 연습곡들을 천천히 시작하여 편안해질 때까지 연습한 후 점차 속도를 올려라. 목표는 어떤 템포로 시작하든 12개의 모든 장조에서 망설임이나 오류 없이 연주하는 것이다.
 
-1. Using 제1윤곽 to connect the target notes:
+1. 제1윤곽을 사용하여 목표음을 연결하기
 #align(center)[#image("figures/fig_377.jpg", width: 90%)]
-2. Using 제2윤곽. The outline starts on the odd measures in the first half, and the even measures on the last half of this exercise:
+2. 제2윤곽을 사용하기. 첫 절반에서는 홀수 마디에, 후반부에서는 짝수 마디에 윤곽이 시작된다
 #align(center)[#image("figures/fig_378.jpg", width: 90%)]
-3. Using 제3윤곽. The outline starts on the odd measures in the first half, and is inverted on the last half of this exercise:
+3. 제3윤곽을 사용하기. 첫 절반에서는 홀수 마디에 윤곽이 시작하고, 후반부에서는 윤곽이 전위된다
 #align(center)[#image("figures/fig_379.jpg", width: 90%)]
-4. This exercise is based on 제1윤곽. The third of each chord occurs on the downbeat of every measure followed by an arpeggio, before continuing down the scale. The arpeggio is octave displaced in every other measure.
+4. 이 연습은 제1윤곽을 기반으로 한다. 각 코드의 3도는 매 마디의 첫 박자에 나타나며, 이후 아르페지오가 이어지고 음계가 하행한다. 아르페지오는 두 마디마다 옥타브가 이동된다.
 #align(center)[#image("figures/fig_380.jpg", width: 90%)]
 
 == 윤곽으로 다른 코드 연결하기 (2)
 
-The progression from exercise 7 is shown here with some elaboration. Can you determine what devices are used?
+다음에는 예제 7의 진행이 일부 꾸밈 기법이 추가된 형태로 제시되어 있다. 어떤 기법들이 사용되었는지 알아낼 수 있는가?
 
 1. 제1윤곽:
 #align(center)[#image("figures/fig_381.jpg", width: 90%)]
@@ -2084,19 +2095,19 @@ The progression from exercise 7 is shown here with some elaboration. Can you det
 
 == 턴어라운드 진행에서 윤곽 사용하기
 
-Practice the outlines over turnaround progressions. Turnaround progressions occur as the last two measures of the blues and countless jazz and pop standard tunes, and as the basis for tunes like _I Got Rhythm_ and _Heart and Soul._ Practice these exercises in all twelve keys.
+턴어라운드 진행 위에서 윤곽을 연습하라. 턴어라운드 진행은 블루스와 수많은 재즈 및 팝 스탠다드 곡의 마지막 두 마디에 자주 등장하며, _I Got Rhythm_과 _Heart and Soul_ 같은 곡의 기초가 된다. 이 연습을 모든 12개 조에서 연습하라.
 
-1. Typical turnaround progression (I - V/ii - ii - V etc., in the key of F major):
+1. 전형적인 턴어라운드 진행 (#note("F")장조에서 $prog("I", "V/ii", "ii", "V")-dots.c$)
 #align(center)[#image("figures/fig_384.jpg", width: 90%)]
-2. Turnaround progression with more secondary dominants (I - V7/ii - V7/V - V7 - V/vi etc., in the key of F major):
+2. 더 많은 부딸림화음을 포함한 턴어라운드 진행 (#note("F")장조에서 $prog("I", "V7/ii", "V7/V", "V7", "V/vi")-dots.c$)
 #align(center)[#image("figures/fig_385.jpg", width: 90%)]
-3. 제1윤곽 in a cycle (iii - V/ii - ii - V - I - [tritone substitute dominant of iii] in the key of C major):
+3. 제1윤곽의 순환 (#note("C")장조에서 $prog("iii", "V/ii", "ii", "V", "I")-$ [#chord("iii")의 딸림화음의 셋온음 대체화음#sub[tritone substitute]])
 #align(center)[#image("figures/fig_386.jpg", width: 90%)]
-4. 제2윤곽 in a cycle (iii - V/ii - ii - V - I - [tritone substitute dominant of iii] in the key of C major):
+4. 제2윤곽의 순환 (#note("C")장조에서 $prog("iii", "V/ii", "ii", "V", "I")-$ [#chord("iii")의 딸림화음의 셋온음 대체화음])
 #align(center)[#image("figures/fig_387.jpg", width: 90%)]
-5. 제3윤곽 in a cycle (iii - V/ii - ii - V - I - [tritone substitute dominant of iii] in the key of C major):
+5. 제3윤곽의 순환 (#note("C")장조에서 $prog("iii", "V/ii", "ii", "V", "I")-$ [#chord("iii")의 딸림화음의 셋온음 대체화음])
 #align(center)[#image("figures/fig_388.jpg", width: 90%)]
-6. The longer harmonic rhythm makes it possible to embellish this cycle with chromatic leading tones. The progression is iii - V/ii - ii - V in the key of C major:
+6. 더 긴 화성 리듬은 이 순환을 반음계적 이끎음으로 꾸밀 수 있도록 해준다. 진행은 #note("C")장조에서 #prog("iii", "V/ii", "ii", "V")이다.
 #align(center)[#image("figures/fig_389.jpg", width: 90%)]
 
 == 조성 중심 순환에서의 윤곽
@@ -2356,7 +2367,7 @@ Practice the outlines over turnaround progressions. Turnaround progressions occu
 == 청음 훈련
 
 - 수업 중 한 번에 한 윤곽씩 곡 위에서 윤곽을 부르게 하라. 모든 음을 4분음표 길이로 부르는 대신 네 번쨰 박자의 약박에서 강박을 미리 부르게 하라.
-- 학생 개개인이 윤곽을 기반으로 한 스캣 솔로를 하게 하라. 두#sub[doo]와 닷#sub[daht]$$(재즈에서 사용하는 '가변 두#sub[doo]') 음절을 사용하여 재즈 아티큘레이션을 강조하도록 도와라.
+- 학생 개개인이 윤곽을 기반으로 한 스캣 솔로를 하게 하라. 두#sub[doo]와 닷#sub[daht]$$(재즈에서 사용하는 '가변 두#sub[variable doo]') 음절을 사용하여 재즈 아티큘레이션을 강조하도록 도와라.
 
   이는 학생들이 청각적으로 음을 식별할 수 있도록 준비시킨다. 음을 청각적으로 인식할 수 있게 되면 화성을 통해 선율을 만드는 것이 쉬워진다.
 
@@ -2396,7 +2407,7 @@ Practice the outlines over turnaround progressions. Turnaround progressions occu
   제1윤곽: 멈췄다 가는#sub[stop and go] 리듬으로 인해 #chord("E7") 화음의 해결이 세 번째 박자까지 지연됨. #chord("E7") 화음의 아르페지오(3-5-7-9)로 #chord("Am") 화음의 해결이 지연됨.
 #align(center)[#image("figures/fig_453.jpg", width: 47%)]
 4. 캐넌볼 애덜리\
-  제2윤곽: 화성음으로 도약하여 톱니형 모양을 만들고 #chord("C7") 화음의 해결을 지연시킴; 목표음(#note("E")) 앞에 반음계적 이끎음(#note("D#"))이 위치함; #chord("C7") 화음의 3도에서 근음으로 도약함.
+  제2윤곽: 화성음으로 도약하여 톱니형 모양을 만들고 #chord("C7") 화음의 해결을 지연시킴. 목표음(#note("E")) 앞에 반음계적 이끎음(#note("D#"))이 위치함. #chord("C7") 화음의 3도에서 근음으로 도약함.
 #align(center)[#image("figures/fig_454.jpg", width: 47%)]
 5. 캐넌볼 애덜리\
   제3윤곽: 아래에서 아르페지오 음을 사용함. 목표음(#note("A"))은 상·하위 이웃음에 의해 지연됨. 목표음(#note("A"))은 위(#note("C")-#note("Bb")-#note("A"))와 아래(#note("G")-#note("G#")-#note("A"))에서 접근함.
