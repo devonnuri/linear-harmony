@@ -1,0 +1,17 @@
+\version "2.25.25"
+
+\include "layout.ly"
+
+\score {
+<<
+  \chords {
+    d1:m7 g:7 c:maj7
+  }
+  \new Staff \relative c' {
+  r4 f'8 e f e d a c d c b r aes' \tuplet 3/2 {r g f} e4 r r2
+    \bar "||"
+  }
+>>
+\layout {}
+\midi {\tempo 4 = 180}
+}

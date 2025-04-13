@@ -3,7 +3,7 @@ rm lilypond/*.svg
 echo "[*] ly to svg"
 
 for file in lilypond/*.ly; do
-    (lilypond -dno-midi -fsvg -o "${file%.*}" "$file") &
+    (lilypond -dno-point-and-click -fsvg -o "${file%.*}" "$file") &
 done;
 
 wait

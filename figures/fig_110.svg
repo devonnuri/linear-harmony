@@ -2,13 +2,12 @@
 <svg
    version="1.2"
    width="118.06622mm"
-   height="18.786184mm"
-   viewBox="0 0 67.186203 10.690376"
+   height="18.590111mm"
+   viewBox="0 0 67.186203 10.5788"
    id="svg66"
    sodipodi:docname="fig_110.svg"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:svg="http://www.w3.org/2000/svg">
   <defs
@@ -29,7 +28,7 @@
 tspan { white-space: pre; }
 ]]></style>
   <g
-     transform="translate(66.9962,7.150376)"
+     transform="translate(66.9962,7.0388)"
      id="g1">
     <rect
        x="0"
@@ -41,7 +40,7 @@ tspan { white-space: pre; }
        id="rect1" />
   </g>
   <g
-     transform="translate(66.5062,7.150376)"
+     transform="translate(66.5062,7.0388)"
      id="g2">
     <rect
        x="0"
@@ -53,7 +52,7 @@ tspan { white-space: pre; }
        id="rect2" />
   </g>
   <g
-     transform="translate(0,9.150376)"
+     transform="translate(0,9.0388)"
      id="g3">
     <line
        stroke-linejoin="round"
@@ -67,7 +66,7 @@ tspan { white-space: pre; }
        id="line2" />
   </g>
   <g
-     transform="translate(0,8.150376)"
+     transform="translate(0,8.0388)"
      id="g4">
     <line
        stroke-linejoin="round"
@@ -81,7 +80,7 @@ tspan { white-space: pre; }
        id="line3" />
   </g>
   <g
-     transform="translate(0,7.150376)"
+     transform="translate(0,7.0388)"
      id="g5">
     <line
        stroke-linejoin="round"
@@ -95,7 +94,7 @@ tspan { white-space: pre; }
        id="line4" />
   </g>
   <g
-     transform="translate(0,6.150376)"
+     transform="translate(0,6.0388)"
      id="g6">
     <line
        stroke-linejoin="round"
@@ -109,7 +108,7 @@ tspan { white-space: pre; }
        id="line5" />
   </g>
   <g
-     transform="translate(0,5.150376)"
+     transform="translate(0,5.0388)"
      id="g7">
     <line
        stroke-linejoin="round"
@@ -123,7 +122,7 @@ tspan { white-space: pre; }
        id="line6" />
   </g>
   <g
-     transform="translate(52.292,7.150376)"
+     transform="translate(52.292,7.0388)"
      id="g8">
     <rect
        x="0"
@@ -135,7 +134,7 @@ tspan { white-space: pre; }
        id="rect7" />
   </g>
   <g
-     transform="translate(29.6686,7.150376)"
+     transform="translate(29.6686,7.0388)"
      id="g9">
     <rect
        x="0"
@@ -147,7 +146,7 @@ tspan { white-space: pre; }
        id="rect8" />
   </g>
   <g
-     transform="translate(42.4405,8.150376)"
+     transform="translate(42.4405,8.0388)"
      id="g10">
     <polygon
        stroke-linejoin="round"
@@ -159,7 +158,7 @@ tspan { white-space: pre; }
        id="polygon9" />
   </g>
   <g
-     transform="translate(36.7621,8.960376)"
+     transform="translate(36.7621,8.8488)"
      id="g11">
     <polygon
        stroke-linejoin="round"
@@ -170,62 +169,50 @@ tspan { white-space: pre; }
        points="0.04,0.2 0.04,-0.2 3.2642,-0.82 3.2642,-0.42 "
        id="polygon10" />
   </g>
-  <a
-     style="color:inherit"
-     xlink:href="textedit:///Users/devonnuri/Documents/typst/241230%20Linear%20Harmony/lilypond/fig_110.ly:7:4:5"
-     id="a14"
-     transform="translate(-8.5358,-6.690724)">
-    <g
-       transform="translate(17.1208,8.8411)"
-       id="g12">
-      <text
-         font-family="'Tex Gyre Termes'"
-         font-size="2.3308px"
-         text-anchor="start"
-         fill="currentColor"
-         id="text11"><tspan
-           id="tspan11">C</tspan></text>
-    </g>
-    <g
-       transform="translate(18.6914,8.8411)"
-       id="g13">
-      <text
-         font-family="'Tex Gyre Termes'"
-         font-size="2.3308px"
-         text-anchor="start"
-         fill="currentColor"
-         id="text12"><tspan
-           id="tspan12">m</tspan></text>
-    </g>
-    <g
-       transform="translate(20.501,7.7817)"
-       id="g14">
-      <text
-         font-family="'Tex Gyre Termes'"
-         font-size="1.648px"
-         text-anchor="start"
-         fill="currentColor"
-         id="text13"><tspan
-           id="tspan13">7</tspan></text>
-    </g>
-  </a>
-  <a
-     style="color:inherit"
-     xlink:href="textedit:///Users/devonnuri/Documents/typst/241230%20Linear%20Harmony/lilypond/fig_110.ly:10:4:5"
-     id="a15"
-     transform="translate(-8.5358,-6.690724)">
-    <g
-       transform="translate(17.1208,13.8411)"
-       id="g15">
-      <path
-         transform="scale(0.004,-0.004)"
-         d="m 70,205 c 79,0 46,-98 91,-98 16,0 54,48 61,63 3,6 8,9 14,9 6,0 12,-3 14,-9 L 127,-250 c -8,-7 -17,-10 -27,-10 -10,0 -20,3 -28,10 L 189,76 C 155,64 120,54 84,54 26,54 -1,95 -1,134 c 0,36 24,71 71,71 z"
-         fill="currentColor"
-         id="path14" />
-    </g>
-  </a>
   <g
-     transform="translate(0.8,8.150376)"
+     transform="translate(8.585,2.0388)"
+     id="g12">
+    <text
+       font-family="'New Computer Modern Math'"
+       font-size="2.3308px"
+       text-anchor="start"
+       fill="currentColor"
+       id="text11"><tspan
+         id="tspan11">C</tspan></text>
+  </g>
+  <g
+     transform="translate(10.258,2.8334)"
+     id="g13">
+    <text
+       font-family="'New Computer Modern Math'"
+       font-size="1.648px"
+       text-anchor="start"
+       fill="currentColor"
+       id="text12"><tspan
+         id="tspan12">−</tspan></text>
+  </g>
+  <g
+     transform="translate(11.5555,2.8334)"
+     id="g14">
+    <text
+       font-family="'New Computer Modern Math'"
+       font-size="1.648px"
+       text-anchor="start"
+       fill="currentColor"
+       id="text13"><tspan
+         id="tspan13">7</tspan></text>
+  </g>
+  <g
+     transform="translate(8.585,7.0388)"
+     id="g15">
+    <path
+       transform="scale(0.004,-0.004)"
+       d="m 70,205 c 79,0 46,-98 91,-98 16,0 54,48 61,63 3,6 8,9 14,9 6,0 12,-3 14,-9 L 127,-250 c -8,-7 -17,-10 -27,-10 -10,0 -20,3 -28,10 L 189,76 C 155,64 120,54 84,54 26,54 -1,95 -1,134 c 0,36 24,71 71,71 z"
+       fill="currentColor"
+       id="path14" />
+  </g>
+  <g
+     transform="translate(0.8,8.0388)"
      id="g16">
     <path
        transform="scale(0.004,-0.004)"
@@ -234,7 +221,7 @@ tspan { white-space: pre; }
        id="path15" />
   </g>
   <g
-     transform="translate(4.885,7.150376)"
+     transform="translate(4.885,7.0388)"
      id="g17">
     <path
        transform="scale(0.004,-0.004)"
@@ -243,7 +230,7 @@ tspan { white-space: pre; }
        id="path16" />
   </g>
   <g
-     transform="translate(30.8337,9.960376)"
+     transform="translate(30.8337,9.8488)"
      id="g18">
     <polygon
        stroke-linejoin="round"
@@ -254,23 +241,17 @@ tspan { white-space: pre; }
        points="0.04,0.2 0.04,-0.2 2.8442,-0.82 2.8442,-0.42 "
        id="polygon17" />
   </g>
-  <a
-     style="color:inherit"
-     xlink:href="textedit:///Users/devonnuri/Documents/typst/241230%20Linear%20Harmony/lilypond/fig_110.ly:10:7:8"
-     id="a19"
-     transform="translate(-8.5358,-6.690724)">
-    <g
-       transform="translate(19.3208,14.8411)"
-       id="g19">
-      <path
-         transform="scale(0.004,-0.004)"
-         d="M 0,-46 C 0,45 116,136 217,136 280,136 326,101 326,46 326,-41 216,-136 106,-136 39,-136 0,-97 0,-46 Z"
-         fill="currentColor"
-         id="path18" />
-    </g>
-  </a>
   <g
-     transform="translate(12.0242,7.150376)"
+     transform="translate(10.785,8.0388)"
+     id="g19">
+    <path
+       transform="scale(0.004,-0.004)"
+       d="M 0,-46 C 0,45 116,136 217,136 280,136 326,101 326,46 326,-41 216,-136 106,-136 39,-136 0,-97 0,-46 Z"
+       fill="currentColor"
+       id="path18" />
+  </g>
+  <g
+     transform="translate(12.0242,7.0388)"
      id="g20">
     <rect
        x="-0.064999998"
@@ -282,7 +263,7 @@ tspan { white-space: pre; }
        id="rect19" />
   </g>
   <g
-     transform="translate(12.0892,4.690376)"
+     transform="translate(12.0892,4.5788)"
      id="g21">
     <path
        transform="scale(0.004,-0.004)"
@@ -291,7 +272,7 @@ tspan { white-space: pre; }
        id="path20" />
   </g>
   <g
-     transform="translate(25.8834,4.340376)"
+     transform="translate(25.8834,4.2288)"
      id="g22">
     <polygon
        stroke-linejoin="round"
@@ -302,23 +283,17 @@ tspan { white-space: pre; }
        points="0.04,0.2 0.04,-0.2 2.3442,0.42 2.3442,0.82 "
        id="polygon21" />
   </g>
-  <a
-     style="color:inherit"
-     xlink:href="textedit:///Users/devonnuri/Documents/typst/241230%20Linear%20Harmony/lilypond/fig_110.ly:10:10:11"
-     id="a23"
-     transform="translate(-8.5358,-6.690724)">
-    <g
-       transform="translate(21.8882,13.3411)"
-       id="g23">
-      <path
-         transform="scale(0.004,-0.004)"
-         d="M 0,-46 C 0,45 116,136 217,136 280,136 326,101 326,46 326,-41 216,-136 106,-136 39,-136 0,-97 0,-46 Z"
-         fill="currentColor"
-         id="path22" />
-    </g>
-  </a>
   <g
-     transform="translate(13.4174,7.150376)"
+     transform="translate(13.3524,6.5388)"
+     id="g23">
+    <path
+       transform="scale(0.004,-0.004)"
+       d="M 0,-46 C 0,45 116,136 217,136 280,136 326,101 326,46 326,-41 216,-136 106,-136 39,-136 0,-97 0,-46 Z"
+       fill="currentColor"
+       id="path22" />
+  </g>
+  <g
+     transform="translate(13.4174,7.0388)"
      id="g24">
     <rect
        x="-0.064999998"
@@ -330,7 +305,7 @@ tspan { white-space: pre; }
        id="rect23" />
   </g>
   <g
-     transform="translate(19.0308,9.150376)"
+     transform="translate(19.0308,9.0388)"
      id="g25">
     <polygon
        stroke-linejoin="round"
@@ -341,23 +316,17 @@ tspan { white-space: pre; }
        points="0.04,0.2 0.04,-0.2 2.5942,-0.01 2.5942,0.39 "
        id="polygon24" />
   </g>
-  <a
-     style="color:inherit"
-     xlink:href="textedit:///Users/devonnuri/Documents/typst/241230%20Linear%20Harmony/lilypond/fig_110.ly:10:12:13"
-     id="a26"
-     transform="translate(-8.5358,-6.690724)">
-    <g
-       transform="translate(25.0624,12.3411)"
-       id="g26">
-      <path
-         transform="scale(0.004,-0.004)"
-         d="M 0,-46 C 0,45 116,136 217,136 280,136 326,101 326,46 326,-41 216,-136 106,-136 39,-136 0,-97 0,-46 Z"
-         fill="currentColor"
-         id="path25" />
-    </g>
-  </a>
   <g
-     transform="translate(16.5916,7.150376)"
+     transform="translate(16.5266,5.5388)"
+     id="g26">
+    <path
+       transform="scale(0.004,-0.004)"
+       d="M 0,-46 C 0,45 116,136 217,136 280,136 326,101 326,46 326,-41 216,-136 106,-136 39,-136 0,-97 0,-46 Z"
+       fill="currentColor"
+       id="path25" />
+  </g>
+  <g
+     transform="translate(16.5916,7.0388)"
      id="g27">
     <rect
        x="-0.064999998"
@@ -369,7 +338,7 @@ tspan { white-space: pre; }
        id="rect26" />
   </g>
   <g
-     transform="translate(15.3766,5.650376)"
+     transform="translate(15.3766,5.5388)"
      id="g28">
     <path
        transform="scale(0.004,-0.004)"
@@ -378,7 +347,7 @@ tspan { white-space: pre; }
        id="path27" />
   </g>
   <g
-     transform="translate(13.3524,9.960376)"
+     transform="translate(13.3524,9.8488)"
      id="g29">
     <polygon
        stroke-linejoin="round"
@@ -389,23 +358,17 @@ tspan { white-space: pre; }
        points="0.04,0.2 0.04,-0.2 3.2642,-0.82 3.2642,-0.42 "
        id="polygon28" />
   </g>
-  <a
-     style="color:inherit"
-     xlink:href="textedit:///Users/devonnuri/Documents/typst/241230%20Linear%20Harmony/lilypond/fig_110.ly:10:15:16"
-     id="a30"
-     transform="translate(-8.5358,-6.690724)">
-    <g
-       transform="translate(27.5666,12.8411)"
-       id="g30">
-      <path
-         transform="scale(0.004,-0.004)"
-         d="M 0,-46 C 0,45 116,136 217,136 280,136 326,101 326,46 326,-41 216,-136 106,-136 39,-136 0,-97 0,-46 Z"
-         fill="currentColor"
-         id="path29" />
-    </g>
-  </a>
   <g
-     transform="translate(19.0958,7.150376)"
+     transform="translate(19.0308,6.0388)"
+     id="g30">
+    <path
+       transform="scale(0.004,-0.004)"
+       d="M 0,-46 C 0,45 116,136 217,136 280,136 326,101 326,46 326,-41 216,-136 106,-136 39,-136 0,-97 0,-46 Z"
+       fill="currentColor"
+       id="path29" />
+  </g>
+  <g
+     transform="translate(19.0958,7.0388)"
      id="g31">
     <rect
        x="-0.064999998"
@@ -416,23 +379,17 @@ tspan { white-space: pre; }
        fill="currentColor"
        id="rect30" />
   </g>
-  <a
-     style="color:inherit"
-     xlink:href="textedit:///Users/devonnuri/Documents/typst/241230%20Linear%20Harmony/lilypond/fig_110.ly:10:17:18"
-     id="a32"
-     transform="translate(-8.5358,-6.690724)">
-    <g
-       transform="translate(30.0708,13.3411)"
-       id="g32">
-      <path
-         transform="scale(0.004,-0.004)"
-         d="M 0,-46 C 0,45 116,136 217,136 280,136 326,101 326,46 326,-41 216,-136 106,-136 39,-136 0,-97 0,-46 Z"
-         fill="currentColor"
-         id="path31" />
-    </g>
-  </a>
   <g
-     transform="translate(21.6,7.150376)"
+     transform="translate(21.535,6.5388)"
+     id="g32">
+    <path
+       transform="scale(0.004,-0.004)"
+       d="M 0,-46 C 0,45 116,136 217,136 280,136 326,101 326,46 326,-41 216,-136 106,-136 39,-136 0,-97 0,-46 Z"
+       fill="currentColor"
+       id="path31" />
+  </g>
+  <g
+     transform="translate(21.6,7.0388)"
      id="g33">
     <rect
        x="-0.064999998"
@@ -443,23 +400,17 @@ tspan { white-space: pre; }
        fill="currentColor"
        id="rect32" />
   </g>
-  <a
-     style="color:inherit"
-     xlink:href="textedit:///Users/devonnuri/Documents/typst/241230%20Linear%20Harmony/lilypond/fig_110.ly:10:19:20"
-     id="a34"
-     transform="translate(-8.5358,-6.690724)">
-    <g
-       transform="translate(33.245,13.8411)"
-       id="g34">
-      <path
-         transform="scale(0.004,-0.004)"
-         d="M 0,-46 C 0,45 116,136 217,136 280,136 326,101 326,46 326,-41 216,-136 106,-136 39,-136 0,-97 0,-46 Z"
-         fill="currentColor"
-         id="path33" />
-    </g>
-  </a>
   <g
-     transform="translate(25.9484,7.150376)"
+     transform="translate(24.7092,7.0388)"
+     id="g34">
+    <path
+       transform="scale(0.004,-0.004)"
+       d="M 0,-46 C 0,45 116,136 217,136 280,136 326,101 326,46 326,-41 216,-136 106,-136 39,-136 0,-97 0,-46 Z"
+       fill="currentColor"
+       id="path33" />
+  </g>
+  <g
+     transform="translate(25.9484,7.0388)"
      id="g35">
     <rect
        x="-0.064999998"
@@ -471,7 +422,7 @@ tspan { white-space: pre; }
        id="rect34" />
   </g>
   <g
-     transform="translate(23.5592,7.150376)"
+     transform="translate(23.5592,7.0388)"
      id="g36">
     <path
        transform="scale(0.004,-0.004)"
@@ -479,23 +430,17 @@ tspan { white-space: pre; }
        fill="currentColor"
        id="path35" />
   </g>
-  <a
-     style="color:inherit"
-     xlink:href="textedit:///Users/devonnuri/Documents/typst/241230%20Linear%20Harmony/lilypond/fig_110.ly:10:23:24"
-     id="a37"
-     transform="translate(-8.5358,-6.690724)">
-    <g
-       transform="translate(35.4992,14.8411)"
-       id="g37">
-      <path
-         transform="scale(0.004,-0.004)"
-         d="M 0,-46 C 0,45 116,136 217,136 280,136 326,101 326,46 326,-41 216,-136 106,-136 39,-136 0,-97 0,-46 Z"
-         fill="currentColor"
-         id="path36" />
-    </g>
-  </a>
   <g
-     transform="translate(28.2026,7.150376)"
+     transform="translate(26.9634,8.0388)"
+     id="g37">
+    <path
+       transform="scale(0.004,-0.004)"
+       d="M 0,-46 C 0,45 116,136 217,136 280,136 326,101 326,46 326,-41 216,-136 106,-136 39,-136 0,-97 0,-46 Z"
+       fill="currentColor"
+       id="path36" />
+  </g>
+  <g
+     transform="translate(28.2026,7.0388)"
      id="g38">
     <rect
        x="-0.064999998"
@@ -506,51 +451,39 @@ tspan { white-space: pre; }
        fill="currentColor"
        id="rect37" />
   </g>
-  <a
-     style="color:inherit"
-     xlink:href="textedit:///Users/devonnuri/Documents/typst/241230%20Linear%20Harmony/lilypond/fig_110.ly:7:10:11"
-     id="a40"
-     transform="translate(-8.5358,-6.690724)">
-    <g
-       transform="translate(39.3695,8.8411)"
-       id="g39">
-      <text
-         font-family="'Tex Gyre Termes'"
-         font-size="2.3308px"
-         text-anchor="start"
-         fill="currentColor"
-         id="text38"><tspan
-           id="tspan38">F</tspan></text>
-    </g>
-    <g
-       transform="translate(40.6669,7.7817)"
-       id="g40">
-      <text
-         font-family="'Tex Gyre Termes'"
-         font-size="1.648px"
-         text-anchor="start"
-         fill="currentColor"
-         id="text39"><tspan
-           id="tspan39">7</tspan></text>
-    </g>
-  </a>
-  <a
-     style="color:inherit"
-     xlink:href="textedit:///Users/devonnuri/Documents/typst/241230%20Linear%20Harmony/lilypond/fig_110.ly:10:25:26"
-     id="a41"
-     transform="translate(-8.5358,-6.690724)">
-    <g
-       transform="translate(39.3695,14.3411)"
-       id="g41">
-      <path
-         transform="scale(0.004,-0.004)"
-         d="M 0,-46 C 0,45 116,136 217,136 280,136 326,101 326,46 326,-41 216,-136 106,-136 39,-136 0,-97 0,-46 Z"
-         fill="currentColor"
-         id="path40" />
-    </g>
-  </a>
   <g
-     transform="translate(30.8987,7.150376)"
+     transform="translate(30.8337,2.0388)"
+     id="g39">
+    <text
+       font-family="'New Computer Modern Math'"
+       font-size="2.3308px"
+       text-anchor="start"
+       fill="currentColor"
+       id="text38"><tspan
+         id="tspan38">F</tspan></text>
+  </g>
+  <g
+     transform="translate(32.3701,2.8334)"
+     id="g40">
+    <text
+       font-family="'New Computer Modern Math'"
+       font-size="1.648px"
+       text-anchor="start"
+       fill="currentColor"
+       id="text39"><tspan
+         id="tspan39">7</tspan></text>
+  </g>
+  <g
+     transform="translate(30.8337,7.5388)"
+     id="g41">
+    <path
+       transform="scale(0.004,-0.004)"
+       d="M 0,-46 C 0,45 116,136 217,136 280,136 326,101 326,46 326,-41 216,-136 106,-136 39,-136 0,-97 0,-46 Z"
+       fill="currentColor"
+       id="path40" />
+  </g>
+  <g
+     transform="translate(30.8987,7.0388)"
      id="g42">
     <rect
        x="-0.064999998"
@@ -561,23 +494,17 @@ tspan { white-space: pre; }
        fill="currentColor"
        id="rect41" />
   </g>
-  <a
-     style="color:inherit"
-     xlink:href="textedit:///Users/devonnuri/Documents/typst/241230%20Linear%20Harmony/lilypond/fig_110.ly:10:27:28"
-     id="a43"
-     transform="translate(-8.5358,-6.690724)">
-    <g
-       transform="translate(42.1237,13.3411)"
-       id="g43">
-      <path
-         transform="scale(0.004,-0.004)"
-         d="M 0,-46 C 0,45 116,136 217,136 280,136 326,101 326,46 326,-41 216,-136 106,-136 39,-136 0,-97 0,-46 Z"
-         fill="currentColor"
-         id="path42" />
-    </g>
-  </a>
   <g
-     transform="translate(33.6529,7.150376)"
+     transform="translate(33.5879,6.5388)"
+     id="g43">
+    <path
+       transform="scale(0.004,-0.004)"
+       d="M 0,-46 C 0,45 116,136 217,136 280,136 326,101 326,46 326,-41 216,-136 106,-136 39,-136 0,-97 0,-46 Z"
+       fill="currentColor"
+       id="path42" />
+  </g>
+  <g
+     transform="translate(33.6529,7.0388)"
      id="g44">
     <rect
        x="-0.064999998"
@@ -589,7 +516,7 @@ tspan { white-space: pre; }
        id="rect43" />
   </g>
   <g
-     transform="translate(47.4489,9.150376)"
+     transform="translate(47.4489,9.0388)"
      id="g45">
     <polygon
        stroke-linejoin="round"
@@ -600,23 +527,17 @@ tspan { white-space: pre; }
        points="0.04,0.2 0.04,-0.2 2.5942,-0.01 2.5942,0.39 "
        id="polygon44" />
   </g>
-  <a
-     style="color:inherit"
-     xlink:href="textedit:///Users/devonnuri/Documents/typst/241230%20Linear%20Harmony/lilypond/fig_110.ly:10:29:30"
-     id="a46"
-     transform="translate(-8.5358,-6.690724)">
-    <g
-       transform="translate(45.2979,12.3411)"
-       id="g46">
-      <path
-         transform="scale(0.004,-0.004)"
-         d="M 0,-46 C 0,45 116,136 217,136 280,136 326,101 326,46 326,-41 216,-136 106,-136 39,-136 0,-97 0,-46 Z"
-         fill="currentColor"
-         id="path45" />
-    </g>
-  </a>
   <g
-     transform="translate(36.8271,7.150376)"
+     transform="translate(36.7621,5.5388)"
+     id="g46">
+    <path
+       transform="scale(0.004,-0.004)"
+       d="M 0,-46 C 0,45 116,136 217,136 280,136 326,101 326,46 326,-41 216,-136 106,-136 39,-136 0,-97 0,-46 Z"
+       fill="currentColor"
+       id="path45" />
+  </g>
+  <g
+     transform="translate(36.8271,7.0388)"
      id="g47">
     <rect
        x="-0.064999998"
@@ -628,7 +549,7 @@ tspan { white-space: pre; }
        id="rect46" />
   </g>
   <g
-     transform="translate(35.6121,5.650376)"
+     transform="translate(35.6121,5.5388)"
      id="g48">
     <path
        transform="scale(0.004,-0.004)"
@@ -636,23 +557,17 @@ tspan { white-space: pre; }
        fill="currentColor"
        id="path47" />
   </g>
-  <a
-     style="color:inherit"
-     xlink:href="textedit:///Users/devonnuri/Documents/typst/241230%20Linear%20Harmony/lilypond/fig_110.ly:10:32:33"
-     id="a49"
-     transform="translate(-8.5358,-6.690724)">
-    <g
-       transform="translate(48.4721,11.3411)"
-       id="g49">
-      <path
-         transform="scale(0.004,-0.004)"
-         d="M 0,-46 C 0,45 116,136 217,136 280,136 326,101 326,46 326,-41 216,-136 106,-136 39,-136 0,-97 0,-46 Z"
-         fill="currentColor"
-         id="path48" />
-    </g>
-  </a>
   <g
-     transform="translate(40.0013,7.150376)"
+     transform="translate(39.9363,4.5388)"
+     id="g49">
+    <path
+       transform="scale(0.004,-0.004)"
+       d="M 0,-46 C 0,45 116,136 217,136 280,136 326,101 326,46 326,-41 216,-136 106,-136 39,-136 0,-97 0,-46 Z"
+       fill="currentColor"
+       id="path48" />
+  </g>
+  <g
+     transform="translate(40.0013,7.0388)"
      id="g50">
     <rect
        x="-0.064999998"
@@ -664,7 +579,7 @@ tspan { white-space: pre; }
        id="rect49" />
   </g>
   <g
-     transform="translate(38.7863,4.650376)"
+     transform="translate(38.7863,4.5388)"
      id="g51">
     <path
        transform="scale(0.004,-0.004)"
@@ -672,23 +587,17 @@ tspan { white-space: pre; }
        fill="currentColor"
        id="path50" />
   </g>
-  <a
-     style="color:inherit"
-     xlink:href="textedit:///Users/devonnuri/Documents/typst/241230%20Linear%20Harmony/lilypond/fig_110.ly:10:36:37"
-     id="a52"
-     transform="translate(-8.5358,-6.690724)">
-    <g
-       transform="translate(50.9763,11.8411)"
-       id="g52">
-      <path
-         transform="scale(0.004,-0.004)"
-         d="M 0,-46 C 0,45 116,136 217,136 280,136 326,101 326,46 326,-41 216,-136 106,-136 39,-136 0,-97 0,-46 Z"
-         fill="currentColor"
-         id="path51" />
-    </g>
-  </a>
   <g
-     transform="translate(42.5055,7.150376)"
+     transform="translate(42.4405,5.0388)"
+     id="g52">
+    <path
+       transform="scale(0.004,-0.004)"
+       d="M 0,-46 C 0,45 116,136 217,136 280,136 326,101 326,46 326,-41 216,-136 106,-136 39,-136 0,-97 0,-46 Z"
+       fill="currentColor"
+       id="path51" />
+  </g>
+  <g
+     transform="translate(42.5055,7.0388)"
      id="g53">
     <rect
        x="-0.064999998"
@@ -699,23 +608,17 @@ tspan { white-space: pre; }
        fill="currentColor"
        id="rect52" />
   </g>
-  <a
-     style="color:inherit"
-     xlink:href="textedit:///Users/devonnuri/Documents/typst/241230%20Linear%20Harmony/lilypond/fig_110.ly:10:38:39"
-     id="a54"
-     transform="translate(-8.5358,-6.690724)">
-    <g
-       transform="translate(53.4805,12.3411)"
-       id="g54">
-      <path
-         transform="scale(0.004,-0.004)"
-         d="M 0,-46 C 0,45 116,136 217,136 280,136 326,101 326,46 326,-41 216,-136 106,-136 39,-136 0,-97 0,-46 Z"
-         fill="currentColor"
-         id="path53" />
-    </g>
-  </a>
   <g
-     transform="translate(45.0097,7.150376)"
+     transform="translate(44.9447,5.5388)"
+     id="g54">
+    <path
+       transform="scale(0.004,-0.004)"
+       d="M 0,-46 C 0,45 116,136 217,136 280,136 326,101 326,46 326,-41 216,-136 106,-136 39,-136 0,-97 0,-46 Z"
+       fill="currentColor"
+       id="path53" />
+  </g>
+  <g
+     transform="translate(45.0097,7.0388)"
      id="g55">
     <rect
        x="-0.064999998"
@@ -726,23 +629,17 @@ tspan { white-space: pre; }
        fill="currentColor"
        id="rect54" />
   </g>
-  <a
-     style="color:inherit"
-     xlink:href="textedit:///Users/devonnuri/Documents/typst/241230%20Linear%20Harmony/lilypond/fig_110.ly:10:41:42"
-     id="a56"
-     transform="translate(-8.5358,-6.690724)">
-    <g
-       transform="translate(55.9847,12.8411)"
-       id="g56">
-      <path
-         transform="scale(0.004,-0.004)"
-         d="M 0,-46 C 0,45 116,136 217,136 280,136 326,101 326,46 326,-41 216,-136 106,-136 39,-136 0,-97 0,-46 Z"
-         fill="currentColor"
-         id="path55" />
-    </g>
-  </a>
   <g
-     transform="translate(47.5139,7.150376)"
+     transform="translate(47.4489,6.0388)"
+     id="g56">
+    <path
+       transform="scale(0.004,-0.004)"
+       d="M 0,-46 C 0,45 116,136 217,136 280,136 326,101 326,46 326,-41 216,-136 106,-136 39,-136 0,-97 0,-46 Z"
+       fill="currentColor"
+       id="path55" />
+  </g>
+  <g
+     transform="translate(47.5139,7.0388)"
      id="g57">
     <rect
        x="-0.064999998"
@@ -753,23 +650,17 @@ tspan { white-space: pre; }
        fill="currentColor"
        id="rect56" />
   </g>
-  <a
-     style="color:inherit"
-     xlink:href="textedit:///Users/devonnuri/Documents/typst/241230%20Linear%20Harmony/lilypond/fig_110.ly:10:43:44"
-     id="a58"
-     transform="translate(-8.5358,-6.690724)">
-    <g
-       transform="translate(58.4889,13.3411)"
-       id="g58">
-      <path
-         transform="scale(0.004,-0.004)"
-         d="M 0,-46 C 0,45 116,136 217,136 280,136 326,101 326,46 326,-41 216,-136 106,-136 39,-136 0,-97 0,-46 Z"
-         fill="currentColor"
-         id="path57" />
-    </g>
-  </a>
   <g
-     transform="translate(50.0181,7.150376)"
+     transform="translate(49.9531,6.5388)"
+     id="g58">
+    <path
+       transform="scale(0.004,-0.004)"
+       d="M 0,-46 C 0,45 116,136 217,136 280,136 326,101 326,46 326,-41 216,-136 106,-136 39,-136 0,-97 0,-46 Z"
+       fill="currentColor"
+       id="path57" />
+  </g>
+  <g
+     transform="translate(50.0181,7.0388)"
      id="g59">
     <rect
        x="-0.064999998"
@@ -780,49 +671,37 @@ tspan { white-space: pre; }
        fill="currentColor"
        id="rect58" />
   </g>
-  <a
-     style="color:inherit"
-     xlink:href="textedit:///Users/devonnuri/Documents/typst/241230%20Linear%20Harmony/lilypond/fig_110.ly:7:14:15"
-     id="a61"
-     transform="translate(-8.5358,-6.690724)">
-    <g
-       transform="translate(62.8878,8.8411)"
-       id="g60">
-      <text
-         font-family="'Tex Gyre Termes'"
-         font-size="2.3308px"
-         text-anchor="start"
-         fill="currentColor"
-         id="text59"><tspan
-           id="tspan59">B</tspan></text>
-    </g>
-    <g
-       transform="translate(64.6756,8.558)"
-       id="g61">
-      <path
-         transform="scale(0.0038,-0.0038)"
-         d="m 29,39 -2,-64 v -11 c 0,-22 2,-43 5,-65 44,38 91,80 91,138 0,33 -13,66 -42,66 C 50,103 30,72 29,39 Z m -57,415 c 9,5 18,8 28,8 10,0 19,-3 28,-8 L 21,111 c 25,23 58,36 92,36 51,0 87,-49 87,-103 0,-79 -84,-117 -144,-169 -16,-14 -25,-41 -47,-41 -14,0 -25,13 -25,27 z"
-         fill="currentColor"
-         id="path60" />
-    </g>
-  </a>
-  <a
-     style="color:inherit"
-     xlink:href="textedit:///Users/devonnuri/Documents/typst/241230%20Linear%20Harmony/lilypond/fig_110.ly:10:45:46"
-     id="a62"
-     transform="translate(-8.5358,-6.690724)">
-    <g
-       transform="translate(62.8878,13.8411)"
-       id="g62">
-      <path
-         transform="scale(0.004,-0.004)"
-         d="M 0,-46 C 0,45 116,136 217,136 280,136 326,101 326,46 326,-41 216,-136 106,-136 39,-136 0,-97 0,-46 Z"
-         fill="currentColor"
-         id="path61" />
-    </g>
-  </a>
   <g
-     transform="translate(54.417,7.150376)"
+     transform="translate(54.352,2.0388)"
+     id="g60">
+    <text
+       font-family="'New Computer Modern Math'"
+       font-size="2.3308px"
+       text-anchor="start"
+       fill="currentColor"
+       id="text59"><tspan
+         id="tspan59">B</tspan></text>
+  </g>
+  <g
+     transform="translate(56.2081,1.7556)"
+     id="g61">
+    <path
+       transform="scale(0.0038,-0.0038)"
+       d="m 29,39 -2,-64 v -11 c 0,-22 2,-43 5,-65 44,38 91,80 91,138 0,33 -13,66 -42,66 C 50,103 30,72 29,39 Z m -57,415 c 9,5 18,8 28,8 10,0 19,-3 28,-8 L 21,111 c 25,23 58,36 92,36 51,0 87,-49 87,-103 0,-79 -84,-117 -144,-169 -16,-14 -25,-41 -47,-41 -14,0 -25,13 -25,27 z"
+       fill="currentColor"
+       id="path60" />
+  </g>
+  <g
+     transform="translate(54.352,7.0388)"
+     id="g62">
+    <path
+       transform="scale(0.004,-0.004)"
+       d="M 0,-46 C 0,45 116,136 217,136 280,136 326,101 326,46 326,-41 216,-136 106,-136 39,-136 0,-97 0,-46 Z"
+       fill="currentColor"
+       id="path61" />
+  </g>
+  <g
+     transform="translate(54.417,7.0388)"
      id="g63">
     <rect
        x="-0.064999998"
@@ -834,7 +713,7 @@ tspan { white-space: pre; }
        id="rect62" />
   </g>
   <g
-     transform="translate(53.202,7.150376)"
+     transform="translate(53.202,7.0388)"
      id="g64">
     <path
        transform="scale(0.004,-0.004)"
@@ -842,34 +721,22 @@ tspan { white-space: pre; }
        fill="currentColor"
        id="path63" />
   </g>
-  <a
-     style="color:inherit"
-     xlink:href="textedit:///Users/devonnuri/Documents/typst/241230%20Linear%20Harmony/lilypond/fig_110.ly:10:50:51"
-     id="a65"
-     transform="translate(-8.5358,-6.690724)">
-    <g
-       transform="translate(66.592,13.8411)"
-       id="g65">
-      <path
-         transform="scale(0.004,-0.004)"
-         d="m -6,78 c 0,59 124,83 124,182 0,24 -8,49 -25,69 l -35,42 c -3,3 -4,7 -4,10 0,9 9,15 17,15 4,0 8,-1 11,-5 L 233,211 c 7,-9 10,-17 10,-25 0,-59 -124,-83 -124,-182 0,-24 7,-49 24,-69 l 84,-99 c 3,-3 4,-7 4,-10 0,-9 -8,-16 -16,-16 -8,0 -45,44 -109,44 -16,0 -53,0 -53,-67 0,-62 30,-97 30,-100 0,-4 -4,-7 -8,-7 -13,0 -98,130 -98,204 0,41 27,42 40,42 33,0 78,-13 119,-31 L 4,53 C -3,62 -6,70 -6,78 Z"
-         fill="currentColor"
-         id="path64" />
-    </g>
-  </a>
-  <a
-     style="color:inherit"
-     xlink:href="textedit:///Users/devonnuri/Documents/typst/241230%20Linear%20Harmony/lilypond/fig_110.ly:10:52:53"
-     id="a66"
-     transform="translate(-8.5358,-6.690724)">
-    <g
-       transform="translate(69.942,13.8411)"
-       id="g66">
-      <path
-         transform="scale(0.004,-0.004)"
-         d="M 365,0 H 10 C 4,0 0,4 0,10 v 136 c 0,6 4,10 10,10 h 355 c 6,0 10,-4 10,-10 V 10 C 375,4 371,0 365,0 Z"
-         fill="currentColor"
-         id="path65" />
-    </g>
-  </a>
+  <g
+     transform="translate(58.0562,7.0388)"
+     id="g65">
+    <path
+       transform="scale(0.004,-0.004)"
+       d="m -6,78 c 0,59 124,83 124,182 0,24 -8,49 -25,69 l -35,42 c -3,3 -4,7 -4,10 0,9 9,15 17,15 4,0 8,-1 11,-5 L 233,211 c 7,-9 10,-17 10,-25 0,-59 -124,-83 -124,-182 0,-24 7,-49 24,-69 l 84,-99 c 3,-3 4,-7 4,-10 0,-9 -8,-16 -16,-16 -8,0 -45,44 -109,44 -16,0 -53,0 -53,-67 0,-62 30,-97 30,-100 0,-4 -4,-7 -8,-7 -13,0 -98,130 -98,204 0,41 27,42 40,42 33,0 78,-13 119,-31 L 4,53 C -3,62 -6,70 -6,78 Z"
+       fill="currentColor"
+       id="path64" />
+  </g>
+  <g
+     transform="translate(61.4062,7.0388)"
+     id="g66">
+    <path
+       transform="scale(0.004,-0.004)"
+       d="M 365,0 H 10 C 4,0 0,4 0,10 v 136 c 0,6 4,10 10,10 h 355 c 6,0 10,-4 10,-10 V 10 C 375,4 371,0 365,0 Z"
+       fill="currentColor"
+       id="path65" />
+  </g>
 </svg>
