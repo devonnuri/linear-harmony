@@ -1,23 +1,65 @@
 \version "2.25.25"
 
+#(define-public (NWS-box-stencil stencil thickness padding)
+   (let* ((x-ext (interval-widen (ly:stencil-extent stencil X) padding))
+          (y-ext (interval-widen (ly:stencil-extent stencil Y) padding))
+          (y-rule (make-filled-box-stencil (cons 0 thickness) y-ext))
+          (x-rule (make-filled-box-stencil
+                   (interval-widen x-ext thickness) (cons 0 thickness))))
+     ;; (set! stencil (ly:stencil-combine-at-edge stencil X 1 y-rule padding))
+     (set! stencil (ly:stencil-combine-at-edge stencil X LEFT y-rule padding))
+     (set! stencil (ly:stencil-combine-at-edge stencil Y UP x-rule 0.0))
+     ;; (set! stencil (ly:stencil-combine-at-edge stencil Y DOWN x-rule 0.0))
+     stencil))
+
+% The corresponding markup command, based on the \box command defined
+% in scm/define-markup-commands.scm
+#(define-markup-command (NWS-box layout props arg) (markup?)
+   #:properties ((thickness 0.1) (font-size 0) (box-padding 0.2))
+   (let ((pad (* (magstep font-size) box-padding))
+         (m (interpret-markup layout props arg)))
+     (NWS-box-stencil m thickness pad)))
+
+
+
 acMin = #(ly:wide-char->utf-8 #x2212)
 acMaj = #(ly:wide-char->utf-8 #x25B3)
 acEmptyset = #(ly:wide-char->utf-8 #x00f8)
+acCircle = #(ly:wide-char->utf-8 #x26ac)
 acFlat = #(ly:wide-char->utf-8 #x266d)
 acSharp = #(ly:wide-char->utf-8 #x266f)
+
+#(define (rootNamer pitch majmin)	;majmin is a required argument for "chordNamer", but not used here
+  (let* ((alt (ly:pitch-alteration pitch)))
+    (make-line-markup
+      (list
+        (make-simple-markup 
+          (vector-ref #("C" "D" "E" "F" "G" "A" "B")
+            (ly:pitch-notename pitch)))
+        (if (= alt 0)			; alteration ?
+          (markup "")		; do nothing
+          (if (= alt FLAT)	; flat or sharp
+            (markup #:super acFlat)
+            (markup #:super acSharp)
+          )
+        )
+      )
+    )
+  )
+)
 
 chExceptionMusic = {
   <c es ges>1-\markup { \sub "dim." } % :dim
   <c es g>-\markup { \sub \acMin #"" } % :m
 
 % minor third chords - 4 notes
-  <c es ges beses>-\markup \sub { "7dim" } % :dim7
+  <c es ges beses>-\markup \sub { \acCircle #"7" } % :dim7
   <c es gis>-\markup \sub { \acMin #"aug" } % :m5+ (Ab/C)	
   <c es g a>-\markup \sub { \acMin #"6" } % :m6            
   <c es ges bes>-\markup \sub { \acEmptyset #"7" } % :m7.5-         
   <c es g bes>-\markup \sub { \acMin #"7" } % :m7            
   <c es gis bes>-\markup \sub { \acMin #"7" \acSharp "5" } % :m7.5+         
-  <c es g b>-\markup \sub { \acMin #"M7" } % :m7+           
+  <c es g b>-\markup \sub { \acMin \acMaj #"7" } % :m7+           
   <c es g d'>-\markup \sub { \acMin #"add9" } % :m5.9
 	
 % minor third chords - 5+ notes
@@ -56,6 +98,7 @@ chExceptionMusic = {
 
 % major third chords - 5+ notes
   <c e g b d'>-\markup \sub { \acMaj #"9" } % :maj9
+  <c e g bes d'>-\markup \sub { #"9" } % :9
   <c e g bes des'>-\markup \sub { #"7" \acFlat #"9" } % :9-
   <c e ges bes des'>-\markup \sub { "alt" #"7" #">9" #">5" } % :9-.5-
   <c e gis bes des'>-\markup \sub { "alt" #"7" #">9" #"<5" } % :9-.5+
@@ -88,11 +131,14 @@ chExceptions = #(sequential-music-to-chord-exceptions chExceptionMusic #t)
   system-system-spacing.minimum-distance = 16
   property-defaults.fonts.serif = "NewComputerModern Math"
   indent = 0.0
+  ragged-last = ##t
+  print-page-number = ##f
 }
 
 \layout {
   \context {
     \ChordNames
+    chordRootNamer = #rootNamer
     chordNameExceptions = #chExceptions
     majorSevenSymbol = \markup { \whiteTriangleMarkup "7" }
     minorChordModifier = \markup { \sub #(ly:wide-char->utf-8 #x8722) }

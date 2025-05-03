@@ -1,4 +1,5 @@
 #import "@local/korange-book:0.1.0": book, part, chapter, my-bibliography, appendices, make-index, index, theorem, definition, notation,remark,corollary,proposition,example,exercise, problem, vocabulary, scr, thmbox
+#import "@preview/cetz:0.3.4"
 //#set text(font: "TeX Gyre Pagella")
 //#set text(font: "Lato")
 //#show math.equation: set text(font: "Fira Math")
@@ -25,6 +26,7 @@
 ]
 
 #let fb(body) = box(width: 100%, body)
+#let fbl(body) = block(width: 100%, body)
 
 #let padbox(body) = block(inset: (x: 20pt, y: 10pt), body)
 
@@ -1841,7 +1843,7 @@ $ prog("iii", "V7/ii", "ii", "V7", "I") $
 
 일반적인 진행에 윤곽을 따르는 짧은 연습곡을 만들어라. 이 예시는 세 가지 윤곽을 모두 사용한다. 첫 두 마디(#maj25)는 여러 반음계적 접근음과 둘러싼음을 포함한 제3윤곽을 사용한다. 비교적 단순한 제1윤곽이 3\~4번째 마디(#prog("iii", "V7/ii"))에 나타난다. 5\~6마디(#maj25)에서는 몇 개의 픽업음과 함께 제2윤곽이 사용되었다.
 
-#align(center)[#image("figures/fig_375.jpg", width: 90%)]
+#align(center)[#autoimg("figures/fig_375.svg")]
 
 == 윤곽으로 다른 코드 연결하기 (1)
 
@@ -1854,41 +1856,41 @@ $ chord("ii")-chord("V7")-chord("I")-chord("IV")-underbracket(chord("iihalfdim")
 이 연습곡들을 천천히 시작하여 편안해질 때까지 연습한 후 점차 속도를 올려라. 목표는 어떤 템포로 시작하든 12개의 모든 장조에서 망설임이나 오류 없이 연주하는 것이다.
 
 #fb[1. 제1윤곽을 사용하여 목표음을 연결하기
-#align(center)[#image("figures/fig_377.jpg", width: 90%)]]
+#align(center)[#autoimg("figures/fig_377.svg")]]
 #fb[2. 제2윤곽 사용하기. 첫 절반에서는 홀수 마디에, 후반부에서는 짝수 마디에 윤곽이 시작된다
-#align(center)[#image("figures/fig_378.jpg", width: 90%)]]
+#align(center)[#autoimg("figures/fig_378.svg")]]
 #fb[3. 제3윤곽 사용하기. 첫 절반에서는 홀수 마디에 윤곽이 시작하고, 후반부에서는 윤곽이 전위된다
-#align(center)[#image("figures/fig_379.jpg", width: 90%)]]
-#fb[4. 이 연습은 제1윤곽을 기반으로 한다. 각 코드의 3도는 매 마디의 첫 박자에 나타나며, 이후 아르페지오가 이어지고 음계가 하행한다. 아르페지오는 두 마디마다 옥타브가 이동된다.
-#align(center)[#image("figures/fig_380.jpg", width: 90%)]]
+#align(center)[#autoimg("figures/fig_379.svg")]]
+#fb[4. 이 연습곡은 제1윤곽을 기반으로 한다. 각 코드의 3도는 매 마디의 첫 박자에 나타나며, 이후 아르페지오가 이어지고 음계가 하행한다. 아르페지오는 두 마디마다 옥타브가 이동된다.
+#align(center)[#autoimg("figures/fig_380.svg")]]
 
 == 윤곽으로 다른 코드 연결하기 (2)
 
 다음에는 예제 7의 진행이 일부 꾸밈 기법이 추가된 형태로 제시되어 있다. 어떤 기법들이 사용되었는지 알아낼 수 있는가?
 
 #fb[1. 제1윤곽
-#align(center)[#image("figures/fig_381.jpg", width: 90%)]]
+#align(center)[#autoimg("figures/fig_381.svg")]]
 #fb[2. 제2윤곽
-#align(center)[#image("figures/fig_382.jpg", width: 90%)]]
+#align(center)[#autoimg("figures/fig_382.svg")]]
 #fb[3. 제3윤곽
-#align(center)[#image("figures/fig_383.jpg", width: 90%)]]
+#align(center)[#autoimg("figures/fig_383.svg")]]
 
 == 턴어라운드 진행에서 윤곽 사용하기
 
 턴어라운드 진행 위에서 윤곽을 연습하라. 턴어라운드 진행은 블루스와 수많은 재즈 및 팝 스탠다드 곡의 마지막 두 마디에 자주 등장하며, "I Got Rhythm"과 "Heart and Soul" 같은 곡의 기초가 된다. 이 연습을 모든 12개 조에서 연습하라.
 
 #fb[1. 전형적인 턴어라운드 진행 (#note("F")장조에서 $prog("I", "V/ii", "ii", "V")-dots.c$)
-#align(center)[#image("figures/fig_384.jpg", width: 90%)]]
+#align(center)[#autoimg("figures/fig_384.svg")]]
 #fb[2. 더 많은 부딸림화음을 포함한 턴어라운드 진행 (#note("F")장조에서 $prog("I", "V7/ii", "V7/V", "V7", "V/vi")-dots.c$)
-#align(center)[#image("figures/fig_385.jpg", width: 90%)]]
+#align(center)[#autoimg("figures/fig_385.svg")]]
 #fb[3. 제1윤곽의 순환 (#note("C")장조에서 $prog("iii", "V/ii", "ii", "V", "I")-$ [#chord("iii")의 딸림화음의 셋온음 대체화음#sub[tritone substitute]])
-#align(center)[#image("figures/fig_386.jpg", width: 90%)]]
+#align(center)[#autoimg("figures/fig_386.svg")]]
 #fb[4. 제2윤곽의 순환 (#note("C")장조에서 $prog("iii", "V/ii", "ii", "V", "I")-$ [#chord("iii")의 딸림화음의 셋온음 대체화음])
-#align(center)[#image("figures/fig_387.jpg", width: 90%)]]
+#align(center)[#autoimg("figures/fig_387.svg")]]
 #fb[5. 제3윤곽의 순환 (#note("C")장조에서 $prog("iii", "V/ii", "ii", "V", "I")-$ [#chord("iii")의 딸림화음의 셋온음 대체화음])
-#align(center)[#image("figures/fig_388.jpg", width: 90%)]]
+#align(center)[#autoimg("figures/fig_388.svg")]]
 #fb[6. 더 긴 화성 리듬은 이 순환을 반음계적 이끎음으로 꾸밀 수 있도록 해준다. 진행은 #note("C")장조에서 #prog("iii", "V/ii", "ii", "V")이다.
-#align(center)[#image("figures/fig_389.jpg", width: 90%)]]
+#align(center)[#autoimg("figures/fig_389.svg")]]
 
 == 조성 중심 순환에서의 윤곽
 
@@ -1897,17 +1899,17 @@ $ chord("ii")-chord("V7")-chord("I")-chord("IV")-underbracket(chord("iihalfdim")
 더 빠른 화성 리듬으로 조성 중심 순환을 연습하라. 연습문제 7에서는 화음이 매 마디마다 바뀌었지만, 여기서는 두 박자마다 바뀐다.
 
 #fb[1. 조성 중심 순환을 관통하는 제1윤곽
-#align(center)[#image("figures/fig_390.jpg", width: 90%)]]
+#align(center)[#autoimg("figures/fig_390.svg")]]
 #fb[2. 조성 중심 순환을 관통하는 제1윤곽의 변형
-#align(center)[#image("figures/fig_391.jpg", width: 90%)]]
+#align(center)[#autoimg("figures/fig_391.svg")]]
 #fb[3. 조성 중심 순환을 관통하는 제2윤곽
-#align(center)[#image("figures/fig_392.jpg", width: 90%)]]
+#align(center)[#autoimg("figures/fig_392.svg")]]
 #fb[4. 조성 중심 순환을 관통하는 제2윤곽의 변형
-#align(center)[#image("figures/fig_393.jpg", width: 90%)]]
+#align(center)[#autoimg("figures/fig_393.svg")]]
 #fb[5. 조성 중심 순환을 관통하는 제3윤곽
-#align(center)[#image("figures/fig_394.jpg", width: 90%)]]
+#align(center)[#autoimg("figures/fig_394.svg")]]
 #fb[6. 조성 중심 순환을 관통하는 제3윤곽의 변형
-#align(center)[#image("figures/fig_395.jpg", width: 90%)]]
+#align(center)[#autoimg("figures/fig_395.svg")]]
 
 === 스탠다드 재즈 진행에서 윤곽 적용하기
 
@@ -1916,114 +1918,114 @@ $ chord("ii")-chord("V7")-chord("I")-chord("IV")-underbracket(chord("iihalfdim")
 == 스탠다드 재즈 진행 I: $bold(#note("Bb"))$ 블루스
 
 #fb[1. 제1윤곽
-#align(center)[#image("figures/fig_396.jpg", width: 90%)]]
+#align(center)[#autoimg("figures/fig_396.svg")]]
 #fb[2. 제2윤곽
-#align(center)[#image("figures/fig_397.jpg", width: 90%)]]
+#align(center)[#autoimg("figures/fig_397.svg")]]
 #fb[3. 제3윤곽
-#align(center)[#image("figures/fig_398.jpg", width: 90%)]]
+#align(center)[#autoimg("figures/fig_398.svg")]]
 
 == 스탠다드 재즈 진행 II: "Rhythm Changes"
 
 === A 섹션
 
 #fb[1. 제1윤곽
-#align(center)[#image("figures/fig_399.jpg", width: 90%)]]
+#align(center)[#autoimg("figures/fig_399.svg")]]
 #fb[2. 제2윤곽
-#align(center)[#image("figures/fig_400.jpg", width: 90%)]]
+#align(center)[#autoimg("figures/fig_400.svg")]]
 #fb[3. 제3윤곽
-#align(center)[#image("figures/fig_401.jpg", width: 90%)]]
+#align(center)[#autoimg("figures/fig_401.svg")]]
 
 === B 섹션
 
 #fb[4. 2분음표로 나타낸 제1윤곽
-#align(center)[#image("figures/fig_402.jpg", width: 90%)]]
+#align(center)[#autoimg("figures/fig_402.svg")]]
 #fb[5. #prog("ii", "V")를 함의하는 제1윤곽 (1\~2마디와 5\~6마디)
-#align(center)[#image("figures/fig_403.jpg", width: 90%)]]
+#align(center)[#autoimg("figures/fig_403.svg")]]
 #fb[6. #prog("ii", "V")를 함의하는 제1윤곽 (3\~4마디와 7\~8마디)
-#align(center)[#image("figures/fig_404.jpg", width: 90%)]]
+#align(center)[#autoimg("figures/fig_404.svg")]]
 #fb[7. 2분음표로 나타낸 제2윤곽
-#align(center)[#image("figures/fig_405.jpg", width: 90%)]]
+#align(center)[#autoimg("figures/fig_405.svg")]]
 #fb[8. #prog("ii", "V")를 함의하는 제2윤곽 (1\~2마디와 5\~6마디)
-#align(center)[#image("figures/fig_406.jpg", width: 90%)]]
+#align(center)[#autoimg("figures/fig_406.svg")]]
 #fb[9. #prog("ii", "V")를 함의하는 제2윤곽 (3\~4마디와 7\~8마디)
-#align(center)[#image("figures/fig_407.jpg", width: 90%)]]
+#align(center)[#autoimg("figures/fig_407.svg")]]
 #fb[10. 2분음표로 나타낸 제3윤곽
-#align(center)[#image("figures/fig_408.jpg", width: 90%)]]
+#align(center)[#autoimg("figures/fig_408.svg")]]
 #fb[11. 2분음표로 나타낸 제3윤곽
-#align(center)[#image("figures/fig_409.jpg", width: 90%)]]
+#align(center)[#autoimg("figures/fig_409.svg")]]
 #fb[12. #prog("ii", "V")를 함의하는 제3윤곽 (1\~2마디와 5\~6마디)
-#align(center)[#image("figures/fig_410.jpg", width: 90%)]]
+#align(center)[#autoimg("figures/fig_410.svg")]]
 #fb[13. #prog("ii", "V")를 함의하는 제3윤곽 (3\~4마디와 7\~8마디)
-#align(center)[#image("figures/fig_411.jpg", width: 90%)]]
+#align(center)[#autoimg("figures/fig_411.svg")]]
 
-== 스탠다드 재즈 진행 III: _Are You All the Outlines_#footnote[스탠다드 재즈 곡 "All the Things You Are"의 제목을 변형한 언어유희 (역주)]
-
-#fb[1. 제1윤곽
-#align(center)[#image("figures/fig_412.jpg", width: 90%)]]
-#fb[2. 제2윤곽 (첫 번째 마디에서 시작)
-#align(center)[#image("figures/fig_413.jpg", width: 90%)]]
-#fb[3. 제2윤곽 (두 번째 마디에서 시작)
-#align(center)[#image("figures/fig_414.jpg", width: 90%)]]
-#fb[4. 제3윤곽 (첫 번째 마디에서 시작)
-#align(center)[#image("figures/fig_415.jpg", width: 90%)]]
-#fb[5. 제3윤곽 (두 번째 마디에서 시작)
-#align(center)[#image("figures/fig_416.jpg", width: 90%)]]
-
-== 스탠다드 재즈 진행 IV: _Outlines by Starlight_#footnote[스탠다드 재즈 곡 "Stella by Starlight"의 제목을 변형한 언어유희 (역주)]
+== 스탠다드 재즈 진행 III: _Are You All the Outlines_
 
 #fb[1. 제1윤곽
-#align(center)[#image("figures/fig_417.jpg", width: 90%)]]
+#align(center)[#autoimg("figures/fig_412.svg")]]
 #fb[2. 제2윤곽 (첫 번째 마디에서 시작)
-#align(center)[#image("figures/fig_418.jpg", width: 90%)]]
+#align(center)[#autoimg("figures/fig_413.svg")]]
 #fb[3. 제2윤곽 (두 번째 마디에서 시작)
-#align(center)[#image("figures/fig_419.jpg", width: 90%)]]
+#align(center)[#autoimg("figures/fig_414.svg")]]
 #fb[4. 제3윤곽 (첫 번째 마디에서 시작)
-#align(center)[#image("figures/fig_420.jpg", width: 90%)]]
+#align(center)[#autoimg("figures/fig_415.svg")]]
 #fb[5. 제3윤곽 (두 번째 마디에서 시작)
-#align(center)[#image("figures/fig_421.jpg", width: 90%)]]
+#align(center)[#autoimg("figures/fig_416.svg")]]
+
+== 스탠다드 재즈 진행 IV: _Outlines by Starlight_
+
+#fb[1. 제1윤곽
+#align(center)[#autoimg("figures/fig_417.svg")]]
+#fb[2. 제2윤곽 (첫 번째 마디에서 시작)
+#align(center)[#autoimg("figures/fig_418.svg")]]
+#fb[3. 제2윤곽 (두 번째 마디에서 시작)
+#align(center)[#autoimg("figures/fig_419.svg")]]
+#fb[4. 제3윤곽 (첫 번째 마디에서 시작)
+#align(center)[#autoimg("figures/fig_420.svg")]]
+#fb[5. 제3윤곽 (두 번째 마디에서 시작)
+#align(center)[#autoimg("figures/fig_421.svg")]]
 
 == 스탠다드 재즈 진행 V: $bold(prog("ii", "V"))$로 대체한 $bold(note("F"))$ 블루스
 
 #fb[1. 제1윤곽
-#align(center)[#image("figures/fig_422.jpg", width: 90%)]]
+#align(center)[#autoimg("figures/fig_422.svg")]]
 #fb[2. 제2윤곽 (첫 번째 반마디에서 시작)
-#align(center)[#image("figures/fig_423.jpg", width: 90%)]]
+#align(center)[#autoimg("figures/fig_423.svg")]]
 #fb[3. 제2윤곽 (두 번째 반마디에서 시작)
-#align(center)[#image("figures/fig_424.jpg", width: 90%)]]
+#align(center)[#autoimg("figures/fig_424.svg")]]
 #fb[4. 제3윤곽 (첫 번째 반마디에서 시작)
-#align(center)[#image("figures/fig_425.jpg", width: 90%)]]
+#align(center)[#autoimg("figures/fig_425.svg")]]
 #fb[5. 제3윤곽 (두 번째 반마디에서 시작)
-#align(center)[#image("figures/fig_426.jpg", width: 90%)]]
+#align(center)[#autoimg("figures/fig_426.svg")]]
 
-== 스탠다드 재즈 진행 VI.: _Big Strides with Outlines_#footnote[스탠다드 재즈 곡 "Giant Steps"의 제목을 변형한 언어유희 (역주)]
+== 스탠다드 재즈 진행 VI.: _Big Strides with Outlines_
 
 #set enum(numbering: n => [16.#n.])
 
 #fb[1. 제1윤곽
-#align(center)[#image("figures/fig_427.jpg", width: 90%)]]
+#align(center)[#autoimg("figures/fig_427.svg")]]
 #fb[2. 제2윤곽
-#align(center)[#image("figures/fig_428.jpg", width: 90%)]]
+#align(center)[#autoimg("figures/fig_428.svg")]]
 #fb[3. 제2윤곽
-#align(center)[#image("figures/fig_429.jpg", width: 90%)]]
+#align(center)[#autoimg("figures/fig_429.svg")]]
 #fb[4. 제3윤곽
-#align(center)[#image("figures/fig_430.jpg", width: 90%)]]
+#align(center)[#autoimg("figures/fig_430.svg")]]
 #fb[5. 제3윤곽
-#align(center)[#image("figures/fig_431.jpg", width: 90%)]]
+#align(center)[#autoimg("figures/fig_431.svg")]]
 
-== 윤곽 인식하기
+== 윤곽 인식하기 <sec_cannonball_problem>
 
 윤곽을 식별하고 이를 꾸미는 데 사용된 기법을 알아보는 연습을 하라. 다음은 캐넌볼 애덜리의 다섯 가지 예시이다. 각각의 예시에서 어떤 윤곽이 사용되었는지 식별하고, 선율을 더 흥미롭게 만드는 데 사용된 기법이 무엇인지 분석하라.
 
 #fb[1. 캐넌볼 애덜리
-#align(center)[#image("figures/fig_432.jpg", width: 47%)]]
+#align(center)[#autoimg("figures/fig_432.svg")]]
 #fb[2. 캐넌볼 애덜리
-#align(center)[#image("figures/fig_433.jpg", width: 47%)]]
+#align(center)[#autoimg("figures/fig_433.svg")]]
 #fb[3. 캐넌볼 애덜리
-#align(center)[#image("figures/fig_434.jpg", width: 47%)]]
+#align(center)[#autoimg("figures/fig_434.svg")]]
 #fb[4. 캐넌볼 애덜리
-#align(center)[#image("figures/fig_435.jpg", width: 47%)]]
+#align(center)[#autoimg("figures/fig_435.svg")]]
 #fb[5. 캐넌볼 애덜리
-#align(center)[#image("figures/fig_436.jpg", width: 35%)]]
+#align(center)[#autoimg("figures/fig_436.svg")]]
 
 재즈 문헌에서 다른 예시들을 찾아 보아라. 그것들을 모든 조성에서 연습하여 익혀라. 답은 #pageref(<sec_cannonball_answer>)쪽에 있다.
 
@@ -2043,9 +2045,33 @@ $ chord("ii")-chord("V7")-chord("I")-chord("IV")-underbracket(chord("iihalfdim")
 
 == 귀를 훈련하라
 
-귀를 훈련해 어떤 선율을 들었을 때 즉시 악기로 연주할 수 있도록 하라. 악보를 보았을 때 즉시 그 소리가 어떤지 상상할 수 있어야 한다. 소리, 악기에서의 운지, 악보에 적힌 음표가 모두 마음속에서 연결되어야 한다. 청각적 형태, 기보 형태(음표와 화음 기호), 악기에서 만들어내는 실제 경험, 이 세 가지는 삼각형을 형성한다. 이를 연습 루틴 속에서 통합하라. 청각 훈련은 평생 동안 이어지는 과정이며, 완료하고 끝낼 수 있는 수업이 아니다.
+귀를 훈련해 어떤 선율을 들었을 때 즉시 악기로 연주할 수 있도록 하라. 악보를 보았을 때 즉시 그 소리가 어떤지 상상할 수 있어야 한다. 소리, 악기에서의 운지, 악보에 적힌 음표가 모두 마음속에서 연결되어야 한다. 청각적 형태, 기보 형태(음표와 화음 기호), 악기를 통해 창조해 나가는 실제 체험, 이 세 가지는 삼각형을 형성한다. 이를 연습 루틴 속에서 통합하라. 청각 훈련은 평생 동안 이어지는 과정이며, 완료하고 끝낼 수 있는 수업이 아니다.
 
-#align(center)[#image("figures/fig_437.jpg", width: 64%)]
+// #align(center)[#image("figures/fig_437.jpg", width: 64%)]
+
+#align(center)[
+#cetz.canvas({
+  import cetz.draw: *
+  circle((0, 0), radius: 1.5)
+  line((0, 3), (1.5*calc.sqrt(3), -1.5), (-1.5*calc.sqrt(3), -1.5), (0, 3))
+  line((0, 0), (1.5*calc.sqrt(3), -1.5))
+  content((1.5*calc.sqrt(3)+0.2, -1.5), sans[
+    체험\
+    (악기 연주)
+  ], anchor: "west")
+  line((0, 0), (-1.5*calc.sqrt(3), -1.5))
+  content((-1.5*calc.sqrt(3)-0.2, -1.5), sans[
+    기보 형태
+  ], anchor: "east")
+  line((0, 0), (0, 3))
+  content((0, 3+0.2), sans[
+    청각적 형태
+  ], anchor: "south")
+  content((0, -0.3), sans[
+    마음
+  ], anchor: "north")
+})
+]
 
 == 연주하라
 
@@ -2060,20 +2086,19 @@ $ chord("ii")-chord("V7")-chord("I")-chord("IV")-underbracket(chord("iihalfdim")
 #set enum(numbering: "연습곡 1.")
 
 #fb[1. 스탠다드 진행 II: _“Rhythm Changes”_
-#align(center)[#image("figures/fig_438.jpg", width: 90%)]]
+#align(center)[#autoimg("figures/fig_438.svg")]]
 #fb[2. 스탠다드 진행 III: _Are You All the Outlines?_
-#align(center)[#image("figures/fig_439.jpg", width: 90%)]]
+#align(center)[#autoimg("figures/fig_439.svg")]]
 #fb[3. 스탠다드 진행 IV: _Outlines by Starlight_
-#align(center)[#image("figures/fig_440.jpg", width: 90%)]]
+#align(center)[#autoimg("figures/fig_440.svg")]]
 
 #chapter("스탠다드 재즈 진행에서의 루 도널드슨 솔로")
 
-루 도널드슨은 아트 블레이키의 음반 _Live at Birdland_에서 연주한 이 솔로에서 세 가지 윤곽에 크게 의존한다. 도널드슨 이후 솔로를 연주하는 클리포드 브라운은 거의 전적으로 제1윤곽을 활용하여 솔로를 구성한다.
+루 도널드슨은 아트 블레이키의 음반 _A Night at Birdland_에서 연주한 이 솔로#footnote["Split Kick" (_A Night At Birdland, Vol. 1_) (역주)]에서 세 가지 윤곽에 크게 의존한다. 도널드슨 이후 솔로를 연주하는 클리포드 브라운은 거의 전적으로 제1윤곽을 활용하여 솔로를 구성한다.
 
-#align(center)[#image("figures/fig_441.jpg", width: 100%)]
-#align(center)[#image("figures/fig_442.jpg", width: 100%)]
-#align(center)[#image("figures/fig_443.jpg", width: 100%)]
-#align(center)[#image("figures/fig_444.jpg", width: 100%)]
+#align(center)[#autoimg("figures/fig_441-1.svg")]
+#align(center)[#autoimg("figures/fig_441-2.svg")]
+#align(center)[#autoimg("figures/fig_441-3.svg")]
 
 #chapter("스탠다드 재즈 진행에서의 톰 하렐 솔로")
 
@@ -2128,28 +2153,41 @@ $ chord("ii")-chord("V7")-chord("I")-chord("IV")-underbracket(chord("iihalfdim")
 
   윤곽은 학생들이 명확한 화성 아이디어를 선형적으로 듣고 연주할 수 있도록 튼튼한 틀을 제공한다. 기본적인 경로를 듣고 이해할 수 있게 되면, 그 경로에서 벗어나 탐색하더라도 돌아올 지점과 방향을 알고 들을 수 있어 더 쉽게 연주할 수 있다.
 
+#chapter(pageref(<sec_cannonball_problem>) + "쪽에 대한 정답")
+
 == 17. 윤곽 인식하기 <sec_cannonball_answer>
 
 윤곽을 식별하고 이를 꾸미는 데 사용된 기법을 알아보는 연습을 하라. 다음은 캐넌볼 애덜리의 다섯 가지 예시이다. 각각의 예시에서 어떤 윤곽이 사용되었는지 식별하고, 선율을 더 흥미롭게 만드는 데 사용된 기법이 무엇인지 분석하라.
 
 #set enum(numbering: n => "17." + str(n) + ".")
 
+#fbl[
 1. 캐넌볼 애덜리\
   제2윤곽: 픽업음과 함께 방향이 반전됨.
-  
-#align(center)[#image("figures/fig_451.jpg", width: 47%)]
+
+  #align(center)[#autoimg("figures/fig_432.svg")]
+
 2. 캐넌볼 애덜리\
   제3윤곽: #chord("C7") 화음에서 옥타브 이동을 포함한 3-5-7-9 아르페지오.
-#align(center)[#image("figures/fig_452.jpg", width: 47%)]
+
+  #align(center)[#autoimg("figures/fig_433.svg")]
+
 3. 캐넌볼 애덜리\
   제1윤곽: 멈췄다 가는#sub[stop and go] 리듬으로 인해 #chord("E7") 화음의 해결이 세 번째 박자까지 지연됨. #chord("E7") 화음의 아르페지오(3-5-7-9)로 #chord("Am") 화음의 해결이 지연됨.
-#align(center)[#image("figures/fig_453.jpg", width: 47%)]
+
+  #align(center)[#autoimg("figures/fig_434.svg")]
+
 4. 캐넌볼 애덜리\
   제2윤곽: 화성음으로 도약하여 톱니형 모양을 만들고 #chord("C7") 화음의 해결을 지연시킴. 목표음(#note("E")) 앞에 반음계적 이끎음(#note("D#"))이 위치함. #chord("C7") 화음의 3도에서 근음으로 도약함.
-#align(center)[#image("figures/fig_454.jpg", width: 47%)]
+
+  #align(center)[#autoimg("figures/fig_435.svg")]
+
 5. 캐넌볼 애덜리\
   제3윤곽: 아래에서 아르페지오 음을 사용함. 목표음(#note("A"))은 상·하위 이웃음에 의해 지연됨. 목표음(#note("A"))은 위(#note("C")-#note("Bb")-#note("A"))와 아래(#note("G")-#note("G#")-#note("A"))에서 접근함.
-#align(center)[#image("figures/fig_455.jpg", width: 35%)]
+
+  #align(center)[#autoimg("figures/fig_436.svg")]
+
+]
 
 #make-index(title: "연주자 색인")
 

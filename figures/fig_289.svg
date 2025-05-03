@@ -2,8 +2,8 @@
 <svg
    version="1.2"
    width="161.61946mm"
-   height="21.516014mm"
-   viewBox="0 0 91.970401 12.2438"
+   height="21.967112mm"
+   viewBox="0 0 91.970401 12.500499"
    id="svg114"
    sodipodi:docname="fig_289.svg"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
@@ -28,7 +28,7 @@
 tspan { white-space: pre; }
 ]]></style>
   <g
-     transform="translate(91.7804,7.0388)"
+     transform="translate(91.7804,7.2955)"
      id="g1">
     <rect
        x="0"
@@ -40,7 +40,7 @@ tspan { white-space: pre; }
        id="rect1" />
   </g>
   <g
-     transform="translate(91.2904,7.0388)"
+     transform="translate(91.2904,7.2955)"
      id="g2">
     <rect
        x="0"
@@ -52,7 +52,7 @@ tspan { white-space: pre; }
        id="rect2" />
   </g>
   <g
-     transform="translate(0,10.0388)"
+     transform="translate(0,10.2955)"
      id="g3">
     <rect
        x="56.683201"
@@ -64,7 +64,7 @@ tspan { white-space: pre; }
        id="rect3" />
   </g>
   <g
-     transform="translate(0,10.0388)"
+     transform="translate(0,10.2955)"
      id="g4">
     <rect
        x="53.929001"
@@ -76,7 +76,7 @@ tspan { white-space: pre; }
        id="rect4" />
   </g>
   <g
-     transform="translate(0,11.0388)"
+     transform="translate(0,11.2955)"
      id="g5">
     <rect
        x="53.929001"
@@ -88,7 +88,7 @@ tspan { white-space: pre; }
        id="rect5" />
   </g>
   <g
-     transform="translate(0,10.0388)"
+     transform="translate(0,10.2955)"
      id="g6">
     <rect
        x="50.307301"
@@ -100,7 +100,7 @@ tspan { white-space: pre; }
        id="rect6" />
   </g>
   <g
-     transform="translate(0,10.0388)"
+     transform="translate(0,10.2955)"
      id="g7">
     <rect
        x="46.981998"
@@ -112,7 +112,7 @@ tspan { white-space: pre; }
        id="rect7" />
   </g>
   <g
-     transform="translate(0,10.0388)"
+     transform="translate(0,10.2955)"
      id="g8">
     <rect
        x="23.7041"
@@ -124,7 +124,7 @@ tspan { white-space: pre; }
        id="rect8" />
   </g>
   <g
-     transform="translate(0,10.0388)"
+     transform="translate(0,10.2955)"
      id="g9">
     <rect
        x="21.200001"
@@ -136,7 +136,7 @@ tspan { white-space: pre; }
        id="rect9" />
   </g>
   <g
-     transform="translate(0,9.0388)"
+     transform="translate(0,9.2955)"
      id="g10">
     <line
        stroke-linejoin="round"
@@ -150,7 +150,7 @@ tspan { white-space: pre; }
        id="line9" />
   </g>
   <g
-     transform="translate(0,8.0388)"
+     transform="translate(0,8.2955)"
      id="g11">
     <line
        stroke-linejoin="round"
@@ -164,7 +164,7 @@ tspan { white-space: pre; }
        id="line10" />
   </g>
   <g
-     transform="translate(0,7.0388)"
+     transform="translate(0,7.2955)"
      id="g12">
     <line
        stroke-linejoin="round"
@@ -178,7 +178,7 @@ tspan { white-space: pre; }
        id="line11" />
   </g>
   <g
-     transform="translate(0,6.0388)"
+     transform="translate(0,6.2955)"
      id="g13">
     <line
        stroke-linejoin="round"
@@ -192,7 +192,7 @@ tspan { white-space: pre; }
        id="line12" />
   </g>
   <g
-     transform="translate(0,5.0388)"
+     transform="translate(0,5.2955)"
      id="g14">
     <line
        stroke-linejoin="round"
@@ -206,7 +206,7 @@ tspan { white-space: pre; }
        id="line13" />
   </g>
   <g
-     transform="translate(76.983,7.0388)"
+     transform="translate(76.983,7.2955)"
      id="g15">
     <rect
        x="0"
@@ -218,7 +218,7 @@ tspan { white-space: pre; }
        id="rect14" />
   </g>
   <g
-     transform="translate(53.1651,7.0388)"
+     transform="translate(53.1651,7.2955)"
      id="g16">
     <rect
        x="0"
@@ -230,7 +230,7 @@ tspan { white-space: pre; }
        id="rect15" />
   </g>
   <g
-     transform="translate(29.5029,7.0388)"
+     transform="translate(29.5029,7.2955)"
      id="g17">
     <rect
        x="0"
@@ -242,7 +242,7 @@ tspan { white-space: pre; }
        id="rect16" />
   </g>
   <g
-     transform="translate(49.3323,10.5388)"
+     transform="translate(49.3323,10.7955)"
      id="g18">
     <path
        transform="scale(0.004,-0.004)"
@@ -251,7 +251,7 @@ tspan { white-space: pre; }
        id="path17" />
   </g>
   <g
-     transform="translate(66.7861,6.0388)"
+     transform="translate(66.7861,6.2955)"
      id="g19">
     <polygon
        stroke-linejoin="round"
@@ -263,10 +263,10 @@ tspan { white-space: pre; }
        id="polygon18" />
   </g>
   <g
-     transform="translate(8.585,2.0388)"
+     transform="translate(8.585,2.2955)"
      id="g20">
     <text
-       font-family="'New Computer Modern Math'"
+       font-family="'NewComputerModern Math'"
        font-size="2.3308px"
        text-anchor="start"
        fill="currentColor"
@@ -274,10 +274,10 @@ tspan { white-space: pre; }
          id="tspan19">D</tspan></text>
   </g>
   <g
-     transform="translate(10.3605,2.8334)"
+     transform="translate(10.3605,3.0901)"
      id="g21">
     <text
-       font-family="'New Computer Modern Math'"
+       font-family="'NewComputerModern Math'"
        font-size="1.648px"
        text-anchor="start"
        fill="currentColor"
@@ -285,10 +285,10 @@ tspan { white-space: pre; }
          id="tspan20">−</tspan></text>
   </g>
   <g
-     transform="translate(11.6579,2.8334)"
+     transform="translate(11.6579,3.0901)"
      id="g22">
     <text
-       font-family="'New Computer Modern Math'"
+       font-family="'NewComputerModern Math'"
        font-size="1.648px"
        text-anchor="start"
        fill="currentColor"
@@ -296,7 +296,7 @@ tspan { white-space: pre; }
          id="tspan21">7</tspan></text>
   </g>
   <g
-     transform="translate(8.585,8.0388)"
+     transform="translate(8.585,8.2955)"
      id="g23">
     <path
        transform="scale(0.004,-0.004)"
@@ -305,7 +305,7 @@ tspan { white-space: pre; }
        id="path22" />
   </g>
   <g
-     transform="translate(0.8,8.0388)"
+     transform="translate(0.8,8.2955)"
      id="g24">
     <path
        transform="scale(0.004,-0.004)"
@@ -314,7 +314,7 @@ tspan { white-space: pre; }
        id="path23" />
   </g>
   <g
-     transform="translate(4.885,7.0388)"
+     transform="translate(4.885,7.2955)"
      id="g25">
     <path
        transform="scale(0.004,-0.004)"
@@ -323,7 +323,7 @@ tspan { white-space: pre; }
        id="path24" />
   </g>
   <g
-     transform="translate(9.8242,7.0388)"
+     transform="translate(9.8242,7.2955)"
      id="g26">
     <rect
        x="-0.064999998"
@@ -335,7 +335,7 @@ tspan { white-space: pre; }
        id="rect25" />
   </g>
   <g
-     transform="translate(61.3577,5.2288)"
+     transform="translate(61.3577,5.4855)"
      id="g27">
     <polygon
        stroke-linejoin="round"
@@ -347,7 +347,7 @@ tspan { white-space: pre; }
        id="polygon26" />
   </g>
   <g
-     transform="translate(10.8392,9.0388)"
+     transform="translate(10.8392,9.2955)"
      id="g28">
     <path
        transform="scale(0.004,-0.004)"
@@ -356,7 +356,7 @@ tspan { white-space: pre; }
        id="path27" />
   </g>
   <g
-     transform="translate(12.0784,7.0388)"
+     transform="translate(12.0784,7.2955)"
      id="g29">
     <rect
        x="-0.064999998"
@@ -368,7 +368,7 @@ tspan { white-space: pre; }
        id="rect28" />
   </g>
   <g
-     transform="translate(55.4293,7.0388)"
+     transform="translate(55.4293,7.2955)"
      id="g30">
     <polygon
        stroke-linejoin="round"
@@ -380,7 +380,7 @@ tspan { white-space: pre; }
        id="polygon29" />
   </g>
   <g
-     transform="translate(13.3434,8.5388)"
+     transform="translate(13.3434,8.7955)"
      id="g31">
     <path
        transform="scale(0.004,-0.004)"
@@ -389,7 +389,7 @@ tspan { white-space: pre; }
        id="path30" />
   </g>
   <g
-     transform="translate(14.5826,7.0388)"
+     transform="translate(14.5826,7.2955)"
      id="g32">
     <rect
        x="-0.064999998"
@@ -401,7 +401,7 @@ tspan { white-space: pre; }
        id="rect31" />
   </g>
   <g
-     transform="translate(48.4823,6.8488)"
+     transform="translate(48.4823,7.1055)"
      id="g33">
     <polygon
        stroke-linejoin="round"
@@ -413,7 +413,7 @@ tspan { white-space: pre; }
        id="polygon32" />
   </g>
   <g
-     transform="translate(16.5176,9.0388)"
+     transform="translate(16.5176,9.2955)"
      id="g34">
     <path
        transform="scale(0.004,-0.004)"
@@ -422,7 +422,7 @@ tspan { white-space: pre; }
        id="path33" />
   </g>
   <g
-     transform="translate(17.7568,7.0388)"
+     transform="translate(17.7568,7.2955)"
      id="g35">
     <rect
        x="-0.064999998"
@@ -434,7 +434,7 @@ tspan { white-space: pre; }
        id="rect34" />
   </g>
   <g
-     transform="translate(15.3676,9.0388)"
+     transform="translate(15.3676,9.2955)"
      id="g36">
     <path
        transform="scale(0.004,-0.004)"
@@ -443,7 +443,7 @@ tspan { white-space: pre; }
        id="path35" />
   </g>
   <g
-     transform="translate(43.0539,5.2288)"
+     transform="translate(43.0539,5.4855)"
      id="g37">
     <polygon
        stroke-linejoin="round"
@@ -455,10 +455,10 @@ tspan { white-space: pre; }
        id="polygon36" />
   </g>
   <g
-     transform="translate(19.0218,2.0388)"
+     transform="translate(19.0218,2.2955)"
      id="g38">
     <text
-       font-family="'New Computer Modern Math'"
+       font-family="'NewComputerModern Math'"
        font-size="2.3308px"
        text-anchor="start"
        fill="currentColor"
@@ -466,10 +466,10 @@ tspan { white-space: pre; }
          id="tspan37">G</tspan></text>
   </g>
   <g
-     transform="translate(20.8656,2.8334)"
+     transform="translate(20.8656,3.0901)"
      id="g39">
     <text
-       font-family="'New Computer Modern Math'"
+       font-family="'NewComputerModern Math'"
        font-size="1.648px"
        text-anchor="start"
        fill="currentColor"
@@ -477,7 +477,7 @@ tspan { white-space: pre; }
          id="tspan38">7</tspan></text>
   </g>
   <g
-     transform="translate(19.0218,9.5388)"
+     transform="translate(19.0218,9.7955)"
      id="g40">
     <path
        transform="scale(0.004,-0.004)"
@@ -486,7 +486,7 @@ tspan { white-space: pre; }
        id="path39" />
   </g>
   <g
-     transform="translate(20.261,7.0388)"
+     transform="translate(20.261,7.2955)"
      id="g41">
     <rect
        x="-0.064999998"
@@ -498,7 +498,7 @@ tspan { white-space: pre; }
        id="rect40" />
   </g>
   <g
-     transform="translate(37.1955,5.2288)"
+     transform="translate(37.1955,5.4855)"
      id="g42">
     <polygon
        stroke-linejoin="round"
@@ -510,7 +510,7 @@ tspan { white-space: pre; }
        id="polygon41" />
   </g>
   <g
-     transform="translate(21.526,10.0388)"
+     transform="translate(21.526,10.2955)"
      id="g43">
     <path
        transform="scale(0.004,-0.004)"
@@ -519,7 +519,7 @@ tspan { white-space: pre; }
        id="path42" />
   </g>
   <g
-     transform="translate(22.7652,7.0388)"
+     transform="translate(22.7652,7.2955)"
      id="g44">
     <rect
        x="-0.064999998"
@@ -531,7 +531,7 @@ tspan { white-space: pre; }
        id="rect43" />
   </g>
   <g
-     transform="translate(24.0302,10.5388)"
+     transform="translate(24.0302,10.7955)"
      id="g45">
     <path
        transform="scale(0.004,-0.004)"
@@ -540,7 +540,7 @@ tspan { white-space: pre; }
        id="path44" />
   </g>
   <g
-     transform="translate(25.2694,7.0388)"
+     transform="translate(25.2694,7.2955)"
      id="g46">
     <rect
        x="-0.064999998"
@@ -552,7 +552,7 @@ tspan { white-space: pre; }
        id="rect45" />
   </g>
   <g
-     transform="translate(41.8797,12.1438)"
+     transform="translate(41.8797,12.4005)"
      id="g47">
     <line
        stroke-linejoin="round"
@@ -566,7 +566,7 @@ tspan { white-space: pre; }
        id="line46" />
   </g>
   <g
-     transform="translate(41.8797,12.1438)"
+     transform="translate(41.8797,12.4005)"
      id="g48">
     <line
        stroke-linejoin="round"
@@ -580,7 +580,7 @@ tspan { white-space: pre; }
        id="line47" />
   </g>
   <g
-     transform="translate(41.8797,12.1438)"
+     transform="translate(41.8797,12.4005)"
      id="g49">
     <line
        stroke-linejoin="round"
@@ -594,7 +594,7 @@ tspan { white-space: pre; }
        id="line48" />
   </g>
   <g
-     transform="translate(26.7844,9.5388)"
+     transform="translate(26.7844,9.7955)"
      id="g50">
     <path
        transform="scale(0.004,-0.004)"
@@ -603,7 +603,7 @@ tspan { white-space: pre; }
        id="path49" />
   </g>
   <g
-     transform="translate(28.0236,7.0388)"
+     transform="translate(28.0236,7.2955)"
      id="g51">
     <rect
        x="-0.064999998"
@@ -615,7 +615,7 @@ tspan { white-space: pre; }
        id="rect50" />
   </g>
   <g
-     transform="translate(31.7671,4.8488)"
+     transform="translate(31.7671,5.1055)"
      id="g52">
     <polygon
        stroke-linejoin="round"
@@ -627,7 +627,7 @@ tspan { white-space: pre; }
        id="polygon51" />
   </g>
   <g
-     transform="translate(25.2044,7.0388)"
+     transform="translate(25.2044,7.2955)"
      id="g53">
     <polygon
        stroke-linejoin="round"
@@ -639,10 +639,10 @@ tspan { white-space: pre; }
        id="polygon52" />
   </g>
   <g
-     transform="translate(30.5929,2.0388)"
+     transform="translate(30.5929,2.2955)"
      id="g54">
     <text
-       font-family="'New Computer Modern Math'"
+       font-family="'NewComputerModern Math'"
        font-size="2.3308px"
        text-anchor="start"
        fill="currentColor"
@@ -650,10 +650,10 @@ tspan { white-space: pre; }
          id="tspan53">C</tspan></text>
   </g>
   <g
-     transform="translate(32.2659,2.8334)"
+     transform="translate(32.2659,3.0901)"
      id="g55">
     <text
-       font-family="'New Computer Modern Math'"
+       font-family="'NewComputerModern Math'"
        font-size="1.648px"
        text-anchor="start"
        fill="currentColor"
@@ -661,10 +661,10 @@ tspan { white-space: pre; }
          id="tspan54">−</tspan></text>
   </g>
   <g
-     transform="translate(33.5634,2.8334)"
+     transform="translate(33.5634,3.0901)"
      id="g56">
     <text
-       font-family="'New Computer Modern Math'"
+       font-family="'NewComputerModern Math'"
        font-size="1.648px"
        text-anchor="start"
        fill="currentColor"
@@ -672,7 +672,7 @@ tspan { white-space: pre; }
          id="tspan55">7</tspan></text>
   </g>
   <g
-     transform="translate(30.5929,8.5388)"
+     transform="translate(30.5929,8.7955)"
      id="g57">
     <path
        transform="scale(0.004,-0.004)"
@@ -681,7 +681,7 @@ tspan { white-space: pre; }
        id="path56" />
   </g>
   <g
-     transform="translate(31.8321,7.0388)"
+     transform="translate(31.8321,7.2955)"
      id="g58">
     <rect
        x="-0.064999998"
@@ -693,7 +693,7 @@ tspan { white-space: pre; }
        id="rect57" />
   </g>
   <g
-     transform="translate(20.196,6.8488)"
+     transform="translate(20.196,7.1055)"
      id="g59">
     <polygon
        stroke-linejoin="round"
@@ -705,7 +705,7 @@ tspan { white-space: pre; }
        id="polygon58" />
   </g>
   <g
-     transform="translate(33.7671,7.5388)"
+     transform="translate(33.7671,7.7955)"
      id="g60">
     <path
        transform="scale(0.004,-0.004)"
@@ -714,7 +714,7 @@ tspan { white-space: pre; }
        id="path59" />
   </g>
   <g
-     transform="translate(35.0063,7.0388)"
+     transform="translate(35.0063,7.2955)"
      id="g61">
     <rect
        x="-0.064999998"
@@ -726,7 +726,7 @@ tspan { white-space: pre; }
        id="rect60" />
   </g>
   <g
-     transform="translate(32.6171,7.5388)"
+     transform="translate(32.6171,7.7955)"
      id="g62">
     <path
        transform="scale(0.004,-0.004)"
@@ -735,7 +735,7 @@ tspan { white-space: pre; }
        id="path61" />
   </g>
   <g
-     transform="translate(14.5176,5.8488)"
+     transform="translate(14.5176,6.1055)"
      id="g63">
     <polygon
        stroke-linejoin="round"
@@ -747,7 +747,7 @@ tspan { white-space: pre; }
        id="polygon62" />
   </g>
   <g
-     transform="translate(36.0213,8.5388)"
+     transform="translate(36.0213,8.7955)"
      id="g64">
     <path
        transform="scale(0.004,-0.004)"
@@ -756,7 +756,7 @@ tspan { white-space: pre; }
        id="path63" />
   </g>
   <g
-     transform="translate(37.2605,7.0388)"
+     transform="translate(37.2605,7.2955)"
      id="g65">
     <rect
        x="-0.064999998"
@@ -768,7 +768,7 @@ tspan { white-space: pre; }
        id="rect64" />
   </g>
   <g
-     transform="translate(9.7592,5.2288)"
+     transform="translate(9.7592,5.4855)"
      id="g66">
     <polygon
        stroke-linejoin="round"
@@ -780,7 +780,7 @@ tspan { white-space: pre; }
        id="polygon65" />
   </g>
   <g
-     transform="translate(39.3755,8.5388)"
+     transform="translate(39.3755,8.7955)"
      id="g67">
     <path
        transform="scale(0.004,-0.004)"
@@ -789,7 +789,7 @@ tspan { white-space: pre; }
        id="path66" />
   </g>
   <g
-     transform="translate(40.6147,7.0388)"
+     transform="translate(40.6147,7.2955)"
      id="g68">
     <rect
        x="-0.064999998"
@@ -801,7 +801,7 @@ tspan { white-space: pre; }
        id="rect67" />
   </g>
   <g
-     transform="translate(37.9255,8.5388)"
+     transform="translate(37.9255,8.7955)"
      id="g69">
     <path
        transform="scale(0.004,-0.004)"
@@ -810,7 +810,7 @@ tspan { white-space: pre; }
        id="path68" />
   </g>
   <g
-     transform="translate(41.8797,8.0388)"
+     transform="translate(41.8797,8.2955)"
      id="g70">
     <path
        transform="scale(0.004,-0.004)"
@@ -819,7 +819,7 @@ tspan { white-space: pre; }
        id="path69" />
   </g>
   <g
-     transform="translate(43.1189,7.0388)"
+     transform="translate(43.1189,7.2955)"
      id="g71">
     <rect
        x="-0.064999998"
@@ -831,7 +831,7 @@ tspan { white-space: pre; }
        id="rect70" />
   </g>
   <g
-     transform="translate(13.3434,11.6438)"
+     transform="translate(13.3434,11.9005)"
      id="g72">
     <line
        stroke-linejoin="round"
@@ -845,7 +845,7 @@ tspan { white-space: pre; }
        id="line71" />
   </g>
   <g
-     transform="translate(13.3434,11.6438)"
+     transform="translate(13.3434,11.9005)"
      id="g73">
     <line
        stroke-linejoin="round"
@@ -859,7 +859,7 @@ tspan { white-space: pre; }
        id="line72" />
   </g>
   <g
-     transform="translate(13.3434,11.6438)"
+     transform="translate(13.3434,11.9005)"
      id="g74">
     <line
        stroke-linejoin="round"
@@ -873,7 +873,7 @@ tspan { white-space: pre; }
        id="line73" />
   </g>
   <g
-     transform="translate(45.0539,9.0388)"
+     transform="translate(45.0539,9.2955)"
      id="g75">
     <path
        transform="scale(0.004,-0.004)"
@@ -882,7 +882,7 @@ tspan { white-space: pre; }
        id="path74" />
   </g>
   <g
-     transform="translate(46.2931,7.0388)"
+     transform="translate(46.2931,7.2955)"
      id="g76">
     <rect
        x="-0.064999998"
@@ -894,7 +894,7 @@ tspan { white-space: pre; }
        id="rect75" />
   </g>
   <g
-     transform="translate(43.9039,9.0388)"
+     transform="translate(43.9039,9.2955)"
      id="g77">
     <path
        transform="scale(0.004,-0.004)"
@@ -903,7 +903,7 @@ tspan { white-space: pre; }
        id="path76" />
   </g>
   <g
-     transform="translate(47.3081,10.0388)"
+     transform="translate(47.3081,10.2955)"
      id="g78">
     <path
        transform="scale(0.004,-0.004)"
@@ -912,7 +912,7 @@ tspan { white-space: pre; }
        id="path77" />
   </g>
   <g
-     transform="translate(48.5473,7.0388)"
+     transform="translate(48.5473,7.2955)"
      id="g79">
     <rect
        x="-0.064999998"
@@ -924,7 +924,7 @@ tspan { white-space: pre; }
        id="rect78" />
   </g>
   <g
-     transform="translate(50.4823,10.5388)"
+     transform="translate(50.4823,10.7955)"
      id="g80">
     <path
        transform="scale(0.004,-0.004)"
@@ -933,7 +933,7 @@ tspan { white-space: pre; }
        id="path79" />
   </g>
   <g
-     transform="translate(51.7215,7.0388)"
+     transform="translate(51.7215,7.2955)"
      id="g81">
     <rect
        x="-0.064999998"
@@ -945,7 +945,7 @@ tspan { white-space: pre; }
        id="rect80" />
   </g>
   <g
-     transform="translate(72.2288,5.8488)"
+     transform="translate(72.2288,6.1055)"
      id="g82">
     <polygon
        stroke-linejoin="round"
@@ -957,10 +957,10 @@ tspan { white-space: pre; }
        id="polygon81" />
   </g>
   <g
-     transform="translate(54.2551,2.0388)"
+     transform="translate(54.2551,2.2955)"
      id="g83">
     <text
-       font-family="'New Computer Modern Math'"
+       font-family="'NewComputerModern Math'"
        font-size="2.3308px"
        text-anchor="start"
        fill="currentColor"
@@ -968,10 +968,10 @@ tspan { white-space: pre; }
          id="tspan82">F</tspan></text>
   </g>
   <g
-     transform="translate(55.7915,2.8334)"
+     transform="translate(55.7915,3.0901)"
      id="g84">
     <text
-       font-family="'New Computer Modern Math'"
+       font-family="'NewComputerModern Math'"
        font-size="1.648px"
        text-anchor="start"
        fill="currentColor"
@@ -979,7 +979,7 @@ tspan { white-space: pre; }
          id="tspan83">7</tspan></text>
   </g>
   <g
-     transform="translate(54.2551,11.0388)"
+     transform="translate(54.2551,11.2955)"
      id="g85">
     <path
        transform="scale(0.004,-0.004)"
@@ -988,7 +988,7 @@ tspan { white-space: pre; }
        id="path84" />
   </g>
   <g
-     transform="translate(55.4943,7.0388)"
+     transform="translate(55.4943,7.2955)"
      id="g86">
     <rect
        x="-0.064999998"
@@ -1000,7 +1000,7 @@ tspan { white-space: pre; }
        id="rect85" />
   </g>
   <g
-     transform="translate(57.0093,10.0388)"
+     transform="translate(57.0093,10.2955)"
      id="g87">
     <path
        transform="scale(0.004,-0.004)"
@@ -1009,7 +1009,7 @@ tspan { white-space: pre; }
        id="path86" />
   </g>
   <g
-     transform="translate(58.2485,7.0388)"
+     transform="translate(58.2485,7.2955)"
      id="g88">
     <rect
        x="-0.064999998"
@@ -1021,7 +1021,7 @@ tspan { white-space: pre; }
        id="rect87" />
   </g>
   <g
-     transform="translate(60.1835,9.0388)"
+     transform="translate(60.1835,9.2955)"
      id="g89">
     <path
        transform="scale(0.004,-0.004)"
@@ -1030,7 +1030,7 @@ tspan { white-space: pre; }
        id="path88" />
   </g>
   <g
-     transform="translate(61.4227,7.0388)"
+     transform="translate(61.4227,7.2955)"
      id="g90">
     <rect
        x="-0.064999998"
@@ -1042,7 +1042,7 @@ tspan { white-space: pre; }
        id="rect89" />
   </g>
   <g
-     transform="translate(59.0335,9.0388)"
+     transform="translate(59.0335,9.2955)"
      id="g91">
     <path
        transform="scale(0.004,-0.004)"
@@ -1051,7 +1051,7 @@ tspan { white-space: pre; }
        id="path90" />
   </g>
   <g
-     transform="translate(63.3577,8.0388)"
+     transform="translate(63.3577,8.2955)"
      id="g92">
     <path
        transform="scale(0.004,-0.004)"
@@ -1060,7 +1060,7 @@ tspan { white-space: pre; }
        id="path91" />
   </g>
   <g
-     transform="translate(64.5969,7.0388)"
+     transform="translate(64.5969,7.2955)"
      id="g93">
     <rect
        x="-0.064999998"
@@ -1072,7 +1072,7 @@ tspan { white-space: pre; }
        id="rect92" />
   </g>
   <g
-     transform="translate(62.2077,8.0388)"
+     transform="translate(62.2077,8.2955)"
      id="g94">
     <path
        transform="scale(0.004,-0.004)"
@@ -1081,7 +1081,7 @@ tspan { white-space: pre; }
        id="path93" />
   </g>
   <g
-     transform="translate(65.6119,9.0388)"
+     transform="translate(65.6119,9.2955)"
      id="g95">
     <path
        transform="scale(0.004,-0.004)"
@@ -1090,7 +1090,7 @@ tspan { white-space: pre; }
        id="path94" />
   </g>
   <g
-     transform="translate(66.8511,7.0388)"
+     transform="translate(66.8511,7.2955)"
      id="g96">
     <rect
        x="-0.064999998"
@@ -1102,7 +1102,7 @@ tspan { white-space: pre; }
        id="rect95" />
   </g>
   <g
-     transform="translate(68.5504,9.0388)"
+     transform="translate(68.5504,9.2955)"
      id="g97">
     <path
        transform="scale(0.004,-0.004)"
@@ -1111,7 +1111,7 @@ tspan { white-space: pre; }
        id="path96" />
   </g>
   <g
-     transform="translate(69.7896,7.0388)"
+     transform="translate(69.7896,7.2955)"
      id="g98">
     <rect
        x="-0.064999998"
@@ -1123,7 +1123,7 @@ tspan { white-space: pre; }
        id="rect97" />
   </g>
   <g
-     transform="translate(67.5161,9.0388)"
+     transform="translate(67.5161,9.2955)"
      id="g99">
     <path
        transform="scale(0.004,-0.004)"
@@ -1132,7 +1132,7 @@ tspan { white-space: pre; }
        id="path98" />
   </g>
   <g
-     transform="translate(71.0546,8.5388)"
+     transform="translate(71.0546,8.7955)"
      id="g100">
     <path
        transform="scale(0.004,-0.004)"
@@ -1141,7 +1141,7 @@ tspan { white-space: pre; }
        id="path99" />
   </g>
   <g
-     transform="translate(72.2938,7.0388)"
+     transform="translate(72.2938,7.2955)"
      id="g101">
     <rect
        x="-0.064999998"
@@ -1153,7 +1153,7 @@ tspan { white-space: pre; }
        id="rect100" />
   </g>
   <g
-     transform="translate(74.2288,9.0388)"
+     transform="translate(74.2288,9.2955)"
      id="g102">
     <path
        transform="scale(0.004,-0.004)"
@@ -1162,7 +1162,7 @@ tspan { white-space: pre; }
        id="path101" />
   </g>
   <g
-     transform="translate(75.468,7.0388)"
+     transform="translate(75.468,7.2955)"
      id="g103">
     <rect
        x="-0.064999998"
@@ -1174,7 +1174,7 @@ tspan { white-space: pre; }
        id="rect102" />
   </g>
   <g
-     transform="translate(73.0788,9.0388)"
+     transform="translate(73.0788,9.2955)"
      id="g104">
     <path
        transform="scale(0.004,-0.004)"
@@ -1183,10 +1183,10 @@ tspan { white-space: pre; }
        id="path103" />
   </g>
   <g
-     transform="translate(78.073,2.0388)"
+     transform="translate(78.073,2.2955)"
      id="g105">
     <text
-       font-family="'New Computer Modern Math'"
+       font-family="'NewComputerModern Math'"
        font-size="2.3308px"
        text-anchor="start"
        fill="currentColor"
@@ -1194,19 +1194,21 @@ tspan { white-space: pre; }
          id="tspan104">B</tspan></text>
   </g>
   <g
-     transform="translate(79.929,1.7556)"
+     transform="translate(79.7118,1.236)"
      id="g106">
-    <path
-       transform="scale(0.0038,-0.0038)"
-       d="m 29,39 -2,-64 v -11 c 0,-22 2,-43 5,-65 44,38 91,80 91,138 0,33 -13,66 -42,66 C 50,103 30,72 29,39 Z m -57,415 c 9,5 18,8 28,8 10,0 19,-3 28,-8 L 21,111 c 25,23 58,36 92,36 51,0 87,-49 87,-103 0,-79 -84,-117 -144,-169 -16,-14 -25,-41 -47,-41 -14,0 -25,13 -25,27 z"
+    <text
+       font-family="'NewComputerModern Math'"
+       font-size="1.648px"
+       text-anchor="start"
        fill="currentColor"
-       id="path105" />
+       id="text105"><tspan
+         id="tspan105">♭</tspan></text>
   </g>
   <g
-     transform="translate(80.6841,2.8334)"
+     transform="translate(80.3606,3.0901)"
      id="g107">
     <text
-       font-family="'New Computer Modern Math'"
+       font-family="'NewComputerModern Math'"
        font-size="1.648px"
        text-anchor="start"
        fill="currentColor"
@@ -1214,10 +1216,10 @@ tspan { white-space: pre; }
          id="tspan106">△</tspan></text>
   </g>
   <g
-     transform="translate(82.2889,2.8334)"
+     transform="translate(81.9653,3.0901)"
      id="g108">
     <text
-       font-family="'New Computer Modern Math'"
+       font-family="'NewComputerModern Math'"
        font-size="1.648px"
        text-anchor="start"
        fill="currentColor"
@@ -1225,7 +1227,7 @@ tspan { white-space: pre; }
          id="tspan107">7</tspan></text>
   </g>
   <g
-     transform="translate(78.073,9.5388)"
+     transform="translate(78.073,9.7955)"
      id="g109">
     <path
        transform="scale(0.004,-0.004)"
@@ -1234,7 +1236,7 @@ tspan { white-space: pre; }
        id="path108" />
   </g>
   <g
-     transform="translate(79.3122,7.0388)"
+     transform="translate(79.3122,7.2955)"
      id="g110">
     <rect
        x="-0.064999998"
@@ -1246,7 +1248,7 @@ tspan { white-space: pre; }
        id="rect109" />
   </g>
   <g
-     transform="translate(79.3772,6.0788)"
+     transform="translate(79.3772,6.3355)"
      id="g111">
     <path
        transform="scale(0.004,-0.004)"
@@ -1255,7 +1257,7 @@ tspan { white-space: pre; }
        id="path110" />
   </g>
   <g
-     transform="translate(80.6404,7.0388)"
+     transform="translate(80.6404,7.2955)"
      id="g112">
     <path
        transform="scale(0.004,-0.004)"
@@ -1264,7 +1266,7 @@ tspan { white-space: pre; }
        id="path111" />
   </g>
   <g
-     transform="translate(82.8404,7.0388)"
+     transform="translate(82.8404,7.2955)"
      id="g113">
     <path
        transform="scale(0.004,-0.004)"
@@ -1273,7 +1275,7 @@ tspan { white-space: pre; }
        id="path112" />
   </g>
   <g
-     transform="translate(86.1904,7.0388)"
+     transform="translate(86.1904,7.2955)"
      id="g114">
     <path
        transform="scale(0.004,-0.004)"
