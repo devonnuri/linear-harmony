@@ -30,298 +30,186 @@ tspan { white-space: pre; }
   <g
      transform="translate(1.31,1.044)"
      id="g1">
-    <rect
-       x="24.407301"
-       y="-0.1"
-       width="1.9563"
-       height="0.2"
-       ry="0.1"
-       fill="currentColor"
-       id="rect1" />
+    <path
+       id="rect1"
+       style="fill:currentColor"
+       d="m 24.507301,-0.1 h 1.7563 c 0.0554,0 0.1,0.0446 0.1,0.1 0,0.0554 -0.0446,0.1 -0.1,0.1 h -1.7563 c -0.0554,0 -0.1,-0.0446 -0.1,-0.1 0,-0.0554 0.0446,-0.1 0.1,-0.1 z" />
   </g>
   <g
      transform="translate(1.31,1.044)"
      id="g2">
-    <rect
-       x="21.903099"
-       y="-0.1"
-       width="1.9563"
-       height="0.2"
-       ry="0.1"
-       fill="currentColor"
-       id="rect2" />
+    <path
+       id="rect2"
+       style="fill:currentColor"
+       d="m 22.003099,-0.1 h 1.7563 c 0.0554,0 0.1,0.0446 0.1,0.1 0,0.0554 -0.0446,0.1 -0.1,0.1 h -1.7563 c -0.0554,0 -0.1,-0.0446 -0.1,-0.1 0,-0.0554 0.0446,-0.1 0.1,-0.1 z" />
   </g>
   <g
      transform="translate(1.31,6.044)"
      id="g3">
-    <line
-       stroke-linejoin="round"
-       stroke-linecap="round"
-       stroke-width="0.1"
-       stroke="currentColor"
-       x1="0.050000001"
-       y1="0"
-       x2="45.2159"
-       y2="0"
-       id="line2" />
+    <path
+       id="line2"
+       style="stroke:currentColor;stroke-width:0.1;stroke-linecap:round;stroke-linejoin:round"
+       d="M 0.05,0 H 45.2159" />
   </g>
   <g
      transform="translate(1.31,5.044)"
      id="g4">
-    <line
-       stroke-linejoin="round"
-       stroke-linecap="round"
-       stroke-width="0.1"
-       stroke="currentColor"
-       x1="0.050000001"
-       y1="0"
-       x2="45.2159"
-       y2="0"
-       id="line3" />
+    <path
+       id="line3"
+       style="stroke:currentColor;stroke-width:0.1;stroke-linecap:round;stroke-linejoin:round"
+       d="M 0.05,0 H 45.2159" />
   </g>
   <g
      transform="translate(1.31,4.044)"
      id="g5">
-    <line
-       stroke-linejoin="round"
-       stroke-linecap="round"
-       stroke-width="0.1"
-       stroke="currentColor"
-       x1="0.050000001"
-       y1="0"
-       x2="45.2159"
-       y2="0"
-       id="line4" />
+    <path
+       id="line4"
+       style="stroke:currentColor;stroke-width:0.1;stroke-linecap:round;stroke-linejoin:round"
+       d="M 0.05,0 H 45.2159" />
   </g>
   <g
      transform="translate(1.31,3.044)"
      id="g6">
-    <line
-       stroke-linejoin="round"
-       stroke-linecap="round"
-       stroke-width="0.1"
-       stroke="currentColor"
-       x1="0.050000001"
-       y1="0"
-       x2="45.2159"
-       y2="0"
-       id="line5" />
+    <path
+       id="line5"
+       style="stroke:currentColor;stroke-width:0.1;stroke-linecap:round;stroke-linejoin:round"
+       d="M 0.05,0 H 45.2159" />
   </g>
   <g
      transform="translate(1.31,2.044)"
      id="g7">
-    <line
-       stroke-linejoin="round"
-       stroke-linecap="round"
-       stroke-width="0.1"
-       stroke="currentColor"
-       x1="0.050000001"
-       y1="0"
-       x2="45.2159"
-       y2="0"
-       id="line6" />
+    <path
+       id="line6"
+       style="stroke:currentColor;stroke-width:0.1;stroke-linecap:round;stroke-linejoin:round"
+       d="M 0.05,0 H 45.2159" />
   </g>
   <g
      transform="translate(46.386,-0.001)"
      id="g8">
-    <rect
-       x="0"
-       y="6.0949998"
-       width="0.19"
-       height="4.9499998"
-       ry="0.0000"
-       fill="currentColor"
-       id="rect7" />
+    <path
+       id="rect7"
+       style="fill:currentColor"
+       d="M 0,6.0949998 H 0.19 V 11.045 H 0 Z" />
   </g>
   <g
      transform="translate(45.896,-0.001)"
      id="g9">
-    <rect
-       x="0"
-       y="6.0949998"
-       width="0.19"
-       height="4.9499998"
-       ry="0.0000"
-       fill="currentColor"
-       id="rect8" />
+    <path
+       id="rect8"
+       style="fill:currentColor"
+       d="M 0,6.0949998 H 0.19 V 11.045 H 0 Z" />
   </g>
   <g
      transform="translate(1.31,15.044)"
      id="g10">
-    <line
-       stroke-linejoin="round"
-       stroke-linecap="round"
-       stroke-width="0.1"
-       stroke="currentColor"
-       x1="0.050000001"
-       y1="0"
-       x2="45.2159"
-       y2="0"
-       id="line9" />
+    <path
+       id="line9"
+       style="stroke:currentColor;stroke-width:0.1;stroke-linecap:round;stroke-linejoin:round"
+       d="M 0.05,0 H 45.2159" />
   </g>
   <g
      transform="translate(1.31,14.044)"
      id="g11">
-    <line
-       stroke-linejoin="round"
-       stroke-linecap="round"
-       stroke-width="0.1"
-       stroke="currentColor"
-       x1="0.050000001"
-       y1="0"
-       x2="45.2159"
-       y2="0"
-       id="line10" />
+    <path
+       id="line10"
+       style="stroke:currentColor;stroke-width:0.1;stroke-linecap:round;stroke-linejoin:round"
+       d="M 0.05,0 H 45.2159" />
   </g>
   <g
      transform="translate(1.31,13.044)"
      id="g12">
-    <line
-       stroke-linejoin="round"
-       stroke-linecap="round"
-       stroke-width="0.1"
-       stroke="currentColor"
-       x1="0.050000001"
-       y1="0"
-       x2="45.2159"
-       y2="0"
-       id="line11" />
+    <path
+       id="line11"
+       style="stroke:currentColor;stroke-width:0.1;stroke-linecap:round;stroke-linejoin:round"
+       d="M 0.05,0 H 45.2159" />
   </g>
   <g
      transform="translate(1.31,12.044)"
      id="g13">
-    <line
-       stroke-linejoin="round"
-       stroke-linecap="round"
-       stroke-width="0.1"
-       stroke="currentColor"
-       x1="0.050000001"
-       y1="0"
-       x2="45.2159"
-       y2="0"
-       id="line12" />
+    <path
+       id="line12"
+       style="stroke:currentColor;stroke-width:0.1;stroke-linecap:round;stroke-linejoin:round"
+       d="M 0.05,0 H 45.2159" />
   </g>
   <g
      transform="translate(1.31,11.044)"
      id="g14">
-    <line
-       stroke-linejoin="round"
-       stroke-linecap="round"
-       stroke-width="0.1"
-       stroke="currentColor"
-       x1="0.050000001"
-       y1="0"
-       x2="45.2159"
-       y2="0"
-       id="line13" />
+    <path
+       id="line13"
+       style="stroke:currentColor;stroke-width:0.1;stroke-linecap:round;stroke-linejoin:round"
+       d="M 0.05,0 H 45.2159" />
   </g>
   <g
      transform="translate(46.386,13.044)"
      id="g15">
-    <rect
-       x="0"
-       y="-2.05"
-       width="0.19"
-       height="4.0500002"
-       ry="0.0000"
-       fill="currentColor"
-       id="rect14" />
+    <path
+       id="rect14"
+       style="fill:currentColor"
+       d="M 0,-2.05 H 0.19 V 2.0000002 H 0 Z" />
   </g>
   <g
      transform="translate(45.896,13.044)"
      id="g16">
-    <rect
-       x="0"
-       y="-2.05"
-       width="0.19"
-       height="4.0500002"
-       ry="0.0000"
-       fill="currentColor"
-       id="rect15" />
+    <path
+       id="rect15"
+       style="fill:currentColor"
+       d="M 0,-2.05 H 0.19 V 2.0000002 H 0 Z" />
   </g>
   <g
      transform="translate(46.386,4.044)"
      id="g17">
-    <rect
-       x="0"
-       y="-2"
-       width="0.19"
-       height="4.0500002"
-       ry="0.0000"
-       fill="currentColor"
-       id="rect16" />
+    <path
+       id="rect16"
+       style="fill:currentColor"
+       d="M 0,-2 H 0.19 V 2.0500002 H 0 Z" />
   </g>
   <g
      transform="translate(45.896,4.044)"
      id="g18">
-    <rect
-       x="0"
-       y="-2"
-       width="0.19"
-       height="4.0500002"
-       ry="0.0000"
-       fill="currentColor"
-       id="rect17" />
+    <path
+       id="rect17"
+       style="fill:currentColor"
+       d="M 0,-2 H 0.19 V 2.0500002 H 0 Z" />
   </g>
   <g
      transform="translate(30.8018,-0.001)"
      id="g19">
-    <rect
-       x="0"
-       y="6.0949998"
-       width="0.19"
-       height="4.9499998"
-       ry="0.0000"
-       fill="currentColor"
-       id="rect18" />
+    <path
+       id="rect18"
+       style="fill:currentColor"
+       d="M 0,6.0949998 H 0.19 V 11.045 H 0 Z" />
   </g>
   <g
      transform="translate(30.8018,13.044)"
      id="g20">
-    <rect
-       x="0"
-       y="-2.05"
-       width="0.19"
-       height="4.0500002"
-       ry="0.0000"
-       fill="currentColor"
-       id="rect19" />
+    <path
+       id="rect19"
+       style="fill:currentColor"
+       d="M 0,-2.05 H 0.19 V 2.0000002 H 0 Z" />
   </g>
   <g
      transform="translate(30.8018,4.044)"
      id="g21">
-    <rect
-       x="0"
-       y="-2"
-       width="0.19"
-       height="4.0500002"
-       ry="0.0000"
-       fill="currentColor"
-       id="rect20" />
+    <path
+       id="rect20"
+       style="fill:currentColor"
+       d="M 0,-2 H 0.19 V 2.0500002 H 0 Z" />
   </g>
   <g
      transform="translate(20.785,5.044)"
      id="g22">
-    <polygon
-       stroke-linejoin="round"
-       stroke-linecap="round"
-       stroke-width="0.08"
-       fill="currentColor"
-       stroke="currentColor"
-       points="0.04,0.2 0.04,-0.2 7.8526,-1.2 7.8526,-0.8 "
-       id="polygon21" />
+    <path
+       id="polygon21"
+       style="fill:currentColor;stroke:currentColor;stroke-width:0.08;stroke-linecap:round;stroke-linejoin:round"
+       d="m 7.8526,-1.2 v 0.4 L 0.04,0.2 v -0.4 z" />
   </g>
   <g
      transform="translate(20.785,5.854)"
      id="g23">
-    <polygon
-       stroke-linejoin="round"
-       stroke-linecap="round"
-       stroke-width="0.08"
-       fill="currentColor"
-       stroke="currentColor"
-       points="0.04,0.2 0.04,-0.2 7.8526,-1.2 7.8526,-0.8 "
-       id="polygon22" />
+    <path
+       id="polygon22"
+       style="fill:currentColor;stroke:currentColor;stroke-width:0.08;stroke-linecap:round;stroke-linejoin:round"
+       d="m 7.8526,-1.2 v 0.4 L 0.04,0.2 v -0.4 z" />
   </g>
   <g
      transform="translate(9.9182,5.044)"
@@ -398,38 +286,26 @@ tspan { white-space: pre; }
   <g
      transform="translate(9.9832,4.044)"
      id="g32">
-    <rect
-       x="-0.064999998"
-       y="1.1862"
-       width="0.13"
-       height="2.6152999"
-       ry="0.039999999"
-       fill="currentColor"
-       id="rect31" />
+    <path
+       id="rect31"
+       style="fill:currentColor"
+       d="m -0.025,1.1862 h 0.05 c 0.02216,0 0.04,0.01784 0.04,0.04 v 2.5353 c 0,0.02216 -0.01784,0.04 -0.04,0.04 h -0.05 c -0.02216,0 -0.04,-0.01784 -0.04,-0.04 V 1.2262 c 0,-0.02216 0.01784,-0.04 0.04,-0.04 z" />
   </g>
   <g
      transform="translate(9.9832,13.044)"
      id="g33">
-    <rect
-       x="-0.064999998"
-       y="-2.3138001"
-       width="0.13"
-       height="3.5116"
-       ry="0.039999999"
-       fill="currentColor"
-       id="rect32" />
+    <path
+       id="rect32"
+       style="fill:currentColor"
+       d="m -0.025,-2.3138001 h 0.05 c 0.02216,0 0.04,0.01784 0.04,0.04 v 3.4316 c 0,0.02216 -0.01784,0.04 -0.04,0.04 h -0.05 c -0.02216,0 -0.04,-0.01784 -0.04,-0.04 v -3.4316 c 0,-0.02216 0.01784,-0.04 0.04,-0.04 z" />
   </g>
   <g
      transform="translate(9.9182,14.234)"
      id="g34">
-    <polygon
-       stroke-linejoin="round"
-       stroke-linecap="round"
-       stroke-width="0.08"
-       fill="currentColor"
-       stroke="currentColor"
-       points="0.04,0.2 0.04,-0.2 5.0984,0.42 5.0984,0.82 "
-       id="polygon33" />
+    <path
+       id="polygon33"
+       style="fill:currentColor;stroke:currentColor;stroke-width:0.08;stroke-linecap:round;stroke-linejoin:round"
+       d="m 5.0984,0.42 v 0.4 L 0.04,0.2 v -0.4 z" />
   </g>
   <g
      transform="translate(12.4224,2.044)"
@@ -443,14 +319,10 @@ tspan { white-space: pre; }
   <g
      transform="translate(12.4874,4.044)"
      id="g36">
-    <rect
-       x="-0.064999998"
-       y="-1.8138"
-       width="0.13"
-       height="5.2876"
-       ry="0.039999999"
-       fill="currentColor"
-       id="rect35" />
+    <path
+       id="rect35"
+       style="fill:currentColor"
+       d="m -0.025,-1.8138 h 0.05 c 0.02216,0 0.04,0.01784 0.04,0.04 v 5.2076001 c 0,0.02216 -0.01784,0.04 -0.04,0.04 h -0.05 c -0.02216,0 -0.04,-0.01784 -0.04,-0.04 V -1.7738 c 0,-0.02216 0.01784,-0.04 0.04,-0.04 z" />
   </g>
   <g
      transform="translate(10.9724,2.044)"
@@ -464,26 +336,18 @@ tspan { white-space: pre; }
   <g
      transform="translate(9.9182,7.044)"
      id="g38">
-    <polygon
-       stroke-linejoin="round"
-       stroke-linecap="round"
-       stroke-width="0.08"
-       fill="currentColor"
-       stroke="currentColor"
-       points="0.04,0.2 0.04,-0.2 7.6026,-1.2 7.6026,-0.8 "
-       id="polygon37" />
+    <path
+       id="polygon37"
+       style="fill:currentColor;stroke:currentColor;stroke-width:0.08;stroke-linecap:round;stroke-linejoin:round"
+       d="m 7.6026,-1.2 v 0.4 L 0.04,0.2 v -0.4 z" />
   </g>
   <g
      transform="translate(9.9182,7.854)"
      id="g39">
-    <polygon
-       stroke-linejoin="round"
-       stroke-linecap="round"
-       stroke-width="0.08"
-       fill="currentColor"
-       stroke="currentColor"
-       points="0.04,0.2 0.04,-0.2 7.6026,-1.2 7.6026,-0.8 "
-       id="polygon38" />
+    <path
+       id="polygon38"
+       style="fill:currentColor;stroke:currentColor;stroke-width:0.08;stroke-linecap:round;stroke-linejoin:round"
+       d="m 7.6026,-1.2 v 0.4 L 0.04,0.2 v -0.4 z" />
   </g>
   <g
      transform="translate(14.9266,2.544)"
@@ -506,26 +370,18 @@ tspan { white-space: pre; }
   <g
      transform="translate(14.9916,4.044)"
      id="g42">
-    <rect
-       x="-0.064999998"
-       y="-1.3138"
-       width="0.13"
-       height="4.46"
-       ry="0.039999999"
-       fill="currentColor"
-       id="rect41" />
+    <path
+       id="rect41"
+       style="fill:currentColor"
+       d="m -0.025,-1.3138 h 0.05 c 0.02216,0 0.04,0.01784 0.04,0.04 v 4.3800001 c 0,0.02216 -0.01784,0.04 -0.04,0.04 h -0.05 c -0.02216,0 -0.04,-0.01784 -0.04,-0.04 V -1.2738 c 0,-0.02216 0.01784,-0.04 0.04,-0.04 z" />
   </g>
   <g
      transform="translate(14.9916,13.044)"
      id="g43">
-    <rect
-       x="-0.064999998"
-       y="-1.3138"
-       width="0.13"
-       height="3.1159999"
-       ry="0.039999999"
-       fill="currentColor"
-       id="rect42" />
+    <path
+       id="rect42"
+       style="fill:currentColor"
+       d="m -0.025,-1.3138 h 0.05 c 0.02216,0 0.04,0.01784 0.04,0.04 v 3.036 c 0,0.02216 -0.01784,0.04 -0.04,0.04 h -0.05 c -0.02216,0 -0.04,-0.01784 -0.04,-0.04 v -3.036 c 0,-0.02216 0.01784,-0.04 0.04,-0.04 z" />
   </g>
   <g
      transform="translate(17.4308,3.044)"
@@ -539,14 +395,10 @@ tspan { white-space: pre; }
   <g
      transform="translate(17.4958,4.044)"
      id="g45">
-    <rect
-       x="-0.064999998"
-       y="-0.81379998"
-       width="0.13"
-       height="3.6322999"
-       ry="0.039999999"
-       fill="currentColor"
-       id="rect44" />
+    <path
+       id="rect44"
+       style="fill:currentColor"
+       d="m -0.025,-0.81379998 h 0.05 c 0.02216,0 0.04,0.01784 0.04,0.04 V 2.7784999 c 0,0.02216 -0.01784,0.04 -0.04,0.04 h -0.05 c -0.02216,0 -0.04,-0.01784 -0.04,-0.04 v -3.55229988 c 0,-0.02216 0.01784,-0.04 0.04,-0.04 z" />
   </g>
   <g
      transform="translate(20.785,3.544)"
@@ -569,14 +421,10 @@ tspan { white-space: pre; }
   <g
      transform="translate(20.85,4.044)"
      id="g48">
-    <rect
-       x="-0.064999998"
-       y="-0.31380001"
-       width="0.13"
-       height="2.1156001"
-       ry="0.039999999"
-       fill="currentColor"
-       id="rect47" />
+    <path
+       id="rect47"
+       style="fill:currentColor"
+       d="m -0.025,-0.31380001 h 0.05 c 0.02216,0 0.04,0.01784 0.04,0.04 V 1.7618001 c 0,0.02216 -0.01784,0.04 -0.04,0.04 h -0.05 c -0.02216,0 -0.04,-0.01784 -0.04,-0.04 v -2.03560011 c 0,-0.02216 0.01784,-0.04 0.04,-0.04 z" />
   </g>
   <g
      transform="translate(19.335,3.544)"
@@ -590,14 +438,10 @@ tspan { white-space: pre; }
   <g
      transform="translate(20.85,13.044)"
      id="g50">
-    <rect
-       x="-0.064999998"
-       y="-1.8138"
-       width="0.13"
-       height="4.0256"
-       ry="0.039999999"
-       fill="currentColor"
-       id="rect49" />
+    <path
+       id="rect49"
+       style="fill:currentColor"
+       d="m -0.025,-1.8138 h 0.05 c 0.02216,0 0.04,0.01784 0.04,0.04 v 3.9456 c 0,0.02216 -0.01784,0.04 -0.04,0.04 h -0.05 c -0.02216,0 -0.04,-0.01784 -0.04,-0.04 v -3.9456 c 0,-0.02216 0.01784,-0.04 0.04,-0.04 z" />
   </g>
   <g
      transform="translate(23.5392,0.544)"
@@ -611,14 +455,10 @@ tspan { white-space: pre; }
   <g
      transform="translate(23.6042,4.044)"
      id="g52">
-    <rect
-       x="-0.064999998"
-       y="-3.3138001"
-       width="0.13"
-       height="4.7666001"
-       ry="0.039999999"
-       fill="currentColor"
-       id="rect51" />
+    <path
+       id="rect51"
+       style="fill:currentColor"
+       d="m -0.025,-3.3138001 h 0.05 c 0.02216,0 0.04,0.01784 0.04,0.04 V 1.4128 c 0,0.02216 -0.01784,0.04 -0.04,0.04 h -0.05 c -0.02216,0 -0.04,-0.01784 -0.04,-0.04 v -4.6866001 c 0,-0.02216 0.01784,-0.04 0.04,-0.04 z" />
   </g>
   <g
      transform="translate(26.0434,1.044)"
@@ -641,38 +481,26 @@ tspan { white-space: pre; }
   <g
      transform="translate(26.1084,4.044)"
      id="g55">
-    <rect
-       x="-0.064999998"
-       y="-2.8138001"
-       width="0.13"
-       height="3.9493001"
-       ry="0.039999999"
-       fill="currentColor"
-       id="rect54" />
+    <path
+       id="rect54"
+       style="fill:currentColor"
+       d="m -0.025,-2.8138001 h 0.05 c 0.02216,0 0.04,0.01784 0.04,0.04 V 1.0955 c 0,0.02216 -0.01784,0.04 -0.04,0.04 h -0.05 c -0.02216,0 -0.04,-0.01784 -0.04,-0.04 v -3.8693001 c 0,-0.02216 0.01784,-0.04 0.04,-0.04 z" />
   </g>
   <g
      transform="translate(26.1084,13.044)"
      id="g56">
-    <rect
-       x="-0.064999998"
-       y="1.6862"
-       width="0.13"
-       height="2.2920001"
-       ry="0.039999999"
-       fill="currentColor"
-       id="rect55" />
+    <path
+       id="rect55"
+       style="fill:currentColor"
+       d="m -0.025,1.6862 h 0.05 c 0.02216,0 0.04,0.01784 0.04,0.04 v 2.2120001 c 0,0.02216 -0.01784,0.04 -0.04,0.04 h -0.05 c -0.02216,0 -0.04,-0.01784 -0.04,-0.04 V 1.7262 c 0,-0.02216 0.01784,-0.04 0.04,-0.04 z" />
   </g>
   <g
      transform="translate(20.785,15.234)"
      id="g57">
-    <polygon
-       stroke-linejoin="round"
-       stroke-linecap="round"
-       stroke-width="0.08"
-       fill="currentColor"
-       stroke="currentColor"
-       points="0.04,0.2 0.04,-0.2 5.3484,1.61 5.3484,2.01 "
-       id="polygon56" />
+    <path
+       id="polygon56"
+       style="fill:currentColor;stroke:currentColor;stroke-width:0.08;stroke-linecap:round;stroke-linejoin:round"
+       d="m 5.3484,1.61 v 0.4 L 0.04,0.2 v -0.4 z" />
   </g>
   <g
      transform="translate(28.5476,1.544)"
@@ -686,14 +514,10 @@ tspan { white-space: pre; }
   <g
      transform="translate(28.6126,4.044)"
      id="g59">
-    <rect
-       x="-0.064999998"
-       y="-2.3138001"
-       width="0.13"
-       height="3.132"
-       ry="0.039999999"
-       fill="currentColor"
-       id="rect58" />
+    <path
+       id="rect58"
+       style="fill:currentColor"
+       d="m -0.025,-2.3138001 h 0.05 c 0.02216,0 0.04,0.01784 0.04,0.04 v 3.05199997 c 0,0.02216 -0.01784,0.04 -0.04,0.04 h -0.05 c -0.02216,0 -0.04,-0.01784 -0.04,-0.04 V -2.2738001 c 0,-0.02216 0.01784,-0.04 0.04,-0.04 z" />
   </g>
   <g
      transform="translate(33.0418,2.044)"
@@ -716,26 +540,18 @@ tspan { white-space: pre; }
   <g
      transform="translate(1.25,8.544)"
      id="g62">
-    <rect
-       x="0"
-       y="-6.5500002"
-       width="0.16"
-       height="13.1"
-       ry="0.050000001"
-       fill="currentColor"
-       id="rect61" />
+    <path
+       id="rect61"
+       style="fill:currentColor"
+       d="m 0.05,-6.5500002 h 0.06 c 0.0277,0 0.05,0.0223 0.05,0.05 V 6.5000002 c 0,0.0277 -0.0223,0.05 -0.05,0.05 H 0.05 c -0.0277,0 -0.05,-0.0223 -0.05,-0.05 V -6.5000002 c 0,-0.0277 0.0223,-0.05 0.05,-0.05 z" />
   </g>
   <g
      transform="translate(33.1068,4.044)"
      id="g63">
-    <rect
-       x="-0.064999998"
-       y="-1.8138"
-       width="0.13"
-       height="3.3138001"
-       ry="0.039999999"
-       fill="currentColor"
-       id="rect62" />
+    <path
+       id="rect62"
+       style="fill:currentColor"
+       d="m -0.025,-1.8138 h 0.05 c 0.02216,0 0.04,0.01784 0.04,0.04 v 3.2338001 c 0,0.02216 -0.01784,0.04 -0.04,0.04 h -0.05 c -0.02216,0 -0.04,-0.01784 -0.04,-0.04 V -1.7738 c 0,-0.02216 0.01784,-0.04 0.04,-0.04 z" />
   </g>
   <g
      transform="translate(33.1718,5.504)"
@@ -758,14 +574,10 @@ tspan { white-space: pre; }
   <g
      transform="translate(33.1068,13.044)"
      id="g66">
-    <rect
-       x="-0.064999998"
-       y="0.18619999"
-       width="0.13"
-       height="3.1888001"
-       ry="0.039999999"
-       fill="currentColor"
-       id="rect65" />
+    <path
+       id="rect65"
+       style="fill:currentColor"
+       d="m -0.025,0.18619999 h 0.05 c 0.02216,0 0.04,0.01784 0.04,0.04 V 3.3350001 c 0,0.02216 -0.01784,0.04 -0.04,0.04 h -0.05 c -0.02216,0 -0.04,-0.01784 -0.04,-0.04 V 0.22619999 c 0,-0.02216 0.01784,-0.04 0.04,-0.04 z" />
   </g>
   <g
      transform="translate(33.1718,16.379)"
@@ -797,14 +609,10 @@ tspan { white-space: pre; }
   <g
      transform="translate(0,8.544)"
      id="g70">
-    <rect
-       x="0"
-       y="-6.5949998"
-       width="0.44999999"
-       height="13.19"
-       ry="0.0000"
-       fill="currentColor"
-       id="rect69" />
+    <path
+       id="rect69"
+       style="fill:currentColor"
+       d="M 0,-6.5949998 H 0.44999999 V 6.5949998 H 0 Z" />
   </g>
   <g
      transform="translate(35.546,4.044)"

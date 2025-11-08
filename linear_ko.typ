@@ -54,11 +54,11 @@
 #let chord(chordstr, jazz: true) = {
   // set text(fill: cmyk(0%, 100%, 0%, 20%))
 
-  let pat = regex("((?:[A-G]|[IViv]+)(?:#|b)?)(M|m|dim|aug|halfdim|sus2|sus4)?((?:[#b]?\d+)*)?(sus)?(?:\/((?:[A-G]|[IViv]+)(?:#|b)?))?(?:\|(.+))?")
+  let pat = regex("((?:[A-G]|[IViv]+)(?:#|b)?)(M|m|dim|aug|halfdim|sus2|sus4)?(M7)?((?:[#b]?\d+)*)?(sus)?(?:\/((?:[A-G]|[IViv]+)(?:#|b)?))?(?:\|(.+))?")
   let match = chordstr.match(pat)
   assert(match != none, message: "Invalid chord string")
 
-  let (root, quality, extalt_str, sus, slash, denom) = match.captures
+  let (root, quality, maj7, extalt_str, sus, slash, denom) = match.captures
 
   root = note(root)
 
@@ -67,6 +67,8 @@
   } else {
     quality = if quality == "M" { $upright(M)$ } else if quality == "m" { $upright(m)$ } else if quality == "dim" { $degree$ } else if quality == "aug" { $+$ } else if quality == "halfdim" { $ø$ } else if quality == "sus2" { $upright(sus2)$ } else if quality == "sus4" { $upright(sus4)$ } else { $$ }
   }
+
+  maj7 = if maj7 == "M7" { $triangle.small 7$ } else { $$ }
   
   let extalt = extalt_str.matches(regex("([#b])?(\d+)")).map(x => (x.captures.at(0), x.captures.at(1))).map(x => (if x.at(0) == "#" { $sharp$ } else if x.at(0) == "b" { $flat$ } else { $$ }, x.at(1))).map(x => $#x.at(0) #x.at(1)$)
   
@@ -79,9 +81,9 @@
   let num_chord = if quality == $$ and extalt.len() == 0 { // needed because empty sub/superscript causes horizontal space
     $root slash$
   } else if jazz { 
-    $root_(quality extalt.join()sus) slash$
+    $root_(quality maj7 extalt.join()sus) slash$
   } else {
-    $root quality extalt.join()sus slash$
+    $root quality maj7 extalt.join()sus slash$
   }
 
   if denom != none {
@@ -217,7 +219,7 @@
 
   다음 악구 전체에서 #note("C") 메이저 3화음과 #note("C") 메이저 블루스 스케일이 사용된다.
 
-  #align(center)[#image("figures/fig_005.jpg", width: 50%)]
+  #align(center)[#autoimg("figures/fig_005.svg")]
 
 - #sans[화성적 함의의 무시]: 이는 즉흥 연주 라인이 동기 기반의 즉흥 연주 방향을 따를 때 발생할 수 있음. 즉흥 연주자가 기존 화성 위에 다른 대체 화성을 도입하고자 하거나, 함의된 화음과 관련 없는 음을 의도적으로 연주하여 긴장을 만들어내기로 결정한 경우에도 나타날 수 있음.
 
@@ -243,11 +245,54 @@
 
 다음은 #note("C")장조의 온음계적 화음과 각각을 로마 숫자로 나타낸 것이다.
 
-#align(center)[#image("figures/fig_006.jpg", width: 50%)]
+// #align(center)[#image("figures/fig_006.jpg", width: 50%)]
+#align(center)[
+  #autoimg("figures/fig_006.svg")
+  #set text(size: 0.9em)
+  #place(
+    center,
+    dx: 9pt,
+    dy: -10pt,
+    table(
+      columns: (25pt, 25pt, 25pt, 25pt, 25pt, 25pt, 25pt), 
+      align: horizon,
+      stroke: none,
+      inset: (x: 3pt, y: 0pt),
+      chord("IM7"),
+      chord("iihalfdim7"),
+      chord("IIIaugM7"),
+      chord("IVM7"),
+      chord("V7"),
+      chord("vi7"),
+      chord("viihalfdim7")
+    ))
+  #v(1.5em)
+]
 
 다음은 #note("C")$$(화성)단조의 온음계적 화음과 각각을 로마 숫자로 나타낸 것이다.
 
-#align(center)[#image("figures/fig_007.jpg", width: 50%)]
+#align(center)[
+  #autoimg("figures/fig_007.svg")
+  #set text(size: 0.9em)
+  #place(
+    center,
+    dx: 10pt,
+    dy: -16pt,
+    table(
+      columns: (25pt, 25pt, 25pt, 25pt, 25pt, 25pt, 25pt), 
+      align: horizon,
+      stroke: none,
+      inset: (x: 3pt, y: 0pt),
+      chord("iM7"),
+      chord("iihalfdim7"),
+      chord("IIIaugM7"),
+      chord("iv7"),
+      chord("V7"),
+      chord("VIM7"),
+      chord("viihalfdim7")
+    ))
+  #v(1.5em)
+]
 
 === 전조와 부딸림화음 <sec_modulation>
 
@@ -304,11 +349,11 @@
 
 #note("C")장조에서의 #maj251 진행(#prog("Dm7", "G7", "C"))의 경우, 베이스는 #note("D")에서 시작하여 #note("G")로 이어지는 선율을 즉흥 연주한다. #note("F")$$(화음의 3도)는 대위선율을 시작하기 위한 좋은 선택이다. #note("D") 위에서 #note("F")가 울리면, 단조 화음이 들린다. 같은 이유로, #chord("G") 화음에서는 #note("B")가 가장 명확한 선택이며, #chord("C") 화음에서는 #chord("E")가 가장 명확하다. 이러한 목표음을 결정한 뒤에는, 이 음들을 흥미로운 방식으로 연결하는 것이 남은 과제이다.
 
-#align(center)[#image("figures/fig_009.jpg", width: 44%)]
+#align(center)[#autoimg("figures/fig_009.svg")]
 
 우리의 귀는 7도 음정이 불안정하며 아래로 해결되기를 원한다는 것을 알려준다. 전통적인 화성학을 공부하면, 이러한 진행에서 화음의 7도 음이 다음 화음의 3도로 순차적으로 해결된다는 것을 알 수 있다. 7도 음은 방향을 제시하는 역할을 한다. #chord("Dm7")의 7도 음인 #note("C")는 순차적으로 내려가 #chord("G") 화음의 #note("B")로 해결된다. #chord("G") 화음의 7도 음인 #note("F")는 순차적으로 내려가 #chord("C") 화음의 #note("E")로 해결된다. 이러한 선율 구조는 이전보다 더 부드럽고 덜 각져있다.
 
-#align(center)[#image("figures/fig_010.jpg", width: 44%)]
+#align(center)[#autoimg("figures/fig_010.svg")]
 
 7도 음은 긴장감을 형성하며, 다음 화음의 3도로 해결되기를 원하는 욕구를 만들어낸다. 이러한 이유로, 7도 음은 종종 다음 화음으로 이동하기 직전에 연주되는 마지막 음이 된다. 때로는 해결이 다음 마디로의 계류를 형성하기도 한다.
 
@@ -325,7 +370,7 @@
 #padbox[
   3도를 첫 번째 박자에 배치하고 7도를 네 번째 박자에 연주하면, 베이스 워킹 라인에 대위하는 4분음표 워킹 선율을 만들기 위해 채울 박자가 두 개 남게 된다. 음계에서 내려가며 움직이면, #chord("ii") 화음의 3도에서 #chord("V7") 화음을 거쳐 #chord("I") 화음의 3도로 이어지는 순차적 선율이 만들어진다.
 
-  #align(center)[#image("figures/fig_011.jpg", width: 47%)]
+  #align(center)[#autoimg("figures/fig_011.svg")]
 ]
 
 이는 제1윤곽의 기본이다. 이 윤곽은 명확한 베이스 라인과 잘 어울리며, 아래에 제시된 바와 같다. 다른 윤곽보다 더 자주 발견되는데, 이는 그 화성적 명확성과 듣기 좋은 하강 순차 진행 때문일 수 있다.
@@ -335,15 +380,22 @@
 #padbox[
   첫 번째 번형은 옥타브 이동이다. 주로 목표음 이후에 이루어진다.
 
-  #align(center)[#image("figures/fig_012.jpg", width: 47%)]
+  #align(center)[
+    #autoimg("figures/fig_012-1.svg")
+    #autoimg("figures/fig_012-2.svg")
+    #autoimg("figures/fig_012-3.svg")
+  ]
 
   또 다른 번형은 #chord("V7") 화음 위에서 상행하는 아르페지오 (3-5-7-9)를 사용하여 으뜸화음의 5도로 해결시키는 것이다.
 
-  #align(center)[#image("figures/fig_013.jpg", width: 47%)]
+  #align(center)[#autoimg("figures/fig_013.svg")]
 
   모든 변형은 단조에서도 적용할 수 있다. 조표와 #chord("V7") 화음을 만들기 위해 이끎음을 올리는 것을 염두에 두어라. #chord("ii7")은 #chord("iihalfdim7")이 되고 #chord("V7") 화음은 #chord("V7b9")가 된다.
 
-  #align(center)[#image("figures/fig_014.jpg", width: 47%)]
+  #align(center)[
+    #autoimg("figures/fig_014-1.svg")
+    #autoimg("figures/fig_014-2.svg")
+  ]
 
   모든 변형은 화성 리듬이 짧아져도 (온음표에서 2분음표로 바뀌어도) 적용 가능하다.
 
@@ -424,9 +476,16 @@
 
 화음의 다른 음으로 도약함으로써 단순한 선율에 더 큰 각진 느낌과 흥미를 유발하는 꾸밈이다.
 
-#align(center)[#autoimg("figures/fig_027.svg")]
+#align(center)[
+  #set text(size: 0.9em)
+#place(center, dx: -12.7em, [단순 멜로디])
+#place(center, dx: -0.4em, [UNT와 PT를 넣은 경우])
+#place(center, dx: 13.8em, [UNT 대신 아르페지오 음을 넣은 경우])
+#v(1em)
+#autoimg("figures/fig_027.svg")
+]
 
-#align(center)[흔한 아르페지오 음은 낮은 옥타브에서 연주되는 #chord("ii") 코드의 5도이다.]
+#align(center)[흔한 아르페지오 음은 낮은 옥타브에서 연주되는 #chord("ii") 화음의 5도이다.]
 
 #align(center)[#autoimg("figures/fig_028.svg")]
 
@@ -1055,7 +1114,7 @@ $ underbracket(prog("iii"), upright("I")text("의 대체"))#h(-8pt)-prog("V7/ii"
 
 같은 #maj25 진행 위에서 파커는 반음계적 픽업음으로 시작하여 제2윤곽을 연주한 후 제1윤곽을 연주한다.
 
-#example("찰리 파커", 170)
+#example("찰리 파커", 170, subtitle: ["Scrapple from the Apple" (_The Complete Savoy and Dial sessions_)])
 
 브라운은 첫 번째 단순한 (제1)윤곽을 첫 번째 목표음에 대한 상·하위 이웃음으로 시작하여 리듬적으로 이동시킨다. 두 번째 마디에서 (제3윤곽이 시작되는) #note("G")로의 반음계적 픽업음이 선율을 제자리에 돌려 놓아 #chord("Cm7")의 7도와 #chord("F7") 화음의 목표음 #note("A")가 예상한 위치에 도달하도록 한다. 더 많은 반음계적 픽업음이 마디를 채워 #note("Eb")이 네 번째 박자의 약박에 도달하고 #note("D")가 강박에 위치하도록 한다. 리듬적 이동은 이 선율을 흥미롭게 만드는 요소 중 하나이다. 추가된 음들이 리듬적 흥미를 만든 것인가, 아니면 리듬적 이동이 추가적인 음을 필요로 한 것인가?
 
@@ -1063,7 +1122,7 @@ $ underbracket(prog("iii"), upright("I")text("의 대체"))#h(-8pt)-prog("V7/ii"
 
 이 마지막 조합은 파커가 #note("Ab")장조에서 잘 알려진 비밥 곡에서 연주한 솔로의 일부이다. 진행은 #note("Ab")장조에서 #prog("iii7", "V7/ii", "ii7", "V7", "I")이다. 첫 번째는 제1윤곽, 두 번째는 제3윤곽이다. 딸림화음들은 3도에서 $flat 9$으로 도약한 후 다음 화음의 5도로 반음계적으로 접근한다는 동일한 패턴을 가진다.
 
-#example("찰리 파커", 172, subtitle: ["Donna Lee" (_The Complete Savoy Sessions_)])
+#example("찰리 파커", 172, subtitle: ["Donna Lee" (_The Complete Savoy and Dial Sessions_)])
 
 #exercisebox[
   + 위의 예제에서 사용된 유사한 기법을 활용하여 자신만의 선율을 만들어 보라.
@@ -1210,7 +1269,7 @@ $ underbracket(prog("iii"), upright("I")text("의 대체"))#h(-8pt)-prog("V7/ii"
 
 상하위 이웃음으로 둘러싸는 경우:
 
-#example("캐넌볼 애덜리", 215)
+#example("캐넌볼 애덜리", 215, subtitle: ["Minority" (_Portrait of Cannonball_)])
 
 #example("톰 하렐", 216)
 
@@ -2104,12 +2163,11 @@ $ chord("ii")-chord("V7")-chord("I")-chord("IV")-underbracket(chord("iihalfdim")
 
 하렐은 이 현대적 솔로를 흥미롭게 만들기 위해 다양한 기법을 사용하지만, 세 가지 윤곽에 여러 번 의존한다. 솔로를 분석하고, 세 가지 윤곽을 찾아내어 그것들이 전체적인 맥락에서 어떻게 연결되고 활용되는지 살펴보라.
 
-#align(center)[#image("figures/fig_445.jpg", width: 100%)]
-#align(center)[#image("figures/fig_446.jpg", width: 100%)]
-#align(center)[#image("figures/fig_447.jpg", width: 100%)]
-#align(center)[#image("figures/fig_448.jpg", width: 100%)]
-#align(center)[#image("figures/fig_449.jpg", width: 100%)]
-#align(center)[#image("figures/fig_450.jpg", width: 100%)]
+#align(center)[#autoimg("figures/fig_450-1.svg")]
+#align(center)[#autoimg("figures/fig_450-2.svg")]
+#align(center)[#autoimg("figures/fig_450-3.svg")]
+#align(center)[#autoimg("figures/fig_450-4.svg")]
+#align(center)[#autoimg("figures/fig_450-5.svg")]
 
 #chapter("재즈 즉흥연주 수업에서 윤곽 활용 제안")
 

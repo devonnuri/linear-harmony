@@ -4,22 +4,13 @@
 
 <<
   \relative {
-    g'4^\markup \column {
-    "simple melody:"
-    " "
-    } f e d c2 r
+    g'4 f e d c2 r
     \bar "||"
 
-    g'8^\markup \column {
-    "with UNTs and PTs:"
-    " "
-    } a g f e f e d c2 r
+    g'8 a g f e f e d c2 r
     \bar "||"
 
-    g'8^\markup \column {
-    "arpeggiated tones replace UNTs:"
-    " "
-    } c g f e g e d c2 r
+    g'8 c g f e g e d c2 r
     \bar "||"
   }
 >>

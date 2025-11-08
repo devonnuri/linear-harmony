@@ -11,7 +11,7 @@ wait
 echo "[*] crop svg"
 
 for file in lilypond/*.svg; do
-    (inkscape --actions "select-all;fit-canvas-to-selection" --export-overwrite "$file") &
+    (inkscape --actions "select-all;object-to-path;fit-canvas-to-selection" --export-overwrite "$file") &
 done;
 
 wait

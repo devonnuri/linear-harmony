@@ -49,7 +49,7 @@ acSharp = #(ly:wide-char->utf-8 #x266f)
 )
 
 chExceptionMusic = {
-  <c es ges>1-\markup { \sub "dim." } % :dim
+  <c es ges>1-\markup \sub { \acCircle } % :dim
   <c es g>-\markup { \sub \acMin #"" } % :m
 
 % minor third chords - 4 notes

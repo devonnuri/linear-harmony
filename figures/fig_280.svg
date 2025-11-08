@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg
    version="1.2"
-   width="179.99992mm"
-   height="20.765646mm"
-   viewBox="0 0 102.4299 11.816799"
-   id="svg110"
+   width="181.40648mm"
+   height="47.165016mm"
+   viewBox="0 0 103.23031 26.839499"
+   id="svg117"
    sodipodi:docname="fig_280.svg"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:svg="http://www.w3.org/2000/svg">
   <defs
-     id="defs110" />
+     id="defs117" />
   <sodipodi:namedview
-     id="namedview110"
+     id="namedview117"
      pagecolor="#505050"
      bordercolor="#eeeeee"
      borderopacity="1"
@@ -28,522 +28,387 @@
 tspan { white-space: pre; }
 ]]></style>
   <g
-     transform="translate(102.2399,7.5768)"
+     transform="translate(103.04031,7.2955)"
      id="g1">
-    <rect
-       x="0"
-       y="-2"
-       width="0.19"
-       height="4"
-       ry="0.0000"
-       fill="currentColor"
-       id="rect1" />
+    <path
+       id="rect1"
+       style="fill:currentColor"
+       d="M 0,-2 H 0.19 V 2 H 0 Z" />
   </g>
   <g
-     transform="translate(101.7499,7.5768)"
+     transform="translate(0.800405,4.2955)"
      id="g2">
-    <rect
-       x="0"
-       y="-2"
-       width="0.19"
-       height="4"
-       ry="0.0000"
-       fill="currentColor"
-       id="rect2" />
+    <path
+       id="rect2"
+       style="fill:currentColor"
+       d="m 29.6471,-0.1 h 1.7563 c 0.0554,0 0.1,0.0446 0.1,0.1 0,0.0554 -0.0446,0.1 -0.1,0.1 h -1.7563 c -0.0554,0 -0.1,-0.0446 -0.1,-0.1 0,-0.0554 0.0446,-0.1 0.1,-0.1 z" />
   </g>
   <g
-     transform="translate(0,10.5768)"
+     transform="translate(0.800405,4.2955)"
      id="g3">
-    <rect
-       x="66.348"
-       y="-0.1"
-       width="1.9563"
-       height="0.2"
-       ry="0.1"
-       fill="currentColor"
-       id="rect3" />
+    <path
+       id="rect3"
+       style="fill:currentColor"
+       d="m 26.247499,-0.1 h 1.6053 c 0.0554,0 0.1,0.0446 0.1,0.1 0,0.0554 -0.0446,0.1 -0.1,0.1 h -1.6053 c -0.0554,0 -0.1,-0.0446 -0.1,-0.1 0,-0.0554 0.0446,-0.1 0.1,-0.1 z" />
   </g>
   <g
-     transform="translate(0,4.5768)"
+     transform="translate(0.800405,4.2955)"
      id="g4">
-    <rect
-       x="21.535801"
-       y="-0.1"
-       width="1.9563"
-       height="0.2"
-       ry="0.1"
-       fill="currentColor"
-       id="rect4" />
+    <path
+       id="rect4"
+       style="fill:currentColor"
+       d="m 20.4503,-0.1 h 1.6053 c 0.0554,0 0.1,0.0446 0.1,0.1 0,0.0554 -0.0446,0.1 -0.1,0.1 h -1.6053 c -0.0554,0 -0.1,-0.0446 -0.1,-0.1 0,-0.0554 0.0446,-0.1 0.1,-0.1 z" />
   </g>
   <g
-     transform="translate(0,4.5768)"
+     transform="translate(0.800405,9.2955)"
      id="g5">
-    <rect
-       x="19.280701"
-       y="-0.1"
-       width="1.8053"
-       height="0.2"
-       ry="0.1"
-       fill="currentColor"
-       id="rect5" />
+    <path
+       id="line4"
+       style="stroke:currentColor;stroke-width:0.1;stroke-linecap:round;stroke-linejoin:round"
+       d="M 0.05,0 H 102.3799" />
   </g>
   <g
-     transform="translate(0,4.5768)"
+     transform="translate(0.800405,8.2955)"
      id="g6">
-    <rect
-       x="15.7724"
-       y="-0.1"
-       width="1.8052"
-       height="0.2"
-       ry="0.1"
-       fill="currentColor"
-       id="rect6" />
+    <path
+       id="line5"
+       style="stroke:currentColor;stroke-width:0.1;stroke-linecap:round;stroke-linejoin:round"
+       d="M 0.05,0 H 102.3799" />
   </g>
   <g
-     transform="translate(0,9.5768)"
+     transform="translate(0.800405,7.2955)"
      id="g7">
-    <line
-       stroke-linejoin="round"
-       stroke-linecap="round"
-       stroke-width="0.1"
-       stroke="currentColor"
-       x1="0.050000001"
-       y1="0"
-       x2="102.3799"
-       y2="0"
-       id="line6" />
+    <path
+       id="line6"
+       style="stroke:currentColor;stroke-width:0.1;stroke-linecap:round;stroke-linejoin:round"
+       d="M 0.05,0 H 102.3799" />
   </g>
   <g
-     transform="translate(0,8.5768)"
+     transform="translate(0.800405,6.2955)"
      id="g8">
-    <line
-       stroke-linejoin="round"
-       stroke-linecap="round"
-       stroke-width="0.1"
-       stroke="currentColor"
-       x1="0.050000001"
-       y1="0"
-       x2="102.3799"
-       y2="0"
-       id="line7" />
+    <path
+       id="line7"
+       style="stroke:currentColor;stroke-width:0.1;stroke-linecap:round;stroke-linejoin:round"
+       d="M 0.05,0 H 102.3799" />
   </g>
   <g
-     transform="translate(0,7.5768)"
+     transform="translate(0.800405,5.2955)"
      id="g9">
-    <line
-       stroke-linejoin="round"
-       stroke-linecap="round"
-       stroke-width="0.1"
-       stroke="currentColor"
-       x1="0.050000001"
-       y1="0"
-       x2="102.3799"
-       y2="0"
-       id="line8" />
+    <path
+       id="line8"
+       style="stroke:currentColor;stroke-width:0.1;stroke-linecap:round;stroke-linejoin:round"
+       d="M 0.05,0 H 102.3799" />
   </g>
   <g
-     transform="translate(0,6.5768)"
+     transform="translate(80.775905,5.2955)"
      id="g10">
-    <line
-       stroke-linejoin="round"
-       stroke-linecap="round"
-       stroke-width="0.1"
-       stroke="currentColor"
-       x1="0.050000001"
-       y1="0"
-       x2="102.3799"
-       y2="0"
-       id="line9" />
+    <path
+       id="polygon9"
+       style="fill:currentColor;stroke:currentColor;stroke-width:0.08;stroke-linecap:round;stroke-linejoin:round"
+       d="M 17.4815,0.8 V 1.2 L 0.04,0.2 v -0.4 z" />
   </g>
   <g
-     transform="translate(0,5.5768)"
+     transform="translate(80.775905,6.1055)"
      id="g11">
-    <line
-       stroke-linejoin="round"
-       stroke-linecap="round"
-       stroke-width="0.1"
-       stroke="currentColor"
-       x1="0.050000001"
-       y1="0"
-       x2="102.3799"
-       y2="0"
-       id="line10" />
+    <path
+       id="polygon10"
+       style="fill:currentColor;stroke:currentColor;stroke-width:0.08;stroke-linecap:round;stroke-linejoin:round"
+       d="M 17.4815,0.8 V 1.2 L 0.04,0.2 v -0.4 z" />
   </g>
   <g
-     transform="translate(65.6168,7.5768)"
+     transform="translate(58.087205,4.4855)"
      id="g12">
-    <rect
-       x="0"
-       y="-2"
-       width="0.19"
-       height="4"
-       ry="0.0000"
-       fill="currentColor"
-       id="rect11" />
+    <path
+       id="polygon11"
+       style="fill:currentColor;stroke:currentColor;stroke-width:0.08;stroke-linecap:round;stroke-linejoin:round"
+       d="M 16.9815,-0.2 V 0.2 H 0.04 v -0.4 z" />
   </g>
   <g
-     transform="translate(81.8812,4.5768)"
+     transform="translate(58.087205,5.2955)"
      id="g13">
-    <polygon
-       stroke-linejoin="round"
-       stroke-linecap="round"
-       stroke-width="0.08"
-       fill="currentColor"
-       stroke="currentColor"
-       points="0.04,0.2 0.04,-0.2 10.6147,-0.7 10.6147,-0.3 "
-       id="polygon12" />
+    <path
+       id="polygon12"
+       style="fill:currentColor;stroke:currentColor;stroke-width:0.08;stroke-linecap:round;stroke-linejoin:round"
+       d="M 16.9815,-0.2 V 0.2 H 0.04 v -0.4 z" />
   </g>
   <g
-     transform="translate(81.8812,5.3868)"
+     transform="translate(9.731405,2.2955)"
      id="g14">
-    <polygon
-       stroke-linejoin="round"
-       stroke-linecap="round"
-       stroke-width="0.08"
-       fill="currentColor"
-       stroke="currentColor"
-       points="0.04,0.2 0.04,-0.2 10.6147,-0.7 10.6147,-0.3 "
-       id="polygon13" />
+    <path
+       style="font-size:2.3308px;font-family:'NewComputerModern Math';white-space:pre"
+       d="m 1.5173508,-0.42653641 c 0,-0.20277961 -0.1911256,-0.37758961 -0.4498444,-0.40555921 0.2260876,-0.0442852 0.3869128,-0.19345638 0.3869128,-0.36593558 0,-0.2027796 -0.2144336,-0.3939052 -0.51743758,-0.3939052 H 0.0839088 v 0.072255 H 0.139848 c 0.17947161,0 0.18413321,0.025639 0.18413321,0.1095476 v 1.2283316 c 0,0.0839088 -0.004662,0.1095476 -0.18413321,0.1095476 H 0.0839088 V 0 H 0.99758242 C 1.3075788,0 1.5173508,-0.20744121 1.5173508,-0.42653641 Z M 1.2283316,-1.1980312 c 0,0.1491712 -0.1142092,0.34495838 -0.37292798,0.34495838 H 0.51743761 V -1.4264496 c 0,-0.076916 0.004662,-0.093232 0.11420921,-0.093232 h 0.2890192 c 0.22608758,0 0.30766558,0.198118 0.30766558,0.3216504 z m 0.055939,0.76916399 c 0,0.1654868 -0.1212016,0.35661241 -0.36127398,0.35661241 h -0.29135 c -0.10954761,0 -0.11420921,-0.0163156 -0.11420921,-0.093232 v -0.63630842 h 0.43819041 c 0.23074918,0 0.32864278,0.21676441 0.32864278,0.37292801 z"
+       id="text13"
+       aria-label="B" />
   </g>
   <g
-     transform="translate(67.8483,5.7668)"
+     transform="translate(11.370305,1.236)"
      id="g15">
-    <polygon
-       stroke-linejoin="round"
-       stroke-linecap="round"
-       stroke-width="0.08"
-       fill="currentColor"
-       stroke="currentColor"
-       points="0.04,0.2 0.04,-0.2 10.6147,-1.2 10.6147,-0.8 "
-       id="polygon14" />
+    <path
+       style="font-size:1.648px;font-family:'NewComputerModern Math';white-space:pre"
+       d="m 0.548784,-0.529008 c 0,-0.121952 -0.09064,-0.229072 -0.225776,-0.229072 -0.092288,0 -0.158208,0.037904 -0.191168,0.069216 v -0.500992 c 0,-0.031312 0,-0.046144 -0.019776,-0.046144 -0.021424,0 -0.021424,0.013184 -0.021424,0.046144 v 1.179968 c 0,0.03296 0,0.046144 0.021424,0.046144 0.01648,0 0.187872,-0.118656 0.278512,-0.215888 0.09064,-0.097232 0.158208,-0.212592 0.158208,-0.349376 z m -0.133488,0 c 0,0.260384 -0.243904,0.46968 -0.283456,0.50264 v -0.538896 c 0,-0.037904 0,-0.072512 0.054384,-0.103824 0.051088,-0.029664 0.1236,-0.029664 0.1236,-0.029664 0.075808,0 0.105472,0.088992 0.105472,0.169744 z"
+       id="text14"
+       aria-label="♭" />
   </g>
   <g
-     transform="translate(67.8483,6.5768)"
+     transform="translate(12.019005,3.0901)"
      id="g16">
-    <polygon
-       stroke-linejoin="round"
-       stroke-linecap="round"
-       stroke-width="0.08"
-       fill="currentColor"
-       stroke="currentColor"
-       points="0.04,0.2 0.04,-0.2 10.6147,-1.2 10.6147,-0.8 "
-       id="polygon15" />
+    <path
+       style="font-size:1.648px;font-family:'NewComputerModern Math';white-space:pre"
+       d="m 1.189856,-0.412 c 0,-0.018128 -0.014832,-0.03296 -0.03296,-0.03296 H 0.125248 c -0.018128,0 -0.03296,0.014832 -0.03296,0.03296 0,0.018128 0.014832,0.03296 0.03296,0.03296 h 1.031648 c 0.018128,0 0.03296,-0.014832 0.03296,-0.03296 z"
+       id="text15"
+       aria-label="−" />
   </g>
   <g
-     transform="translate(8.931,2.2955)"
+     transform="translate(13.316505,3.0901)"
      id="g17">
-    <text
-       font-family="'NewComputerModern Math'"
-       font-size="2.3308px"
-       text-anchor="start"
-       fill="currentColor"
-       id="text16"><tspan
-         id="tspan16">B</tspan></text>
+    <path
+       style="font-size:1.648px;font-family:'NewComputerModern Math';white-space:pre"
+       d="M 0.79928,-1.061312 H 0.398816 c -0.201056,0 -0.204352,-0.021424 -0.210944,-0.052736 h -0.0412 L 0.092288,-0.77456 h 0.0412 c 0.004944,-0.026368 0.019776,-0.130192 0.0412,-0.149968 0.011536,-0.009888 0.14008,-0.009888 0.161504,-0.009888 h 0.341136 l -0.184576,0.260384 c -0.14832,0.22248 -0.202704,0.451552 -0.202704,0.619648 0,0.01648 0,0.09064 0.075808,0.09064 0.075808,0 0.075808,-0.07416 0.075808,-0.09064 v -0.084048 c 0,-0.09064 0.004944,-0.18128 0.018128,-0.270272 0.006592,-0.037904 0.029664,-0.179632 0.102176,-0.281808 l 0.22248,-0.31312 C 0.79928,-1.023408 0.79928,-1.026704 0.79928,-1.061312 Z"
+       id="text16"
+       aria-label="7" />
   </g>
   <g
-     transform="translate(10.5699,1.236)"
+     transform="translate(9.731405,5.7955)"
      id="g18">
-    <text
-       font-family="'NewComputerModern Math'"
-       font-size="1.648px"
-       text-anchor="start"
-       fill="currentColor"
-       id="text17"><tspan
-         id="tspan17">♭</tspan></text>
-  </g>
-  <g
-     transform="translate(11.2186,3.0901)"
-     id="g19">
-    <text
-       font-family="'NewComputerModern Math'"
-       font-size="1.648px"
-       text-anchor="start"
-       fill="currentColor"
-       id="text18"><tspan
-         id="tspan18">−</tspan></text>
-  </g>
-  <g
-     transform="translate(12.5161,3.0901)"
-     id="g20">
-    <text
-       font-family="'NewComputerModern Math'"
-       font-size="1.648px"
-       text-anchor="start"
-       fill="currentColor"
-       id="text19"><tspan
-         id="tspan19">7</tspan></text>
-  </g>
-  <g
-     transform="translate(8.931,6.0768)"
-     id="g21">
     <path
        transform="scale(0.004,-0.004)"
        d="M 0,-46 C 0,45 116,136 217,136 280,136 326,101 326,46 326,-41 216,-136 106,-136 39,-136 0,-97 0,-46 Z"
        fill="currentColor"
-       id="path20" />
+       id="path17" />
   </g>
   <g
-     transform="translate(0.8,8.5768)"
-     id="g22">
+     transform="translate(1.600405,8.2955)"
+     id="g19">
     <path
        transform="scale(0.004,-0.004)"
        d="m 266,-635 h -6 c -108,0 -195,88 -195,197 0,58 53,103 112,103 54,0 95,-47 95,-103 0,-52 -43,-95 -95,-95 -11,0 -21,2 -31,6 26,-39 68,-65 117,-65 h 4 z m 135,786 c 19,-89 48,-242 60,-354 76,27 112,94 112,163 0,89 -60,179 -172,191 z M 74,28 c 0,-112 98,-247 278,-247 21,0 44,2 68,6 -7,64 -29,203 -63,364 -79,-8 -124,-61 -124,-119 0,-44 25,-91 81,-123 5,-5 7,-10 7,-15 0,-11 -10,-22 -22,-22 -15,0 -126,62 -126,187 0,88 58,174 160,197 -14,58 -29,117 -46,175 C 180,310 74,188 74,28 Z m 283,1166 c 28,0 143,-206 143,-361 0,-143 -86,-255 -180,-364 21,-68 39,-138 56,-207 5,0 10,1 14,1 155,0 255,-129 255,-262 0,-113 -74,-212 -180,-245 3,-35 5,-70 5,-105 0,-19 -1,-39 -2,-58 -7,-119 -88,-225 -202,-228 l 1,43 c 93,2 153,92 159,191 1,18 2,37 2,55 0,31 -1,61 -4,92 -28,-5 -55,-8 -80,-8 -239,0 -342,217 -342,374 0,177 131,306 248,441 -29,96 -52,170 -52,346 0,189 144,295 159,295 z M 247,782 c 0,-55 12,-115 35,-190 83,100 147,202 147,326 0,40 -6,82 -21,127 -49,-24 -161,-97 -161,-263 z"
        fill="currentColor"
-       id="path21" />
+       id="path18" />
   </g>
   <g
-     transform="translate(4.885,7.5768)"
-     id="g23">
+     transform="translate(5.685405,7.2955)"
+     id="g20">
     <path
        transform="scale(0.004,-0.004)"
        d="M 433,-89 C 433,-111 383,-263 250,-263 191,-263 0,-244 0,0 0,62 18,262 250,262 366,262 426,156 426,99 426,59 396,27 359,27 c -31,0 -75,25 -75,75 0,38 27,77 72,77 4,0 9,0 14,-1 -28,37 -72,59 -120,59 C 144,237 137,164 137,51 V 0 -51 c 0,-113 7,-187 113,-187 80,0 139,70 158,151 2,7 7,10 12,10 6,0 13,-4 13,-12 z"
        fill="currentColor"
-       id="path22" />
+       id="path19" />
   </g>
   <g
-     transform="translate(8.996,7.5768)"
-     id="g24">
-    <rect
-       x="-0.064999998"
-       y="-1.3138"
-       width="0.13"
-       height="3.1187999"
-       ry="0.039999999"
-       fill="currentColor"
-       id="rect23" />
+     transform="translate(9.796405,7.2955)"
+     id="g21">
+    <path
+       id="rect20"
+       style="fill:currentColor"
+       d="m -0.025,-1.3138 h 0.05 c 0.02216,0 0.04,0.01784 0.04,0.04 v 3.0406999 c 0,0.02216 -0.01784,0.04 -0.04,0.04 h -0.05 c -0.02216,0 -0.04,-0.01784 -0.04,-0.04 V -1.2738 c 0,-0.02216 0.01784,-0.04 0.04,-0.04 z" />
   </g>
   <g
-     transform="translate(7.885,6.0768)"
-     id="g25">
+     transform="translate(8.685405,5.7955)"
+     id="g22">
     <path
        transform="scale(0.004,-0.004)"
        d="m -7,375 c 8,4 17,7 25,7 8,0 16,-3 24,-7 l -2,-183 106,20 h 3 c 10,0 18,-7 18,-17 l 7,-570 c -8,-4 -17,-7 -25,-7 -8,0 -16,3 -24,7 l 2,183 -106,-20 h -3 c -10,0 -18,7 -18,17 z M 131,112 39,95 l -3,-207 92,17 z"
        fill="currentColor"
+       id="path21" />
+  </g>
+  <g
+     transform="translate(33.974305,8.2955)"
+     id="g23">
+    <path
+       id="polygon22"
+       style="fill:currentColor;stroke:currentColor;stroke-width:0.08;stroke-linecap:round;stroke-linejoin:round"
+       d="M 17.2315,1.8 V 2.2 L 0.04,0.2 v -0.4 z" />
+  </g>
+  <g
+     transform="translate(33.974305,9.1055)"
+     id="g24">
+    <path
+       id="polygon23"
+       style="fill:currentColor;stroke:currentColor;stroke-width:0.08;stroke-linecap:round;stroke-linejoin:round"
+       d="M 17.2315,1.8 V 2.2 L 0.04,0.2 v -0.4 z" />
+  </g>
+  <g
+     transform="translate(15.528605,5.2955)"
+     id="g25">
+    <path
+       transform="scale(0.004,-0.004)"
+       d="M 0,-46 C 0,45 116,136 217,136 280,136 326,101 326,46 326,-41 216,-136 106,-136 39,-136 0,-97 0,-46 Z"
+       fill="currentColor"
        id="path24" />
   </g>
   <g
-     transform="translate(52.5081,5.5768)"
+     transform="translate(15.593605,7.2955)"
      id="g26">
-    <polygon
-       stroke-linejoin="round"
-       stroke-linecap="round"
-       stroke-width="0.08"
-       fill="currentColor"
-       stroke="currentColor"
-       points="0.04,0.2 0.04,-0.2 10.6147,0.8 10.6147,1.2 "
-       id="polygon25" />
+    <path
+       id="rect25"
+       style="fill:currentColor"
+       d="m -0.025,-1.8138 h 0.05 c 0.02216,0 0.04,0.01784 0.04,0.04 v 3.2655999 c 0,0.02216 -0.01784,0.04 -0.04,0.04 h -0.05 c -0.02216,0 -0.04,-0.01784 -0.04,-0.04 V -1.7738 c 0,-0.02216 0.01784,-0.04 0.04,-0.04 z" />
   </g>
   <g
-     transform="translate(52.5081,6.3868)"
+     transform="translate(27.122905,6.6601)"
      id="g27">
-    <polygon
-       stroke-linejoin="round"
-       stroke-linecap="round"
-       stroke-width="0.08"
-       fill="currentColor"
-       stroke="currentColor"
-       points="0.04,0.2 0.04,-0.2 10.6147,0.8 10.6147,1.2 "
-       id="polygon26" />
+    <path
+       id="polygon26"
+       style="fill:currentColor;stroke:currentColor;stroke-width:0.08;stroke-linecap:round;stroke-linejoin:round"
+       d="m 3.6407,-0.3747 v 0.4 L 0.04,0.2 v -0.4 z" />
   </g>
   <g
-     transform="translate(12.4392,5.5768)"
+     transform="translate(9.731405,8.2955)"
      id="g28">
+    <path
+       id="polygon27"
+       style="fill:currentColor;stroke:currentColor;stroke-width:0.08;stroke-linecap:round;stroke-linejoin:round"
+       d="m 21.0322,-1.2 v 0.4 L 0.04,0.2 v -0.4 z" />
+  </g>
+  <g
+     transform="translate(9.731405,9.1055)"
+     id="g29">
+    <path
+       id="polygon28"
+       style="fill:currentColor;stroke:currentColor;stroke-width:0.08;stroke-linecap:round;stroke-linejoin:round"
+       d="m 21.0322,-1.2 v 0.4 L 0.04,0.2 v -0.4 z" />
+  </g>
+  <g
+     transform="translate(21.325805,4.2955)"
+     id="g30">
     <path
        transform="scale(0.004,-0.004)"
        d="M 0,-46 C 0,45 116,136 217,136 280,136 326,101 326,46 326,-41 216,-136 106,-136 39,-136 0,-97 0,-46 Z"
        fill="currentColor"
-       id="path27" />
+       id="path29" />
   </g>
   <g
-     transform="translate(12.5042,7.5768)"
-     id="g29">
-    <rect
-       x="-0.064999998"
-       y="-1.8138"
-       width="0.13"
-       height="3.3501999"
-       ry="0.039999999"
-       fill="currentColor"
-       id="rect28" />
-  </g>
-  <g
-     transform="translate(38.9752,4.7668)"
-     id="g30">
-    <polygon
-       stroke-linejoin="round"
-       stroke-linecap="round"
-       stroke-width="0.08"
-       fill="currentColor"
-       stroke="currentColor"
-       points="0.04,0.2 0.04,-0.2 10.1147,-0.2 10.1147,0.2 "
-       id="polygon29" />
-  </g>
-  <g
-     transform="translate(38.9752,5.5768)"
+     transform="translate(21.390805,7.2955)"
      id="g31">
-    <polygon
-       stroke-linejoin="round"
-       stroke-linecap="round"
-       stroke-width="0.08"
-       fill="currentColor"
-       stroke="currentColor"
-       points="0.04,0.2 0.04,-0.2 10.1147,-0.2 10.1147,0.2 "
-       id="polygon30" />
+    <path
+       id="rect30"
+       style="fill:currentColor"
+       d="m -0.025,-2.8138001 h 0.05 c 0.02216,0 0.04,0.01784 0.04,0.04 v 3.9904999 c 0,0.02216 -0.01784,0.04 -0.04,0.04 h -0.05 c -0.02216,0 -0.04,-0.01784 -0.04,-0.04 v -3.9904999 c 0,-0.02216 0.01784,-0.04 0.04,-0.04 z" />
   </g>
   <g
-     transform="translate(15.9475,4.5768)"
+     transform="translate(20.175805,4.2955)"
      id="g32">
     <path
        transform="scale(0.004,-0.004)"
-       d="M 0,-46 C 0,45 116,136 217,136 280,136 326,101 326,46 326,-41 216,-136 106,-136 39,-136 0,-97 0,-46 Z"
+       d="m 27,41 -1,-66 v -11 c 0,-22 1,-44 4,-66 45,38 93,80 93,139 0,33 -14,67 -43,67 C 49,104 28,74 27,41 Z m -42,-179 -12,595 c 8,5 18,8 27,8 9,0 19,-3 27,-8 L 20,112 c 25,21 58,34 91,34 52,0 89,-48 89,-102 0,-80 -86,-117 -147,-169 -15,-13 -24,-38 -45,-38 -13,0 -23,11 -23,25 z"
        fill="currentColor"
        id="path31" />
   </g>
   <g
-     transform="translate(16.0125,7.5768)"
+     transform="translate(27.122905,3.7955)"
      id="g33">
-    <rect
-       x="-0.064999998"
-       y="-2.8138001"
-       width="0.13"
-       height="4.0816002"
-       ry="0.039999999"
-       fill="currentColor"
-       id="rect32" />
-  </g>
-  <g
-     transform="translate(14.7975,4.5768)"
-     id="g34">
-    <path
-       transform="scale(0.004,-0.004)"
-       d="m 27,41 -1,-66 v -11 c 0,-22 1,-44 4,-66 45,38 93,80 93,139 0,33 -14,67 -43,67 C 49,104 28,74 27,41 Z m -42,-179 -12,595 c 8,5 18,8 27,8 9,0 19,-3 27,-8 L 20,112 c 25,21 58,34 91,34 52,0 89,-48 89,-102 0,-80 -86,-117 -147,-169 -15,-13 -24,-38 -45,-38 -13,0 -23,11 -23,25 z"
-       fill="currentColor"
-       id="path33" />
-  </g>
-  <g
-     transform="translate(24.0181,8.7668)"
-     id="g35">
-    <polygon
-       stroke-linejoin="round"
-       stroke-linecap="round"
-       stroke-width="0.08"
-       fill="currentColor"
-       stroke="currentColor"
-       points="0.04,0.2 0.04,-0.2 10.3647,1.8 10.3647,2.2 "
-       id="polygon34" />
-  </g>
-  <g
-     transform="translate(24.0181,9.5768)"
-     id="g36">
-    <polygon
-       stroke-linejoin="round"
-       stroke-linecap="round"
-       stroke-width="0.08"
-       fill="currentColor"
-       stroke="currentColor"
-       points="0.04,0.2 0.04,-0.2 10.3647,1.8 10.3647,2.2 "
-       id="polygon35" />
-  </g>
-  <g
-     transform="translate(19.4557,4.0768)"
-     id="g37">
     <path
        transform="scale(0.004,-0.004)"
        d="M 0,-46 C 0,45 116,136 217,136 280,136 326,101 326,46 326,-41 216,-136 106,-136 39,-136 0,-97 0,-46 Z"
        fill="currentColor"
-       id="path36" />
+       id="path32" />
   </g>
   <g
-     transform="translate(19.5207,7.5768)"
-     id="g38">
-    <rect
-       x="-0.064999998"
-       y="-3.3138001"
-       width="0.13"
-       height="4.3130002"
-       ry="0.039999999"
-       fill="currentColor"
-       id="rect37" />
+     transform="translate(27.187905,7.2955)"
+     id="g34">
+    <path
+       id="rect33"
+       style="fill:currentColor"
+       d="m -0.025,-3.3138001 h 0.05 c 0.02216,0 0.04,0.01784 0.04,0.04 v 4.21540015 c 0,0.02216 -0.01784,0.04 -0.04,0.04 h -0.05 c -0.02216,0 -0.04,-0.01784 -0.04,-0.04 V -3.2738001 c 0,-0.02216 0.01784,-0.04 0.04,-0.04 z" />
   </g>
   <g
-     transform="translate(18.3057,4.0768)"
-     id="g39">
+     transform="translate(25.972905,3.7955)"
+     id="g35">
     <path
        transform="scale(0.004,-0.004)"
        d="m 27,41 -1,-66 v -11 c 0,-22 1,-44 4,-66 45,38 93,80 93,139 0,33 -14,67 -43,67 C 49,104 28,74 27,41 Z m -42,-179 -12,595 c 8,5 18,8 27,8 9,0 19,-3 27,-8 L 20,112 c 25,21 58,34 91,34 52,0 89,-48 89,-102 0,-80 -86,-117 -147,-169 -15,-13 -24,-38 -45,-38 -13,0 -23,11 -23,25 z"
+       fill="currentColor"
+       id="path34" />
+  </g>
+  <g
+     transform="translate(30.673605,4.2955)"
+     id="g36">
+    <path
+       transform="scale(0.004,-0.004)"
+       d="M 0,-46 C 0,45 116,136 217,136 280,136 326,101 326,46 326,-41 216,-136 106,-136 39,-136 0,-97 0,-46 Z"
+       fill="currentColor"
+       id="path35" />
+  </g>
+  <g
+     transform="translate(30.673605,2.8967)"
+     id="g37">
+    <path
+       style="font-size:2.2px;font-family:'NewComputerModern Math';white-space:pre"
+       d="m 1.056,-0.1298 c 0,-0.0242 -0.0198,-0.044 -0.044,-0.044 -0.0044,0 -0.0088,0 -0.0132,0.0022 -0.11,0.033 -0.209,0.0924 -0.2904,0.1694 -0.044,0.044 -0.0814,0.0924 -0.11440001,0.143 v -1.6434 c 0,-0.0242 -0.0198,-0.044 -0.044,-0.044 -0.0242,0 -0.044,0.0198 -0.044,0.044 v 1.6434 c -0.033,-0.0506 -0.0704,-0.099 -0.1144,-0.143 C 0.31020001,-0.0792 0.2112,-0.1386 0.1012,-0.1716 0.0968,-0.1738 0.0924,-0.1738 0.088,-0.1738 c -0.0242,0 -0.044,0.0198 -0.044,0.044 0,0.0198 0.0132,0.0352 0.0308,0.0418 0.0968,0.0286 0.18480001,0.0814 0.25520001,0.1496 0.088,0.0858 0.1628,0.18700001 0.1914,0.31020001 0.0022,0.0132 0.0154,0.022 0.0286,0.022 0.0132,0 0.0264,-0.0088 0.0286,-0.022 0.0286,-0.1232 0.1034,-0.22440001 0.19140001,-0.31020001 0.0704,-0.0682 0.1584,-0.121 0.25519998,-0.1496 C 1.0428,-0.0946 1.056,-0.11 1.056,-0.1298 Z"
+       id="text36"
+       aria-label="↓" />
+  </g>
+  <g
+     transform="translate(30.738605,7.2955)"
+     id="g38">
+    <path
+       id="rect37"
+       style="fill:currentColor"
+       d="m -0.025,-2.8138001 h 0.05 c 0.02216,0 0.04,0.01784 0.04,0.04 v 3.54689996 c 0,0.02216 -0.01784,0.04 -0.04,0.04 h -0.05 c -0.02216,0 -0.04,-0.01784 -0.04,-0.04 V -2.7738001 c 0,-0.02216 0.01784,-0.04 0.04,-0.04 z" />
+  </g>
+  <g
+     transform="translate(33.974305,5.2955)"
+     id="g39">
+    <path
+       transform="scale(0.004,-0.004)"
+       d="M 0,-46 C 0,45 116,136 217,136 280,136 326,101 326,46 326,-41 216,-136 106,-136 39,-136 0,-97 0,-46 Z"
        fill="currentColor"
        id="path38" />
   </g>
   <g
-     transform="translate(19.4557,6.961)"
+     transform="translate(33.974305,3.8967)"
      id="g40">
-    <polygon
-       stroke-linejoin="round"
-       stroke-linecap="round"
-       stroke-width="0.08"
-       fill="currentColor"
-       stroke="currentColor"
-       points="0.04,0.2 0.04,-0.2 2.4962,-0.3942 2.4962,0.0058 "
-       id="polygon39" />
+    <path
+       style="font-size:2.2px;font-family:'NewComputerModern Math';white-space:pre"
+       d="m 1.056,-0.1298 c 0,-0.0242 -0.0198,-0.044 -0.044,-0.044 -0.0044,0 -0.0088,0 -0.0132,0.0022 -0.11,0.033 -0.209,0.0924 -0.2904,0.1694 -0.044,0.044 -0.0814,0.0924 -0.11440001,0.143 v -1.6434 c 0,-0.0242 -0.0198,-0.044 -0.044,-0.044 -0.0242,0 -0.044,0.0198 -0.044,0.044 v 1.6434 c -0.033,-0.0506 -0.0704,-0.099 -0.1144,-0.143 C 0.31020001,-0.0792 0.2112,-0.1386 0.1012,-0.1716 0.0968,-0.1738 0.0924,-0.1738 0.088,-0.1738 c -0.0242,0 -0.044,0.0198 -0.044,0.044 0,0.0198 0.0132,0.0352 0.0308,0.0418 0.0968,0.0286 0.18480001,0.0814 0.25520001,0.1496 0.088,0.0858 0.1628,0.18700001 0.1914,0.31020001 0.0022,0.0132 0.0154,0.022 0.0286,0.022 0.0132,0 0.0264,-0.0088 0.0286,-0.022 0.0286,-0.1232 0.1034,-0.22440001 0.19140001,-0.31020001 0.0704,-0.0682 0.1584,-0.121 0.25519998,-0.1496 C 1.0428,-0.0946 1.056,-0.11 1.056,-0.1298 Z"
+       id="text39"
+       aria-label="↓" />
   </g>
   <g
-     transform="translate(8.931,8.5768)"
+     transform="translate(34.039305,7.2955)"
      id="g41">
-    <polygon
-       stroke-linejoin="round"
-       stroke-linecap="round"
-       stroke-width="0.08"
-       fill="currentColor"
-       stroke="currentColor"
-       points="0.04,0.2 0.04,-0.2 13.0209,-1.2 13.0209,-0.8 "
-       id="polygon40" />
+    <path
+       id="rect40"
+       style="fill:currentColor"
+       d="m -0.025,-1.8138 h 0.05 c 0.02216,0 0.04,0.01784 0.04,0.04 v 3.5513 c 0,0.02216 -0.01784,0.04 -0.04,0.04 h -0.05 c -0.02216,0 -0.04,-0.01784 -0.04,-0.04 v -3.5513 c 0,-0.02216 0.01784,-0.04 0.04,-0.04 z" />
   </g>
   <g
-     transform="translate(8.931,9.3868)"
+     transform="translate(39.771505,6.2955)"
      id="g42">
-    <polygon
-       stroke-linejoin="round"
-       stroke-linecap="round"
-       stroke-width="0.08"
-       fill="currentColor"
-       stroke="currentColor"
-       points="0.04,0.2 0.04,-0.2 13.0209,-1.2 13.0209,-0.8 "
-       id="polygon41" />
-  </g>
-  <g
-     transform="translate(21.8619,4.5768)"
-     id="g43">
     <path
        transform="scale(0.004,-0.004)"
        d="M 0,-46 C 0,45 116,136 217,136 280,136 326,101 326,46 326,-41 216,-136 106,-136 39,-136 0,-97 0,-46 Z"
        fill="currentColor"
-       id="path42" />
+       id="path41" />
   </g>
   <g
-     transform="translate(21.8619,3.1781)"
+     transform="translate(39.771505,4.3917)"
+     id="g43">
+    <path
+       style="font-size:2.2px;font-family:'NewComputerModern Math';white-space:pre"
+       d="m 1.056,-0.1298 c 0,-0.0242 -0.0198,-0.044 -0.044,-0.044 -0.0044,0 -0.0088,0 -0.0132,0.0022 -0.11,0.033 -0.209,0.0924 -0.2904,0.1694 -0.044,0.044 -0.0814,0.0924 -0.11440001,0.143 v -1.6434 c 0,-0.0242 -0.0198,-0.044 -0.044,-0.044 -0.0242,0 -0.044,0.0198 -0.044,0.044 v 1.6434 c -0.033,-0.0506 -0.0704,-0.099 -0.1144,-0.143 C 0.31020001,-0.0792 0.2112,-0.1386 0.1012,-0.1716 0.0968,-0.1738 0.0924,-0.1738 0.088,-0.1738 c -0.0242,0 -0.044,0.0198 -0.044,0.044 0,0.0198 0.0132,0.0352 0.0308,0.0418 0.0968,0.0286 0.18480001,0.0814 0.25520001,0.1496 0.088,0.0858 0.1628,0.18700001 0.1914,0.31020001 0.0022,0.0132 0.0154,0.022 0.0286,0.022 0.0132,0 0.0264,-0.0088 0.0286,-0.022 0.0286,-0.1232 0.1034,-0.22440001 0.19140001,-0.31020001 0.0704,-0.0682 0.1584,-0.121 0.25519998,-0.1496 C 1.0428,-0.0946 1.056,-0.11 1.056,-0.1298 Z"
+       id="text42"
+       aria-label="↓" />
+  </g>
+  <g
+     transform="translate(39.836505,7.2955)"
      id="g44">
-    <text
-       font-family="'NewComputerModern Math'"
-       font-size="2.2px"
-       text-anchor="start"
-       fill="currentColor"
-       id="text43"><tspan
-         id="tspan43">↓</tspan></text>
+    <path
+       id="rect43"
+       style="fill:currentColor"
+       d="m -0.025,-0.81379998 h 0.05 c 0.02216,0 0.04,0.01784 0.04,0.04 V 2.4487999 c 0,0.02216 -0.01784,0.04 -0.04,0.04 h -0.05 c -0.02216,0 -0.04,-0.01784 -0.04,-0.04 v -3.22259988 c 0,-0.02216 0.01784,-0.04 0.04,-0.04 z" />
   </g>
   <g
-     transform="translate(21.9269,7.5768)"
+     transform="translate(38.621505,6.2955)"
      id="g45">
-    <rect
-       x="-0.064999998"
-       y="-2.8138001"
-       width="0.13"
-       height="3.6287999"
-       ry="0.039999999"
+    <path
+       transform="scale(0.004,-0.004)"
+       d="m 27,41 -1,-66 v -11 c 0,-22 1,-44 4,-66 45,38 93,80 93,139 0,33 -14,67 -43,67 C 49,104 28,74 27,41 Z m -42,-179 -12,595 c 8,5 18,8 27,8 9,0 19,-3 27,-8 L 20,112 c 25,21 58,34 91,34 52,0 89,-48 89,-102 0,-80 -86,-117 -147,-169 -15,-13 -24,-38 -45,-38 -13,0 -23,11 -23,25 z"
        fill="currentColor"
-       id="rect44" />
+       id="path44" />
   </g>
   <g
-     transform="translate(24.0181,5.5768)"
+     transform="translate(45.568605,7.2955)"
      id="g46">
     <path
        transform="scale(0.004,-0.004)"
@@ -552,112 +417,94 @@ tspan { white-space: pre; }
        id="path45" />
   </g>
   <g
-     transform="translate(24.0181,4.1781)"
+     transform="translate(45.568605,4.3917)"
      id="g47">
-    <text
-       font-family="'NewComputerModern Math'"
-       font-size="2.2px"
-       text-anchor="start"
-       fill="currentColor"
-       id="text46"><tspan
-         id="tspan46">↓</tspan></text>
+    <path
+       style="font-size:2.2px;font-family:'NewComputerModern Math';white-space:pre"
+       d="m 1.056,-0.1298 c 0,-0.0242 -0.0198,-0.044 -0.044,-0.044 -0.0044,0 -0.0088,0 -0.0132,0.0022 -0.11,0.033 -0.209,0.0924 -0.2904,0.1694 -0.044,0.044 -0.0814,0.0924 -0.11440001,0.143 v -1.6434 c 0,-0.0242 -0.0198,-0.044 -0.044,-0.044 -0.0242,0 -0.044,0.0198 -0.044,0.044 v 1.6434 c -0.033,-0.0506 -0.0704,-0.099 -0.1144,-0.143 C 0.31020001,-0.0792 0.2112,-0.1386 0.1012,-0.1716 0.0968,-0.1738 0.0924,-0.1738 0.088,-0.1738 c -0.0242,0 -0.044,0.0198 -0.044,0.044 0,0.0198 0.0132,0.0352 0.0308,0.0418 0.0968,0.0286 0.18480001,0.0814 0.25520001,0.1496 0.088,0.0858 0.1628,0.18700001 0.1914,0.31020001 0.0022,0.0132 0.0154,0.022 0.0286,0.022 0.0132,0 0.0264,-0.0088 0.0286,-0.022 0.0286,-0.1232 0.1034,-0.22440001 0.19140001,-0.31020001 0.0704,-0.0682 0.1584,-0.121 0.25519998,-0.1496 C 1.0428,-0.0946 1.056,-0.11 1.056,-0.1298 Z"
+       id="text46"
+       aria-label="↓" />
   </g>
   <g
-     transform="translate(24.0831,7.5768)"
+     transform="translate(45.633605,7.2955)"
      id="g48">
-    <rect
-       x="-0.064999998"
-       y="-1.8138"
-       width="0.13"
-       height="3.8262999"
-       ry="0.039999999"
-       fill="currentColor"
-       id="rect47" />
+    <path
+       id="rect47"
+       style="fill:currentColor"
+       d="m -0.025,0.18619999 h 0.05 c 0.02216,0 0.04,0.01784 0.04,0.04 V 3.1201001 c 0,0.02216 -0.01784,0.04 -0.04,0.04 h -0.05 c -0.02216,0 -0.04,-0.01784 -0.04,-0.04 V 0.22619999 c 0,-0.02216 0.01784,-0.04 0.04,-0.04 z" />
   </g>
   <g
-     transform="translate(27.5263,6.5768)"
+     transform="translate(44.418605,7.2955)"
      id="g49">
     <path
        transform="scale(0.004,-0.004)"
-       d="M 0,-46 C 0,45 116,136 217,136 280,136 326,101 326,46 326,-41 216,-136 106,-136 39,-136 0,-97 0,-46 Z"
+       d="m 27,41 -1,-66 v -11 c 0,-22 1,-44 4,-66 45,38 93,80 93,139 0,33 -14,67 -43,67 C 49,104 28,74 27,41 Z m -42,-179 -12,595 c 8,5 18,8 27,8 9,0 19,-3 27,-8 L 20,112 c 25,21 58,34 91,34 52,0 89,-48 89,-102 0,-80 -86,-117 -147,-169 -15,-13 -24,-38 -45,-38 -13,0 -23,11 -23,25 z"
        fill="currentColor"
        id="path48" />
   </g>
   <g
-     transform="translate(27.5263,4.6731)"
+     transform="translate(51.115805,8.7955)"
      id="g50">
-    <text
-       font-family="'NewComputerModern Math'"
-       font-size="2.2px"
-       text-anchor="start"
-       fill="currentColor"
-       id="text49"><tspan
-         id="tspan49">↓</tspan></text>
-  </g>
-  <g
-     transform="translate(27.5913,7.5768)"
-     id="g51">
-    <rect
-       x="-0.064999998"
-       y="-0.81379998"
-       width="0.13"
-       height="3.5006001"
-       ry="0.039999999"
-       fill="currentColor"
-       id="rect50" />
-  </g>
-  <g
-     transform="translate(26.3763,6.5768)"
-     id="g52">
-    <path
-       transform="scale(0.004,-0.004)"
-       d="m 27,41 -1,-66 v -11 c 0,-22 1,-44 4,-66 45,38 93,80 93,139 0,33 -14,67 -43,67 C 49,104 28,74 27,41 Z m -42,-179 -12,595 c 8,5 18,8 27,8 9,0 19,-3 27,-8 L 20,112 c 25,21 58,34 91,34 52,0 89,-48 89,-102 0,-80 -86,-117 -147,-169 -15,-13 -24,-38 -45,-38 -13,0 -23,11 -23,25 z"
-       fill="currentColor"
-       id="path51" />
-  </g>
-  <g
-     transform="translate(31.0346,7.5768)"
-     id="g53">
     <path
        transform="scale(0.004,-0.004)"
        d="M 0,-46 C 0,45 116,136 217,136 280,136 326,101 326,46 326,-41 216,-136 106,-136 39,-136 0,-97 0,-46 Z"
        fill="currentColor"
-       id="path52" />
+       id="path49" />
   </g>
   <g
-     transform="translate(31.0346,4.6731)"
+     transform="translate(51.180805,7.2955)"
+     id="g51">
+    <path
+       id="rect50"
+       style="fill:currentColor"
+       d="m -0.025,1.6862 h 0.05 c 0.02216,0 0.04,0.01784 0.04,0.04 v 2.0363001 c 0,0.02216 -0.01784,0.04 -0.04,0.04 h -0.05 c -0.02216,0 -0.04,-0.01784 -0.04,-0.04 V 1.7262 c 0,-0.02216 0.01784,-0.04 0.04,-0.04 z" />
+  </g>
+  <g
+     transform="translate(56.913005,2.2955)"
+     id="g52">
+    <path
+       style="font-size:2.3308px;font-family:'NewComputerModern Math';white-space:pre"
+       d="m 1.5196816,-0.60134641 h -0.05827 c -0.05827,0.3589432 -0.1118784,0.52909161 -0.51277598,0.52909161 h -0.3099964 c -0.10954761,0 -0.11420921,-0.0163156 -0.11420921,-0.093232 v -0.62232362 h 0.20977201 c 0.2260876,0 0.2517264,0.0745856 0.2517264,0.27270361 h 0.05827 V -1.1327688 h -0.05827 c 0,0.20044878 -0.0256388,0.27270358 -0.2517264,0.27270358 H 0.52443001 V -1.4194572 c 0,-0.076916 0.004662,-0.093232 0.11420921,-0.093232 h 0.3006732 c 0.35661238,0 0.41954398,0.128194 0.45683678,0.4521752 h 0.05827 l -0.065262,-0.52443 H 0.0769164 v 0.072255 h 0.0559392 c 0.17947161,0 0.18413321,0.025639 0.18413321,0.1095476 v 1.2213392 c 0,0.0839088 -0.004662,0.1095476 -0.18413321,0.1095476 H 0.0769164 V 0 H 1.421788 Z"
+       id="text51"
+       aria-label="E" />
+  </g>
+  <g
+     transform="translate(58.483605,1.236)"
+     id="g53">
+    <path
+       style="font-size:1.648px;font-family:'NewComputerModern Math';white-space:pre"
+       d="m 0.548784,-0.529008 c 0,-0.121952 -0.09064,-0.229072 -0.225776,-0.229072 -0.092288,0 -0.158208,0.037904 -0.191168,0.069216 v -0.500992 c 0,-0.031312 0,-0.046144 -0.019776,-0.046144 -0.021424,0 -0.021424,0.013184 -0.021424,0.046144 v 1.179968 c 0,0.03296 0,0.046144 0.021424,0.046144 0.01648,0 0.187872,-0.118656 0.278512,-0.215888 0.09064,-0.097232 0.158208,-0.212592 0.158208,-0.349376 z m -0.133488,0 c 0,0.260384 -0.243904,0.46968 -0.283456,0.50264 v -0.538896 c 0,-0.037904 0,-0.072512 0.054384,-0.103824 0.051088,-0.029664 0.1236,-0.029664 0.1236,-0.029664 0.075808,0 0.105472,0.088992 0.105472,0.169744 z"
+       id="text52"
+       aria-label="♭" />
+  </g>
+  <g
+     transform="translate(59.132305,3.0901)"
      id="g54">
-    <text
-       font-family="'NewComputerModern Math'"
-       font-size="2.2px"
-       text-anchor="start"
-       fill="currentColor"
-       id="text53"><tspan
-         id="tspan53">↓</tspan></text>
+    <path
+       style="font-size:1.648px;font-family:'NewComputerModern Math';white-space:pre"
+       d="M 0.79928,-1.061312 H 0.398816 c -0.201056,0 -0.204352,-0.021424 -0.210944,-0.052736 h -0.0412 L 0.092288,-0.77456 h 0.0412 c 0.004944,-0.026368 0.019776,-0.130192 0.0412,-0.149968 0.011536,-0.009888 0.14008,-0.009888 0.161504,-0.009888 h 0.341136 l -0.184576,0.260384 c -0.14832,0.22248 -0.202704,0.451552 -0.202704,0.619648 0,0.01648 0,0.09064 0.075808,0.09064 0.075808,0 0.075808,-0.07416 0.075808,-0.09064 v -0.084048 c 0,-0.09064 0.004944,-0.18128 0.018128,-0.270272 0.006592,-0.037904 0.029664,-0.179632 0.102176,-0.281808 l 0.22248,-0.31312 C 0.79928,-1.023408 0.79928,-1.026704 0.79928,-1.061312 Z"
+       id="text53"
+       aria-label="7" />
   </g>
   <g
-     transform="translate(31.0996,7.5768)"
+     transform="translate(56.913005,7.7955)"
      id="g55">
-    <rect
-       x="-0.064999998"
-       y="0.18619999"
-       width="0.13"
-       height="3.175"
-       ry="0.039999999"
-       fill="currentColor"
-       id="rect54" />
-  </g>
-  <g
-     transform="translate(29.8846,7.5768)"
-     id="g56">
     <path
        transform="scale(0.004,-0.004)"
-       d="m 27,41 -1,-66 v -11 c 0,-22 1,-44 4,-66 45,38 93,80 93,139 0,33 -14,67 -43,67 C 49,104 28,74 27,41 Z m -42,-179 -12,595 c 8,5 18,8 27,8 9,0 19,-3 27,-8 L 20,112 c 25,21 58,34 91,34 52,0 89,-48 89,-102 0,-80 -86,-117 -147,-169 -15,-13 -24,-38 -45,-38 -13,0 -23,11 -23,25 z"
+       d="M 0,-46 C 0,45 116,136 217,136 280,136 326,101 326,46 326,-41 216,-136 106,-136 39,-136 0,-97 0,-46 Z"
        fill="currentColor"
-       id="path55" />
+       id="path54" />
   </g>
   <g
-     transform="translate(34.2928,9.0768)"
+     transform="translate(58.152205,7.2955)"
+     id="g56">
+    <path
+       id="rect55"
+       style="fill:currentColor"
+       d="m -0.025,-2.8099999 h 0.05 c 0.02216,0 0.04,0.01784 0.04,0.04 v 3.0438 c 0,0.02216 -0.01784,0.04 -0.04,0.04 h -0.05 c -0.02216,0 -0.04,-0.01784 -0.04,-0.04 v -3.0438 c 0,-0.02216 0.01784,-0.04 0.04,-0.04 z" />
+  </g>
+  <g
+     transform="translate(62.460205,8.7955)"
      id="g57">
     <path
        transform="scale(0.004,-0.004)"
@@ -666,459 +513,375 @@ tspan { white-space: pre; }
        id="path56" />
   </g>
   <g
-     transform="translate(34.3578,7.5768)"
+     transform="translate(63.699405,7.2955)"
      id="g58">
-    <rect
-       x="-0.064999998"
-       y="1.6862"
-       width="0.13"
-       height="2.3013"
-       ry="0.039999999"
-       fill="currentColor"
-       id="rect57" />
+    <path
+       id="rect57"
+       style="fill:currentColor"
+       d="m -0.025,-2.8099999 h 0.05 c 0.02216,0 0.04,0.01784 0.04,0.04 v 4.0437998 c 0,0.02216 -0.01784,0.04 -0.04,0.04 h -0.05 c -0.02216,0 -0.04,-0.01784 -0.04,-0.04 v -4.0437998 c 0,-0.02216 0.01784,-0.04 0.04,-0.04 z" />
   </g>
   <g
-     transform="translate(37.801,2.2955)"
+     transform="translate(68.257305,7.7955)"
      id="g59">
-    <text
-       font-family="'NewComputerModern Math'"
-       font-size="2.3308px"
-       text-anchor="start"
-       fill="currentColor"
-       id="text58"><tspan
-         id="tspan58">E</tspan></text>
-  </g>
-  <g
-     transform="translate(39.3716,1.236)"
-     id="g60">
-    <text
-       font-family="'NewComputerModern Math'"
-       font-size="1.648px"
-       text-anchor="start"
-       fill="currentColor"
-       id="text59"><tspan
-         id="tspan59">♭</tspan></text>
-  </g>
-  <g
-     transform="translate(40.0203,3.0901)"
-     id="g61">
-    <text
-       font-family="'NewComputerModern Math'"
-       font-size="1.648px"
-       text-anchor="start"
-       fill="currentColor"
-       id="text60"><tspan
-         id="tspan60">7</tspan></text>
-  </g>
-  <g
-     transform="translate(37.801,8.0768)"
-     id="g62">
     <path
        transform="scale(0.004,-0.004)"
        d="M 0,-46 C 0,45 116,136 217,136 280,136 326,101 326,46 326,-41 216,-136 106,-136 39,-136 0,-97 0,-46 Z"
+       fill="currentColor"
+       id="path58" />
+  </g>
+  <g
+     transform="translate(68.257305,3.3917)"
+     id="g60">
+    <path
+       style="font-size:2.2px;font-family:'NewComputerModern Math';white-space:pre"
+       d="m 1.056,-0.1298 c 0,-0.0242 -0.0198,-0.044 -0.044,-0.044 -0.0044,0 -0.0088,0 -0.0132,0.0022 -0.11,0.033 -0.209,0.0924 -0.2904,0.1694 -0.044,0.044 -0.0814,0.0924 -0.11440001,0.143 v -1.6434 c 0,-0.0242 -0.0198,-0.044 -0.044,-0.044 -0.0242,0 -0.044,0.0198 -0.044,0.044 v 1.6434 c -0.033,-0.0506 -0.0704,-0.099 -0.1144,-0.143 C 0.31020001,-0.0792 0.2112,-0.1386 0.1012,-0.1716 0.0968,-0.1738 0.0924,-0.1738 0.088,-0.1738 c -0.0242,0 -0.044,0.0198 -0.044,0.044 0,0.0198 0.0132,0.0352 0.0308,0.0418 0.0968,0.0286 0.18480001,0.0814 0.25520001,0.1496 0.088,0.0858 0.1628,0.18700001 0.1914,0.31020001 0.0022,0.0132 0.0154,0.022 0.0286,0.022 0.0132,0 0.0264,-0.0088 0.0286,-0.022 0.0286,-0.1232 0.1034,-0.22440001 0.19140001,-0.31020001 0.0704,-0.0682 0.1584,-0.121 0.25519998,-0.1496 C 1.0428,-0.0946 1.056,-0.11 1.056,-0.1298 Z"
+       id="text59"
+       aria-label="↓" />
+  </g>
+  <g
+     transform="translate(69.496505,7.2955)"
+     id="g61">
+    <path
+       id="rect60"
+       style="fill:currentColor"
+       d="m -0.025,-2.8099999 h 0.05 c 0.02216,0 0.04,0.01784 0.04,0.04 v 3.0438 c 0,0.02216 -0.01784,0.04 -0.04,0.04 h -0.05 c -0.02216,0 -0.04,-0.01784 -0.04,-0.04 v -3.0438 c 0,-0.02216 0.01784,-0.04 0.04,-0.04 z" />
+  </g>
+  <g
+     transform="translate(67.107305,7.7955)"
+     id="g62">
+    <path
+       transform="scale(0.004,-0.004)"
+       d="m 27,41 -1,-66 v -11 c 0,-22 1,-44 4,-66 45,38 93,80 93,139 0,33 -14,67 -43,67 C 49,104 28,74 27,41 Z m -42,-179 -12,595 c 8,5 18,8 27,8 9,0 19,-3 27,-8 L 20,112 c 25,21 58,34 91,34 52,0 89,-48 89,-102 0,-80 -86,-117 -147,-169 -15,-13 -24,-38 -45,-38 -13,0 -23,11 -23,25 z"
        fill="currentColor"
        id="path61" />
   </g>
   <g
-     transform="translate(39.0402,7.5768)"
+     transform="translate(73.804505,8.7955)"
      id="g63">
-    <rect
-       x="-0.064999998"
-       y="-2.8099999"
-       width="0.13"
-       height="3.1238"
-       ry="0.039999999"
+    <path
+       transform="scale(0.004,-0.004)"
+       d="M 0,-46 C 0,45 116,136 217,136 280,136 326,101 326,46 326,-41 216,-136 106,-136 39,-136 0,-97 0,-46 Z"
        fill="currentColor"
-       id="rect62" />
+       id="path62" />
   </g>
   <g
-     transform="translate(41.0592,9.0768)"
+     transform="translate(75.043705,7.2955)"
      id="g64">
     <path
-       transform="scale(0.004,-0.004)"
-       d="M 0,-46 C 0,45 116,136 217,136 280,136 326,101 326,46 326,-41 216,-136 106,-136 39,-136 0,-97 0,-46 Z"
-       fill="currentColor"
-       id="path63" />
+       id="rect63"
+       style="fill:currentColor"
+       d="m -0.025,-2.8099999 h 0.05 c 0.02216,0 0.04,0.01784 0.04,0.04 v 4.0437998 c 0,0.02216 -0.01784,0.04 -0.04,0.04 h -0.05 c -0.02216,0 -0.04,-0.01784 -0.04,-0.04 v -4.0437998 c 0,-0.02216 0.01784,-0.04 0.04,-0.04 z" />
   </g>
   <g
-     transform="translate(42.2984,7.5768)"
+     transform="translate(79.601705,8.2955)"
      id="g65">
-    <rect
-       x="-0.064999998"
-       y="-2.8099999"
-       width="0.13"
-       height="4.1237998"
-       ry="0.039999999"
-       fill="currentColor"
-       id="rect64" />
-  </g>
-  <g
-     transform="translate(44.5674,8.0768)"
-     id="g66">
     <path
        transform="scale(0.004,-0.004)"
        d="M 0,-46 C 0,45 116,136 217,136 280,136 326,101 326,46 326,-41 216,-136 106,-136 39,-136 0,-97 0,-46 Z"
        fill="currentColor"
-       id="path65" />
+       id="path64" />
   </g>
   <g
-     transform="translate(44.5674,3.6731)"
+     transform="translate(79.601705,4.3917)"
+     id="g66">
+    <path
+       style="font-size:2.2px;font-family:'NewComputerModern Math';white-space:pre"
+       d="m 1.056,-0.1298 c 0,-0.0242 -0.0198,-0.044 -0.044,-0.044 -0.0044,0 -0.0088,0 -0.0132,0.0022 -0.11,0.033 -0.209,0.0924 -0.2904,0.1694 -0.044,0.044 -0.0814,0.0924 -0.11440001,0.143 v -1.6434 c 0,-0.0242 -0.0198,-0.044 -0.044,-0.044 -0.0242,0 -0.044,0.0198 -0.044,0.044 v 1.6434 c -0.033,-0.0506 -0.0704,-0.099 -0.1144,-0.143 C 0.31020001,-0.0792 0.2112,-0.1386 0.1012,-0.1716 0.0968,-0.1738 0.0924,-0.1738 0.088,-0.1738 c -0.0242,0 -0.044,0.0198 -0.044,0.044 0,0.0198 0.0132,0.0352 0.0308,0.0418 0.0968,0.0286 0.18480001,0.0814 0.25520001,0.1496 0.088,0.0858 0.1628,0.18700001 0.1914,0.31020001 0.0022,0.0132 0.0154,0.022 0.0286,0.022 0.0132,0 0.0264,-0.0088 0.0286,-0.022 0.0286,-0.1232 0.1034,-0.22440001 0.19140001,-0.31020001 0.0704,-0.0682 0.1584,-0.121 0.25519998,-0.1496 C 1.0428,-0.0946 1.056,-0.11 1.056,-0.1298 Z"
+       id="text65"
+       aria-label="↓" />
+  </g>
+  <g
+     transform="translate(80.840905,7.2955)"
      id="g67">
-    <text
-       font-family="'NewComputerModern Math'"
-       font-size="2.2px"
-       text-anchor="start"
-       fill="currentColor"
-       id="text66"><tspan
-         id="tspan66">↓</tspan></text>
+    <path
+       id="rect66"
+       style="fill:currentColor"
+       d="m -0.025,-1.9963 h 0.05 c 0.02216,0 0.04,0.01784 0.04,0.04 v 2.7301001 c 0,0.02216 -0.01784,0.04 -0.04,0.04 h -0.05 c -0.02216,0 -0.04,-0.01784 -0.04,-0.04 V -1.9563 c 0,-0.02216 0.01784,-0.04 0.04,-0.04 z" />
   </g>
   <g
-     transform="translate(45.8066,7.5768)"
+     transform="translate(85.398805,8.7955)"
      id="g68">
-    <rect
-       x="-0.064999998"
-       y="-2.8099999"
-       width="0.13"
-       height="3.1238"
-       ry="0.039999999"
+    <path
+       transform="scale(0.004,-0.004)"
+       d="M 0,-46 C 0,45 116,136 217,136 280,136 326,101 326,46 326,-41 216,-136 106,-136 39,-136 0,-97 0,-46 Z"
        fill="currentColor"
-       id="rect67" />
+       id="path67" />
   </g>
   <g
-     transform="translate(43.4174,8.0768)"
+     transform="translate(85.398805,4.3917)"
      id="g69">
+    <path
+       style="font-size:2.2px;font-family:'NewComputerModern Math';white-space:pre"
+       d="m 1.056,-0.1298 c 0,-0.0242 -0.0198,-0.044 -0.044,-0.044 -0.0044,0 -0.0088,0 -0.0132,0.0022 -0.11,0.033 -0.209,0.0924 -0.2904,0.1694 -0.044,0.044 -0.0814,0.0924 -0.11440001,0.143 v -1.6434 c 0,-0.0242 -0.0198,-0.044 -0.044,-0.044 -0.0242,0 -0.044,0.0198 -0.044,0.044 v 1.6434 c -0.033,-0.0506 -0.0704,-0.099 -0.1144,-0.143 C 0.31020001,-0.0792 0.2112,-0.1386 0.1012,-0.1716 0.0968,-0.1738 0.0924,-0.1738 0.088,-0.1738 c -0.0242,0 -0.044,0.0198 -0.044,0.044 0,0.0198 0.0132,0.0352 0.0308,0.0418 0.0968,0.0286 0.18480001,0.0814 0.25520001,0.1496 0.088,0.0858 0.1628,0.18700001 0.1914,0.31020001 0.0022,0.0132 0.0154,0.022 0.0286,0.022 0.0132,0 0.0264,-0.0088 0.0286,-0.022 0.0286,-0.1232 0.1034,-0.22440001 0.19140001,-0.31020001 0.0704,-0.0682 0.1584,-0.121 0.25519998,-0.1496 C 1.0428,-0.0946 1.056,-0.11 1.056,-0.1298 Z"
+       id="text68"
+       aria-label="↓" />
+  </g>
+  <g
+     transform="translate(86.638005,7.2955)"
+     id="g70">
+    <path
+       id="rect69"
+       style="fill:currentColor"
+       d="m -0.025,-1.6654 h 0.05 c 0.02216,0 0.04,0.01784 0.04,0.04 v 2.8991999 c 0,0.02216 -0.01784,0.04 -0.04,0.04 h -0.05 c -0.02216,0 -0.04,-0.01784 -0.04,-0.04 V -1.6254 c 0,-0.02216 0.01784,-0.04 0.04,-0.04 z" />
+  </g>
+  <g
+     transform="translate(91.196005,9.2955)"
+     id="g71">
+    <path
+       transform="scale(0.004,-0.004)"
+       d="M 0,-46 C 0,45 116,136 217,136 280,136 326,101 326,46 326,-41 216,-136 106,-136 39,-136 0,-97 0,-46 Z"
+       fill="currentColor"
+       id="path70" />
+  </g>
+  <g
+     transform="translate(91.196005,4.3917)"
+     id="g72">
+    <path
+       style="font-size:2.2px;font-family:'NewComputerModern Math';white-space:pre"
+       d="m 1.056,-0.1298 c 0,-0.0242 -0.0198,-0.044 -0.044,-0.044 -0.0044,0 -0.0088,0 -0.0132,0.0022 -0.11,0.033 -0.209,0.0924 -0.2904,0.1694 -0.044,0.044 -0.0814,0.0924 -0.11440001,0.143 v -1.6434 c 0,-0.0242 -0.0198,-0.044 -0.044,-0.044 -0.0242,0 -0.044,0.0198 -0.044,0.044 v 1.6434 c -0.033,-0.0506 -0.0704,-0.099 -0.1144,-0.143 C 0.31020001,-0.0792 0.2112,-0.1386 0.1012,-0.1716 0.0968,-0.1738 0.0924,-0.1738 0.088,-0.1738 c -0.0242,0 -0.044,0.0198 -0.044,0.044 0,0.0198 0.0132,0.0352 0.0308,0.0418 0.0968,0.0286 0.18480001,0.0814 0.25520001,0.1496 0.088,0.0858 0.1628,0.18700001 0.1914,0.31020001 0.0022,0.0132 0.0154,0.022 0.0286,0.022 0.0132,0 0.0264,-0.0088 0.0286,-0.022 0.0286,-0.1232 0.1034,-0.22440001 0.19140001,-0.31020001 0.0704,-0.0682 0.1584,-0.121 0.25519998,-0.1496 C 1.0428,-0.0946 1.056,-0.11 1.056,-0.1298 Z"
+       id="text71"
+       aria-label="↓" />
+  </g>
+  <g
+     transform="translate(92.435205,7.2955)"
+     id="g73">
+    <path
+       id="rect72"
+       style="fill:currentColor"
+       d="m -0.025,-1.3346 h 0.05 c 0.02216,0 0.04,0.01784 0.04,0.04 v 3.0684001 c 0,0.02216 -0.01784,0.04 -0.04,0.04 h -0.05 c -0.02216,0 -0.04,-0.01784 -0.04,-0.04 V -1.2946 c 0,-0.02216 0.01784,-0.04 0.04,-0.04 z" />
+  </g>
+  <g
+     transform="translate(90.046005,9.2955)"
+     id="g74">
     <path
        transform="scale(0.004,-0.004)"
        d="m 27,41 -1,-66 v -11 c 0,-22 1,-44 4,-66 45,38 93,80 93,139 0,33 -14,67 -43,67 C 49,104 28,74 27,41 Z m -42,-179 -12,595 c 8,5 18,8 27,8 9,0 19,-3 27,-8 L 20,112 c 25,21 58,34 91,34 52,0 89,-48 89,-102 0,-80 -86,-117 -147,-169 -15,-13 -24,-38 -45,-38 -13,0 -23,11 -23,25 z"
        fill="currentColor"
-       id="path68" />
+       id="path73" />
   </g>
   <g
-     transform="translate(47.8257,9.0768)"
-     id="g70">
-    <path
-       transform="scale(0.004,-0.004)"
-       d="M 0,-46 C 0,45 116,136 217,136 280,136 326,101 326,46 326,-41 216,-136 106,-136 39,-136 0,-97 0,-46 Z"
-       fill="currentColor"
-       id="path69" />
-  </g>
-  <g
-     transform="translate(49.0649,7.5768)"
-     id="g71">
-    <rect
-       x="-0.064999998"
-       y="-2.8099999"
-       width="0.13"
-       height="4.1237998"
-       ry="0.039999999"
-       fill="currentColor"
-       id="rect70" />
-  </g>
-  <g
-     transform="translate(51.3339,8.5768)"
-     id="g72">
-    <path
-       transform="scale(0.004,-0.004)"
-       d="M 0,-46 C 0,45 116,136 217,136 280,136 326,101 326,46 326,-41 216,-136 106,-136 39,-136 0,-97 0,-46 Z"
-       fill="currentColor"
-       id="path71" />
-  </g>
-  <g
-     transform="translate(51.3339,4.6731)"
-     id="g73">
-    <text
-       font-family="'NewComputerModern Math'"
-       font-size="2.2px"
-       text-anchor="start"
-       fill="currentColor"
-       id="text72"><tspan
-         id="tspan72">↓</tspan></text>
-  </g>
-  <g
-     transform="translate(52.5731,7.5768)"
-     id="g74">
-    <rect
-       x="-0.064999998"
-       y="-1.9938999"
-       width="0.13"
-       height="2.8076999"
-       ry="0.039999999"
-       fill="currentColor"
-       id="rect73" />
-  </g>
-  <g
-     transform="translate(54.8421,9.0768)"
+     transform="translate(95.843205,9.7955)"
      id="g75">
     <path
        transform="scale(0.004,-0.004)"
-       d="M 0,-46 C 0,45 116,136 217,136 280,136 326,101 326,46 326,-41 216,-136 106,-136 39,-136 0,-97 0,-46 Z"
+       d="m 27,41 -1,-66 v -11 c 0,-22 1,-44 4,-66 45,38 93,80 93,139 0,33 -14,67 -43,67 C 49,104 28,74 27,41 Z m -42,-179 -12,595 c 8,5 18,8 27,8 9,0 19,-3 27,-8 L 20,112 c 25,21 58,34 91,34 52,0 89,-48 89,-102 0,-80 -86,-117 -147,-169 -15,-13 -24,-38 -45,-38 -13,0 -23,11 -23,25 z"
        fill="currentColor"
        id="path74" />
   </g>
   <g
-     transform="translate(54.8421,4.6731)"
+     transform="translate(96.993205,9.7955)"
      id="g76">
-    <text
-       font-family="'NewComputerModern Math'"
-       font-size="2.2px"
-       text-anchor="start"
+    <path
+       transform="scale(0.004,-0.004)"
+       d="M 0,-46 C 0,45 116,136 217,136 280,136 326,101 326,46 326,-41 216,-136 106,-136 39,-136 0,-97 0,-46 Z"
        fill="currentColor"
-       id="text75"><tspan
-         id="tspan75">↓</tspan></text>
+       id="path75" />
   </g>
   <g
-     transform="translate(56.0813,7.5768)"
+     transform="translate(96.993205,4.3917)"
      id="g77">
-    <rect
-       x="-0.064999998"
-       y="-1.6646"
-       width="0.13"
-       height="2.9784"
-       ry="0.039999999"
-       fill="currentColor"
-       id="rect76" />
+    <path
+       style="font-size:2.2px;font-family:'NewComputerModern Math';white-space:pre"
+       d="m 1.056,-0.1298 c 0,-0.0242 -0.0198,-0.044 -0.044,-0.044 -0.0044,0 -0.0088,0 -0.0132,0.0022 -0.11,0.033 -0.209,0.0924 -0.2904,0.1694 -0.044,0.044 -0.0814,0.0924 -0.11440001,0.143 v -1.6434 c 0,-0.0242 -0.0198,-0.044 -0.044,-0.044 -0.0242,0 -0.044,0.0198 -0.044,0.044 v 1.6434 c -0.033,-0.0506 -0.0704,-0.099 -0.1144,-0.143 C 0.31020001,-0.0792 0.2112,-0.1386 0.1012,-0.1716 0.0968,-0.1738 0.0924,-0.1738 0.088,-0.1738 c -0.0242,0 -0.044,0.0198 -0.044,0.044 0,0.0198 0.0132,0.0352 0.0308,0.0418 0.0968,0.0286 0.18480001,0.0814 0.25520001,0.1496 0.088,0.0858 0.1628,0.18700001 0.1914,0.31020001 0.0022,0.0132 0.0154,0.022 0.0286,0.022 0.0132,0 0.0264,-0.0088 0.0286,-0.022 0.0286,-0.1232 0.1034,-0.22440001 0.19140001,-0.31020001 0.0704,-0.0682 0.1584,-0.121 0.25519998,-0.1496 C 1.0428,-0.0946 1.056,-0.11 1.056,-0.1298 Z"
+       id="text76"
+       aria-label="↓" />
   </g>
   <g
-     transform="translate(58.3503,9.5768)"
+     transform="translate(98.232405,7.2955)"
      id="g78">
     <path
-       transform="scale(0.004,-0.004)"
-       d="M 0,-46 C 0,45 116,136 217,136 280,136 326,101 326,46 326,-41 216,-136 106,-136 39,-136 0,-97 0,-46 Z"
-       fill="currentColor"
-       id="path77" />
+       id="rect77"
+       style="fill:currentColor"
+       d="m -0.025,-1.0037 h 0.05 c 0.02216,0 0.04,0.01784 0.04,0.04 v 3.2375001 c 0,0.02216 -0.01784,0.04 -0.04,0.04 h -0.05 c -0.02216,0 -0.04,-0.01784 -0.04,-0.04 v -3.23750012 c 0,-0.02216 0.01784,-0.04 0.04,-0.04 z" />
   </g>
   <g
-     transform="translate(58.3503,4.6731)"
+     transform="translate(44.224005,23.2955)"
      id="g79">
-    <text
-       font-family="'NewComputerModern Math'"
-       font-size="2.2px"
-       text-anchor="start"
-       fill="currentColor"
-       id="text78"><tspan
-         id="tspan78">↓</tspan></text>
+    <path
+       id="rect78"
+       style="fill:currentColor"
+       d="M 0,-2 H 0.19 V 2 H 0 Z" />
   </g>
   <g
-     transform="translate(59.5895,7.5768)"
+     transform="translate(43.734005,23.2955)"
      id="g80">
-    <rect
-       x="-0.064999998"
-       y="-1.3354"
-       width="0.13"
-       height="3.1492"
-       ry="0.039999999"
-       fill="currentColor"
-       id="rect79" />
+    <path
+       id="rect79"
+       style="fill:currentColor"
+       d="M 0,-2 H 0.19 V 2 H 0 Z" />
   </g>
   <g
-     transform="translate(57.2003,9.5768)"
+     transform="translate(0.800405,26.2955)"
      id="g81">
     <path
-       transform="scale(0.004,-0.004)"
-       d="m 27,41 -1,-66 v -11 c 0,-22 1,-44 4,-66 45,38 93,80 93,139 0,33 -14,67 -43,67 C 49,104 28,74 27,41 Z m -42,-179 -12,595 c 8,5 18,8 27,8 9,0 19,-3 27,-8 L 20,112 c 25,21 58,34 91,34 52,0 89,-48 89,-102 0,-80 -86,-117 -147,-169 -15,-13 -24,-38 -45,-38 -13,0 -23,11 -23,25 z"
-       fill="currentColor"
-       id="path80" />
+       id="rect80"
+       style="fill:currentColor"
+       d="m 5.574,-0.1 h 1.7563 c 0.0554,0 0.1,0.0446 0.1,0.1 0,0.0554 -0.0446,0.1 -0.1,0.1 H 5.574 c -0.0554,0 -0.1,-0.0446 -0.1,-0.1 0,-0.0554 0.0446,-0.1 0.1,-0.1 z" />
   </g>
   <g
-     transform="translate(61.8586,10.0768)"
+     transform="translate(0.800405,25.2955)"
      id="g82">
     <path
-       transform="scale(0.004,-0.004)"
-       d="M 0,-46 C 0,45 116,136 217,136 280,136 326,101 326,46 326,-41 216,-136 106,-136 39,-136 0,-97 0,-46 Z"
-       fill="currentColor"
-       id="path81" />
+       id="line81"
+       style="stroke:currentColor;stroke-width:0.1;stroke-linecap:round;stroke-linejoin:round"
+       d="M 0.05,0 H 43.563599" />
   </g>
   <g
-     transform="translate(61.8586,4.6731)"
+     transform="translate(0.800405,24.2955)"
      id="g83">
-    <text
-       font-family="'NewComputerModern Math'"
-       font-size="2.2px"
-       text-anchor="start"
-       fill="currentColor"
-       id="text82"><tspan
-         id="tspan82">↓</tspan></text>
+    <path
+       id="line82"
+       style="stroke:currentColor;stroke-width:0.1;stroke-linecap:round;stroke-linejoin:round"
+       d="M 0.05,0 H 43.563599" />
   </g>
   <g
-     transform="translate(63.0978,7.5768)"
+     transform="translate(0.800405,23.2955)"
      id="g84">
-    <rect
-       x="-0.064999998"
-       y="-1.0061001"
-       width="0.13"
-       height="3.3199"
-       ry="0.039999999"
-       fill="currentColor"
-       id="rect83" />
+    <path
+       id="line83"
+       style="stroke:currentColor;stroke-width:0.1;stroke-linecap:round;stroke-linejoin:round"
+       d="M 0.05,0 H 43.563599" />
   </g>
   <g
-     transform="translate(60.7086,10.0768)"
+     transform="translate(0.800405,22.2955)"
      id="g85">
     <path
-       transform="scale(0.004,-0.004)"
-       d="m 27,41 -1,-66 v -11 c 0,-22 1,-44 4,-66 45,38 93,80 93,139 0,33 -14,67 -43,67 C 49,104 28,74 27,41 Z m -42,-179 -12,595 c 8,5 18,8 27,8 9,0 19,-3 27,-8 L 20,112 c 25,21 58,34 91,34 52,0 89,-48 89,-102 0,-80 -86,-117 -147,-169 -15,-13 -24,-38 -45,-38 -13,0 -23,11 -23,25 z"
-       fill="currentColor"
-       id="path84" />
+       id="line84"
+       style="stroke:currentColor;stroke-width:0.1;stroke-linecap:round;stroke-linejoin:round"
+       d="M 0.05,0 H 43.563599" />
   </g>
   <g
-     transform="translate(66.6741,2.2955)"
+     transform="translate(0.800405,21.2955)"
      id="g86">
-    <text
-       font-family="'NewComputerModern Math'"
-       font-size="2.3308px"
-       text-anchor="start"
-       fill="currentColor"
-       id="text85"><tspan
-         id="tspan85">A</tspan></text>
+    <path
+       id="line85"
+       style="stroke:currentColor;stroke-width:0.1;stroke-linecap:round;stroke-linejoin:round"
+       d="M 0.05,0 H 43.563599" />
   </g>
   <g
-     transform="translate(68.4154,1.236)"
+     transform="translate(7.774605,21.4855)"
      id="g87">
-    <text
-       font-family="'NewComputerModern Math'"
-       font-size="1.648px"
-       text-anchor="start"
-       fill="currentColor"
-       id="text86"><tspan
-         id="tspan86">♭</tspan></text>
+    <path
+       id="polygon86"
+       style="fill:currentColor;stroke:currentColor;stroke-width:0.08;stroke-linecap:round;stroke-linejoin:round"
+       d="m 11.2026,-1.2 v 0.4 L 0.04,0.2 v -0.4 z" />
   </g>
   <g
-     transform="translate(69.0641,3.0901)"
+     transform="translate(7.774605,22.2955)"
      id="g88">
-    <text
-       font-family="'NewComputerModern Math'"
-       font-size="1.648px"
-       text-anchor="start"
-       fill="currentColor"
-       id="text87"><tspan
-         id="tspan87">△</tspan></text>
+    <path
+       id="polygon87"
+       style="fill:currentColor;stroke:currentColor;stroke-width:0.08;stroke-linecap:round;stroke-linejoin:round"
+       d="m 11.2026,-1.2 v 0.4 L 0.04,0.2 v -0.4 z" />
   </g>
   <g
-     transform="translate(70.6689,3.0901)"
+     transform="translate(1.600405,24.2955)"
      id="g89">
-    <text
-       font-family="'NewComputerModern Math'"
-       font-size="1.648px"
-       text-anchor="start"
+    <path
+       transform="scale(0.004,-0.004)"
+       d="m 266,-635 h -6 c -108,0 -195,88 -195,197 0,58 53,103 112,103 54,0 95,-47 95,-103 0,-52 -43,-95 -95,-95 -11,0 -21,2 -31,6 26,-39 68,-65 117,-65 h 4 z m 135,786 c 19,-89 48,-242 60,-354 76,27 112,94 112,163 0,89 -60,179 -172,191 z M 74,28 c 0,-112 98,-247 278,-247 21,0 44,2 68,6 -7,64 -29,203 -63,364 -79,-8 -124,-61 -124,-119 0,-44 25,-91 81,-123 5,-5 7,-10 7,-15 0,-11 -10,-22 -22,-22 -15,0 -126,62 -126,187 0,88 58,174 160,197 -14,58 -29,117 -46,175 C 180,310 74,188 74,28 Z m 283,1166 c 28,0 143,-206 143,-361 0,-143 -86,-255 -180,-364 21,-68 39,-138 56,-207 5,0 10,1 14,1 155,0 255,-129 255,-262 0,-113 -74,-212 -180,-245 3,-35 5,-70 5,-105 0,-19 -1,-39 -2,-58 -7,-119 -88,-225 -202,-228 l 1,43 c 93,2 153,92 159,191 1,18 2,37 2,55 0,31 -1,61 -4,92 -28,-5 -55,-8 -80,-8 -239,0 -342,217 -342,374 0,177 131,306 248,441 -29,96 -52,170 -52,346 0,189 144,295 159,295 z M 247,782 c 0,-55 12,-115 35,-190 83,100 147,202 147,326 0,40 -6,82 -21,127 -49,-24 -161,-97 -161,-263 z"
        fill="currentColor"
-       id="text88"><tspan
-         id="tspan88">7</tspan></text>
+       id="path88" />
   </g>
   <g
-     transform="translate(66.6741,10.5768)"
+     transform="translate(-0.087295,20.2455)"
      id="g90">
     <path
-       transform="scale(0.004,-0.004)"
-       d="M 0,-46 C 0,45 116,136 217,136 280,136 326,101 326,46 326,-41 216,-136 106,-136 39,-136 0,-97 0,-46 Z"
-       fill="currentColor"
-       id="path89" />
+       style="font-size:1.7459px;font-family:'NewComputerModern Math';white-space:pre"
+       d="m 0.78390912,-0.30378661 h -0.0436475 c -0.00873,0.052377 -0.0209508,0.12919661 -0.0384098,0.15538511 -0.0122213,0.0139672 -0.1274507,0.0139672 -0.1658605,0.0139672 H 0.2217293 l 0.18506541,-0.17982771 c 0.2723604,-0.2409342 0.37711441,-0.3352128 0.37711441,-0.50980281 0,-0.19903258 -0.15713101,-0.33870458 -0.37013081,-0.33870458 -0.19728671,0 -0.32648331,0.1606228 -0.32648331,0.31600788 0,0.0977704 0.087295,0.0977704 0.0925327,0.0977704 0.0296803,0 0.0907868,-0.0209508 0.0907868,-0.0925327 0,-0.0453934 -0.0314262,-0.0907868 -0.0925327,-0.0907868 -0.0139672,0 -0.017459,0 -0.0226967,0.001746 0.0401557,-0.11348348 0.13443431,-0.17808178 0.23569651,-0.17808178 0.1588769,0 0.2339506,0.14141788 0.2339506,0.28458168 0,0.13967201 -0.087295,0.27759811 -0.1833195,0.38584391 L 0.1064999,-0.0645983 C 0.087295,-0.0453934 0.087295,-0.0419016 0.087295,0 h 0.64772891 z"
+       id="text89"
+       aria-label="2" />
   </g>
   <g
-     transform="translate(66.6741,4.6731)"
+     transform="translate(6.600405,17.7955)"
      id="g91">
-    <text
-       font-family="'NewComputerModern Math'"
-       font-size="2.2px"
-       text-anchor="start"
-       fill="currentColor"
-       id="text90"><tspan
-         id="tspan90">↓</tspan></text>
+    <path
+       style="font-size:2.3308px;font-family:'NewComputerModern Math';white-space:pre"
+       d="m 1.6711836,0 v -0.0722548 h -0.041954 c -0.139848,0 -0.1724792,-0.0163156 -0.198118,-0.093232 l -0.50345278,-1.45675 c -0.011654,-0.0303 -0.0163156,-0.046616 -0.0536084,-0.046616 -0.0372928,0 -0.0442852,0.013985 -0.0559392,0.046616 L 0.33563521,-0.22841841 C 0.29368081,-0.1095476 0.2004488,-0.0745856 0.0745856,-0.0722548 V 0 L 0.31232721,-0.0069924 0.58036921,0 v -0.0722548 c -0.11654,0 -0.17481,-0.05827 -0.17481,-0.1188708 0,-0.006992 0.002331,-0.0303004 0.004662,-0.034962 l 0.1072168,-0.3053348 H 1.0931452 L 1.2166776,-0.17481 c 0.00233,0.009323 0.00699,0.023308 0.00699,0.0326312 0,0.069924 -0.1305248,0.069924 -0.1934564,0.069924 V 0 C 1.1141202,-0.0069924 1.277276,-0.0069924 1.3658464,-0.0069924 Z M 1.0675064,-0.60367721 H 0.54307641 L 0.80412602,-1.3611872 Z"
+       id="text90"
+       aria-label="A" />
   </g>
   <g
-     transform="translate(67.9133,7.5768)"
+     transform="translate(8.341705,16.736)"
      id="g92">
-    <rect
-       x="-0.064999998"
-       y="-1.8161"
-       width="0.13"
-       height="4.6299"
-       ry="0.039999999"
-       fill="currentColor"
-       id="rect91" />
+    <path
+       style="font-size:1.648px;font-family:'NewComputerModern Math';white-space:pre"
+       d="m 0.548784,-0.529008 c 0,-0.121952 -0.09064,-0.229072 -0.225776,-0.229072 -0.092288,0 -0.158208,0.037904 -0.191168,0.069216 v -0.500992 c 0,-0.031312 0,-0.046144 -0.019776,-0.046144 -0.021424,0 -0.021424,0.013184 -0.021424,0.046144 v 1.179968 c 0,0.03296 0,0.046144 0.021424,0.046144 0.01648,0 0.187872,-0.118656 0.278512,-0.215888 0.09064,-0.097232 0.158208,-0.212592 0.158208,-0.349376 z m -0.133488,0 c 0,0.260384 -0.243904,0.46968 -0.283456,0.50264 v -0.538896 c 0,-0.037904 0,-0.072512 0.054384,-0.103824 0.051088,-0.029664 0.1236,-0.029664 0.1236,-0.029664 0.075808,0 0.105472,0.088992 0.105472,0.169744 z"
+       id="text91"
+       aria-label="♭" />
   </g>
   <g
-     transform="translate(70.1823,9.5768)"
+     transform="translate(8.990505,18.5901)"
      id="g93">
     <path
-       transform="scale(0.004,-0.004)"
-       d="M 0,-46 C 0,45 116,136 217,136 280,136 326,101 326,46 326,-41 216,-136 106,-136 39,-136 0,-97 0,-46 Z"
-       fill="currentColor"
-       id="path92" />
+       style="font-size:1.648px;font-family:'NewComputerModern Math';white-space:pre"
+       d="m 1.502976,-0.02472 c 0,-0.004944 -0.00165,-0.011536 -0.00494,-0.01648 L 0.825648,-1.204688 c -0.004944,-0.00989 -0.01648,-0.01648 -0.028016,-0.01648 -0.013184,0 -0.023072,0.00659 -0.028016,0.01648 L 0.097232,-0.0412 c -0.003296,0.004944 -0.004944,0.011536 -0.004944,0.01648 0,0.019776 0.014832,0.03296 0.03296,0.03296 h 1.344768 c 0.018128,0 0.03296,-0.013184 0.03296,-0.03296 z M 1.412336,-0.05768 H 0.182928 l 0.614704,-1.064608 z"
+       id="text92"
+       aria-label="△" />
   </g>
   <g
-     transform="translate(71.4215,7.5768)"
+     transform="translate(10.595205,18.5901)"
      id="g94">
-    <rect
-       x="-0.064999998"
-       y="-2.1454"
-       width="0.13"
-       height="3.9591999"
-       ry="0.039999999"
-       fill="currentColor"
-       id="rect93" />
+    <path
+       style="font-size:1.648px;font-family:'NewComputerModern Math';white-space:pre"
+       d="M 0.79928,-1.061312 H 0.398816 c -0.201056,0 -0.204352,-0.021424 -0.210944,-0.052736 h -0.0412 L 0.092288,-0.77456 h 0.0412 c 0.004944,-0.026368 0.019776,-0.130192 0.0412,-0.149968 0.011536,-0.009888 0.14008,-0.009888 0.161504,-0.009888 h 0.341136 l -0.184576,0.260384 c -0.14832,0.22248 -0.202704,0.451552 -0.202704,0.619648 0,0.01648 0,0.09064 0.075808,0.09064 0.075808,0 0.075808,-0.07416 0.075808,-0.09064 v -0.084048 c 0,-0.09064 0.004944,-0.18128 0.018128,-0.270272 0.006592,-0.037904 0.029664,-0.179632 0.102176,-0.281808 l 0.22248,-0.31312 C 0.79928,-1.023408 0.79928,-1.026704 0.79928,-1.061312 Z"
+       id="text93"
+       aria-label="7" />
   </g>
   <g
-     transform="translate(69.0323,9.5768)"
+     transform="translate(6.600405,26.2955)"
      id="g95">
     <path
        transform="scale(0.004,-0.004)"
-       d="m 27,41 -1,-66 v -11 c 0,-22 1,-44 4,-66 45,38 93,80 93,139 0,33 -14,67 -43,67 C 49,104 28,74 27,41 Z m -42,-179 -12,595 c 8,5 18,8 27,8 9,0 19,-3 27,-8 L 20,112 c 25,21 58,34 91,34 52,0 89,-48 89,-102 0,-80 -86,-117 -147,-169 -15,-13 -24,-38 -45,-38 -13,0 -23,11 -23,25 z"
+       d="M 0,-46 C 0,45 116,136 217,136 280,136 326,101 326,46 326,-41 216,-136 106,-136 39,-136 0,-97 0,-46 Z"
        fill="currentColor"
        id="path94" />
   </g>
   <g
-     transform="translate(94.7399,7.5768)"
+     transform="translate(6.600405,20.3917)"
      id="g96">
     <path
-       transform="scale(0.004,-0.004)"
-       d="M 365,0 H 10 C 4,0 0,4 0,10 v 136 c 0,6 4,10 10,10 h 355 c 6,0 10,-4 10,-10 V 10 C 375,4 371,0 365,0 Z"
-       fill="currentColor"
-       id="path95" />
+       style="font-size:2.2px;font-family:'NewComputerModern Math';white-space:pre"
+       d="m 1.056,-0.1298 c 0,-0.0242 -0.0198,-0.044 -0.044,-0.044 -0.0044,0 -0.0088,0 -0.0132,0.0022 -0.11,0.033 -0.209,0.0924 -0.2904,0.1694 -0.044,0.044 -0.0814,0.0924 -0.11440001,0.143 v -1.6434 c 0,-0.0242 -0.0198,-0.044 -0.044,-0.044 -0.0242,0 -0.044,0.0198 -0.044,0.044 v 1.6434 c -0.033,-0.0506 -0.0704,-0.099 -0.1144,-0.143 C 0.31020001,-0.0792 0.2112,-0.1386 0.1012,-0.1716 0.0968,-0.1738 0.0924,-0.1738 0.088,-0.1738 c -0.0242,0 -0.044,0.0198 -0.044,0.044 0,0.0198 0.0132,0.0352 0.0308,0.0418 0.0968,0.0286 0.18480001,0.0814 0.25520001,0.1496 0.088,0.0858 0.1628,0.18700001 0.1914,0.31020001 0.0022,0.0132 0.0154,0.022 0.0286,0.022 0.0132,0 0.0264,-0.0088 0.0286,-0.022 0.0286,-0.1232 0.1034,-0.22440001 0.19140001,-0.31020001 0.0704,-0.0682 0.1584,-0.121 0.25519998,-0.1496 C 1.0428,-0.0946 1.056,-0.11 1.056,-0.1298 Z"
+       id="text95"
+       aria-label="↓" />
   </g>
   <g
-     transform="translate(73.6906,9.0768)"
+     transform="translate(7.839605,23.2955)"
      id="g97">
     <path
-       transform="scale(0.004,-0.004)"
-       d="M 0,-46 C 0,45 116,136 217,136 280,136 326,101 326,46 326,-41 216,-136 106,-136 39,-136 0,-97 0,-46 Z"
-       fill="currentColor"
-       id="path96" />
+       id="rect96"
+       style="fill:currentColor"
+       d="m -0.025,-1.8158 h 0.05 c 0.02216,0 0.04,0.01784 0.04,0.04 v 4.5496001 c 0,0.02216 -0.01784,0.04 -0.04,0.04 h -0.05 c -0.02216,0 -0.04,-0.01784 -0.04,-0.04 V -1.7758 c 0,-0.02216 0.01784,-0.04 0.04,-0.04 z" />
   </g>
   <g
-     transform="translate(74.9298,7.5768)"
+     transform="translate(10.304605,25.2955)"
      id="g98">
-    <rect
-       x="-0.064999998"
-       y="-2.4746001"
-       width="0.13"
-       height="3.7883999"
-       ry="0.039999999"
-       fill="currentColor"
-       id="rect97" />
-  </g>
-  <g
-     transform="translate(77.1988,8.5768)"
-     id="g99">
     <path
        transform="scale(0.004,-0.004)"
        d="M 0,-46 C 0,45 116,136 217,136 280,136 326,101 326,46 326,-41 216,-136 106,-136 39,-136 0,-97 0,-46 Z"
        fill="currentColor"
-       id="path98" />
+       id="path97" />
   </g>
   <g
-     transform="translate(78.438,7.5768)"
+     transform="translate(11.543805,23.2955)"
+     id="g99">
+    <path
+       id="rect98"
+       style="fill:currentColor"
+       d="m -0.025,-2.1452999 h 0.05 c 0.02216,0 0.04,0.01784 0.04,0.04 v 3.8791 c 0,0.02216 -0.01784,0.04 -0.04,0.04 h -0.05 c -0.02216,0 -0.04,-0.01784 -0.04,-0.04 v -3.8791 c 0,-0.02216 0.01784,-0.04 0.04,-0.04 z" />
+  </g>
+  <g
+     transform="translate(9.154605,25.2955)"
      id="g100">
-    <rect
-       x="-0.064999998"
-       y="-2.8039"
-       width="0.13"
-       height="3.6177001"
-       ry="0.039999999"
+    <path
+       transform="scale(0.004,-0.004)"
+       d="m 27,41 -1,-66 v -11 c 0,-22 1,-44 4,-66 45,38 93,80 93,139 0,33 -14,67 -43,67 C 49,104 28,74 27,41 Z m -42,-179 -12,595 c 8,5 18,8 27,8 9,0 19,-3 27,-8 L 20,112 c 25,21 58,34 91,34 52,0 89,-48 89,-102 0,-80 -86,-117 -147,-169 -15,-13 -24,-38 -45,-38 -13,0 -23,11 -23,25 z"
        fill="currentColor"
-       id="rect99" />
+       id="path99" />
   </g>
   <g
-     transform="translate(80.707,7.5768)"
+     transform="translate(14.008805,24.7955)"
      id="g101">
     <path
        transform="scale(0.004,-0.004)"
@@ -1127,96 +890,139 @@ tspan { white-space: pre; }
        id="path100" />
   </g>
   <g
-     transform="translate(81.9462,7.5768)"
+     transform="translate(15.248005,23.2955)"
      id="g102">
-    <rect
-       x="-0.064999998"
-       y="-3.0030999"
-       width="0.13"
-       height="2.8169"
-       ry="0.039999999"
-       fill="currentColor"
-       id="rect101" />
+    <path
+       id="rect101"
+       style="fill:currentColor"
+       d="m -0.025,-2.4747 h 0.05 c 0.02216,0 0.04,0.01784 0.04,0.04 v 3.7085001 c 0,0.02216 -0.01784,0.04 -0.04,0.04 h -0.05 c -0.02216,0 -0.04,-0.01784 -0.04,-0.04 V -2.4347 c 0,-0.02216 0.01784,-0.04 0.04,-0.04 z" />
   </g>
   <g
-     transform="translate(79.557,7.5768)"
+     transform="translate(17.713005,24.2955)"
      id="g103">
     <path
        transform="scale(0.004,-0.004)"
-       d="m 27,41 -1,-66 v -11 c 0,-22 1,-44 4,-66 45,38 93,80 93,139 0,33 -14,67 -43,67 C 49,104 28,74 27,41 Z m -42,-179 -12,595 c 8,5 18,8 27,8 9,0 19,-3 27,-8 L 20,112 c 25,21 58,34 91,34 52,0 89,-48 89,-102 0,-80 -86,-117 -147,-169 -15,-13 -24,-38 -45,-38 -13,0 -23,11 -23,25 z"
+       d="M 0,-46 C 0,45 116,136 217,136 280,136 326,101 326,46 326,-41 216,-136 106,-136 39,-136 0,-97 0,-46 Z"
        fill="currentColor"
        id="path102" />
   </g>
   <g
-     transform="translate(83.9652,8.5768)"
+     transform="translate(18.952205,23.2955)"
      id="g104">
     <path
-       transform="scale(0.004,-0.004)"
-       d="M 0,-46 C 0,45 116,136 217,136 280,136 326,101 326,46 326,-41 216,-136 106,-136 39,-136 0,-97 0,-46 Z"
-       fill="currentColor"
-       id="path103" />
+       id="rect103"
+       style="fill:currentColor"
+       d="m -0.025,-2.8041999 h 0.05 c 0.02216,0 0.04,0.01784 0.04,0.04 v 3.538 c 0,0.02216 -0.01784,0.04 -0.04,0.04 h -0.05 c -0.02216,0 -0.04,-0.01784 -0.04,-0.04 v -3.538 c 0,-0.02216 0.01784,-0.04 0.04,-0.04 z" />
   </g>
   <g
-     transform="translate(85.2044,7.5768)"
+     transform="translate(22.591405,20.2955)"
      id="g105">
-    <rect
-       x="-0.064999998"
-       y="-3.1559999"
-       width="0.13"
-       height="3.9698"
-       ry="0.039999999"
-       fill="currentColor"
-       id="rect104" />
+    <path
+       id="polygon104"
+       style="fill:currentColor;stroke:currentColor;stroke-width:0.08;stroke-linecap:round;stroke-linejoin:round"
+       d="m 11.2026,-0.7 v 0.4 L 0.04,0.2 v -0.4 z" />
   </g>
   <g
-     transform="translate(87.4734,8.0768)"
+     transform="translate(22.591405,21.1055)"
      id="g106">
+    <path
+       id="polygon105"
+       style="fill:currentColor;stroke:currentColor;stroke-width:0.08;stroke-linecap:round;stroke-linejoin:round"
+       d="m 11.2026,-0.7 v 0.4 L 0.04,0.2 v -0.4 z" />
+  </g>
+  <g
+     transform="translate(21.417205,23.2955)"
+     id="g107">
     <path
        transform="scale(0.004,-0.004)"
        d="M 0,-46 C 0,45 116,136 217,136 280,136 326,101 326,46 326,-41 216,-136 106,-136 39,-136 0,-97 0,-46 Z"
        fill="currentColor"
-       id="path105" />
+       id="path106" />
   </g>
   <g
-     transform="translate(88.7126,7.5768)"
-     id="g107">
-    <rect
-       x="-0.064999998"
-       y="-3.3206"
-       width="0.13"
-       height="3.6343999"
-       ry="0.039999999"
-       fill="currentColor"
-       id="rect106" />
-  </g>
-  <g
-     transform="translate(86.3234,8.0768)"
+     transform="translate(22.656405,23.2955)"
      id="g108">
+    <path
+       id="rect107"
+       style="fill:currentColor"
+       d="m -0.025,-3.0028999 h 0.05 c 0.02216,0 0.04,0.01784 0.04,0.04 v 2.7367 c 0,0.02216 -0.01784,0.04 -0.04,0.04 h -0.05 c -0.02216,0 -0.04,-0.01784 -0.04,-0.04 v -2.7367 c 0,-0.02216 0.01784,-0.04 0.04,-0.04 z" />
+  </g>
+  <g
+     transform="translate(20.267205,23.2955)"
+     id="g109">
     <path
        transform="scale(0.004,-0.004)"
        d="m 27,41 -1,-66 v -11 c 0,-22 1,-44 4,-66 45,38 93,80 93,139 0,33 -14,67 -43,67 C 49,104 28,74 27,41 Z m -42,-179 -12,595 c 8,5 18,8 27,8 9,0 19,-3 27,-8 L 20,112 c 25,21 58,34 91,34 52,0 89,-48 89,-102 0,-80 -86,-117 -147,-169 -15,-13 -24,-38 -45,-38 -13,0 -23,11 -23,25 z"
        fill="currentColor"
-       id="path107" />
+       id="path108" />
   </g>
   <g
-     transform="translate(92.4709,7.5768)"
-     id="g109">
-    <rect
-       x="-0.064999998"
-       y="-3.4969001"
-       width="0.13"
-       height="2.8106999"
-       ry="0.039999999"
-       fill="currentColor"
-       id="rect108" />
-  </g>
-  <g
-     transform="translate(91.2317,7.0768)"
+     transform="translate(24.871405,24.2955)"
      id="g110">
     <path
        transform="scale(0.004,-0.004)"
        d="M 0,-46 C 0,45 116,136 217,136 280,136 326,101 326,46 326,-41 216,-136 106,-136 39,-136 0,-97 0,-46 Z"
        fill="currentColor"
        id="path109" />
+  </g>
+  <g
+     transform="translate(26.110605,23.2955)"
+     id="g111">
+    <path
+       id="rect110"
+       style="fill:currentColor"
+       d="m -0.025,-3.1565001 h 0.05 c 0.02216,0 0.04,0.01784 0.04,0.04 v 3.89029996 c 0,0.02216 -0.01784,0.04 -0.04,0.04 h -0.05 c -0.02216,0 -0.04,-0.01784 -0.04,-0.04 V -3.1165001 c 0,-0.02216 0.01784,-0.04 0.04,-0.04 z" />
+  </g>
+  <g
+     transform="translate(28.575605,23.7955)"
+     id="g112">
+    <path
+       transform="scale(0.004,-0.004)"
+       d="M 0,-46 C 0,45 116,136 217,136 280,136 326,101 326,46 326,-41 216,-136 106,-136 39,-136 0,-97 0,-46 Z"
+       fill="currentColor"
+       id="path111" />
+  </g>
+  <g
+     transform="translate(29.814805,23.2955)"
+     id="g113">
+    <path
+       id="rect112"
+       style="fill:currentColor"
+       d="m -0.025,-3.3213 h 0.05 c 0.02216,0 0.04,0.01784 0.04,0.04 v 3.55509986 c 0,0.02216 -0.01784,0.04 -0.04,0.04 h -0.05 c -0.02216,0 -0.04,-0.01784 -0.04,-0.04 V -3.2813 c 0,-0.02216 0.01784,-0.04 0.04,-0.04 z" />
+  </g>
+  <g
+     transform="translate(27.425605,23.7955)"
+     id="g114">
+    <path
+       transform="scale(0.004,-0.004)"
+       d="m 27,41 -1,-66 v -11 c 0,-22 1,-44 4,-66 45,38 93,80 93,139 0,33 -14,67 -43,67 C 49,104 28,74 27,41 Z m -42,-179 -12,595 c 8,5 18,8 27,8 9,0 19,-3 27,-8 L 20,112 c 25,21 58,34 91,34 52,0 89,-48 89,-102 0,-80 -86,-117 -147,-169 -15,-13 -24,-38 -45,-38 -13,0 -23,11 -23,25 z"
+       fill="currentColor"
+       id="path113" />
+  </g>
+  <g
+     transform="translate(32.529805,22.7955)"
+     id="g115">
+    <path
+       transform="scale(0.004,-0.004)"
+       d="M 0,-46 C 0,45 116,136 217,136 280,136 326,101 326,46 326,-41 216,-136 106,-136 39,-136 0,-97 0,-46 Z"
+       fill="currentColor"
+       id="path114" />
+  </g>
+  <g
+     transform="translate(33.769005,23.2955)"
+     id="g116">
+    <path
+       id="rect115"
+       style="fill:currentColor"
+       d="m -0.025,-3.4971001 h 0.05 c 0.02216,0 0.04,0.01784 0.04,0.04 v 2.73089996 c 0,0.02216 -0.01784,0.04 -0.04,0.04 h -0.05 c -0.02216,0 -0.04,-0.01784 -0.04,-0.04 V -3.4571001 c 0,-0.02216 0.01784,-0.04 0.04,-0.04 z" />
+  </g>
+  <g
+     transform="translate(36.234005,23.2955)"
+     id="g117">
+    <path
+       transform="scale(0.004,-0.004)"
+       d="M 365,0 H 10 C 4,0 0,4 0,10 v 136 c 0,6 4,10 10,10 h 355 c 6,0 10,-4 10,-10 V 10 C 375,4 371,0 365,0 Z"
+       fill="currentColor"
+       id="path116" />
   </g>
 </svg>

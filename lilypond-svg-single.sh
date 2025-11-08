@@ -23,7 +23,7 @@ lilypond -dno-point-and-click -fsvg -o "$basename" "$lyfile"
 echo "[*] crop svg"
 
 for svg in "${basename}"*.svg; do
-    inkscape --actions "select-all;fit-canvas-to-selection" --export-overwrite "$svg"
+    inkscape --actions "select-all;object-to-path;fit-canvas-to-selection" --export-overwrite "$svg"
 done
 
 echo "[*] copy svg into ./figures/"
