@@ -1,4 +1,5 @@
 .DS_Store
 lilypond/*.pdf
 lilypond/*.svg
+figures/*.jpg
 *.midi
